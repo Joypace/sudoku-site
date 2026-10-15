@@ -2,6 +2,16 @@
 
 Public static files only. No private App source, account credentials, puzzle packs, or player data.
 
+## Homepage preview
+
+Open `index.html` locally to review the homepage. It uses `home.css`, `home.js`
+and optimized WebP screenshots in `home-assets/`; no build step or remote font
+is required. Clicking a screenshot opens its full-size view. The images come
+from the App's actual Journey, Library, sharing and real-widget tip captures.
+The create/import and sharing availability note must match the released App
+before the homepage is published. Store download links are deliberately omitted
+until their destination and availability are confirmed.
+
 ## Hosting with Cloudflare Pages
 
 Connect only `Joypace/sudoku-site` to Cloudflare Pages (not Workers).
