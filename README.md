@@ -29,6 +29,7 @@ GitHub Pages had one authorized deployment; GitHub Actions are disabled again. C
 ## Public routes
 
 - `/app-ads.txt`: Google AdMob publisher declaration for both platforms.
+- `/privacy/`: app privacy policy for individual developer Li Zhang, contact sudoku@joypace.com.
 - `/share/?p=…`: serves the existing compiled read-only preview and its local renderer/font resources on this host. There is no Pi redirect. Existing pi.joypace.com links continue working independently.
 - `/.well-known/apple-app-site-association`: public Apple association captured from the working share host before cutover. Signed application capabilities still govern native opening. Before DNS cutover, verify this extensionless file is actually served with application/json Content-Type using the supplied Cloudflare header rule. The prior GitHub Pages deployment serves application/octet-stream and is not qualified for native opening. The current host returns 404 for Android assetlinks.json; Android verified HTTPS opening needs separately verified signing-certificate evidence. No certificate is invented here.
 
