@@ -1,0 +1,16 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["CXQ7PVGCZ6.com.joypace.sudokuletstry"],
+        "components": [
+          {
+            "/": "/share/",
+            "?": {"p": "?*"},
+            "comment": "Original puzzle share links"
+          }
+        ]
+      }
+    ]
+  }
+}
