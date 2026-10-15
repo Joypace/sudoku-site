@@ -1,0 +1,336 @@
+{
+  "action-hold": {
+    "grid": "530070000600195000098000060800060003400803001700020006060000280000419005000080079",
+    "setup": [
+      {
+        "id": "SET_FILL",
+        "slot": 0,
+        "choice": {
+          "row": 0,
+          "col": 2,
+          "label": 3
+        }
+      },
+      {
+        "id": "SET_FILL",
+        "slot": 0,
+        "choice": {
+          "row": 1,
+          "col": 2,
+          "label": 1
+        }
+      },
+      {
+        "id": "SET_FILL",
+        "slot": 0,
+        "choice": {
+          "row": 2,
+          "col": 5,
+          "label": 1
+        }
+      },
+      {
+        "id": "SET_FILL",
+        "slot": 0,
+        "choice": {
+          "row": 3,
+          "col": 6,
+          "label": 3
+        }
+      },
+      {
+        "id": "SET_FILL",
+        "slot": 0,
+        "choice": {
+          "row": 5,
+          "col": 1,
+          "label": 0
+        }
+      },
+      {
+        "id": "SET_FILL",
+        "slot": 0,
+        "choice": {
+          "row": 6,
+          "col": 2,
+          "label": 0
+        }
+      }
+    ]
+  },
+  "action-overlay": {
+    "grid": "530070000600195000098000060800060003400803001700020006060000280000419005000080079",
+    "setup": [
+      {
+        "id": "NEW_TRY",
+        "slot": 1,
+        "hostSlot": 0
+      },
+      {
+        "id": "SET_FILL",
+        "slot": 1,
+        "choice": {
+          "row": 0,
+          "col": 2,
+          "label": 3
+        }
+      },
+      {
+        "id": "SET_FILL",
+        "slot": 1,
+        "choice": {
+          "row": 0,
+          "col": 3,
+          "label": 5
+        }
+      },
+      {
+        "id": "SET_FILL",
+        "slot": 1,
+        "choice": {
+          "row": 0,
+          "col": 5,
+          "label": 7
+        }
+      },
+      {
+        "id": "SET_FILL",
+        "slot": 1,
+        "choice": {
+          "row": 1,
+          "col": 1,
+          "label": 6
+        }
+      },
+      {
+        "id": "SET_FILL",
+        "slot": 1,
+        "choice": {
+          "row": 1,
+          "col": 2,
+          "label": 1
+        }
+      },
+      {
+        "id": "DELETE_NOTE",
+        "slot": 1,
+        "choice": {
+          "row": 0,
+          "col": 6,
+          "label": 0
+        }
+      },
+      {
+        "id": "DELETE_NOTE",
+        "slot": 1,
+        "choice": {
+          "row": 0,
+          "col": 7,
+          "label": 8
+        }
+      },
+      {
+        "id": "DELETE_NOTE",
+        "slot": 1,
+        "choice": {
+          "row": 1,
+          "col": 6,
+          "label": 3
+        }
+      },
+      {
+        "id": "SELECT_BOARD",
+        "slot": 0
+      }
+    ]
+  },
+  "action-pill": {
+    "grid": "005100020008600000010000000090043070800000030000210800000900006900008240370000009",
+    "setup": []
+  },
+  "warning-crowded-cell": {
+    "grid": "008062030006000270500000000001007020000001003000020801000040500090050684000610000",
+    "setup": [
+      {
+        "id": "SET_FILL",
+        "slot": 0,
+        "choice": {
+          "row": 0,
+          "col": 3,
+          "label": 8
+        }
+      },
+      {
+        "id": "SET_FILL",
+        "slot": 0,
+        "choice": {
+          "row": 4,
+          "col": 0,
+          "label": 1
+        }
+      },
+      {
+        "id": "SET_FILL",
+        "slot": 0,
+        "choice": {
+          "row": 5,
+          "col": 0,
+          "label": 8
+        }
+      },
+      {
+        "id": "SET_FILL",
+        "slot": 0,
+        "choice": {
+          "row": 2,
+          "col": 8,
+          "label": 7
+        }
+      },
+      {
+        "id": "DELETE_NOTE",
+        "slot": 0,
+        "choice": {
+          "row": 0,
+          "col": 1,
+          "label": 3
+        }
+      },
+      {
+        "id": "DELETE_NOTE",
+        "slot": 0,
+        "choice": {
+          "row": 1,
+          "col": 0,
+          "label": 6
+        }
+      },
+      {
+        "id": "DELETE_NOTE",
+        "slot": 0,
+        "choice": {
+          "row": 0,
+          "col": 2,
+          "label": 3
+        }
+      },
+      {
+        "id": "DELETE_NOTE",
+        "slot": 0,
+        "choice": {
+          "row": 2,
+          "col": 0,
+          "label": 6
+        }
+      },
+      {
+        "id": "DELETE_NOTE",
+        "slot": 0,
+        "choice": {
+          "row": 0,
+          "col": 3,
+          "label": 3
+        }
+      },
+      {
+        "id": "DELETE_NOTE",
+        "slot": 0,
+        "choice": {
+          "row": 3,
+          "col": 0,
+          "label": 6
+        }
+      },
+      {
+        "id": "DELETE_NOTE",
+        "slot": 0,
+        "choice": {
+          "row": 0,
+          "col": 4,
+          "label": 3
+        }
+      },
+      {
+        "id": "DELETE_NOTE",
+        "slot": 0,
+        "choice": {
+          "row": 4,
+          "col": 0,
+          "label": 6
+        }
+      },
+      {
+        "id": "DELETE_NOTE",
+        "slot": 0,
+        "choice": {
+          "row": 0,
+          "col": 5,
+          "label": 3
+        }
+      },
+      {
+        "id": "DELETE_NOTE",
+        "slot": 0,
+        "choice": {
+          "row": 5,
+          "col": 0,
+          "label": 6
+        }
+      },
+      {
+        "id": "DELETE_NOTE",
+        "slot": 0,
+        "choice": {
+          "row": 0,
+          "col": 6,
+          "label": 3
+        }
+      },
+      {
+        "id": "DELETE_NOTE",
+        "slot": 0,
+        "choice": {
+          "row": 6,
+          "col": 0,
+          "label": 6
+        }
+      },
+      {
+        "id": "DELETE_NOTE",
+        "slot": 0,
+        "choice": {
+          "row": 0,
+          "col": 7,
+          "label": 3
+        }
+      },
+      {
+        "id": "DELETE_NOTE",
+        "slot": 0,
+        "choice": {
+          "row": 7,
+          "col": 0,
+          "label": 6
+        }
+      },
+      {
+        "id": "DELETE_NOTE",
+        "slot": 0,
+        "choice": {
+          "row": 0,
+          "col": 8,
+          "label": 3
+        }
+      },
+      {
+        "id": "DELETE_NOTE",
+        "slot": 0,
+        "choice": {
+          "row": 8,
+          "col": 0,
+          "label": 6
+        }
+      }
+    ]
+  }
+}
