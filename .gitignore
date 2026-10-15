@@ -1,2 +1,4 @@
 /share/review/
 /share/fixture.json
+
+__pycache__/

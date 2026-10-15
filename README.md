@@ -56,3 +56,36 @@ The original compiled artifact is unchanged (App source 97bbdffa9f9cbfbe847f78aa
 ## AdMob verification
 
 Set https://sudoku.joypace.com/ in the public App Store Marketing URL / Google Play developer website field. Once live, verify `/app-ads.txt` directly, then request AdMob's app-ads.txt check. TestFlight-only availability does not substitute for the public store listing.
+
+## Review the site after an App update
+
+The App release owner supplies the verified revision and public feature changes;
+the website owner reviews the affected sections. For each release, run this local,
+read-only check with the exact
+candidate revision available in the App checkout:
+
+```sh
+python3 tools/check_app_update.py --app /path/to/sudoku_app --ref VERIFIED_APP_SHA
+```
+
+It compares against `app-source.json`, lists sections needing review, and exits
+2 when a review is needed. It does not fetch, build, publish or start Actions.
+Review the relevant App/content diff before deciding whether the page needs a
+change; unrelated internal changes do not require a new animation.
+
+Regenerate affected tips with the App's formal `docs/ued/tips/bake.py
+--export-svg` command, or use `--export-catalog` for the complete Help list.
+`--export-screens` records the actual Journey/Library/sharing widgets offline;
+these screen tours retain 2x image captures inside SVG, while gesture tips retain
+vector grids, text and marks (shader/sprite layers use recorded image textures).
+Do not draw a second version of the App UI or run Flutter in the homepage.
+
+Review the local page at phone, tablet and desktop widths, then run
+`node test/homepage.mjs`, `python3 test/assets_test.py`, and
+`python3 test/app_update_test.py`. Check captions,
+section claims, gesture timing, scrolling, visibility/looping, and Help's
+single-expanded-tip behavior. After review, record the exact reviewed App and
+content refs in `app-source.json`. Keep publication separate from an App release:
+use the existing website owner/deployment path only when publication is authorized.
+Also compare the release’s SDK/platform and App-opening configuration when those
+change. No Actions are started by this process.

@@ -1,0 +1,364 @@
+{
+  "tips": [
+    {
+      "id": "action-note-1",
+      "title": {
+        "en": "Toggle note 1",
+        "es": "Alternar la nota 1",
+        "zh-Hans": "切换笔记1",
+        "zh-Hant": "切換筆記1"
+      },
+      "description": "Notes are possibilities, not answers. Changing them does not change a fill."
+    },
+    {
+      "id": "action-note-3",
+      "title": {
+        "en": "Toggle note 3",
+        "es": "Alternar la nota 3",
+        "zh-Hans": "切换笔记3",
+        "zh-Hant": "切換筆記3"
+      },
+      "description": "Notes are possibilities, not answers. Changing them does not change a fill."
+    },
+    {
+      "id": "action-note-5",
+      "title": {
+        "en": "Toggle note 5",
+        "es": "Alternar la nota 5",
+        "zh-Hans": "切换笔记5",
+        "zh-Hant": "切換筆記5"
+      },
+      "description": "Notes are possibilities, not answers. Changing them does not change a fill."
+    },
+    {
+      "id": "action-note-8",
+      "title": {
+        "en": "Toggle note 8",
+        "es": "Alternar la nota 8",
+        "zh-Hans": "切换笔记8",
+        "zh-Hant": "切換筆記8"
+      },
+      "description": "Notes are possibilities, not answers. Changing them does not change a fill."
+    },
+    {
+      "id": "action-hold",
+      "title": {
+        "en": "Drag and hold to fill",
+        "es": "Arrastrar y mantener para rellenar",
+        "zh-Hans": "拖动并停留填数字",
+        "zh-Hant": "拖動並停留填數字"
+      },
+      "description": "The closing ring separates a note gesture from a fill, giving you time to choose."
+    },
+    {
+      "id": "action-cancel",
+      "title": {
+        "en": "Cancel a gesture",
+        "es": "Cancelar un gesto",
+        "zh-Hans": "取消手势",
+        "zh-Hant": "取消手勢"
+      },
+      "description": "Cancelling leaves both fills and notes as they were before you touched."
+    },
+    {
+      "id": "action-one",
+      "title": {
+        "en": "Fill a cell with one note",
+        "es": "Rellenar una celda con una nota",
+        "zh-Hans": "填写只剩一个笔记的格子",
+        "zh-Hant": "填寫只剩一個筆記的格子"
+      },
+      "description": "Use this when a cell has only one remaining note."
+    },
+    {
+      "id": "action-green",
+      "title": {
+        "en": "Fill a green forced digit",
+        "es": "Rellenar el dígito verde",
+        "zh-Hans": "填写绿色必填数字",
+        "zh-Hant": "填寫綠色必填數字"
+      },
+      "description": "Green is a forced-move hint available in Chill mode, not a guess."
+    },
+    {
+      "id": "action-unfill",
+      "title": {
+        "en": "Clear a filled digit",
+        "es": "Borrar un dígito",
+        "zh-Hans": "清除已填数字",
+        "zh-Hant": "清除已填數字"
+      },
+      "description": "Clearing a fill brings its notes back so you can reconsider the cell."
+    },
+    {
+      "id": "action-map",
+      "title": {
+        "en": "Highlight a label",
+        "es": "Resaltar un número",
+        "zh-Hans": "高亮数字",
+        "zh-Hant": "高亮數字"
+      },
+      "description": "A highlight helps you follow one label across the board, including its notes and fills."
+    },
+    {
+      "id": "action-carry",
+      "title": {
+        "en": "Drag a digit onto the board",
+        "es": "Arrastrar un dígito al tablero",
+        "zh-Hans": "拖动数字到棋盘",
+        "zh-Hant": "拖曳數字到棋盤"
+      },
+      "description": "You can enter a fill from the panel without opening the direction wheel."
+    },
+    {
+      "id": "action-panel-a",
+      "title": {
+        "en": "Change notes in the panel",
+        "es": "Cambiar notas en el panel",
+        "zh-Hans": "在面板中修改笔记",
+        "zh-Hant": "在面板中修改筆記"
+      },
+      "description": "The panel edits the selected cell’s notes. Choosing a different cell changes what it shows."
+    },
+    {
+      "id": "action-panel-b",
+      "title": {
+        "en": "Fill and clear through the panel",
+        "es": "Rellenar y borrar desde el panel",
+        "zh-Hans": "用面板填写和清除",
+        "zh-Hant": "用面板填寫與清除"
+      },
+      "description": "The panel can fill or clear the selected cell while the other cells stay unchanged."
+    },
+    {
+      "id": "action-copy",
+      "title": {
+        "en": "Try a copy of the board",
+        "es": "Probar una copia del tablero",
+        "zh-Hans": "复制棋盘尝试",
+        "zh-Hant": "複製棋盤嘗試"
+      },
+      "description": "Trying a guess on a copy leaves your original board unchanged."
+    },
+    {
+      "id": "action-overlay",
+      "title": {
+        "en": "Compare boards by overlay",
+        "es": "Comparar tableros superpuestos",
+        "zh-Hans": "叠加比较棋盘",
+        "zh-Hant": "疊加比較棋盤"
+      },
+      "description": "Compare another board’s deductions with your notes through its coloured marks."
+    },
+    {
+      "id": "action-consensus",
+      "title": {
+        "en": "Rule out a note with two tries",
+        "es": "Descartar una nota con dos pruebas",
+        "zh-Hans": "用两种尝试排除笔记",
+        "zh-Hant": "用兩種嘗試排除筆記"
+      },
+      "description": "Try both possible places for a label. A note ruled out in both copies can be removed from the original."
+    },
+    {
+      "id": "action-discard",
+      "title": {
+        "en": "Discard a try board",
+        "es": "Descartar un tablero de prueba",
+        "zh-Hans": "丢弃尝试棋盘",
+        "zh-Hant": "丟棄嘗試棋盤"
+      },
+      "description": "Discarding a try board keeps the other boards and their work."
+    },
+    {
+      "id": "action-fire",
+      "title": {
+        "en": "Use Fire",
+        "es": "Usar Fuego",
+        "zh-Hans": "使用火",
+        "zh-Hant": "使用火"
+      },
+      "description": "Fire fills one proved cell; it does not choose a guess for you."
+    },
+    {
+      "id": "action-ice",
+      "title": {
+        "en": "Use Ice",
+        "es": "Usar Hielo",
+        "zh-Hans": "使用冰",
+        "zh-Hant": "使用冰"
+      },
+      "description": "Ice fills the current proved cells together. Those fills do not start another wave."
+    },
+    {
+      "id": "action-bolt",
+      "title": {
+        "en": "Use Lightning",
+        "es": "Usar Rayo",
+        "zh-Hans": "使用闪电",
+        "zh-Hant": "使用閃電"
+      },
+      "description": "Each Lightning wave can prove more cells, which the next wave fills."
+    },
+    {
+      "id": "action-pill",
+      "title": {
+        "en": "Show enforced moves in Definite",
+        "es": "Mostrar jugadas forzadas en Cierto",
+        "zh-Hans": "在确定状态下显示强制走法",
+        "zh-Hant": "在確定狀態下顯示強制走法"
+      },
+      "description": "Definite means at least one set has only one choice left. Tap the status pill to highlight these enforced moves one by one."
+    },
+    {
+      "id": "action-pill-dilemma",
+      "title": {
+        "en": "Show the tightest sets in Dilemma",
+        "es": "Mostrar los grupos más limitados en Dilema",
+        "zh-Hans": "在困境状态下显示选择最少的集合",
+        "zh-Hant": "在困境狀態下顯示選擇最少的集合"
+      },
+      "description": "Dilemma means no move is enforced. Tap the status pill to highlight the sets with the fewest choices left. This example has two choices in each highlighted set."
+    },
+    {
+      "id": "action-warn",
+      "title": {
+        "en": "Focus on errors one by one",
+        "es": "Ver cada error por separado",
+        "zh-Hans": "逐个聚焦错误",
+        "zh-Hant": "逐個聚焦錯誤"
+      },
+      "description": "Tap Invalid to highlight each error in turn."
+    },
+    {
+      "id": "action-history-tap",
+      "title": {
+        "en": "Tap Undo and Redo",
+        "es": "Tocar Deshacer y Rehacer",
+        "zh-Hans": "单击撤销与重做",
+        "zh-Hant": "點一下復原與重做"
+      },
+      "description": "Undo and Redo work on notes and fills. Use them to recheck the last change."
+    },
+    {
+      "id": "action-history-double",
+      "title": {
+        "en": "Double-tap Undo and Redo",
+        "es": "Dos toques: Deshacer y Rehacer",
+        "zh-Hans": "双击撤销与重做",
+        "zh-Hant": "點兩下復原與重做"
+      },
+      "description": "A Dilemma has no forced move left. It is where you choose what to try next."
+    },
+    {
+      "id": "action-history-hold",
+      "title": {
+        "en": "Hold Undo and Redo",
+        "es": "Mantener Deshacer y Rehacer",
+        "zh-Hans": "长按撤销与重做",
+        "zh-Hant": "長按復原與重做"
+      },
+      "description": "Revisit the opening board without resetting the puzzle or losing its recorded moves."
+    },
+    {
+      "id": "warning-conflict-row",
+      "title": {
+        "en": "Conflicts",
+        "es": "Conflictos",
+        "zh-Hans": "冲突",
+        "zh-Hant": "衝突"
+      },
+      "description": "A digit repeats in a row, column or box. Red corners mark your conflicting fills. Here, row 1 has two 1s, at columns 4 and 7."
+    },
+    {
+      "id": "warning-starving-cell",
+      "title": {
+        "en": "Starving: cell",
+        "es": "Starving: celda",
+        "zh-Hans": "Starving：格子",
+        "zh-Hant": "Starving：格子"
+      },
+      "description": "Your fills and notes leave no label that can fill this cell. At row 1, column 1, dashed red boxes mark all nine labels as missing."
+    },
+    {
+      "id": "warning-starving-row",
+      "title": {
+        "en": "Starving: row",
+        "es": "Starving: fila",
+        "zh-Hans": "Starving：行",
+        "zh-Hant": "Starving：行"
+      },
+      "description": "Your fills and notes leave no place for a label in a row. Row 1 is outlined in red. Dashed red boxes mark 1 in every empty cell, showing the missing label."
+    },
+    {
+      "id": "warning-starving-box",
+      "title": {
+        "en": "Starving: box",
+        "es": "Starving: caja",
+        "zh-Hans": "Starving：宫",
+        "zh-Hant": "Starving：宮"
+      },
+      "description": "Your fills and notes leave no place for a label in a box. The top-left box is outlined in red. Dashed red boxes mark 3 in every empty cell, showing the missing label."
+    },
+    {
+      "id": "warning-starving-column",
+      "title": {
+        "en": "Starving: column",
+        "es": "Starving: columna",
+        "zh-Hans": "Starving：列",
+        "zh-Hant": "Starving：列"
+      },
+      "description": "Your fills and notes leave no place for a label in a column. Column 1 is outlined in red. Dashed red boxes mark 2 in every empty cell, showing the missing label."
+    },
+    {
+      "id": "warning-crowded-cell",
+      "title": {
+        "en": "Crowded: cell",
+        "es": "Crowded: celda",
+        "zh-Hans": "Crowded：格子",
+        "zh-Hant": "Crowded：格子"
+      },
+      "description": "Two forced moves conflict in the same cell. A red frame outlines row 1, column 1; solid red boxes mark the competing notes 4 and 7."
+    },
+    {
+      "id": "warning-crowded-row",
+      "title": {
+        "en": "Crowded: row",
+        "es": "Crowded: fila",
+        "zh-Hans": "Crowded：行",
+        "zh-Hant": "Crowded：行"
+      },
+      "description": "Two forced moves conflict in the same row. A red frame outlines row 1; solid red boxes mark the competing 1s in columns 2 and 4."
+    },
+    {
+      "id": "warning-crowded-box",
+      "title": {
+        "en": "Crowded: box",
+        "es": "Crowded: caja",
+        "zh-Hans": "Crowded：宫",
+        "zh-Hant": "Crowded：宮"
+      },
+      "description": "Two forced moves conflict in the same box. A red frame outlines the top-left box; solid red boxes mark the competing 3s at row 2, column 1 and row 3, column 2."
+    },
+    {
+      "id": "warning-crowded-column",
+      "title": {
+        "en": "Crowded: column",
+        "es": "Crowded: columna",
+        "zh-Hans": "Crowded：列",
+        "zh-Hant": "Crowded：列"
+      },
+      "description": "Two forced moves conflict in the same column. A red frame outlines column 1; solid red boxes mark the competing 1s in rows 1 and 8."
+    },
+    {
+      "id": "warning-uniqueness-rows",
+      "title": {
+        "en": "Uniqueness Error",
+        "es": "Error de unicidad",
+        "zh-Hans": "唯一性错误",
+        "zh-Hant": "唯一性錯誤"
+      },
+      "description": "If these fills were right, we'd get two answers. We detect only some swaps: red circles mark 1s and 4s; thin lines link circled cells in two sets; chevrons show the sets can swap."
+    }
+  ]
+}

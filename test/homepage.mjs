@@ -47,16 +47,38 @@ try{
  await call('Input.dispatchMouseEvent',{type:'mouseWheel',...point,deltaX:0,deltaY:450});
  await until(`scrollY>${before}+200`,'Wheel over animation did not scroll the page');
  console.log('Animation frame intervals (ms):',paint);
+ const stages=await read(`Array.from(document.querySelectorAll('.tip-animation'),stage=>stage.dataset.tip)`);
+ for(const id of stages){
+  await read(`document.querySelector('[data-tip="'+${JSON.stringify(id)}+'"]').scrollIntoView({block:'center',behavior:'instant'})`);
+  await until(`(()=>{const stage=document.querySelector('[data-tip="'+${JSON.stringify(id)}+'"]');const svg=stage.querySelector('object')?.contentDocument?.documentElement;return svg?.localName==='svg' && (Number(svg.dataset.duration)===0 || svg.getCurrentTime()>0)})()`,'Feature animation unavailable: '+id);
+ }
  for(const width of [834,390,320]){
   await call('Emulation.setDeviceMetricsOverride',{width,height:844,deviceScaleFactor:1,mobile:false});
   assert.equal(await read('document.documentElement.scrollWidth'),width,'Horizontal overflow');
+  await read(`document.querySelector('[data-tip="screen-library-wide"]').scrollIntoView({block:'center',behavior:'instant'})`);
+  const libraryFile=width<=680?'screen-library.svg':'screen-library-wide.svg';
+  await until(`document.querySelector('[data-tip="screen-library-wide"] object')?.data.endsWith(${JSON.stringify(libraryFile)})`,'Responsive Library capture did not match the viewport');
  }
  await call('Emulation.setEmulatedMedia',{features:[{name:'prefers-reduced-motion',value:'reduce'}]});
  await call('Page.navigate',{url});
  await until(`!!document.querySelector('.tip-animation')`,'Reduced-motion homepage missing');
  await read(`document.querySelector('.tip-animation').scrollIntoView({block:'center',behavior:'instant'})`);await wait(300);
  assert.equal(await read(`document.querySelectorAll('.tip-vector').length`),0,'Reduced motion ignored');
+ await call('Emulation.setEmulatedMedia',{features:[{name:'prefers-reduced-motion',value:'no-preference'}]});
+ await call('Page.navigate',{url:new URL('help/',url).href});
+ await until(`document.querySelectorAll('#help-tips details').length>1`,'Help catalogue missing');
+ assert.equal(await read(`document.querySelectorAll('#help-tips details[open]').length`),0,'Tips should start collapsed');
+ assert.equal(await read(`document.querySelectorAll('.tip-vector').length`),0,'Collapsed tips should not load animations');
+ await read(`document.querySelector('#help-tips summary').click()`);
+ const helpSvg=`document.querySelector('#help-tips details[open] object')?.contentDocument?.documentElement`;
+ await until(`${helpSvg}?.localName==='svg' && !${helpSvg}.animationsPaused()`,'Expanded tip did not autoplay');
+ await read(`document.querySelectorAll('#help-tips summary')[1].click();document.querySelectorAll('#help-tips details')[1].scrollIntoView({block:'start',behavior:'instant'})`);
+ await until(`document.querySelectorAll('#help-tips details[open]').length===1 && !document.querySelector('#help-tips details').querySelector('object') && ${helpSvg}?.localName==='svg' && !${helpSvg}.animationsPaused()`,'Opening a second tip did not close/unload the first');
+ await read(`document.querySelector('#help-tips details[open] summary').click()`);
+ await until(`document.querySelectorAll('.tip-vector').length===0`,'Closing a tip retained its animation');
+ await call('Page.navigate',{url:new URL('help/#action-copy',url).href});
+ await until(`document.querySelector('#action-copy')?.open && document.querySelectorAll('details[open]').length===1 && !!document.querySelector('#action-copy object')?.contentDocument?.documentElement`,'Direct tip link did not open the requested lesson');
  assert(!requests.some(value=>/\.wasm(?:\?|$)|flutter(?:_bootstrap)?\.js|main\.dart\.js/.test(value)),'Homepage downloaded a Flutter runtime');
  assert.equal(exceptions.length,0,JSON.stringify(exceptions));
- console.log('PASS: click-free visible autoplay, 1.5-second reading gap and repeat, offscreen stop, return autoplay, wheel scrolling, responsive widths, reduced motion; no Flutter web runtime');
+ console.log('PASS: click-free visible autoplay, 1.5-second reading gap and repeat, offscreen stop, return autoplay, wheel scrolling, responsive widths, reduced motion, single-expanded Help with unload; no Flutter web runtime');
 }finally{socket?.close();browser.kill()}
