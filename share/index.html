@@ -1,2 +1,22 @@
 <!doctype html>
-<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><title>Opening shared puzzle · Sudoku Let's Try</title><style>body{font:18px/1.6 system-ui;max-width:620px;margin:15vh auto;padding:24px;color:#30291f;background:#f5efe3}a{color:#216b86}</style><h1>Opening the puzzle preview…</h1><p><a id="preview" href="https://pi.joypace.com/share/">Continue to the preview</a></p><noscript>JavaScript is needed to forward the puzzle automatically. Open the preview link and retain the original puzzle query.</noscript><script>const destination=new URL('https://pi.joypace.com/share/');destination.search=location.search;destination.hash=location.hash;document.getElementById('preview').href=destination.href;location.replace(destination.href);</script></html>
+<html lang="en">
+<head>
+  <base href="/share/">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <meta name="referrer" content="no-referrer">
+  <meta name="apple-itunes-app" content="app-id=6810872565, app-argument=https://sudoku.joypace.com/share/">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <title>Shared puzzle · Sudoku Let’s Try</title>
+  <style>
+    html,body{margin:0;width:100%;height:100%;background:#f2f3f6}
+    #open-app{position:fixed;z-index:10;top:calc(3px + env(safe-area-inset-top));right:12px;min-height:44px;padding:10px 14px;box-sizing:border-box;border-radius:22px;background:#E5EDF9;color:#365991;text-decoration:none;font:600 14px system-ui,sans-serif;display:none}
+    #loading{height:100%;display:grid;place-items:center;font:16px system-ui,sans-serif;color:#626b7a}
+    @media(prefers-color-scheme:dark){html,body{background:#17130f}#loading{color:#b9b0a0}}
+  </style>
+  <script>window.addEventListener('flutter-first-frame',()=>{document.getElementById('loading')?.remove();const p=new URL(location.href).searchParams.getAll('p');if(document.documentElement.dataset.puzzleReady==='true' && p.length===1){const a=document.getElementById('open-app');a.href='sudokuletstry://share?p='+encodeURIComponent(p[0]);a.style.display='block';}});</script>
+  <script src="flutter_bootstrap.js" async></script>
+</head>
+<body><a id="open-app" href="#" aria-label="Open this puzzle in Sudoku Let’s Try">Open in app</a><div id="loading" role="status">Loading puzzle preview…</div></body>
+</html>
