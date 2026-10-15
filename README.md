@@ -22,7 +22,7 @@ Enabling Pages or pushing after branch-based Pages is enabled may start GitHub's
 
 - `/app-ads.txt`: Google AdMob publisher declaration for both platforms.
 - `/share/?p=…`: preserves the original query and fragment while forwarding to the existing read-only preview at pi.joypace.com. The compiled preview has NOT been migrated here. Keep the Pi site running.
-- `/.well-known/apple-app-site-association`: public Apple association captured from the working share host before cutover. Signed application capabilities still govern native opening. The current host returns 404 for Android assetlinks.json; Android verified HTTPS opening needs separately verified signing-certificate evidence. No certificate is invented here.
+- `/.well-known/apple-app-site-association`: public Apple association captured from the working share host before cutover. Signed application capabilities still govern native opening. Before DNS cutover, verify this extensionless file is actually served with Apple-compatible application/json Content-Type. GitHub Pages does not offer arbitrary response-header configuration; if its MIME type is incompatible, retain an appropriate front proxy/header rule or keep the existing host instead of claiming native opening is preserved. The current host returns 404 for Android assetlinks.json; Android verified HTTPS opening needs separately verified signing-certificate evidence. No certificate is invented here.
 
 The existing preview uses nginx SSI for Safari's server-rendered Smart App Banner. Moving the full compiled preview requires qualifying a static-compatible banner and preserving the existing browser/app opening behavior, not copying the bootstrap HTML alone.
 
