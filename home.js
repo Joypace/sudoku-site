@@ -18,46 +18,86 @@ viewer.addEventListener('click', event => {
 
 const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
 const tips = [...document.querySelectorAll('.tip-animation')].map(stage => {
-  const svg = stage.querySelector('svg');
-  const controls = stage.nextElementSibling;
-  const toggle = controls.querySelector('[data-tip-action="toggle"]');
-  const replay = controls.querySelector('[data-tip-action="replay"]');
-  svg.pauseAnimations();
-  svg.setCurrentTime(0);
-  const tip = { stage, svg, toggle, duration: Number(svg.dataset.duration), visible: false, userPaused: false, playing: false };
-  tip.setPlaying = playing => {
-    tip.playing = playing;
-    playing ? svg.unpauseAnimations() : svg.pauseAnimations();
-    toggle.textContent = playing ? 'Pause animation' : 'Play animation';
-    toggle.setAttribute('aria-pressed', String(playing));
+  const toggle = stage.nextElementSibling.querySelector('[data-tip-action="toggle"]');
+  const replay = stage.nextElementSibling.querySelector('[data-tip-action="replay"]');
+  const status = stage.nextElementSibling.querySelector('.tip-status');
+  const tip = { stage, toggle, status, visible: false, playing: false, userPaused: false, svg: null, object: null, loopTimer: null };
+  tip.play = restart => {
+    clearTimeout(tip.loopTimer);
+    tip.loopTimer = null;
+    tip.userPaused = false;
+    tip.playing = true;
+    toggle.textContent = 'Pause animation';
+    toggle.setAttribute('aria-pressed', 'true');
+    if (!tip.object) {
+      const object = document.createElement('object');
+      object.type = 'image/svg+xml';
+      object.className = 'tip-vector';
+      object.setAttribute('aria-label', stage.querySelector('p').textContent);
+      object.tabIndex = -1;
+      object.addEventListener('load', () => {
+        const svg = object.contentDocument?.documentElement;
+        if (!svg || typeof svg.pauseAnimations !== 'function') {
+          status.textContent = 'Animation unavailable'; tip.pause(); return;
+        }
+        tip.svg = svg;
+        svg.pauseAnimations();
+        svg.setCurrentTime(0);
+        stage.classList.add('has-vector');
+        if (tip.playing && tip.visible && !document.hidden && !tip.userPaused) tip.play(false);
+      });
+      object.data = `home-assets/${stage.dataset.tip}.svg`;
+      stage.append(object);
+      tip.object = object;
+      return;
+    }
+    if (!tip.svg) return;
+    if (restart || tip.svg.getCurrentTime() >= Number(tip.svg.dataset.duration)) tip.svg.setCurrentTime(0);
+    tip.svg.unpauseAnimations();
+    tip.playing = true;
+    toggle.textContent = 'Pause animation';
+    toggle.setAttribute('aria-pressed', 'true');
+  };
+  tip.pause = () => {
+    clearTimeout(tip.loopTimer);
+    tip.loopTimer = null;
+    tip.svg?.pauseAnimations();
+    tip.playing = false;
+    toggle.textContent = 'Play animation';
+    toggle.setAttribute('aria-pressed', 'false');
   };
   toggle.addEventListener('click', () => {
-    tip.userPaused = tip.playing;
-    if (svg.getCurrentTime() >= tip.duration) svg.setCurrentTime(0);
-    tip.setPlaying(!tip.playing);
+    if (tip.playing) { tip.userPaused = true; tip.pause(); }
+    else tip.play(false);
   });
-  replay.addEventListener('click', () => {
-    svg.setCurrentTime(0);
-    tip.userPaused = false;
-    tip.setPlaying(true);
-  });
+  replay.addEventListener('click', () => tip.play(true));
   return tip;
 });
-const observer = new IntersectionObserver(entries => {
+const tipObserver = new IntersectionObserver(entries => {
   for (const entry of entries) {
     const tip = tips.find(tip => tip.stage === entry.target);
     tip.visible = entry.isIntersecting;
-    tip.setPlaying(tip.visible && !document.hidden && !tip.userPaused && !reducedMotion.matches && tip.svg.getCurrentTime() < tip.duration);
+    if (!tip.visible) tip.pause();
+    else if (!reducedMotion.matches && !tip.userPaused && !document.hidden) tip.play(false);
   }
-}, { threshold: 0.25 });
-for (const tip of tips) observer.observe(tip.stage);
+}, { threshold: 0.35 });
+for (const tip of tips) tipObserver.observe(tip.stage);
 document.addEventListener('visibilitychange', () => {
-  for (const tip of tips) tip.setPlaying(!document.hidden && tip.visible && !tip.userPaused && !reducedMotion.matches && tip.svg.getCurrentTime() < tip.duration);
+  if (document.hidden) for (const tip of tips) tip.pause();
+  else if (!reducedMotion.matches) for (const tip of tips) if (tip.visible && !tip.userPaused) tip.play(false);
 });
 reducedMotion.addEventListener('change', () => {
-  for (const tip of tips) tip.setPlaying(!reducedMotion.matches && tip.visible && !tip.userPaused && !document.hidden && tip.svg.getCurrentTime() < tip.duration);
+  if (reducedMotion.matches) for (const tip of tips) tip.pause();
+  else for (const tip of tips) if (tip.visible && !tip.userPaused && !document.hidden) tip.play(false);
 });
-// Poll only visible playback to stop cleanly at its final frame; never loop by surprise.
 setInterval(() => {
-  for (const tip of tips) if (tip.playing && tip.svg.getCurrentTime() >= tip.duration) tip.setPlaying(false);
+  for (const tip of tips) {
+    if (!tip.playing || !tip.svg || tip.loopTimer || tip.svg.getCurrentTime() < Number(tip.svg.dataset.duration)) continue;
+    tip.svg.pauseAnimations();
+    if (reducedMotion.matches) { tip.pause(); continue; }
+    tip.loopTimer = setTimeout(() => {
+      tip.loopTimer = null;
+      if (tip.visible && !document.hidden && !tip.userPaused) tip.play(true);
+    }, 1500);
+  }
 }, 250);
