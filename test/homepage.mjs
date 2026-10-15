@@ -40,6 +40,13 @@ try{
  await until(`${svg}.animationsPaused()`,'Offscreen animation did not stop');
  await read(`document.querySelector('.tip-animation').scrollIntoView({block:'center',behavior:'instant'})`);
  await until(`!${svg}.animationsPaused()`,'Returning animation did not autoplay');
+ assert.equal(await read(`document.querySelectorAll('[data-tip-action]').length`),0,'Unexpected playback buttons');
+ const paint=await read(`(async()=>{const gaps=[];let last=performance.now();for(let i=0;i<60;i++){await new Promise(requestAnimationFrame);const now=performance.now();gaps.push(now-last);last=now;}gaps.sort((a,b)=>a-b);return {median:gaps[30],p95:gaps[57]}})()`);
+ const before=await read('scrollY');
+ const point=await read(`(()=>{const r=document.querySelector('.tip-animation').getBoundingClientRect();return {x:r.x+r.width/2,y:r.y+r.height/2}})()`);
+ await call('Input.dispatchMouseEvent',{type:'mouseWheel',...point,deltaX:0,deltaY:450});
+ await until(`scrollY>${before}+200`,'Wheel over animation did not scroll the page');
+ console.log('Animation frame intervals (ms):',paint);
  for(const width of [834,390,320]){
   await call('Emulation.setDeviceMetricsOverride',{width,height:844,deviceScaleFactor:1,mobile:false});
   assert.equal(await read('document.documentElement.scrollWidth'),width,'Horizontal overflow');
@@ -51,5 +58,5 @@ try{
  assert.equal(await read(`document.querySelectorAll('.tip-vector').length`),0,'Reduced motion ignored');
  assert(!requests.some(value=>/\.wasm(?:\?|$)|flutter(?:_bootstrap)?\.js|main\.dart\.js/.test(value)),'Homepage downloaded a Flutter runtime');
  assert.equal(exceptions.length,0,JSON.stringify(exceptions));
- console.log('PASS: click-free visible autoplay, 1.5-second reading gap and repeat, offscreen stop, return autoplay, responsive widths, reduced motion; no Flutter web runtime');
+ console.log('PASS: click-free visible autoplay, 1.5-second reading gap and repeat, offscreen stop, return autoplay, wheel scrolling, responsive widths, reduced motion; no Flutter web runtime');
 }finally{socket?.close();browser.kill()}

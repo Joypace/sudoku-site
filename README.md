@@ -13,7 +13,7 @@ Tip demonstrations are standalone animated SVGs exported by the App's formal
 painters and timing offline; the website uses native SVG playback only. It
 ships no Flutter runtime, puzzle model or replacement gesture interpreter.
 Animations start when visible, repeat after a 1.5-second pause, and stop offscreen.
-Reduced-motion preferences disable autoplay. Optional Pause/Replay controls remain.
+Reduced-motion preferences disable autoplay.
 Run `node test/homepage.mjs http://127.0.0.1:8090/` for local playback checks.
 Website publication remains separate from App releases.
 
