@@ -3,3 +3,6 @@
 
 /app-ads.txt
   Content-Type: text/plain; charset=utf-8
+
+/.well-known/assetlinks.json
+  Content-Type: application/json

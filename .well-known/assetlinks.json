@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.joypace.sudokuletstry",
+      "sha256_cert_fingerprints": [
+        "CD:24:AC:5D:DD:84:EB:B2:E3:43:EB:92:6B:71:E7:BF:12:40:5B:35:09:28:24:21:58:44:77:8E:17:F9:44:90"
+      ]
+    }
+  }
+]
