@@ -71,7 +71,9 @@ python3 tools/check_app_update.py --app /path/to/sudoku_app --ref VERIFIED_APP_S
 It compares against `app-source.json`, lists sections needing review, and exits
 2 when a review is needed. It does not fetch, build, publish or start Actions.
 Review the relevant App/content diff before deciding whether the page needs a
-change; unrelated internal changes do not require a new animation.
+change; unrelated internal changes do not require a new animation. SVG metadata
+keeps the revision actually captured; `app-source.json` records the revision
+reviewed.
 
 Regenerate affected tips with the App's formal `docs/ued/tips/bake.py
 --export-svg` command, or use `--export-catalog` for the complete Help list.
