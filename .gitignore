@@ -2,3 +2,5 @@
 /share/fixture.json
 
 __pycache__/
+node_modules/
+.auth-build/

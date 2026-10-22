@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test:auth": "node --test test/google-auth.test.mjs"
+  },
+  "dependencies": {
+    "esbuild": "0.28.2",
+    "jose": "6.2.13"
+  }
+}

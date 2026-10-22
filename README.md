@@ -2,6 +2,34 @@
 
 Public static files only. No private App source, account credentials, puzzle packs, or player data.
 
+## Private webapp authentication
+
+`auth/google.mjs` verifies Google Identity Services redirect-POST credentials and
+allows only the verified account in the server-side `ALLOWED_EMAILS` binding.
+It checks Google's signature,
+issuer, web-client audience, expiry and nonce, plus Google's double-submit CSRF
+token. Successful sign-in creates a Secure, HttpOnly session bounded to 24 hours.
+The dedicated Google project is `sudoku-web-sign-in`; native clients are separate.
+
+`node tools/build_webapp_gate.mjs` builds the Pages advanced-mode Worker and its
+invocation routes into ignored `.auth-build/`. Its public allowlist comes from the
+immutable public site baseline; exact static exemptions preserve the homepage,
+policy, association files and public assets outside the Functions quota. Share
+HTML remains dynamic. Every private or unknown route reaches the gate, ambiguous
+paths are rejected, and alternative origins cannot serve `/webapp` assets.
+The owning scenarios run with `npm run test:auth`.
+
+The deployment overlay requires `GOOGLE_WEB_CLIENT_ID`, the secret binding
+`ALLOWED_EMAILS` containing a JSON array with exactly one lowercase address, and a random server-only
+`WEBAPP_SESSION_SECRET` of at least 43 characters. Both deployment environments
+must fail closed before a protected static payload is uploaded. Local tests do
+not prove live routing, cache behavior or Google's browser flow; a harmless
+provider probe must qualify those first. Free Functions exhaustion can interrupt
+the webapp and dynamic sharing, while exact excluded public assets remain static.
+
+Playable App files and puzzle packs stay in a private deployment overlay outside
+this public repository. They must never enter Git, even when HTTP access is gated.
+
 ## Homepage preview
 
 Serve this directory locally to review the homepage (for example,
