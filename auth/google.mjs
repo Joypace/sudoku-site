@@ -7,13 +7,14 @@ const nonceCookie = '__Host-sudoku_google_nonce';
 const googleKeys = createRemoteJWKSet(new URL('https://www.googleapis.com/oauth2/v3/certs'));
 const encoder = new TextEncoder();
 
-function allowedEmail(env) {
+function allowedEmails(env) {
   const entries = JSON.parse(env.ALLOWED_EMAILS);
-  if (!Array.isArray(entries) || entries.length !== 1 || typeof entries[0] !== 'string' ||
-      !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(entries[0]) || entries[0] !== entries[0].toLowerCase()) {
+  if (!Array.isArray(entries) || entries.length === 0 || !entries.every(email =>
+    typeof email === 'string' && /^[a-z0-9._+-]+@[a-z0-9.-]+\.[a-z]{2,}$/.test(email)) ||
+    new Set(entries).size !== entries.length) {
     throw new Error('Invalid allowlist');
   }
-  return entries[0];
+  return new Set(entries);
 }
 
 function reply(body, status = 200, headers = {}) {
@@ -114,7 +115,7 @@ async function login(env) {
     'Set-Cookie': cookie(nonceCookie, transaction, 600, 'None') });
 }
 
-async function callback(request, env, keys) {
+async function callback(request, env, keys, allowed) {
   try {
     const form = await boundedForm(request);
     if (!await sameValue(readCookie(request, 'g_csrf_token'), form.get('g_csrf_token'))) throw new Error('CSRF');
@@ -124,7 +125,7 @@ async function callback(request, env, keys) {
       audience: env.GOOGLE_WEB_CLIENT_ID, requiredClaims: ['exp', 'iat', 'sub', 'email', 'email_verified', 'nonce'],
       maxTokenAge: '10m',
     });
-    if (!await sameValue(payload.nonce, transaction.nonce) || payload.email !== allowedEmail(env) ||
+    if (!await sameValue(payload.nonce, transaction.nonce) || !allowed.has(payload.email) ||
         payload.email_verified !== true || typeof payload.sub !== 'string' || !payload.sub ||
         (payload.azp !== undefined && payload.azp !== env.GOOGLE_WEB_CLIENT_ID)) throw new Error('Not allowed');
     const session = await sign({ sub: payload.sub, email: payload.email }, env, 'webapp-session', '24h');
@@ -157,9 +158,10 @@ export function createGoogleGate(publicPaths, keys = googleKeys) {
       if (!/^[a-zA-Z0-9-]+\.apps\.googleusercontent\.com$/.test(env.GOOGLE_WEB_CLIENT_ID ?? '')) {
         return reply('Sign-in is not configured.', 503);
       }
-      try { key(env); allowedEmail(env); } catch { return reply('Sign-in is not configured.', 503); }
+      let allowed;
+      try { key(env); allowed = allowedEmails(env); } catch { return reply('Sign-in is not configured.', 503); }
       if (url.pathname === '/webapp/auth/callback') {
-        return request.method === 'POST' ? callback(request, env, keys) : reply('Method not allowed', 405);
+        return request.method === 'POST' ? callback(request, env, keys, allowed) : reply('Method not allowed', 405);
       }
       if (url.pathname === '/webapp/auth/login') {
         if (request.method !== 'GET') return reply('Method not allowed', 405);
@@ -172,7 +174,7 @@ export function createGoogleGate(publicPaths, keys = googleKeys) {
       if (!['GET', 'HEAD'].includes(request.method)) return reply('Method not allowed', 405);
       try {
         const session = await verifyOwn(readCookie(request, sessionCookie), env, 'webapp-session', '24h');
-        if (session.email !== allowedEmail(env) || typeof session.sub !== 'string' || !session.sub) throw new Error('Not allowed');
+        if (!allowed.has(session.email) || typeof session.sub !== 'string' || !session.sub) throw new Error('Not allowed');
       } catch {
         if (['/webapp', '/webapp/', '/webapp/index.html'].includes(url.pathname)) {
           return reply(null, 302, { Location: origin + '/webapp/auth/login' });

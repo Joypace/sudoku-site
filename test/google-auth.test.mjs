@@ -6,6 +6,7 @@ import { createGoogleGate } from '../auth/google.mjs';
 const canonical = 'https://sudoku.joypace.com';
 const client = 'fixture.apps.googleusercontent.com';
 const allowed = 'owner@example.test';
+const approved = [allowed, 'qa@example.test', 'agent@example.test'];
 const pair = await generateKeyPair('RS256');
 const publicKey = await exportJWK(pair.publicKey);
 const keys = createLocalJWKSet({ keys: [{ ...publicKey, kid: 'fixture', alg: 'RS256' }] });
@@ -15,7 +16,7 @@ const gate = createGoogleGate(publicPaths, keys);
 
 function setup(overrides = {}) {
   const calls = [];
-  return { calls, env: { GOOGLE_WEB_CLIENT_ID: client, ALLOWED_EMAILS: JSON.stringify([allowed]),
+  return { calls, env: { GOOGLE_WEB_CLIENT_ID: client, ALLOWED_EMAILS: JSON.stringify(approved),
     WEBAPP_SESSION_SECRET: 'fixture-session-key-which-is-longer-than-43-characters',
     ASSETS: { async fetch(request) {
       calls.push(request);
@@ -78,9 +79,20 @@ test('approved verified Google identity creates bounded HttpOnly session; every 
   assert.equal(calls.length, 10);
   const removedUser = await gate.fetch(new Request(canonical + '/webapp/main.dart.js', {
     headers: { Cookie: cookie.split(';')[0] },
-  }), { ...env, ALLOWED_EMAILS: JSON.stringify(['replacement@example.test']) });
+  }), { ...env, ALLOWED_EMAILS: JSON.stringify(approved.slice(1)) });
   assert.equal(removedUser.status, 401);
   assert.equal(calls.length, 10, 'Removed user must not reach ASSETS');
+  for (const email of approved.slice(1)) {
+    const otherFlow = await start(env);
+    const signedIn = await finish(env, otherFlow, await googleToken(otherFlow.nonce, { email, sub: 'subject-' + email }));
+    assert.equal(signedIn.status, 303);
+    const otherCookie = signedIn.headers.getSetCookie().find(c => c.startsWith('__Host-sudoku_webapp='));
+    const asset = await gate.fetch(new Request(canonical + '/webapp/main.dart.js', {
+      headers: { Cookie: otherCookie.split(';')[0] },
+    }), env);
+    assert.equal(asset.status, 200);
+  }
+  assert.equal(calls.length, 12, 'All three configured accounts must pass callback and session checks');
   const logout = await gate.fetch(new Request(canonical + '/webapp/auth/logout', {
     method: 'POST', headers: { Origin: canonical, Cookie: cookie.split(';')[0] },
   }), env);
@@ -175,7 +187,10 @@ test('public routes bypass authentication; dynamic share banner stays exact', as
 test('configuration and allowed HTTP methods never expose private assets', async () => {
   for (const config of [{ GOOGLE_WEB_CLIENT_ID: undefined }, { WEBAPP_SESSION_SECRET: 'short' }, { ALLOWED_EMAILS: undefined },
     { ALLOWED_EMAILS: '[]' }, { ALLOWED_EMAILS: 'invalid' },
-    { ALLOWED_EMAILS: JSON.stringify([allowed, 'other@example.test']) },
+    { ALLOWED_EMAILS: JSON.stringify([allowed, 42]) },
+    { ALLOWED_EMAILS: JSON.stringify([allowed, '*@example.test']) },
+    { ALLOWED_EMAILS: JSON.stringify([allowed, allowed]) },
+    { ALLOWED_EMAILS: '["example.test"]' },
     { ALLOWED_EMAILS: '[42]' }, { ALLOWED_EMAILS: '["bad"]' },
     { ALLOWED_EMAILS: '["Owner@example.test"]' }]) {
     const { env, calls } = setup(config);

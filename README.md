@@ -5,7 +5,7 @@ Public static files only. No private App source, account credentials, puzzle pac
 ## Private webapp authentication
 
 `auth/google.mjs` verifies Google Identity Services redirect-POST credentials and
-allows only the verified account in the server-side `ALLOWED_EMAILS` binding.
+allows only verified accounts in the server-side `ALLOWED_EMAILS` binding.
 It checks Google's signature,
 issuer, web-client audience, expiry and nonce, plus Google's double-submit CSRF
 token. Successful sign-in creates a Secure, HttpOnly session bounded to 24 hours.
@@ -20,7 +20,8 @@ paths are rejected, and alternative origins cannot serve `/webapp` assets.
 The owning scenarios run with `npm run test:auth`.
 
 The deployment overlay requires `GOOGLE_WEB_CLIENT_ID`, the secret binding
-`ALLOWED_EMAILS` containing a JSON array with exactly one lowercase address, and a random server-only
+`ALLOWED_EMAILS` containing a nonempty JSON array of unique exact lowercase email
+addresses (no domains or wildcards), and a random server-only
 `WEBAPP_SESSION_SECRET` of at least 43 characters. Both deployment environments
 must fail closed before a protected static payload is uploaded. Local tests do
 not prove live routing, cache behavior or Google's browser flow; a harmless
