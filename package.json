@@ -7,5 +7,8 @@
   "dependencies": {
     "esbuild": "0.28.2",
     "jose": "6.2.13"
+  },
+  "devDependencies": {
+    "blake3-wasm": "2.1.5"
   }
 }

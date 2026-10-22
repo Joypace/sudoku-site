@@ -30,6 +30,15 @@ the webapp and dynamic sharing, while exact excluded public assets remain static
 Playable App files and puzzle packs stay in a private deployment overlay outside
 this public repository. They must never enter Git, even when HTTP access is gated.
 
+The maintained manual-release helpers are `tools/prepare_pages_token_request.mjs`,
+`tools/pages_assets.mjs`, and `tools/prepare_pages_deploy.mjs`. Project upload
+tokens stay encrypted or in memory outside this repository. The asset helper
+uploads content only; the deployment helper prepares the multipart request, with
+real File parts and nested Worker metadata. `python3 test/pages_multipart_test.py`
+pins the upload-format defect that otherwise produces a static-only deployment.
+The Pages project's automatic production Git deployments are disabled for composed
+private releases; a source-only deployment cannot carry the private runtime.
+
 ## Homepage preview
 
 Serve this directory locally to review the homepage (for example,
