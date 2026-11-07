@@ -55,8 +55,10 @@ Reduced-motion preferences disable autoplay.
 Run `node test/homepage.mjs http://127.0.0.1:8090/` for local playback checks.
 Website publication remains separate from App releases.
 
-Store download links are omitted until their destination and availability are
-confirmed.
+The homepage’s App Store button uses `/app-store`. The Worker redirects Canadian
+IP locations to the Canada storefront and all other or unknown locations to the
+USA storefront, using Cloudflare’s request country. Redirects are not cached;
+there is no external location lookup. Apple Account region still controls purchase availability.
 
 ## Hosting with Cloudflare Pages
 

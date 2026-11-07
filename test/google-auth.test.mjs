@@ -204,3 +204,21 @@ test('configuration and allowed HTTP methods never expose private assets', async
     headers: { Origin: 'https://attacker.example' } }), env)).status, 403);
   assert.equal(calls.length, 0);
 });
+
+// Country comes from Cloudflare, never a caller-supplied header or query.
+test('App Store destination follows edge country without caching or touching protected assets', async () => {
+  for (const [country, storefront] of [['CA', 'ca'], ['US', 'us'], ['FR', 'us'], [undefined, 'us']]) {
+    const {env, calls} = setup();
+    const request = new Request(canonical + '/app-store?country=CA', {headers: {'CF-IPCountry': 'CA'}});
+    Object.defineProperty(request, 'cf', {value: {country}});
+    const response = await gate.fetch(request, env);
+    assert.equal(response.status, 302);
+    assert.equal(response.headers.get('Location'), `https://apps.apple.com/${storefront}/app/id6810872565`);
+    assert.equal(response.headers.get('Cache-Control'), 'private, no-store');
+    assert.equal(calls.length, 0);
+  }
+  const {env} = setup();
+  assert.equal((await gate.fetch(new Request(canonical + '/app-store', {method: 'HEAD'}), env)).status, 302);
+  assert.equal((await gate.fetch(new Request(canonical + '/app-store', {method: 'POST'}), env)).status, 405);
+  assert.equal((await gate.fetch(new Request('https://alternate.example/app-store'), env)).status, 403);
+});

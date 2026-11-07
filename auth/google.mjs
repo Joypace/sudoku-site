@@ -147,6 +147,15 @@ export function createGoogleGate(publicPaths, keys = googleKeys) {
       // All requests invoke this gate. Ambiguous paths never reach static lookup,
       // so provider decoding cannot turn a public-looking alias into a private file.
       if (/%|\\|\/\//.test(url.pathname)) return reply('Invalid path', 400);
+      if (url.pathname === '/app-store') {
+        if (url.origin !== origin) return reply('Forbidden', 403);
+        if (!['GET', 'HEAD'].includes(request.method)) return reply('Method not allowed', 405);
+        const storefront = request.cf?.country === 'CA' ? 'ca' : 'us';
+        return new Response(null, { status: 302, headers: {
+          Location: `https://apps.apple.com/${storefront}/app/id6810872565`,
+          'Cache-Control': 'private, no-store',
+        } });
+      }
       const isPrivate = url.pathname === '/webapp' || url.pathname.startsWith('/webapp/');
       if (!isPrivate) {
         if (!publicSet.has(url.pathname)) return reply('Not found', 404);
