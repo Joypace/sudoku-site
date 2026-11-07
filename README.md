@@ -59,6 +59,9 @@ The homepage’s App Store button uses `/app-store`. The Worker redirects Canadi
 IP locations to the Canada storefront and all other or unknown locations to the
 USA storefront, using Cloudflare’s request country. Redirects are not cached;
 there is no external location lookup. Apple Account region still controls purchase availability.
+The download lockup pairs the app icon with Apple’s unchanged official black
+[App Store badge](https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg),
+embedded as an image to avoid a remote request. Its 48px height has 12px clear space.
 
 ## Hosting with Cloudflare Pages
 
