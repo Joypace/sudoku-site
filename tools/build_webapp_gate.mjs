@@ -4,8 +4,9 @@ import path from 'node:path';
 import { build } from 'esbuild';
 import assert from 'node:assert/strict';
 
-// The public baseline determines which requests may reach static storage before
-// authentication. App bundles and new server code cannot enter this allowlist.
+// The public baseline and exact reviewed shared-preview images determine which
+// requests may reach static storage before authentication. App bundles and
+// new server code cannot enter this allowlist.
 const baseline = 'f4cbe27278189f9a917fde5c469adf0d10f5d5ef';
 const root = path.resolve(import.meta.dirname, '..');
 const output = path.resolve(process.argv[2] || path.join(root, '.auth-build'));
@@ -26,6 +27,12 @@ for (const file of files) {
     publicPaths.add(directory);
     if (directory !== '/') publicPaths.add(directory.slice(0, -1));
   }
+}
+// The current read-only play painters use these two public badge images.
+for (const file of ['share/assets/assets/badges/ice.webp', 'share/assets/assets/badges/surge.webp']) {
+  await fs.access(path.join(root, file));
+  publicPaths.add('/' + file);
+  exclusions.add('/' + file);
 }
 for (const route of exclusions) {
   assert(publicPaths.has(route), 'Exclusion outside immutable public baseline');
