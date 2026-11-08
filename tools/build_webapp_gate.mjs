@@ -34,6 +34,9 @@ for (const file of ['robots.txt', 'sitemap.xml', 'googlebf6c56c3dfe44ecb.html', 
   publicPaths.add('/' + file);
   exclusions.add('/' + file);
 }
+// Pages normalizes HTML files to their exact extensionless alias.
+publicPaths.add('/googlebf6c56c3dfe44ecb');
+exclusions.add('/googlebf6c56c3dfe44ecb');
 for (const route of exclusions) {
   assert(publicPaths.has(route), 'Exclusion outside immutable public baseline');
   assert(!/[\*%\\?#]|\/\//.test(route) && !/(^|\/)\.{1,2}(\/|$)/.test(route), 'Ambiguous exclusion');
