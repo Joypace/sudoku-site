@@ -13,7 +13,7 @@ The dedicated Google project is `sudoku-web-sign-in`; native clients are separat
 
 `node tools/build_webapp_gate.mjs` builds the Pages advanced-mode Worker and its
 invocation routes into ignored `.auth-build/`. Its public allowlist comes from the
-immutable public site baseline plus two exact shared-preview badge images; exact static exemptions preserve the homepage,
+immutable public site baseline plus reviewed exact metadata and image paths; exact static exemptions preserve the homepage,
 policy, association files and public assets outside the Functions quota. Share
 HTML remains dynamic. Every private or unknown route reaches the gate, ambiguous
 paths are rejected, and alternative origins cannot serve `/webapp` assets.
@@ -62,6 +62,20 @@ there is no external location lookup. Apple Account region still controls purcha
 The download lockup pairs the app icon with Apple’s unchanged official black
 [App Store badge](https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg),
 embedded as an image to avoid a remote request. Its 48px height has 12px clear space.
+
+## Public search metadata
+
+The homepage, Help and Privacy pages declare their canonical HTTPS URLs in the
+sitemap. `robots.txt` announces the sitemap and excludes the private webapp from
+crawling; authentication remains the access control.
+
+Help's readable HTML comes from the same App tip catalogue as its animations.
+After a catalogue update, run `node tools/render_help.mjs`; the existing asset
+test checks that the generated HTML stays current. `help.js` adds lazy playback,
+single-expanded tips and direct lesson links to that HTML.
+
+Search Console verification and indexing are provider state, not a consequence
+of publishing metadata. No ratings, reviews or search-result eligibility are claimed.
 
 ## Hosting with Cloudflare Pages
 

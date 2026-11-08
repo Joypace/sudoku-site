@@ -10,7 +10,7 @@ const approved = [allowed, 'qa@example.test', 'agent@example.test'];
 const pair = await generateKeyPair('RS256');
 const publicKey = await exportJWK(pair.publicKey);
 const keys = createLocalJWKSet({ keys: [{ ...publicKey, kid: 'fixture', alg: 'RS256' }] });
-const publicPaths = ['/', '/index.html', '/privacy/', '/app-ads.txt', '/share', '/share/', '/share/index', '/share/index.html',
+const publicPaths = ['/', '/index.html', '/privacy/', '/app-ads.txt', '/robots.txt', '/sitemap.xml', '/googlebf6c56c3dfe44ecb.html', '/share', '/share/', '/share/index', '/share/index.html',
   '/share/main.dart.js', '/share/assets/assets/badges/ice.webp', '/share/assets/assets/badges/surge.webp', '/.well-known/apple-app-site-association', '/.well-known/assetlinks.json'];
 const gate = createGoogleGate(publicPaths, keys);
 

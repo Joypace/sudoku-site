@@ -2,6 +2,7 @@
 import json
 from pathlib import Path
 import re
+import subprocess
 import unittest
 import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
@@ -41,6 +42,8 @@ class Artifacts(unittest.TestCase):
             self.check_svg(ROOT / source)
 
     def test_help_is_the_complete_catalogue_without_broken_or_mismatched_tips(self):
+        subprocess.run(['node', str(ROOT / 'tools/render_help.mjs'), '--check'],
+                       check=True, capture_output=True, text=True)
         catalog = json.loads((ROOT / 'home-assets/tips.json').read_text())
         ids = set()
         for tip in catalog['tips']:

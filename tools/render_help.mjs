@@ -1,0 +1,21 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+const root = path.resolve(import.meta.dirname, '..');
+const catalog = JSON.parse(await fs.readFile(path.join(root, 'home-assets/tips.json'), 'utf8'));
+const file = path.join(root, 'help/index.html');
+const html = await fs.readFile(file, 'utf8');
+const start = '<!-- app-tips:start -->', end = '<!-- app-tips:end -->';
+assert.equal(html.split(start).length, 2);
+assert.equal(html.split(end).length, 2);
+const escape = text => text.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const seen = new Set();
+const tips = catalog.tips.map(tip => {
+  assert(/^[a-z0-9-]+$/.test(tip.id) && !seen.has(tip.id));
+  seen.add(tip.id);
+  return `<details id="${tip.id}" name="app-tips"><summary>${escape(tip.title.en)}</summary><div class="tip-animation" data-tip="${tip.id}" data-src="../home-assets/${tip.id}.svg"><div class="tip-placeholder"><p>${escape(tip.title.en)}</p><small>Open this tip to watch the animation.</small></div></div><p class="help-description">${escape(tip.description)}</p></details>`;
+}).join('\n');
+const generated = html.slice(0, html.indexOf(start) + start.length) + '\n' + tips + '\n' + html.slice(html.indexOf(end));
+if (process.argv.includes('--check')) assert.equal(html, generated, 'Help HTML is stale; run node tools/render_help.mjs');
+else await fs.writeFile(file, generated);
+console.log(`${process.argv.includes('--check') ? 'Checked' : 'Rendered'} ${seen.size} App-catalogue tips as crawlable HTML.`);

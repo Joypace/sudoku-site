@@ -4,7 +4,7 @@ import path from 'node:path';
 import { build } from 'esbuild';
 import assert from 'node:assert/strict';
 
-// The public baseline and exact reviewed shared-preview images determine which
+// The public baseline and exact reviewed public additions determine which
 // requests may reach static storage before authentication. App bundles and
 // new server code cannot enter this allowlist.
 const baseline = 'f4cbe27278189f9a917fde5c469adf0d10f5d5ef';
@@ -28,8 +28,8 @@ for (const file of files) {
     if (directory !== '/') publicPaths.add(directory.slice(0, -1));
   }
 }
-// The current read-only play painters use these two public badge images.
-for (const file of ['share/assets/assets/badges/ice.webp', 'share/assets/assets/badges/surge.webp']) {
+// Public crawl metadata and the current read-only play badge images.
+for (const file of ['robots.txt', 'sitemap.xml', 'googlebf6c56c3dfe44ecb.html', 'share/assets/assets/badges/ice.webp', 'share/assets/assets/badges/surge.webp']) {
   await fs.access(path.join(root, file));
   publicPaths.add('/' + file);
   exclusions.add('/' + file);
