@@ -34,6 +34,20 @@ for (const file of ['robots.txt', 'sitemap.xml', 'googlebf6c56c3dfe44ecb.html', 
   publicPaths.add('/' + file);
   exclusions.add('/' + file);
 }
+// Exact publisher notice pages and TikTok's URL-prefix ownership proof.
+// Notice HTML remains on the Worker public allowlist to preserve the route budget.
+for (const file of ['publisher/index.html', 'publisher/terms/index.html', 'publisher/privacy/index.html']) {
+  await fs.access(path.join(root, file));
+  const directory = '/' + file.slice(0, -10);
+  publicPaths.add('/' + file);
+  publicPaths.add('/' + file.slice(0, -5));
+  publicPaths.add(directory);
+  publicPaths.add(directory.slice(0, -1));
+}
+const publisherProof = '/publisher/tiktokZ6OBR3hRgbV5C1WqcyHvtLYmpsBDoNAE.txt';
+await fs.access(path.join(root, publisherProof.slice(1)));
+publicPaths.add(publisherProof);
+exclusions.add(publisherProof);
 // Pages normalizes HTML files to their exact extensionless alias.
 publicPaths.add('/googlebf6c56c3dfe44ecb');
 exclusions.add('/googlebf6c56c3dfe44ecb');
