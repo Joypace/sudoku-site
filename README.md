@@ -13,9 +13,9 @@ The dedicated Google project is `sudoku-web-sign-in`; native clients are separat
 
 `node tools/build_webapp_gate.mjs` builds the Pages advanced-mode Worker and its
 invocation routes into ignored `.auth-build/`. Its public allowlist comes from the
-immutable public site baseline plus reviewed exact metadata and image paths; exact static exemptions preserve the homepage,
+immutable public site baseline plus reviewed metadata/image paths and the validated public lesson catalogue; exact static exemptions preserve the homepage,
 policy, association files and public assets outside the Functions quota. Share
-HTML remains dynamic. Every private or unknown route reaches the gate, ambiguous
+HTML remains dynamic. Every private or unknown route outside the deliberately public learning subtree reaches the gate, ambiguous
 paths are rejected, and alternative origins cannot serve `/webapp` assets.
 The owning scenarios run with `npm run test:auth`.
 
@@ -63,6 +63,29 @@ The download lockup pairs the app icon with Apple’s unchanged official black
 [App Store badge](https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg),
 embedded as an image to avoid a remote request. Its 48px height has 12px clear space.
 
+
+## Daily technique lessons
+
+`learn/manifest.json` is the public catalogue, with at most one technique page per
+publication date. Each page has3–5 original practice examples, a real App-exported
+SVG animation and a native puzzle-share link for every example. The animation's
+starting givens must match the link; no hidden note edits may precede playback.
+
+The private Ops authoring/export/scheduling workflow lives outside this public
+repository at `workshops/ops/technique-pages`. It uses the existing App tutorial
+player and painters. No App source or puzzle packs are copied into the site.
+The page provides complete written reasoning and explicit play/pause/replay/seek
+controls; animations start paused and stop offscreen or when the tab hides.
+
+`tools/validate_lessons.py` owns the public subtree contract, including safe file
+names, original-grid share decoding, unique solutions, technique proof rules,
+App scenario provenance and the narrow native-SVG format. Unsupported proof rules
+fail before publication; new techniques add their own owning validator/test.
+The gate builder adds only the literal `/learn/*` static exclusion and exact
+known paths/aliases, keeping the combined Pages route budget bounded. Run
+`python3 test/lessons_test.py` and the isolated browser test
+`node test/lessons_browser.mjs LOCAL_LESSON_URL QA_OUTPUT` with the existing checks.
+
 ## Public search metadata
 
 The homepage, Help and Privacy pages declare their canonical HTTPS URLs in the
@@ -79,27 +102,15 @@ of publishing metadata. No ratings, reviews or search-result eligibility are cla
 
 ## Hosting with Cloudflare Pages
 
-Connect only `Joypace/sudoku-site` to Cloudflare Pages (not Workers).
+The existing Pages project is `sudoku-joypace`, serving `sudoku.joypace.com`.
+The public repository is `Joypace/sudoku-site`, production branch `main`.
+Automatic production Git deployments and GitHub Actions remain disabled.
 
-| Setting | Value |
-|---|---|
-| Production branch | `main` |
-| Framework preset | None |
-| Build command | `exit 0` |
-| Build output directory | `.` (repository root) |
-| Root directory | Leave default |
-
-The `_headers` file gives Apple's extensionless association JSON Content-Type. One small Pages Function handles only the share HTML to preserve the exact Safari banner URL; static JS, Wasm, fonts and all other routes do not invoke it. No secrets are needed. First verify the generated `*.pages.dev` URL, `/app-ads.txt` and the association's delivered Content-Type. The repository CNAME file belongs to the retained GitHub Pages setup; Cloudflare custom domains must be added in the Cloudflare dashboard.
-
-Add `sudoku.joypace.com` in the Pages project's Custom domains **before** changing external DNS. Use the actual `*.pages.dev` hostname Cloudflare assigns; do not guess its name.
-
-| DNS type | Name | Target |
-|---|---|---|
-| CNAME | sudoku | The assigned Cloudflare Pages hostname |
-
-Replace the existing sudoku CNAME to pi.joypace.com. Leave pi.joypace.com, the blog and other DNS records unchanged. You do not need to transfer the joypace.com domain or change its nameservers for this subdomain setup.
-
-GitHub Pages had one authorized deployment; GitHub Actions are disabled again. Connecting Cloudflare Git integration uses Cloudflare's own build service, not GitHub Actions. It normally deploys future main-branch pushes automatically; use Pages deployment controls if manual publication is desired.
+Publish through the composed-private-release helpers described in
+[Private webapp authentication](#private-webapp-authentication). A public-source
+push alone cannot carry the protected runtime and must not replace a complete
+release. Keep existing DNS, custom domains, sign-in bindings and preview/production
+controls unchanged unless the user requests a separate hosting change.
 
 ## Public routes
 

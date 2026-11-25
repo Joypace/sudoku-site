@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "lessons": [
+    {
+      "slug": "x-wing",
+      "title": "X-Wing: two choices, one conclusion",
+      "description": "Learn X-Wing with three real Sudoku examples, replayable app animations, copied-board overlays and links to play each starting position.",
+      "published": "2026-11-24",
+      "examples": [
+        {
+          "id": "example-1"
+        },
+        {
+          "id": "example-2"
+        },
+        {
+          "id": "example-3"
+        }
+      ]
+    }
+  ]
+}

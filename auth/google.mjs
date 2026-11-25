@@ -144,8 +144,8 @@ export function createGoogleGate(publicPaths, keys = googleKeys) {
   return {
     async fetch(request, env) {
       const url = new URL(request.url);
-      // All requests invoke this gate. Ambiguous paths never reach static lookup,
-      // so provider decoding cannot turn a public-looking alias into a private file.
+      // Requests routed through this gate reject ambiguous paths before static lookup.
+      // Static exemptions are separately constrained by the composed-packet validator.
       if (/%|\\|\/\//.test(url.pathname)) return reply('Invalid path', 400);
       if (url.pathname === '/app-store') {
         if (url.origin !== origin) return reply('Forbidden', 403);

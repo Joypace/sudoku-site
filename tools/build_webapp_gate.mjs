@@ -1,8 +1,10 @@
 import { execFileSync } from 'node:child_process';
+import { createHash } from 'node:crypto';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { build } from 'esbuild';
 import assert from 'node:assert/strict';
+import {publicLessons} from './public_lessons.mjs';
 
 // The public baseline and exact reviewed public additions determine which
 // requests may reach static storage before authentication. App bundles and
@@ -10,8 +12,11 @@ import assert from 'node:assert/strict';
 const baseline = 'f4cbe27278189f9a917fde5c469adf0d10f5d5ef';
 const root = path.resolve(import.meta.dirname, '..');
 const output = path.resolve(process.argv[2] || path.join(root, '.auth-build'));
-const files = execFileSync('git', ['ls-tree', '-r', '--name-only', '-z', baseline],
-  { cwd: root, encoding: 'utf8' }).split('\0').filter(Boolean);
+const files = process.env.SUDOKU_SITE_PUBLIC_BASELINE_FILES
+  ? JSON.parse(await fs.readFile(process.env.SUDOKU_SITE_PUBLIC_BASELINE_FILES, 'utf8'))
+  : execFileSync('git', ['ls-tree', '-r', '--name-only', '-z', baseline],
+    { cwd: root, encoding: 'utf8' }).split('\0').filter(Boolean);
+assert.equal(createHash('sha256').update(JSON.stringify(files)).digest('hex'), '36c2ded95e95874b07aa3731d695fbd776c2e8a6160e22f28cf5de74dbd3cf8b', 'Immutable public baseline file list changed');
 const publicPaths = new Set();
 const exclusions = new Set(['/', '/privacy', '/privacy/', '/help', '/help/']);
 const shareEntries = new Set(['/share', '/share/', '/share/index', '/share/index.html']);
@@ -48,10 +53,24 @@ const publisherProof = '/publisher/tiktokZ6OBR3hRgbV5C1WqcyHvtLYmpsBDoNAE.txt';
 await fs.access(path.join(root, publisherProof.slice(1)));
 publicPaths.add(publisherProof);
 exclusions.add(publisherProof);
+// The complete reviewed learn subtree is public; no private release files may live there.
+const lessons = await publicLessons(root);
+if (lessons.length) {
+  for (const file of lessons) {
+    publicPaths.add('/' + file);
+    if (file.endsWith('.html')) publicPaths.add('/' + file.slice(0, -5));
+    if (file.endsWith('/index.html')) {
+      const directory = '/' + file.slice(0, -10);
+      publicPaths.add(directory); publicPaths.add(directory.slice(0, -1));
+    }
+  }
+  exclusions.add('/learn/*');
+}
 // Pages normalizes HTML files to their exact extensionless alias.
 publicPaths.add('/googlebf6c56c3dfe44ecb');
 exclusions.add('/googlebf6c56c3dfe44ecb');
 for (const route of exclusions) {
+  if (route === '/learn/*') { assert(lessons.length > 0); continue; }
   assert(publicPaths.has(route), 'Exclusion outside immutable public baseline');
   assert(!/[\*%\\?#]|\/\//.test(route) && !/(^|\/)\.{1,2}(\/|$)/.test(route), 'Ambiguous exclusion');
   assert(route !== '/webapp' && !route.startsWith('/webapp/') && !shareEntries.has(route), 'Protected exclusion');
@@ -64,4 +83,4 @@ await build({ stdin: { contents: `import {createGoogleGate} from './auth/google.
   outfile: path.join(output, '_worker.js') });
 await fs.writeFile(path.join(output, '_routes.json'), JSON.stringify({ version: 1, include: ['/*'], exclude: [...exclusions].sort() }) + '\n');
 await fs.writeFile(path.join(output, 'public-paths.json'), JSON.stringify([...publicPaths].sort(), null, 2) + '\n');
-console.log(`Built gate: ${publicPaths.size} public baseline paths, ${exclusions.size} exact static exemptions in ${output}`);
+console.log(`Built gate: ${publicPaths.size} public paths, ${exclusions.size} static exemptions in ${output}`);

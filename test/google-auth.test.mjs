@@ -222,3 +222,32 @@ test('App Store destination follows edge country without caching or touching pro
   assert.equal((await gate.fetch(new Request(canonical + '/app-store', {method: 'POST'}), env)).status, 405);
   assert.equal((await gate.fetch(new Request('https://alternate.example/app-store'), env)).status, 403);
 });
+
+test('generated learning aliases are public while private and neighboring paths remain gated', async () => {
+  const fs = await import('node:fs/promises');
+  const os = await import('node:os');
+  const path = await import('node:path');
+  const {execFileSync} = await import('node:child_process');
+  const output = await fs.mkdtemp(path.join(os.tmpdir(),'lesson-gate-'));
+  try {
+    execFileSync(process.execPath,[new URL('../tools/build_webapp_gate.mjs',import.meta.url).pathname,output],{stdio:'pipe'});
+    const paths = JSON.parse(await fs.readFile(path.join(output,'public-paths.json'),'utf8'));
+    const routes = JSON.parse(await fs.readFile(path.join(output,'_routes.json'),'utf8'));
+    assert.deepEqual(routes.include,['/*']);
+    assert.equal(routes.exclude.filter(r=>r.includes('*')).join(','),'/learn/*');
+    assert(routes.include.length+routes.exclude.length<=100);
+    assert(!routes.exclude.some(r=>r==='/webapp'||r.startsWith('/webapp/')));
+    assert(!['/share','/share/','/share/index','/share/index.html'].some(r=>routes.exclude.includes(r)));
+    const learningGate = createGoogleGate(paths,keys);
+    const {env,calls} = setup();
+    for(const route of ['/learn','/learn/','/learn/index','/learn/index.html','/learn/x-wing','/learn/x-wing/','/learn/x-wing/index','/learn/x-wing/index.html','/learn/x-wing/example-1.svg']) {
+      const r=await learningGate.fetch(new Request(canonical+route),{ASSETS:env.ASSETS});assert.equal(r.status,200,route);
+    }
+    const prior=calls.length;
+    for(const route of ['/learning','/learn-private','/learn/not-approved.html','/webapp/main.dart.js','/webapp/assets/assets/content/library/packs/2026-09-27.csv','/webapp/canvaskit/canvaskit.wasm','/learn/../webapp/main.dart.js','/learn/%2e%2e/webapp/main.dart.js','/learn/%2e%2e%2fwebapp/main.dart.js','/learn/%252e%252e%252fwebapp/main.dart.js','/learn//../webapp/main.dart.js']) {
+      const r=await learningGate.fetch(new Request(canonical+route),env);assert([400,401,404].includes(r.status),route+': '+r.status);
+    }
+    const alternate=await learningGate.fetch(new Request('https://example.pages.dev/webapp/main.dart.js'),env);assert.equal(alternate.status,403);
+    assert.equal(calls.length,prior,'Learning aliases must not expose private or unknown files');
+  } finally { await fs.rm(output,{recursive:true,force:true}); }
+});

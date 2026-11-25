@@ -1,0 +1,127 @@
+[
+  {
+    "orientation": "rows",
+    "digit": 9,
+    "bases": [
+      2,
+      7
+    ],
+    "covers": [
+      2,
+      7
+    ],
+    "corners": [
+      20,
+      25,
+      65,
+      70
+    ],
+    "targets": [
+      16,
+      34,
+      79
+    ],
+    "branches": [
+      [
+        20,
+        70
+      ],
+      [
+        25,
+        65
+      ]
+    ],
+    "grid": "532790010007000500010205407108000004964020070000069000700906001080152703001340000",
+    "origin": "original generated unique grid",
+    "seed": 20261201,
+    "solutionCount": 1,
+    "id": "example-1",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABUyeQAQAHAAUAAQIFQHEIAAAElkAgBwAABpAAcAkGABCAFScDABNAAAAXQqV4",
+    "animation": "example-1.svg",
+    "scenarioSHA256": "3d9cce56334be80b5f30eea8e891ea5277929cdd3ab0d6ad3fd649eb60de1609"
+  },
+  {
+    "orientation": "columns",
+    "digit": 7,
+    "bases": [
+      1,
+      5
+    ],
+    "covers": [
+      4,
+      6
+    ],
+    "corners": [
+      37,
+      55,
+      41,
+      59
+    ],
+    "targets": [
+      54,
+      39,
+      57,
+      40
+    ],
+    "branches": [
+      [
+        37,
+        59
+      ],
+      [
+        55,
+        41
+      ]
+    ],
+    "grid": "012084900300021000087009050630205487200000090048003120004030000020008039000100748",
+    "origin": "original generated unique grid, transposed for column-based teaching",
+    "seed": 20261208,
+    "solutionCount": 1,
+    "id": "example-2",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABASCEkAMAAhAACHAJBQYwIFSHIAAACQBIADEgAEAwAAAgAIA5AAEAdIAP6Yrm",
+    "animation": "example-2.svg",
+    "scenarioSHA256": "d3d2e3ebed7aa1301fcf3116325f5f74a3fdf9d6779e3c58a45342ffebe9de53"
+  },
+  {
+    "orientation": "rows",
+    "digit": 2,
+    "bases": [
+      2,
+      3
+    ],
+    "covers": [
+      2,
+      6
+    ],
+    "corners": [
+      20,
+      24,
+      29,
+      33
+    ],
+    "targets": [
+      2,
+      6,
+      38,
+      42
+    ],
+    "branches": [
+      [
+        20,
+        33
+      ],
+      [
+        24,
+        29
+      ]
+    ],
+    "grid": "000003000004028900930405078800007010070056000500200300090840002720000080008302609",
+    "origin": "original generated unique grid, digit relabeling for a second row example",
+    "seed": 20261124,
+    "solutionCount": 1,
+    "id": "example-3",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABAAADAAAEAokAkwQFB4gAAHAQBwBWAAUAIAMACQhAACcgAACAAIMCYJCvKS_2",
+    "animation": "example-3.svg",
+    "scenarioSHA256": "036391fbed16b26f0d97cc0aa27610d6bca6b694aa62ef07ea4464d2016adf2d"
+  }
+]
