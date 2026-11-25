@@ -11,7 +11,8 @@
   <title>Shared puzzle · Sudoku Let’s Try</title>
   <style>
     html,body{margin:0;width:100%;height:100%;background:#f2f3f6}
-    #open-app{position:fixed;z-index:10;top:calc(3px + env(safe-area-inset-top));right:12px;min-height:44px;padding:10px 14px;box-sizing:border-box;border-radius:22px;background:#E5EDF9;color:#365991;text-decoration:none;font:600 14px system-ui,sans-serif;display:none}
+    #open-app{position:fixed;z-index:10;top:calc(10px + env(safe-area-inset-top));right:12px;min-height:28px;padding:2px 8px;box-sizing:border-box;border-radius:14px;background:#E5EDF9;color:#365991;text-decoration:none;font:600 18px/24px system-ui,sans-serif;display:none}
+    #open-app::after{content:"";position:absolute;inset:-8px 0}
     #loading{height:100%;display:grid;place-items:center;font:16px system-ui,sans-serif;color:#626b7a}
     @media(prefers-color-scheme:dark){html,body{background:#17130f}#loading{color:#b9b0a0}}
   </style>
