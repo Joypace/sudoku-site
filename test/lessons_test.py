@@ -32,4 +32,6 @@ class Lessons(unittest.TestCase):
   manifest=json.loads((ROOT/'learn/manifest.json').read_text());index=(ROOT/'learn/index.html').read_text();home=(ROOT/'index.html').read_text();sitemap=(ROOT/'sitemap.xml').read_text();self.assertIn('href="/learn/"',home)
   for lesson in manifest['lessons']:
    url='/learn/'+lesson['slug']+'/';self.assertIn('href="'+url+'"',index);self.assertIn('https://sudoku.joypace.com'+url,sitemap)
+  if any(x['slug']=='naked-pair' for x in manifest['lessons']):
+   self.assertLess(index.index('href="/learn/naked-pair/"'),index.index('href="/learn/hidden-single/"'))
 if __name__=='__main__':unittest.main()

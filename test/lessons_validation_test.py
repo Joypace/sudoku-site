@@ -22,6 +22,9 @@ class Contract(unittest.TestCase):
  def test_valid_native_format_and_current_real_exports(self):
   self.assertEqual(len(module.validate(self.root)),12)
   lessons=json.loads((ROOT/'learn/manifest.json').read_text())['lessons'];self.assertEqual(len(module.validate(ROOT)),4+sum(2+2*len(x['examples']) for x in lessons))
+ def test_same_publication_date_is_valid_but_duplicate_slug_is_not(self):
+  lessons=json.loads((ROOT/'learn/manifest.json').read_text())['lessons'];dates=[x['published'] for x in lessons];self.assertLess(len(set(dates)),len(dates));module.validate(ROOT)
+  self.manifest['lessons'].append(dict(self.manifest['lessons'][0]));self.write();self.reject('duplicate')
  def test_root_and_descendant_symlinks_rejected_before_reads(self):
   self.learn.rename(self.root/'real');self.learn.symlink_to(self.root/'real',target_is_directory=True);self.reject('symlink');self.learn.unlink();(self.root/'real').rename(self.learn);p=self.folder/'example-1.json';p.rename(self.root/'outside.json');p.symlink_to(self.root/'outside.json');self.reject('symlinks')
  def test_wrong_share_grid_and_provenance_rejected(self):

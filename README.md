@@ -64,10 +64,10 @@ The download lockup pairs the app icon with Apple’s unchanged official black
 embedded as an image to avoid a remote request. Its 48px height has 12px clear space.
 
 
-## Daily technique lessons
+## Technique lessons
 
-`learn/manifest.json` is the public catalogue, with at most one technique page per
-publication date. Each page has3–5 original practice examples, a real App-exported
+`learn/manifest.json` is the public catalogue. Several lessons may share a
+publication date; completed lessons can be published as ready. Each page has3–5 original practice examples, a real App-exported
 SVG animation and a native puzzle-share link for every example. The animation's
 starting givens must match the link; no hidden note edits may precede playback.
 
