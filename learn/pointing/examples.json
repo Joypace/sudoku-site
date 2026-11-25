@@ -1,0 +1,75 @@
+[
+  {
+    "grid": "005100020008600000019000060090843070807500030003217890084900006900008240370400089",
+    "origin": "original Sudoku Let\u2019s Try practice puzzle",
+    "sourceFamily": "6047cf4ed615bc64",
+    "initialStatus": "dilemma",
+    "initialSingles": 0,
+    "boxIndex": 4,
+    "digit": 6,
+    "line": "row",
+    "lineIndex": 4,
+    "positions": [
+      40,
+      41
+    ],
+    "targets": [
+      37,
+      42
+    ],
+    "solutionCount": 1,
+    "id": "example-1",
+    "animation": "example-1.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABAFEAAgAIYAAAAZAABgCQhDBwgHUAAwADIXiQCEkAAGkAAIJANwQACJCVo_uk",
+    "scenarioSHA256": "2aad3ed599867f327f5fa46ceba3400cab4eb27bace6c66107590d295588bb20"
+  },
+  {
+    "grid": "003000000020386009009000063000070600000400010200030005050000240002050008080001000",
+    "origin": "original Sudoku Let\u2019s Try practice puzzle",
+    "sourceFamily": "fa40caef126d793e",
+    "initialStatus": "dilemma",
+    "initialSingles": 0,
+    "boxIndex": 4,
+    "digit": 1,
+    "line": "column",
+    "lineIndex": 3,
+    "positions": [
+      30,
+      48
+    ],
+    "targets": [
+      3,
+      21
+    ],
+    "solutionCount": 1,
+    "id": "example-2",
+    "animation": "example-2.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABADAAAAAgOGAJAJAABjAABwYAAAQAAQIAAwAFBQAAJAACBQAICAABAADv0H0S",
+    "scenarioSHA256": "04ee94a0f501dc1c04d177dc0ed3ee326b34b1dfee66dd2fff351a09a2578b05"
+  },
+  {
+    "grid": "070300050000800000200160000700000024900000700060003000625934000807006409094000000",
+    "origin": "original Sudoku Let\u2019s Try practice puzzle",
+    "sourceFamily": "059c64cf73dc346d",
+    "initialStatus": "dilemma",
+    "initialSingles": 0,
+    "boxIndex": 7,
+    "digit": 7,
+    "line": "row",
+    "lineIndex": 8,
+    "positions": [
+      75,
+      76,
+      77
+    ],
+    "targets": [
+      79,
+      80
+    ],
+    "solutionCount": 1,
+    "id": "example-3",
+    "animation": "example-3.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABBwMABQAAgAAAIAFgAAcAAAAkkAAAcABgADAAYlk0AAgHAGQJCUAAAACtr_88",
+    "scenarioSHA256": "afc57d4ba10d78fdf177f498fac4392580df1f544a0550b349a54be937014cb4"
+  }
+]

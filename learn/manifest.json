@@ -51,6 +51,23 @@
           "id": "example-3"
         }
       ]
+    },
+    {
+      "slug": "pointing",
+      "title": "Pointing Pairs and Triples: a box reserves a line",
+      "description": "Explore pointing pairs and triples with three Dilemma puzzles, real App trial boards, overlay animations and links to play each exact starting grid.",
+      "published": "2026-11-25",
+      "examples": [
+        {
+          "id": "example-1"
+        },
+        {
+          "id": "example-2"
+        },
+        {
+          "id": "example-3"
+        }
+      ]
     }
   ]
 }

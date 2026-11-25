@@ -32,23 +32,22 @@ def unique_solution(grid):
 def share_grid(url):
  p=urlparse(url);q=parse_qs(p.query,strict_parsing=True);require(p.scheme=='https' and p.netloc=='sudoku.joypace.com' and p.path=='/share/' and not p.fragment and set(q)=={'p'} and len(q['p'])==1,'Unexpected share URL')
  code=q['p'][0];require(bool(re.fullmatch('[A-Za-z0-9_-]{64}',code)),'Invalid share frame');b=base64.urlsafe_b64decode(code);require(b[:3]==b'SP\x01' and len(b)==48 and b[43]&15==0 and int.from_bytes(b[44:],'big')==zlib.crc32(b[:44]),'Invalid share checksum/version');digits=[(b[3+i//2]>>(4 if i%2==0 else 0))&15 for i in range(81)];require(all(v<=9 for v in digits),'Invalid share digit');return ''.join(map(str,digits))
-def naked_pair(example):
+def advanced_position(example):
  g=list(map(int,example['grid']));units=[set(range(r*9,r*9+9)) for r in range(9)]+[set(range(c,81,9)) for c in range(9)]+[{(r+dr)*9+c+dc for dr in range(3) for dc in range(3)} for r in (0,3,6) for c in (0,3,6)]
  cs={i:set(range(1,10))-{g[j] for u in units if i in u for j in u} for i,v in enumerate(g) if not v}
  require(all(len(opts)>1 for opts in cs.values()),'Advanced example still has a forced single')
  for unit in units:
   for d in set(range(1,10))-{g[i] for i in unit}:require(sum(d in cs.get(i,set()) for i in unit)>1,'Advanced example still has a forced single')
+ return g,units,cs
+def naked_pair(example):
+ g,units,cs=advanced_position(example)
  kind,n=example['unit'],example['unitIndex'];require(kind in ['row','column','box'] and type(n)==int and n in range(9),'Invalid pair unit');unit=units[{'row':0,'column':9,'box':18}[kind]+n]
  pair=example['pair'];digits=example['digits'];require(len(pair)==2 and len(set(pair))==2 and all(type(i)==int and i in unit for i in pair),'Pair needs two distinct cells in the named unit');require(len(digits)==2 and len(set(digits))==2 and all(type(d)==int and d in range(1,10) for d in digits),'Pair needs two distinct digits')
  require(all(cs.get(i)==set(digits) for i in pair),'Both pair cells must have exactly the same two candidates')
  targets={(i,d) for i in unit if i not in pair for d in digits if d in cs.get(i,set())};claimed=[tuple(q) for q in example['targets']];require(targets and len(claimed)==len(set(claimed)) and set(claimed)==targets,'Incorrect or incomplete pair eliminations')
  a,b=pair;x,y=digits;branches=example['branches'];require(len(branches)==2 and {tuple(map(tuple,q)) for q in branches}=={((a,x),(b,y)),((a,y),(b,x))},'Pair trials must exhaust both candidate assignments')
 def xwing(example):
- g=list(map(int,example['grid']));units=[set(range(r*9,r*9+9)) for r in range(9)]+[set(range(c,81,9)) for c in range(9)]+[{(r+dr)*9+c+dc for dr in range(3) for dc in range(3)} for r in (0,3,6) for c in (0,3,6)]
- cs={i:set(range(1,10))-{g[j] for u in units if i in u for j in u} for i,v in enumerate(g) if not v}
- require(all(len(opts)>1 for opts in cs.values()),'Advanced example still has a forced single')
- for unit in units:
-  for digit in set(range(1,10))-{g[i] for i in unit}:require(sum(digit in cs.get(i,set()) for i in unit)>1,'Advanced example still has a forced single')
+ g,units,cs=advanced_position(example)
  d=example['digit'];require(d in range(1,10),'Invalid target digit');require(example['orientation'] in ['rows','columns'],'Unknown X-Wing orientation');row_based=example['orientation']=='rows';base=(lambda i:i//9) if row_based else (lambda i:i%9);cross=(lambda i:i%9) if row_based else (lambda i:i//9);bases=example['bases'];covers=example['covers'];require(len(set(bases))==2 and len(set(covers))==2 and all(i in range(9) for i in bases+covers),'Invalid base/cover units');corners=set()
  for b in bases:
   live={i for i in cs if base(i)==b and d in cs[i]};require(len(live)==2 and {cross(i) for i in live}==set(covers),'X-Wing is not present in the original notes');corners|=live
@@ -70,7 +69,18 @@ def hidden_single(example):
  for item in exclusions:
   i,j=item['cell'],item['given'];require(type(j)==int and j in range(81) and j in peers(i) and g[j]==d,'Exclusion witness must be an original peer clue of the target digit')
 
-PROOFS={'x-wing':xwing,'hidden-single':hidden_single,'naked-pair':naked_pair}
+def pointing(example):
+ g,units,cs=advanced_position(example);box=example['boxIndex'];kind=example['line'];n=example['lineIndex'];d=example['digit']
+ require(type(box)==int and box in range(9) and kind in ['row','column'] and type(n)==int and n in range(9),'Invalid pointing box/line');require(type(d)==int and d in range(1,10),'Invalid pointing digit')
+ cells=units[18+box];places={i for i in cells if d in cs.get(i,set())};claimed=example['positions'];require(all(type(i)==int for i in claimed),'Pointing positions must be cell indices');require(len(places) in [2,3] and len(claimed)==len(set(claimed)) and set(claimed)==places,'Pointing must show every candidate in the box')
+ line=units[(0 if kind=='row' else 9)+n];require(all(type(i)==int for i in example['targets']),'Pointing targets must be cell indices');require(places<=line,'Box candidates must all lie on the named line');targets={i for i in line-cells if d in cs.get(i,set())};require(targets and len(example['targets'])==len(set(example['targets'])) and set(example['targets'])==targets,'Incorrect or incomplete pointing eliminations')
+def pointing_animation(data,example):
+ ps=example['positions'];d=example['digit'];box=example['boxIndex'];checks=data.get('expected',{});reveal=data.get('presentation',{}).get('choiceReveal',{})
+ require(checks.get('boards')==len(ps)+1 and checks.get('slotFills')==[[slot,i//9,i%9,d] for slot,i in enumerate(ps,1)] and checks.get('validSlots')==list(range(len(ps)+1)),'Pointing animation must test every box placement on valid boards')
+ require(checks.get('overlays')==[[slot,0] for slot in range(1,len(ps)+1)] and checks.get('notes')==[[i//9,i%9,d,False] for i in example['targets']],'Pointing animation must overlay every try and remove only proved targets')
+ require(checks.get('revealFrameCount')==1 and checks.get('revealLabelCount')==len(ps) and reveal.get('frames')==[[box//3*3,box%3*3,3,3]] and reveal.get('labels')==[[i//9,i%9,d] for i in ps],'Pointing reveal must show the complete box choice set')
+
+PROOFS={'x-wing':xwing,'hidden-single':hidden_single,'naked-pair':naked_pair,'pointing':pointing}
 def check_svg(file,scenario,example):
  raw=file.read_text();without_declaration=re.sub(r'^\s*<\?xml\s[^?]*\?>','',raw,count=1);require('<?' not in without_declaration,'SVG processing instructions are forbidden');require('<!DOCTYPE' not in raw.upper() and '<!ENTITY' not in raw.upper(),'External XML declarations are forbidden');root=ET.fromstring(raw);require(root.tag=='{'+SVG+'}svg','Not a standalone SVG');require(float(root.attrib.get('data-duration',0))>0,'Not an animation')
  for e in root.iter():
@@ -105,7 +115,7 @@ def validate(root):
   for n,(entry,example) in enumerate(zip(items,examples),1):
    stem=f'example-{n}';require(entry.get('id')==stem and example.get('id')==stem and example.get('animation')==stem+'.svg','Example ID mismatch');grid=example['grid'];require(grid not in grids,'Each example must use a different starting puzzle');grids.add(grid);require(bool(re.fullmatch('[0-9]{81}',grid)),'Invalid starting grid');require(share_grid(example['shareURL'])==grid,'Share link does not open the animated starting clues');unique_solution(grid);PROOFS[slug](example)
    scenario=folder/(stem+'.json');data=json.loads(scenario.read_text());require(data['grid']==grid and isinstance(data.get('setup'),list) and data['setup']==[],'No hidden setup may precede a shared example')
-   if slug in ['x-wing','naked-pair']:require(data.get('expected',{}).get('initialStatus')=='dilemma','Missing initial Dilemma runtime assertion')
+   if slug in ['x-wing','naked-pair','pointing']:require(data.get('expected',{}).get('initialStatus')=='dilemma','Missing initial Dilemma runtime assertion')
    if slug=='hidden-single':
     i,d,n=example['cell'],example['digit'],example['unitIndex'];kind=example['unit'];choice=[i//9,i%9,d];checks=data.get('expected',{});reveal=data.get('presentation',{}).get('choiceReveal',{});geometry={'row':[n,0,1,9],'column':[0,n,9,1],'box':[n//3*3,n%3*3,3,3]}[kind]
     require(checks.get('initialStatus')=='definite' and checks.get('initialSingle')==choice,'Missing forced-choice initial runtime assertion')
@@ -113,6 +123,7 @@ def validate(root):
     require(reveal.get('frames')==[geometry] and reveal.get('labels')==[choice] and reveal.get('start')==500,'Hidden-single highlight must reveal the complete named unit and target candidate')
     actions=[f for f in data['frames'] if f['do'] not in ['hover','depart','hide']]
     require(len(actions)==1 and actions[0]['do']=='tap' and actions[0].get('count')==2 and actions[0].get('at')=={'part':'cell','cell':choice[:2]},'Hidden-single capture must use one cell-centered forced double tap')
+   if slug=='pointing':pointing_animation(data,example)
    check_svg(folder/(stem+'.svg'),scenario,example);expected|={slug+'/'+stem+'.json',slug+'/'+stem+'.svg'}
  require(set(actual)==expected,'Unapproved or missing public lesson files: '+str(set(actual)^expected));return sorted('learn/'+p for p in actual)
 if __name__=='__main__':
