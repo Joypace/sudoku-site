@@ -38,7 +38,7 @@
     "id": "example-1",
     "shareURL": "https://sudoku.joypace.com/share/?p=U1ABUyeQAQAHAAUAAQIFQHEIAAAElkAgBwAABpAAcAkGABCAFScDABNAAAAXQqV4",
     "animation": "example-1.svg",
-    "scenarioSHA256": "3d9cce56334be80b5f30eea8e891ea5277929cdd3ab0d6ad3fd649eb60de1609"
+    "scenarioSHA256": "a5a30b00464e128ba9e1b9cd0162dea7c6ef0645764dafb9a47668426c907e8b"
   },
   {
     "orientation": "columns",
@@ -80,7 +80,7 @@
     "id": "example-2",
     "shareURL": "https://sudoku.joypace.com/share/?p=U1ABASCEkAMAAhAACHAJBQYwIFSHIAAACQBIADEgAEAwAAAgAIA5AAEAdIAP6Yrm",
     "animation": "example-2.svg",
-    "scenarioSHA256": "d3d2e3ebed7aa1301fcf3116325f5f74a3fdf9d6779e3c58a45342ffebe9de53"
+    "scenarioSHA256": "17b9cc6b5733af433d66dc5dccf54a46675af9ca4af392b1f3e8c8cfc8e38ff3"
   },
   {
     "orientation": "rows",
@@ -122,6 +122,6 @@
     "id": "example-3",
     "shareURL": "https://sudoku.joypace.com/share/?p=U1ABAAADAAAEAokAkwQFB4gAAHAQBwBWAAUAIAMACQhAACcgAACAAIMCYJCvKS_2",
     "animation": "example-3.svg",
-    "scenarioSHA256": "036391fbed16b26f0d97cc0aa27610d6bca6b694aa62ef07ea4464d2016adf2d"
+    "scenarioSHA256": "f4e602af0f57de9e5102221b879c1cbe14bf96e1ee7195cbdfeef7217e5bf6aa"
   }
 ]

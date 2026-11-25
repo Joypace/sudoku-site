@@ -25,7 +25,7 @@
         "part": "slot",
         "slot": 2
       },
-      "time": 4900,
+      "time": 3880,
       "ms": 350
     },
     {
@@ -35,16 +35,16 @@
         "slot": 2
       },
       "count": 1,
-      "time": 5400
+      "time": 4380
     },
     {
       "do": "depart",
-      "time": 5900,
+      "time": 4880,
       "ms": 200
     },
     {
       "do": "hide",
-      "time": 6100
+      "time": 5080
     },
     {
       "do": "hover",
@@ -55,7 +55,7 @@
           1
         ]
       },
-      "time": 7750,
+      "time": 6730,
       "ms": 350
     },
     {
@@ -67,7 +67,7 @@
           1
         ]
       },
-      "time": 8250
+      "time": 7230
     },
     {
       "do": "move",
@@ -82,26 +82,26 @@
           1.2
         ]
       },
-      "time": 8330,
+      "time": 7310,
       "ms": 450
     },
     {
       "do": "ready",
       "digit": 7,
-      "time": 8850
+      "time": 7830
     },
     {
       "do": "up",
-      "time": 9550
+      "time": 8530
     },
     {
       "do": "depart",
-      "time": 10050,
+      "time": 9030,
       "ms": 200
     },
     {
       "do": "hide",
-      "time": 10250
+      "time": 9230
     },
     {
       "do": "hover",
@@ -110,10 +110,9 @@
         "cell": [
           6,
           5
-        ],
-        "note": 7
+        ]
       },
-      "time": 12450,
+      "time": 11430,
       "ms": 350
     },
     {
@@ -123,20 +122,19 @@
         "cell": [
           6,
           5
-        ],
-        "note": 7
+        ]
       },
       "count": 2,
-      "time": 12950
+      "time": 11930
     },
     {
       "do": "depart",
-      "time": 13450,
+      "time": 12430,
       "ms": 200
     },
     {
       "do": "hide",
-      "time": 13650
+      "time": 12630
     },
     {
       "do": "hover",
@@ -144,7 +142,7 @@
         "part": "slot",
         "slot": 1
       },
-      "time": 13800,
+      "time": 12780,
       "ms": 350
     },
     {
@@ -154,16 +152,16 @@
         "slot": 1
       },
       "count": 1,
-      "time": 14300
+      "time": 13280
     },
     {
       "do": "depart",
-      "time": 14800,
+      "time": 13780,
       "ms": 200
     },
     {
       "do": "hide",
-      "time": 15000
+      "time": 13980
     },
     {
       "do": "hover",
@@ -171,7 +169,7 @@
         "part": "slot",
         "slot": 3
       },
-      "time": 16550,
+      "time": 15530,
       "ms": 350
     },
     {
@@ -181,16 +179,16 @@
         "slot": 3
       },
       "count": 1,
-      "time": 17050
+      "time": 16030
     },
     {
       "do": "depart",
-      "time": 17550,
+      "time": 16530,
       "ms": 200
     },
     {
       "do": "hide",
-      "time": 17750
+      "time": 16730
     },
     {
       "do": "hover",
@@ -201,7 +199,7 @@
           1
         ]
       },
-      "time": 19400,
+      "time": 18380,
       "ms": 350
     },
     {
@@ -213,7 +211,7 @@
           1
         ]
       },
-      "time": 19900
+      "time": 18880
     },
     {
       "do": "move",
@@ -228,26 +226,26 @@
           1.2
         ]
       },
-      "time": 19980,
+      "time": 18960,
       "ms": 450
     },
     {
       "do": "ready",
       "digit": 7,
-      "time": 20500
+      "time": 19480
     },
     {
       "do": "up",
-      "time": 21200
+      "time": 20180
     },
     {
       "do": "depart",
-      "time": 21700,
+      "time": 20680,
       "ms": 200
     },
     {
       "do": "hide",
-      "time": 21900
+      "time": 20880
     },
     {
       "do": "hover",
@@ -256,10 +254,9 @@
         "cell": [
           4,
           5
-        ],
-        "note": 7
+        ]
       },
-      "time": 24100,
+      "time": 23080,
       "ms": 350
     },
     {
@@ -269,20 +266,19 @@
         "cell": [
           4,
           5
-        ],
-        "note": 7
+        ]
       },
       "count": 2,
-      "time": 24600
+      "time": 23580
     },
     {
       "do": "depart",
-      "time": 25100,
+      "time": 24080,
       "ms": 200
     },
     {
       "do": "hide",
-      "time": 25300
+      "time": 24280
     },
     {
       "do": "hover",
@@ -290,7 +286,7 @@
         "part": "slot",
         "slot": 1
       },
-      "time": 25450,
+      "time": 24430,
       "ms": 350
     },
     {
@@ -300,16 +296,16 @@
         "slot": 1
       },
       "count": 1,
-      "time": 25950
+      "time": 24930
     },
     {
       "do": "depart",
-      "time": 26450,
+      "time": 25430,
       "ms": 200
     },
     {
       "do": "hide",
-      "time": 26650
+      "time": 25630
     },
     {
       "do": "hover",
@@ -317,7 +313,7 @@
         "part": "slot",
         "slot": 2
       },
-      "time": 28000,
+      "time": 26980,
       "ms": 400
     },
     {
@@ -326,7 +322,7 @@
         "part": "slot",
         "slot": 2
       },
-      "time": 28550
+      "time": 27530
     },
     {
       "do": "move",
@@ -334,21 +330,21 @@
         "part": "slot",
         "slot": 1
       },
-      "time": 28800,
+      "time": 27780,
       "ms": 750
     },
     {
       "do": "up",
-      "time": 29700
+      "time": 28680
     },
     {
       "do": "depart",
-      "time": 30100,
+      "time": 29080,
       "ms": 200
     },
     {
       "do": "hide",
-      "time": 30300
+      "time": 29280
     },
     {
       "do": "hover",
@@ -356,7 +352,7 @@
         "part": "slot",
         "slot": 3
       },
-      "time": 31700,
+      "time": 30680,
       "ms": 400
     },
     {
@@ -365,7 +361,7 @@
         "part": "slot",
         "slot": 3
       },
-      "time": 32250
+      "time": 31230
     },
     {
       "do": "move",
@@ -373,21 +369,21 @@
         "part": "slot",
         "slot": 1
       },
-      "time": 32500,
+      "time": 31480,
       "ms": 750
     },
     {
       "do": "up",
-      "time": 33400
+      "time": 32380
     },
     {
       "do": "depart",
-      "time": 33800,
+      "time": 32780,
       "ms": 200
     },
     {
       "do": "hide",
-      "time": 34000
+      "time": 32980
     },
     {
       "do": "hover",
@@ -398,7 +394,7 @@
           0
         ]
       },
-      "time": 38900,
+      "time": 37880,
       "ms": 350
     },
     {
@@ -410,7 +406,7 @@
           0
         ]
       },
-      "time": 39400,
+      "time": 38380,
       "inputDelay": 440
     },
     {
@@ -426,21 +422,21 @@
           1.1433916651786473
         ]
       },
-      "time": 39440,
+      "time": 38420,
       "ms": 600
     },
     {
       "do": "up",
-      "time": 40090
+      "time": 39070
     },
     {
       "do": "depart",
-      "time": 40600,
+      "time": 39580,
       "ms": 200
     },
     {
       "do": "hide",
-      "time": 40800
+      "time": 39780
     },
     {
       "do": "hover",
@@ -451,7 +447,7 @@
           3
         ]
       },
-      "time": 42200,
+      "time": 41180,
       "ms": 350
     },
     {
@@ -463,7 +459,7 @@
           3
         ]
       },
-      "time": 42700,
+      "time": 41680,
       "inputDelay": 440
     },
     {
@@ -479,21 +475,21 @@
           1.1433916651786473
         ]
       },
-      "time": 42740,
+      "time": 41720,
       "ms": 600
     },
     {
       "do": "up",
-      "time": 43390
+      "time": 42370
     },
     {
       "do": "depart",
-      "time": 43900,
+      "time": 42880,
       "ms": 200
     },
     {
       "do": "hide",
-      "time": 44100
+      "time": 43080
     },
     {
       "do": "hover",
@@ -504,7 +500,7 @@
           3
         ]
       },
-      "time": 45500,
+      "time": 44480,
       "ms": 350
     },
     {
@@ -516,7 +512,7 @@
           3
         ]
       },
-      "time": 46000,
+      "time": 44980,
       "inputDelay": 440
     },
     {
@@ -532,21 +528,21 @@
           1.1433916651786473
         ]
       },
-      "time": 46040,
+      "time": 45020,
       "ms": 600
     },
     {
       "do": "up",
-      "time": 46690
+      "time": 45670
     },
     {
       "do": "depart",
-      "time": 47200,
+      "time": 46180,
       "ms": 200
     },
     {
       "do": "hide",
-      "time": 47400
+      "time": 46380
     },
     {
       "do": "hover",
@@ -557,7 +553,7 @@
           4
         ]
       },
-      "time": 48800,
+      "time": 47780,
       "ms": 350
     },
     {
@@ -569,7 +565,7 @@
           4
         ]
       },
-      "time": 49300,
+      "time": 48280,
       "inputDelay": 440
     },
     {
@@ -585,30 +581,30 @@
           1.1433916651786473
         ]
       },
-      "time": 49340,
+      "time": 48320,
       "ms": 600
     },
     {
       "do": "up",
-      "time": 49990
+      "time": 48970
     },
     {
       "do": "depart",
-      "time": 50500,
+      "time": 49480,
       "ms": 200
     },
     {
       "do": "hide",
-      "time": 50700
+      "time": 49680
     }
   ],
   "presentation": {
-    "duration": 54300,
+    "duration": 53280,
     "captions": [
       {
         "text": "7 has only two places in each highlighted column.",
         "start": 500,
-        "end": 3500,
+        "end": 2480,
         "target": {
           "part": "cells",
           "cells": [
@@ -633,8 +629,8 @@
       },
       {
         "text": "Copy the original to explore one choice.",
-        "start": 3500,
-        "end": 4900,
+        "start": 2480,
+        "end": 3880,
         "target": {
           "part": "slot",
           "slot": 2
@@ -642,8 +638,8 @@
       },
       {
         "text": "Try 7 at r5c2.",
-        "start": 6250,
-        "end": 7750,
+        "start": 5230,
+        "end": 6730,
         "target": {
           "part": "cell",
           "cell": [
@@ -654,8 +650,8 @@
       },
       {
         "text": "Then r7c6 must be 7.",
-        "start": 10450,
-        "end": 12450,
+        "start": 9430,
+        "end": 11430,
         "target": {
           "part": "cell",
           "cell": [
@@ -666,8 +662,8 @@
       },
       {
         "text": "Copy the original to explore one choice.",
-        "start": 15150,
-        "end": 16550,
+        "start": 14130,
+        "end": 15530,
         "target": {
           "part": "slot",
           "slot": 3
@@ -675,8 +671,8 @@
       },
       {
         "text": "Try 7 at r7c2.",
-        "start": 17900,
-        "end": 19400,
+        "start": 16880,
+        "end": 18380,
         "target": {
           "part": "cell",
           "cell": [
@@ -687,8 +683,8 @@
       },
       {
         "text": "Then r5c6 must be 7.",
-        "start": 22100,
-        "end": 24100,
+        "start": 21080,
+        "end": 23080,
         "target": {
           "part": "cell",
           "cell": [
@@ -699,8 +695,8 @@
       },
       {
         "text": "Lay this try over the original.",
-        "start": 26800,
-        "end": 28000,
+        "start": 25780,
+        "end": 26980,
         "target": {
           "part": "slot",
           "slot": 2
@@ -708,8 +704,8 @@
       },
       {
         "text": "Lay this try over the original.",
-        "start": 30500,
-        "end": 31700,
+        "start": 29480,
+        "end": 30680,
         "target": {
           "part": "slot",
           "slot": 3
@@ -717,8 +713,8 @@
       },
       {
         "text": "Both arrangements rule out 7 at these cells.",
-        "start": 34200,
-        "end": 37700,
+        "start": 33180,
+        "end": 36680,
         "target": {
           "part": "cells",
           "cells": [
@@ -743,8 +739,8 @@
       },
       {
         "text": "Remove 7 at r7c1.",
-        "start": 37700,
-        "end": 38900,
+        "start": 36680,
+        "end": 37880,
         "target": {
           "part": "cell",
           "cell": [
@@ -756,8 +752,8 @@
       },
       {
         "text": "Remove 7 at r5c4.",
-        "start": 41000,
-        "end": 42200,
+        "start": 39980,
+        "end": 41180,
         "target": {
           "part": "cell",
           "cell": [
@@ -769,8 +765,8 @@
       },
       {
         "text": "Remove 7 at r7c4.",
-        "start": 44300,
-        "end": 45500,
+        "start": 43280,
+        "end": 44480,
         "target": {
           "part": "cell",
           "cell": [
@@ -782,8 +778,8 @@
       },
       {
         "text": "Remove 7 at r5c5.",
-        "start": 47600,
-        "end": 48800,
+        "start": 46580,
+        "end": 47780,
         "target": {
           "part": "cell",
           "cell": [
@@ -795,8 +791,8 @@
       },
       {
         "text": "The same eliminations hold whichever choice was right.",
-        "start": 50900,
-        "end": 53900,
+        "start": 49880,
+        "end": 52880,
         "target": {
           "part": "cells",
           "cells": [
@@ -822,47 +818,7 @@
     ],
     "focus": [
       {
-        "start": 500,
-        "duration": 3000,
-        "shape": "rect",
-        "target": {
-          "part": "cells",
-          "cells": [
-            [
-              4,
-              1
-            ],
-            [
-              6,
-              1
-            ]
-          ]
-        },
-        "from": 6,
-        "to": 2
-      },
-      {
-        "start": 500,
-        "duration": 3000,
-        "shape": "rect",
-        "target": {
-          "part": "cells",
-          "cells": [
-            [
-              4,
-              5
-            ],
-            [
-              6,
-              5
-            ]
-          ]
-        },
-        "from": 6,
-        "to": 2
-      },
-      {
-        "start": 3500,
+        "start": 2480,
         "duration": 1400,
         "shape": "rect",
         "target": {
@@ -873,7 +829,7 @@
         "to": 2
       },
       {
-        "start": 6250,
+        "start": 5230,
         "duration": 1500,
         "shape": "rect",
         "target": {
@@ -887,7 +843,7 @@
         "to": 2
       },
       {
-        "start": 10450,
+        "start": 9430,
         "duration": 2000,
         "shape": "rect",
         "target": {
@@ -901,7 +857,7 @@
         "to": 2
       },
       {
-        "start": 15150,
+        "start": 14130,
         "duration": 1400,
         "shape": "rect",
         "target": {
@@ -912,7 +868,7 @@
         "to": 2
       },
       {
-        "start": 17900,
+        "start": 16880,
         "duration": 1500,
         "shape": "rect",
         "target": {
@@ -926,7 +882,7 @@
         "to": 2
       },
       {
-        "start": 22100,
+        "start": 21080,
         "duration": 2000,
         "shape": "rect",
         "target": {
@@ -940,7 +896,7 @@
         "to": 2
       },
       {
-        "start": 26800,
+        "start": 25780,
         "duration": 1200,
         "shape": "rect",
         "target": {
@@ -951,7 +907,7 @@
         "to": 2
       },
       {
-        "start": 30500,
+        "start": 29480,
         "duration": 1200,
         "shape": "rect",
         "target": {
@@ -962,7 +918,7 @@
         "to": 2
       },
       {
-        "start": 34200,
+        "start": 33180,
         "duration": 3500,
         "shape": "rect",
         "target": {
@@ -990,7 +946,7 @@
         "to": 2
       },
       {
-        "start": 37700,
+        "start": 36680,
         "duration": 1200,
         "shape": "rect",
         "target": {
@@ -1005,7 +961,7 @@
         "to": 2
       },
       {
-        "start": 41000,
+        "start": 39980,
         "duration": 1200,
         "shape": "rect",
         "target": {
@@ -1020,7 +976,7 @@
         "to": 2
       },
       {
-        "start": 44300,
+        "start": 43280,
         "duration": 1200,
         "shape": "rect",
         "target": {
@@ -1035,7 +991,7 @@
         "to": 2
       },
       {
-        "start": 47600,
+        "start": 46580,
         "duration": 1200,
         "shape": "rect",
         "target": {
@@ -1050,7 +1006,7 @@
         "to": 2
       },
       {
-        "start": 50900,
+        "start": 49880,
         "duration": 3000,
         "shape": "rect",
         "target": {
@@ -1078,6 +1034,45 @@
         "to": 2
       }
     ],
+    "choiceReveal": {
+      "start": 500,
+      "frames": [
+        [
+          0,
+          1,
+          9,
+          1
+        ],
+        [
+          0,
+          5,
+          9,
+          1
+        ]
+      ],
+      "labels": [
+        [
+          4,
+          1,
+          7
+        ],
+        [
+          6,
+          1,
+          7
+        ],
+        [
+          4,
+          5,
+          7
+        ],
+        [
+          6,
+          5,
+          7
+        ]
+      ]
+    },
     "bubbleSize": {
       "maxWidth": 240,
       "minHeight": 38
