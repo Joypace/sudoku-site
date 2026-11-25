@@ -1,0 +1,160 @@
+{
+  "schema": 1,
+  "title": "Hidden Single example 3: box 5",
+  "grid": "000090000910400805300805091000907304140260007500004008890000642731042589026009070",
+  "style": "chill",
+  "setup": [],
+  "camera": {
+    "targets": [
+      {
+        "part": "tray"
+      },
+      {
+        "part": "board"
+      },
+      {
+        "part": "panel-row"
+      }
+    ],
+    "padding": 0.04
+  },
+  "frames": [
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          3,
+          4
+        ]
+      },
+      "time": 7400,
+      "ms": 400
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "cell",
+        "cell": [
+          3,
+          4
+        ]
+      },
+      "count": 2,
+      "time": 8100
+    },
+    {
+      "do": "depart",
+      "time": 8900,
+      "ms": 250
+    },
+    {
+      "do": "hide",
+      "time": 9300
+    }
+  ],
+  "presentation": {
+    "duration": 12000,
+    "captions": [
+      {
+        "text": "Box 5 needs a 5. Only r4c5 can take it.",
+        "start": 500,
+        "end": 3900,
+        "target": {
+          "part": "cell",
+          "cell": [
+            3,
+            4
+          ]
+        }
+      },
+      {
+        "text": "r4c5 has several notes, but 5 has no other place in this box.",
+        "start": 4000,
+        "end": 7300,
+        "target": {
+          "part": "cell",
+          "cell": [
+            3,
+            4
+          ]
+        }
+      },
+      {
+        "text": "Double-tap the cell in Chill Mode to fill the forced 5.",
+        "start": 7400,
+        "end": 10200,
+        "target": {
+          "part": "cell",
+          "cell": [
+            3,
+            4
+          ]
+        }
+      },
+      {
+        "text": "r4c5 is 5; no guess was needed.",
+        "start": 10300,
+        "end": 12000,
+        "target": {
+          "part": "cell",
+          "cell": [
+            3,
+            4
+          ]
+        }
+      }
+    ],
+    "focus": [],
+    "choiceReveal": {
+      "start": 500,
+      "frames": [
+        [
+          3,
+          3,
+          3,
+          3
+        ]
+      ],
+      "labels": [
+        [
+          3,
+          4,
+          5
+        ]
+      ]
+    },
+    "bubbleSize": {
+      "maxWidth": 240,
+      "minHeight": 38
+    }
+  },
+  "expected": {
+    "initialStatus": "definite",
+    "initialSingle": [
+      3,
+      4,
+      5
+    ],
+    "boards": 1,
+    "overlays": [],
+    "validSlots": [
+      0
+    ],
+    "slotFills": [
+      [
+        0,
+        3,
+        4,
+        5
+      ]
+    ],
+    "fills": [
+      [
+        3,
+        4,
+        5
+      ]
+    ]
+  }
+}

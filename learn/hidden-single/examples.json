@@ -1,0 +1,108 @@
+[
+  {
+    "grid": "982060000400009007700150809000600000146500080090003400010400000009006245504908076",
+    "unit": "row",
+    "unitIndex": 7,
+    "digit": 1,
+    "cell": 67,
+    "candidates": [
+      1,
+      3,
+      7
+    ],
+    "exclusions": [
+      {
+        "cell": 63,
+        "given": 36
+      },
+      {
+        "cell": 64,
+        "given": 55
+      },
+      {
+        "cell": 66,
+        "given": 21
+      }
+    ],
+    "origin": "original generated unique grid",
+    "seed": 20261125,
+    "id": "example-1",
+    "animation": "example-1.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABmCBgAAQAAJAHcAFQgJAAYAAAFGUACACQADQAAQQAAAAJAGJFUEkIB2Ae2iQY",
+    "scenarioSHA256": "b681f5426200918030dc0fd6fc25f1788026eed2d0b51dbe4ee70ceb17497a06"
+  },
+  {
+    "grid": "000600093057009480200000600506072009104586020000004000045760010920845036000920054",
+    "unit": "column",
+    "unitIndex": 1,
+    "digit": 6,
+    "cell": 73,
+    "candidates": [
+      1,
+      3,
+      6,
+      7,
+      8
+    ],
+    "exclusions": [
+      {
+        "cell": 1,
+        "given": 3
+      },
+      {
+        "cell": 19,
+        "given": 24
+      },
+      {
+        "cell": 28,
+        "given": 29
+      },
+      {
+        "cell": 37,
+        "given": 29
+      },
+      {
+        "cell": 46,
+        "given": 29
+      }
+    ],
+    "origin": "original generated unique grid",
+    "seed": 20261125,
+    "id": "example-2",
+    "animation": "example-2.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABAAYACTBXAJSAIAAAYAUGByAJEEWGAgAAAEAABFdgAQkghFA2AAkgBUAg-UHX",
+    "scenarioSHA256": "59fb2282c2049e5dadc712ad35f621b4240f04f467063f20441950a28a930064"
+  },
+  {
+    "grid": "000090000910400805300805091000907304140260007500004008890000642731042589026009070",
+    "unit": "box",
+    "unitIndex": 4,
+    "digit": 5,
+    "cell": 31,
+    "candidates": [
+      1,
+      5,
+      8
+    ],
+    "exclusions": [
+      {
+        "cell": 41,
+        "given": 23
+      },
+      {
+        "cell": 48,
+        "given": 45
+      },
+      {
+        "cell": 49,
+        "given": 45
+      }
+    ],
+    "origin": "original generated unique grid",
+    "seed": 20261125,
+    "id": "example-3",
+    "animation": "example-3.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABAACQAAkQQAgFMAgFCRAAkHMEFAJgAHUAAEAIiQAAZCcxBCWJAmAJBwBnRiBF",
+    "scenarioSHA256": "f2519218f73574fbe25aeea27308588d274dad3f2067d821fb7239e358a884dc"
+  }
+]

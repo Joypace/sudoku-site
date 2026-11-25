@@ -17,6 +17,23 @@
           "id": "example-3"
         }
       ]
+    },
+    {
+      "slug": "hidden-single",
+      "title": "Hidden Single: one place for a digit",
+      "description": "Find a Hidden Single in a row, column or box with three original puzzles, real app animations and a play link for each starting grid.",
+      "published": "2026-11-25",
+      "examples": [
+        {
+          "id": "example-1"
+        },
+        {
+          "id": "example-2"
+        },
+        {
+          "id": "example-3"
+        }
+      ]
     }
   ]
 }

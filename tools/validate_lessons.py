@@ -44,7 +44,22 @@ def xwing(example):
  require(set(example['corners'])==corners,'Wrong four corners');targets={i for i in cs if base(i) not in bases and cross(i) in covers and d in cs[i]};require(targets and set(example['targets'])==targets,'Incorrect or incomplete X-Wing eliminations');branches=example['branches'];require(len(branches)==2 and {q[0] for q in branches}=={i for i in corners if base(i)==bases[0]},'Branches must exhaust the first base unit')
  for first,forced in branches:
   require(first in corners and forced in corners and base(first)!=base(forced) and cross(first)!=cross(forced),'Wrong forced second placement')
-PROOFS={'x-wing':xwing}
+def hidden_single(example):
+ g=list(map(int,example['grid']));kind=example['unit'];n=example['unitIndex'];d=example['digit'];target=example['cell']
+ require(kind in ['row','column','box'] and type(n)==int and n in range(9),'Invalid hidden-single unit')
+ require(type(d)==int and d in range(1,10) and type(target)==int and target in range(81),'Invalid hidden-single choice')
+ units=[set(range(r*9,r*9+9)) for r in range(9)]+[set(range(c,81,9)) for c in range(9)]+[{(r+dr)*9+c+dc for dr in range(3) for dc in range(3)} for r in (0,3,6) for c in (0,3,6)]
+ peers=lambda i:set().union(*(u for u in units if i in u))-{i}
+ unit=units[{'row':0,'column':9,'box':18}[kind]+n];cs={i:set(range(1,10))-{g[j] for j in peers(i)} for i,v in enumerate(g) if not v}
+ require(target in unit and not g[target] and d not in {g[i] for i in unit},'Hidden-single digit must be missing in its unit')
+ require({i for i in unit if d in cs.get(i,set())}=={target},'Hidden single must have exactly one place in the named unit')
+ require(len(cs[target])>1 and example['candidates']==sorted(cs[target]),'Hidden single must show exact multiple cell candidates')
+ exclusions=example['exclusions'];others={i for i in unit if not g[i] and i!=target}
+ require(len(exclusions)==len(others) and {x['cell'] for x in exclusions}==others,'Every other empty unit cell needs an exclusion witness')
+ for item in exclusions:
+  i,j=item['cell'],item['given'];require(type(j)==int and j in range(81) and j in peers(i) and g[j]==d,'Exclusion witness must be an original peer clue of the target digit')
+
+PROOFS={'x-wing':xwing,'hidden-single':hidden_single}
 def check_svg(file,scenario,example):
  raw=file.read_text();without_declaration=re.sub(r'^\s*<\?xml\s[^?]*\?>','',raw,count=1);require('<?' not in without_declaration,'SVG processing instructions are forbidden');require('<!DOCTYPE' not in raw.upper() and '<!ENTITY' not in raw.upper(),'External XML declarations are forbidden');root=ET.fromstring(raw);require(root.tag=='{'+SVG+'}svg','Not a standalone SVG');require(float(root.attrib.get('data-duration',0))>0,'Not an animation')
  for e in root.iter():
@@ -80,6 +95,13 @@ def validate(root):
    stem=f'example-{n}';require(entry.get('id')==stem and example.get('id')==stem and example.get('animation')==stem+'.svg','Example ID mismatch');grid=example['grid'];require(grid not in grids,'Each example must use a different starting puzzle');grids.add(grid);require(bool(re.fullmatch('[0-9]{81}',grid)),'Invalid starting grid');require(share_grid(example['shareURL'])==grid,'Share link does not open the animated starting clues');unique_solution(grid);PROOFS[slug](example)
    scenario=folder/(stem+'.json');data=json.loads(scenario.read_text());require(data['grid']==grid and isinstance(data.get('setup'),list) and data['setup']==[],'No hidden setup may precede a shared example')
    if slug=='x-wing':require(data.get('expected',{}).get('initialStatus')=='dilemma','Missing initial Dilemma runtime assertion')
+   if slug=='hidden-single':
+    i,d,n=example['cell'],example['digit'],example['unitIndex'];kind=example['unit'];choice=[i//9,i%9,d];checks=data.get('expected',{});reveal=data.get('presentation',{}).get('choiceReveal',{});geometry={'row':[n,0,1,9],'column':[0,n,9,1],'box':[n//3*3,n%3*3,3,3]}[kind]
+    require(checks.get('initialStatus')=='definite' and checks.get('initialSingle')==choice,'Missing forced-choice initial runtime assertion')
+    require(data.get('style')=='chill' and checks.get('slotFills')==[[0,*choice]] and checks.get('validSlots')==[0] and checks.get('fills')==[choice] and checks.get('boards')==1 and checks.get('overlays')==[],'Hidden-single capture must assert its actual fill and valid original board')
+    require(reveal.get('frames')==[geometry] and reveal.get('labels')==[choice] and reveal.get('start')==500,'Hidden-single highlight must reveal the complete named unit and target candidate')
+    actions=[f for f in data['frames'] if f['do'] not in ['hover','depart','hide']]
+    require(len(actions)==1 and actions[0]['do']=='tap' and actions[0].get('count')==2 and actions[0].get('at')=={'part':'cell','cell':choice[:2]},'Hidden-single capture must use one cell-centered forced double tap')
    check_svg(folder/(stem+'.svg'),scenario,example);expected|={slug+'/'+stem+'.json',slug+'/'+stem+'.svg'}
  require(set(actual)==expected,'Unapproved or missing public lesson files: '+str(set(actual)^expected));return sorted('learn/'+p for p in actual)
 if __name__=='__main__':
