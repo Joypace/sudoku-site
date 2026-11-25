@@ -15,8 +15,8 @@
     #loading{height:100%;display:grid;place-items:center;font:16px system-ui,sans-serif;color:#626b7a}
     @media(prefers-color-scheme:dark){html,body{background:#17130f}#loading{color:#b9b0a0}}
   </style>
-  <script>window.addEventListener('flutter-first-frame',()=>{document.getElementById('loading')?.remove();const p=new URL(location.href).searchParams.getAll('p');if(document.documentElement.dataset.puzzleReady==='true' && p.length===1){const a=document.getElementById('open-app');a.href='sudokuletstry://share?p='+encodeURIComponent(p[0]);a.style.display='block';}});</script>
+  <script>window.addEventListener('flutter-first-frame',()=>{document.getElementById('loading')?.remove();const p=new URL(location.href).searchParams.getAll('p');if(document.documentElement.dataset.puzzleReady==='true' && p.length===1){const a=document.getElementById('open-app');a.style.display='block';}});</script>
   <script src="flutter_bootstrap.js" async></script>
 </head>
-<body><a id="open-app" href="#" aria-label="Open this puzzle in Sudoku Let’s Try">Open in app</a><div id="loading" role="status">Loading puzzle preview…</div></body>
+<body><a id="open-app" href="/app-store" aria-label="Download Sudoku Let’s Try on the App Store">App Store</a><div id="loading" role="status">Loading puzzle preview…</div></body>
 </html>
