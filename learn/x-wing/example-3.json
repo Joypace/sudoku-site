@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "title": "X-Wing example 3: two ways to place 2",
-  "grid": "000003000004028900930405078800007010070056000500200300090840002720000080008302609",
+  "title": "X-Wing example 3: two ways to place 6",
+  "grid": "082500003009034000370028000600400700047002030000300005000800100000206300090040560",
   "style": "chill",
   "setup": [],
   "camera": {
@@ -51,8 +51,8 @@
       "at": {
         "part": "cell",
         "cell": [
-          2,
-          2
+          0,
+          4
         ]
       },
       "time": 6730,
@@ -63,8 +63,8 @@
       "at": {
         "part": "cell",
         "cell": [
-          2,
-          2
+          0,
+          4
         ]
       },
       "time": 7230
@@ -74,12 +74,12 @@
       "at": {
         "part": "cell",
         "cell": [
-          2,
-          2
+          0,
+          4
         ],
         "offset": [
-          0.0,
-          -1.2
+          1.2,
+          0.0
         ]
       },
       "time": 7310,
@@ -87,7 +87,7 @@
     },
     {
       "do": "ready",
-      "digit": 2,
+      "digit": 6,
       "time": 7830
     },
     {
@@ -108,7 +108,7 @@
       "at": {
         "part": "cell",
         "cell": [
-          3,
+          5,
           6
         ]
       },
@@ -120,7 +120,7 @@
       "at": {
         "part": "cell",
         "cell": [
-          3,
+          5,
           6
         ]
       },
@@ -195,7 +195,7 @@
       "at": {
         "part": "cell",
         "cell": [
-          2,
+          0,
           6
         ]
       },
@@ -207,7 +207,7 @@
       "at": {
         "part": "cell",
         "cell": [
-          2,
+          0,
           6
         ]
       },
@@ -218,12 +218,12 @@
       "at": {
         "part": "cell",
         "cell": [
-          2,
+          0,
           6
         ],
         "offset": [
-          0.0,
-          -1.2
+          1.2,
+          0.0
         ]
       },
       "time": 18960,
@@ -231,7 +231,7 @@
     },
     {
       "do": "ready",
-      "digit": 2,
+      "digit": 6,
       "time": 19480
     },
     {
@@ -252,8 +252,8 @@
       "at": {
         "part": "cell",
         "cell": [
-          3,
-          2
+          5,
+          4
         ]
       },
       "time": 23080,
@@ -264,8 +264,8 @@
       "at": {
         "part": "cell",
         "cell": [
-          3,
-          2
+          5,
+          4
         ]
       },
       "count": 2,
@@ -390,8 +390,8 @@
       "at": {
         "part": "cell",
         "cell": [
-          0,
-          2
+          1,
+          6
         ]
       },
       "time": 37880,
@@ -402,8 +402,8 @@
       "at": {
         "part": "cell",
         "cell": [
-          0,
-          2
+          1,
+          6
         ]
       },
       "time": 38380,
@@ -414,12 +414,12 @@
       "at": {
         "part": "cell",
         "cell": [
-          0,
-          2
+          1,
+          6
         ],
         "offset": [
-          0.0,
-          -1.617
+          1.617,
+          0.0
         ]
       },
       "time": 38420,
@@ -443,7 +443,7 @@
       "at": {
         "part": "cell",
         "cell": [
-          0,
+          2,
           6
         ]
       },
@@ -455,7 +455,7 @@
       "at": {
         "part": "cell",
         "cell": [
-          0,
+          2,
           6
         ]
       },
@@ -467,12 +467,12 @@
       "at": {
         "part": "cell",
         "cell": [
-          0,
+          2,
           6
         ],
         "offset": [
-          0.0,
-          -1.617
+          1.617,
+          0.0
         ]
       },
       "time": 41720,
@@ -497,7 +497,7 @@
         "part": "cell",
         "cell": [
           4,
-          2
+          4
         ]
       },
       "time": 44480,
@@ -509,7 +509,7 @@
         "part": "cell",
         "cell": [
           4,
-          2
+          4
         ]
       },
       "time": 44980,
@@ -521,11 +521,11 @@
         "part": "cell",
         "cell": [
           4,
-          2
+          4
         ],
         "offset": [
-          0.0,
-          -1.617
+          1.617,
+          0.0
         ]
       },
       "time": 45020,
@@ -577,8 +577,8 @@
           6
         ],
         "offset": [
-          0.0,
-          -1.617
+          1.617,
+          0.0
         ]
       },
       "time": 48320,
@@ -602,26 +602,26 @@
     "duration": 53280,
     "captions": [
       {
-        "text": "2 has only two places in each highlighted row.",
+        "text": "6 has only two places in each highlighted row.",
         "start": 500,
         "end": 2480,
         "target": {
           "part": "cells",
           "cells": [
             [
-              2,
-              2
+              0,
+              4
             ],
             [
-              2,
+              0,
               6
             ],
             [
-              3,
-              2
+              5,
+              4
             ],
             [
-              3,
+              5,
               6
             ]
           ]
@@ -637,25 +637,25 @@
         }
       },
       {
-        "text": "Try 2 at r3c3.",
+        "text": "Try 6 at r1c5.",
         "start": 5230,
         "end": 6730,
         "target": {
           "part": "cell",
           "cell": [
-            2,
-            2
+            0,
+            4
           ]
         }
       },
       {
-        "text": "Then r4c7 must be 2.",
+        "text": "Then r6c7 must be 6.",
         "start": 9430,
         "end": 11430,
         "target": {
           "part": "cell",
           "cell": [
-            3,
+            5,
             6
           ]
         }
@@ -670,26 +670,26 @@
         }
       },
       {
-        "text": "Try 2 at r3c7.",
+        "text": "Try 6 at r1c7.",
         "start": 16880,
         "end": 18380,
         "target": {
           "part": "cell",
           "cell": [
-            2,
+            0,
             6
           ]
         }
       },
       {
-        "text": "Then r4c3 must be 2.",
+        "text": "Then r6c5 must be 6.",
         "start": 21080,
         "end": 23080,
         "target": {
           "part": "cell",
           "cell": [
-            3,
-            2
+            5,
+            4
           ]
         }
       },
@@ -712,23 +712,23 @@
         }
       },
       {
-        "text": "Both arrangements rule out 2 at these cells.",
+        "text": "Both arrangements rule out 6 at these cells.",
         "start": 33180,
         "end": 36680,
         "target": {
           "part": "cells",
           "cells": [
             [
-              0,
-              2
+              1,
+              6
             ],
             [
-              0,
+              2,
               6
             ],
             [
               4,
-              2
+              4
             ],
             [
               4,
@@ -738,46 +738,46 @@
         }
       },
       {
-        "text": "Remove 2 at r1c3.",
+        "text": "Remove 6 at r2c7.",
         "start": 36680,
         "end": 37880,
         "target": {
           "part": "cell",
           "cell": [
-            0,
-            2
+            1,
+            6
           ],
-          "note": 2
+          "note": 6
         }
       },
       {
-        "text": "Remove 2 at r1c7.",
+        "text": "Remove 6 at r3c7.",
         "start": 39980,
         "end": 41180,
         "target": {
           "part": "cell",
           "cell": [
-            0,
+            2,
             6
           ],
-          "note": 2
+          "note": 6
         }
       },
       {
-        "text": "Remove 2 at r5c3.",
+        "text": "Remove 6 at r5c5.",
         "start": 43280,
         "end": 44480,
         "target": {
           "part": "cell",
           "cell": [
             4,
-            2
+            4
           ],
-          "note": 2
+          "note": 6
         }
       },
       {
-        "text": "Remove 2 at r5c7.",
+        "text": "Remove 6 at r5c7.",
         "start": 46580,
         "end": 47780,
         "target": {
@@ -786,7 +786,7 @@
             4,
             6
           ],
-          "note": 2
+          "note": 6
         }
       },
       {
@@ -797,16 +797,16 @@
           "part": "cells",
           "cells": [
             [
-              0,
-              2
+              1,
+              6
             ],
             [
-              0,
+              2,
               6
             ],
             [
               4,
-              2
+              4
             ],
             [
               4,
@@ -835,8 +835,8 @@
         "target": {
           "part": "cell",
           "cell": [
-            2,
-            2
+            0,
+            4
           ]
         },
         "from": 6,
@@ -849,7 +849,7 @@
         "target": {
           "part": "cell",
           "cell": [
-            3,
+            5,
             6
           ]
         },
@@ -874,7 +874,7 @@
         "target": {
           "part": "cell",
           "cell": [
-            2,
+            0,
             6
           ]
         },
@@ -888,8 +888,8 @@
         "target": {
           "part": "cell",
           "cell": [
-            3,
-            2
+            5,
+            4
           ]
         },
         "from": 6,
@@ -925,16 +925,16 @@
           "part": "cells",
           "cells": [
             [
-              0,
-              2
+              1,
+              6
             ],
             [
-              0,
+              2,
               6
             ],
             [
               4,
-              2
+              4
             ],
             [
               4,
@@ -952,10 +952,10 @@
         "target": {
           "part": "cell",
           "cell": [
-            0,
-            2
+            1,
+            6
           ],
-          "note": 2
+          "note": 6
         },
         "from": 6,
         "to": 2
@@ -967,10 +967,10 @@
         "target": {
           "part": "cell",
           "cell": [
-            0,
+            2,
             6
           ],
-          "note": 2
+          "note": 6
         },
         "from": 6,
         "to": 2
@@ -983,9 +983,9 @@
           "part": "cell",
           "cell": [
             4,
-            2
+            4
           ],
-          "note": 2
+          "note": 6
         },
         "from": 6,
         "to": 2
@@ -1000,7 +1000,7 @@
             4,
             6
           ],
-          "note": 2
+          "note": 6
         },
         "from": 6,
         "to": 2
@@ -1013,16 +1013,16 @@
           "part": "cells",
           "cells": [
             [
-              0,
-              2
+              1,
+              6
             ],
             [
-              0,
+              2,
               6
             ],
             [
               4,
-              2
+              4
             ],
             [
               4,
@@ -1038,13 +1038,13 @@
       "start": 500,
       "frames": [
         [
-          2,
+          0,
           0,
           1,
           9
         ],
         [
-          3,
+          5,
           0,
           1,
           9
@@ -1052,24 +1052,24 @@
       ],
       "labels": [
         [
-          2,
-          2,
-          2
+          0,
+          4,
+          6
         ],
         [
-          2,
+          0,
           6,
-          2
+          6
         ],
         [
-          3,
-          2,
-          2
+          5,
+          4,
+          6
         ],
         [
-          3,
+          5,
           6,
-          2
+          6
         ]
       ]
     },
@@ -1079,6 +1079,7 @@
     }
   },
   "expected": {
+    "initialStatus": "dilemma",
     "boards": 3,
     "overlays": [
       [
@@ -1098,73 +1099,73 @@
     "slotFills": [
       [
         1,
-        2,
-        2,
-        2
+        0,
+        4,
+        6
       ],
       [
         1,
-        3,
+        5,
         6,
-        2
+        6
       ],
       [
         2,
-        2,
+        0,
         6,
-        2
+        6
       ],
       [
         2,
-        3,
-        2,
-        2
+        5,
+        4,
+        6
       ]
     ],
     "notes": [
       [
-        0,
-        2,
-        2,
+        1,
+        6,
+        6,
         false
       ],
       [
-        0,
-        6,
         2,
+        6,
+        6,
         false
       ],
       [
         4,
-        2,
-        2,
+        4,
+        6,
         false
       ],
       [
         4,
         6,
-        2,
+        6,
         false
       ]
     ],
     "fills": [
       [
-        2,
-        2,
+        0,
+        4,
         0
       ],
       [
-        2,
+        0,
         6,
         0
       ],
       [
-        3,
-        2,
+        5,
+        4,
         0
       ],
       [
-        3,
+        5,
         6,
         0
       ]

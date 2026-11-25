@@ -33,6 +33,15 @@ class Contract(unittest.TestCase):
    with self.subTest(fragment=fragment):p.write_text(original.replace('</svg>',fragment+'</svg>'));self.reject('Unsupported|External|forbidden')
  def test_reserved_slugs_ids_and_extra_files_rejected(self):
   self.manifest['lessons'][0]['slug']='index';self.write();self.reject('slug');self.manifest['lessons'][0]['slug']='x-wing';self.manifest['lessons'][0]['examples'][0]['id']='different';self.write();self.reject('ID');self.manifest['lessons'][0]['examples'][0]['id']='example-1';self.write();(self.learn/'private.key').write_text('harmless-test-marker');self.reject('Unapproved')
+ def test_advanced_example_rejects_hidden_single_without_naked_single(self):
+  # This valid X-Wing has a hidden 9, while every blank still has 2+ notes.
+  example={'orientation': 'rows', 'digit': 9, 'bases': [5, 6], 'covers': [2, 7], 'corners': [47, 52, 56, 61], 'targets': [29, 34, 74, 79], 'branches': [[47, 61], [52, 56]], 'grid': '967000000008001907004703000400000000086900270570000006640800002700009618800306000'}
+  with self.assertRaisesRegex(ValueError,'forced single'):module.xwing(example)
+ def test_advanced_export_requires_initial_dilemma_runtime_assertion(self):
+  p=self.folder/'example-1.json';data=json.loads(p.read_text());data['expected'].pop('initialStatus',None);p.write_text(json.dumps(data));self.reject('Dilemma runtime assertion')
+ def test_advanced_example_rejects_the_previous_definite_start(self):
+  old={'grid':'532790010007000500010205407108000004964020070000069000700906001080152703001340000','orientation':'rows','digit':9,'bases':[2,7],'covers':[2,7],'corners':[20,25,65,70],'targets':[16,34,79],'branches':[[20,70],[25,65]]}
+  with self.assertRaisesRegex(ValueError,'forced single'):module.xwing(old)
  def test_duplicate_and_unproved_examples_rejected(self):
   self.cases[1]['grid']=self.cases[0]['grid'];self.write();self.reject('different');self.cases=json.loads((ROOT/'learn/x-wing/examples.json').read_text());self.cases[0]['targets']=[self.cases[0]['corners'][0]];self.write();self.reject('eliminations')
 if __name__=='__main__':unittest.main()

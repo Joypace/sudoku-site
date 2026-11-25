@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "title": "X-Wing example 1: two ways to place 9",
-  "grid": "532790010007000500010205407108000004964020070000069000700906001080152703001340000",
+  "grid": "067000000008001907004703000400000000086900270570000006640800002700009618800306000",
   "style": "chill",
   "setup": [],
   "camera": {
@@ -51,7 +51,7 @@
       "at": {
         "part": "cell",
         "cell": [
-          2,
+          5,
           2
         ]
       },
@@ -63,7 +63,7 @@
       "at": {
         "part": "cell",
         "cell": [
-          2,
+          5,
           2
         ]
       },
@@ -74,7 +74,7 @@
       "at": {
         "part": "cell",
         "cell": [
-          2,
+          5,
           2
         ],
         "offset": [
@@ -108,7 +108,7 @@
       "at": {
         "part": "cell",
         "cell": [
-          7,
+          6,
           7
         ]
       },
@@ -120,7 +120,7 @@
       "at": {
         "part": "cell",
         "cell": [
-          7,
+          6,
           7
         ]
       },
@@ -195,7 +195,7 @@
       "at": {
         "part": "cell",
         "cell": [
-          2,
+          5,
           7
         ]
       },
@@ -207,7 +207,7 @@
       "at": {
         "part": "cell",
         "cell": [
-          2,
+          5,
           7
         ]
       },
@@ -218,7 +218,7 @@
       "at": {
         "part": "cell",
         "cell": [
-          2,
+          5,
           7
         ],
         "offset": [
@@ -252,7 +252,7 @@
       "at": {
         "part": "cell",
         "cell": [
-          7,
+          6,
           2
         ]
       },
@@ -264,7 +264,7 @@
       "at": {
         "part": "cell",
         "cell": [
-          7,
+          6,
           2
         ]
       },
@@ -390,8 +390,8 @@
       "at": {
         "part": "cell",
         "cell": [
-          1,
-          7
+          3,
+          2
         ]
       },
       "time": 37880,
@@ -402,8 +402,8 @@
       "at": {
         "part": "cell",
         "cell": [
-          1,
-          7
+          3,
+          2
         ]
       },
       "time": 38380,
@@ -414,8 +414,8 @@
       "at": {
         "part": "cell",
         "cell": [
-          1,
-          7
+          3,
+          2
         ],
         "offset": [
           1.1433916651786473,
@@ -497,7 +497,7 @@
         "part": "cell",
         "cell": [
           8,
-          7
+          2
         ]
       },
       "time": 44480,
@@ -509,7 +509,7 @@
         "part": "cell",
         "cell": [
           8,
-          7
+          2
         ]
       },
       "time": 44980,
@@ -521,7 +521,7 @@
         "part": "cell",
         "cell": [
           8,
-          7
+          2
         ],
         "offset": [
           1.1433916651786473,
@@ -543,10 +543,63 @@
     {
       "do": "hide",
       "time": 46380
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          8,
+          7
+        ]
+      },
+      "time": 47780,
+      "ms": 350
+    },
+    {
+      "do": "down",
+      "at": {
+        "part": "cell",
+        "cell": [
+          8,
+          7
+        ]
+      },
+      "time": 48280,
+      "inputDelay": 440
+    },
+    {
+      "do": "move",
+      "at": {
+        "part": "cell",
+        "cell": [
+          8,
+          7
+        ],
+        "offset": [
+          1.1433916651786473,
+          1.1433916651786473
+        ]
+      },
+      "time": 48320,
+      "ms": 600
+    },
+    {
+      "do": "up",
+      "time": 48970
+    },
+    {
+      "do": "depart",
+      "time": 49480,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 49680
     }
   ],
   "presentation": {
-    "duration": 49980,
+    "duration": 53280,
     "captions": [
       {
         "text": "9 has only two places in each highlighted row.",
@@ -556,19 +609,19 @@
           "part": "cells",
           "cells": [
             [
-              2,
+              5,
               2
             ],
             [
-              2,
+              5,
               7
             ],
             [
-              7,
+              6,
               2
             ],
             [
-              7,
+              6,
               7
             ]
           ]
@@ -584,25 +637,25 @@
         }
       },
       {
-        "text": "Try 9 at r3c3.",
+        "text": "Try 9 at r6c3.",
         "start": 5230,
         "end": 6730,
         "target": {
           "part": "cell",
           "cell": [
-            2,
+            5,
             2
           ]
         }
       },
       {
-        "text": "Then r8c8 must be 9.",
+        "text": "Then r7c8 must be 9.",
         "start": 9430,
         "end": 11430,
         "target": {
           "part": "cell",
           "cell": [
-            7,
+            6,
             7
           ]
         }
@@ -617,25 +670,25 @@
         }
       },
       {
-        "text": "Try 9 at r3c8.",
+        "text": "Try 9 at r6c8.",
         "start": 16880,
         "end": 18380,
         "target": {
           "part": "cell",
           "cell": [
-            2,
+            5,
             7
           ]
         }
       },
       {
-        "text": "Then r8c3 must be 9.",
+        "text": "Then r7c3 must be 9.",
         "start": 21080,
         "end": 23080,
         "target": {
           "part": "cell",
           "cell": [
-            7,
+            6,
             2
           ]
         }
@@ -666,12 +719,16 @@
           "part": "cells",
           "cells": [
             [
-              1,
-              7
+              3,
+              2
             ],
             [
               3,
               7
+            ],
+            [
+              8,
+              2
             ],
             [
               8,
@@ -681,14 +738,14 @@
         }
       },
       {
-        "text": "Remove 9 at r2c8.",
+        "text": "Remove 9 at r4c3.",
         "start": 36680,
         "end": 37880,
         "target": {
           "part": "cell",
           "cell": [
-            1,
-            7
+            3,
+            2
           ],
           "note": 9
         }
@@ -707,9 +764,22 @@
         }
       },
       {
-        "text": "Remove 9 at r9c8.",
+        "text": "Remove 9 at r9c3.",
         "start": 43280,
         "end": 44480,
+        "target": {
+          "part": "cell",
+          "cell": [
+            8,
+            2
+          ],
+          "note": 9
+        }
+      },
+      {
+        "text": "Remove 9 at r9c8.",
+        "start": 46580,
+        "end": 47780,
         "target": {
           "part": "cell",
           "cell": [
@@ -721,18 +791,22 @@
       },
       {
         "text": "The same eliminations hold whichever choice was right.",
-        "start": 46580,
-        "end": 49580,
+        "start": 49880,
+        "end": 52880,
         "target": {
           "part": "cells",
           "cells": [
             [
-              1,
-              7
+              3,
+              2
             ],
             [
               3,
               7
+            ],
+            [
+              8,
+              2
             ],
             [
               8,
@@ -761,7 +835,7 @@
         "target": {
           "part": "cell",
           "cell": [
-            2,
+            5,
             2
           ]
         },
@@ -775,7 +849,7 @@
         "target": {
           "part": "cell",
           "cell": [
-            7,
+            6,
             7
           ]
         },
@@ -800,7 +874,7 @@
         "target": {
           "part": "cell",
           "cell": [
-            2,
+            5,
             7
           ]
         },
@@ -814,7 +888,7 @@
         "target": {
           "part": "cell",
           "cell": [
-            7,
+            6,
             2
           ]
         },
@@ -851,12 +925,16 @@
           "part": "cells",
           "cells": [
             [
-              1,
-              7
+              3,
+              2
             ],
             [
               3,
               7
+            ],
+            [
+              8,
+              2
             ],
             [
               8,
@@ -874,8 +952,8 @@
         "target": {
           "part": "cell",
           "cell": [
-            1,
-            7
+            3,
+            2
           ],
           "note": 9
         },
@@ -905,7 +983,7 @@
           "part": "cell",
           "cell": [
             8,
-            7
+            2
           ],
           "note": 9
         },
@@ -914,18 +992,37 @@
       },
       {
         "start": 46580,
+        "duration": 1200,
+        "shape": "rect",
+        "target": {
+          "part": "cell",
+          "cell": [
+            8,
+            7
+          ],
+          "note": 9
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 49880,
         "duration": 3000,
         "shape": "rect",
         "target": {
           "part": "cells",
           "cells": [
             [
-              1,
-              7
+              3,
+              2
             ],
             [
               3,
               7
+            ],
+            [
+              8,
+              2
             ],
             [
               8,
@@ -941,13 +1038,13 @@
       "start": 500,
       "frames": [
         [
-          2,
+          5,
           0,
           1,
           9
         ],
         [
-          7,
+          6,
           0,
           1,
           9
@@ -955,22 +1052,22 @@
       ],
       "labels": [
         [
-          2,
-          2,
-          9
-        ],
-        [
-          2,
-          7,
-          9
-        ],
-        [
-          7,
+          5,
           2,
           9
         ],
         [
+          5,
           7,
+          9
+        ],
+        [
+          6,
+          2,
+          9
+        ],
+        [
+          6,
           7,
           9
         ]
@@ -982,6 +1079,7 @@
     }
   },
   "expected": {
+    "initialStatus": "dilemma",
     "boards": 3,
     "overlays": [
       [
@@ -1001,39 +1099,45 @@
     "slotFills": [
       [
         1,
-        2,
+        5,
         2,
         9
       ],
       [
         1,
-        7,
-        7,
-        9
-      ],
-      [
-        2,
-        2,
+        6,
         7,
         9
       ],
       [
         2,
+        5,
         7,
+        9
+      ],
+      [
+        2,
+        6,
         2,
         9
       ]
     ],
     "notes": [
       [
-        1,
-        7,
+        3,
+        2,
         9,
         false
       ],
       [
         3,
         7,
+        9,
+        false
+      ],
+      [
+        8,
+        2,
         9,
         false
       ],
@@ -1046,22 +1150,22 @@
     ],
     "fills": [
       [
-        2,
-        2,
-        0
-      ],
-      [
-        2,
-        7,
-        0
-      ],
-      [
-        7,
+        5,
         2,
         0
       ],
       [
+        5,
         7,
+        0
+      ],
+      [
+        6,
+        2,
+        0
+      ],
+      [
+        6,
         7,
         0
       ]

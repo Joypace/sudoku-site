@@ -1,50 +1,102 @@
 [
   {
+    "grid": "067000000008001907004703000400000000086900270570000006640800002700009618800306000",
+    "origin": "original Sudoku Let\u2019s Try practice puzzle",
+    "sourceFamily": "c9a535f3cd4160e8",
+    "initialStatus": "dilemma",
+    "initialSingles": 0,
     "orientation": "rows",
     "digit": 9,
     "bases": [
-      2,
-      7
+      5,
+      6
     ],
     "covers": [
       2,
       7
     ],
     "corners": [
-      20,
-      25,
-      65,
-      70
+      47,
+      52,
+      56,
+      61
     ],
     "targets": [
-      16,
+      29,
       34,
+      74,
       79
     ],
     "branches": [
       [
-        20,
-        70
+        47,
+        61
       ],
       [
-        25,
-        65
+        52,
+        56
       ]
     ],
-    "grid": "532790010007000500010205407108000004964020070000069000700906001080152703001340000",
-    "origin": "original generated unique grid",
-    "seed": 20261201,
     "solutionCount": 1,
     "id": "example-1",
-    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABUyeQAQAHAAUAAQIFQHEIAAAElkAgBwAABpAAcAkGABCAFScDABNAAAAXQqV4",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABBnAAAAAIABkHAEcDAAQAAAAACGkAJwVwAAAGZAgAACcAAJYYgAMGAADHHv4Q",
     "animation": "example-1.svg",
-    "scenarioSHA256": "a5a30b00464e128ba9e1b9cd0162dea7c6ef0645764dafb9a47668426c907e8b"
+    "scenarioSHA256": "9145f38f75b5cbdac9a537e8fdfc42c97e205f9d727edf370801aa0540a3a402"
   },
   {
+    "grid": "008309004003004800100682009060900005200045000007260400000036070030497000000021040",
+    "origin": "original Sudoku Let\u2019s Try practice puzzle",
+    "sourceFamily": "a2d340239588c131",
+    "initialStatus": "dilemma",
+    "initialSingles": 0,
     "orientation": "columns",
     "digit": 7,
     "bases": [
+      3,
+      8
+    ],
+    "covers": [
       1,
+      4
+    ],
+    "corners": [
+      12,
+      39,
+      17,
+      44
+    ],
+    "targets": [
+      9,
+      10,
+      13,
+      42
+    ],
+    "branches": [
+      [
+        12,
+        44
+      ],
+      [
+        39,
+        17
+      ]
+    ],
+    "solutionCount": 1,
+    "id": "example-2",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABAIMJAEADAEgAEAaCAJBgkAAFIABFAAAHJgQAAAA2BwAwSXAAAAAhBACeD9JP",
+    "animation": "example-2.svg",
+    "scenarioSHA256": "eca85df402af1b91cdfd6b372b134fca1efa4882b6a71b4a8c80c44fb4d8fbdb"
+  },
+  {
+    "grid": "082500003009034000370028000600400700047002030000300005000800100000206300090040560",
+    "origin": "original Sudoku Let\u2019s Try practice puzzle",
+    "sourceFamily": "df589b5edfac611b",
+    "initialStatus": "dilemma",
+    "initialSingles": 0,
+    "orientation": "rows",
+    "digit": 6,
+    "bases": [
+      0,
       5
     ],
     "covers": [
@@ -52,76 +104,31 @@
       6
     ],
     "corners": [
-      37,
-      55,
-      41,
-      59
-    ],
-    "targets": [
-      54,
-      39,
-      57,
-      40
-    ],
-    "branches": [
-      [
-        37,
-        59
-      ],
-      [
-        55,
-        41
-      ]
-    ],
-    "grid": "012084900300021000087009050630205487200000090048003120004030000020008039000100748",
-    "origin": "original generated unique grid, transposed for column-based teaching",
-    "seed": 20261208,
-    "solutionCount": 1,
-    "id": "example-2",
-    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABASCEkAMAAhAACHAJBQYwIFSHIAAACQBIADEgAEAwAAAgAIA5AAEAdIAP6Yrm",
-    "animation": "example-2.svg",
-    "scenarioSHA256": "17b9cc6b5733af433d66dc5dccf54a46675af9ca4af392b1f3e8c8cfc8e38ff3"
-  },
-  {
-    "orientation": "rows",
-    "digit": 2,
-    "bases": [
-      2,
-      3
-    ],
-    "covers": [
-      2,
-      6
-    ],
-    "corners": [
-      20,
-      24,
-      29,
-      33
-    ],
-    "targets": [
-      2,
+      4,
       6,
-      38,
+      49,
+      51
+    ],
+    "targets": [
+      15,
+      24,
+      40,
       42
     ],
     "branches": [
       [
-        20,
-        33
+        4,
+        51
       ],
       [
-        24,
-        29
+        6,
+        49
       ]
     ],
-    "grid": "000003000004028900930405078800007010070056000500200300090840002720000080008302609",
-    "origin": "original generated unique grid, digit relabeling for a second row example",
-    "seed": 20261124,
     "solutionCount": 1,
     "id": "example-3",
-    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABAAADAAAEAokAkwQFB4gAAHAQBwBWAAUAIAMACQhAACcgAACAAIMCYJCvKS_2",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABCCUAADAJA0AANwAoAAYAQAcABHACAwAAMAAFAAgAEAAAIGMACQBAVgCNlXK8",
     "animation": "example-3.svg",
-    "scenarioSHA256": "f4e602af0f57de9e5102221b879c1cbe14bf96e1ee7195cbdfeef7217e5bf6aa"
+    "scenarioSHA256": "0980097d99abf30288043d6686fbf876ebc09a44b950ad1e54f9d3e3b4e7f642"
   }
 ]

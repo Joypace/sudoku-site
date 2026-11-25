@@ -34,7 +34,11 @@ def share_grid(url):
  code=q['p'][0];require(bool(re.fullmatch('[A-Za-z0-9_-]{64}',code)),'Invalid share frame');b=base64.urlsafe_b64decode(code);require(b[:3]==b'SP\x01' and len(b)==48 and b[43]&15==0 and int.from_bytes(b[44:],'big')==zlib.crc32(b[:44]),'Invalid share checksum/version');digits=[(b[3+i//2]>>(4 if i%2==0 else 0))&15 for i in range(81)];require(all(v<=9 for v in digits),'Invalid share digit');return ''.join(map(str,digits))
 def xwing(example):
  g=list(map(int,example['grid']));units=[set(range(r*9,r*9+9)) for r in range(9)]+[set(range(c,81,9)) for c in range(9)]+[{(r+dr)*9+c+dc for dr in range(3) for dc in range(3)} for r in (0,3,6) for c in (0,3,6)]
- cs={i:set(range(1,10))-{g[j] for u in units if i in u for j in u} for i,v in enumerate(g) if not v};d=example['digit'];require(d in range(1,10),'Invalid target digit');require(example['orientation'] in ['rows','columns'],'Unknown X-Wing orientation');row_based=example['orientation']=='rows';base=(lambda i:i//9) if row_based else (lambda i:i%9);cross=(lambda i:i%9) if row_based else (lambda i:i//9);bases=example['bases'];covers=example['covers'];require(len(set(bases))==2 and len(set(covers))==2 and all(i in range(9) for i in bases+covers),'Invalid base/cover units');corners=set()
+ cs={i:set(range(1,10))-{g[j] for u in units if i in u for j in u} for i,v in enumerate(g) if not v}
+ require(all(len(opts)>1 for opts in cs.values()),'Advanced example still has a forced single')
+ for unit in units:
+  for digit in set(range(1,10))-{g[i] for i in unit}:require(sum(digit in cs.get(i,set()) for i in unit)>1,'Advanced example still has a forced single')
+ d=example['digit'];require(d in range(1,10),'Invalid target digit');require(example['orientation'] in ['rows','columns'],'Unknown X-Wing orientation');row_based=example['orientation']=='rows';base=(lambda i:i//9) if row_based else (lambda i:i%9);cross=(lambda i:i%9) if row_based else (lambda i:i//9);bases=example['bases'];covers=example['covers'];require(len(set(bases))==2 and len(set(covers))==2 and all(i in range(9) for i in bases+covers),'Invalid base/cover units');corners=set()
  for b in bases:
   live={i for i in cs if base(i)==b and d in cs[i]};require(len(live)==2 and {cross(i) for i in live}==set(covers),'X-Wing is not present in the original notes');corners|=live
  require(set(example['corners'])==corners,'Wrong four corners');targets={i for i in cs if base(i) not in bases and cross(i) in covers and d in cs[i]};require(targets and set(example['targets'])==targets,'Incorrect or incomplete X-Wing eliminations');branches=example['branches'];require(len(branches)==2 and {q[0] for q in branches}=={i for i in corners if base(i)==bases[0]},'Branches must exhaust the first base unit')
@@ -74,7 +78,9 @@ def validate(root):
   grids=set()
   for n,(entry,example) in enumerate(zip(items,examples),1):
    stem=f'example-{n}';require(entry.get('id')==stem and example.get('id')==stem and example.get('animation')==stem+'.svg','Example ID mismatch');grid=example['grid'];require(grid not in grids,'Each example must use a different starting puzzle');grids.add(grid);require(bool(re.fullmatch('[0-9]{81}',grid)),'Invalid starting grid');require(share_grid(example['shareURL'])==grid,'Share link does not open the animated starting clues');unique_solution(grid);PROOFS[slug](example)
-   scenario=folder/(stem+'.json');data=json.loads(scenario.read_text());require(data['grid']==grid and isinstance(data.get('setup'),list) and data['setup']==[],'No hidden setup may precede a shared example');check_svg(folder/(stem+'.svg'),scenario,example);expected|={slug+'/'+stem+'.json',slug+'/'+stem+'.svg'}
+   scenario=folder/(stem+'.json');data=json.loads(scenario.read_text());require(data['grid']==grid and isinstance(data.get('setup'),list) and data['setup']==[],'No hidden setup may precede a shared example')
+   if slug=='x-wing':require(data.get('expected',{}).get('initialStatus')=='dilemma','Missing initial Dilemma runtime assertion')
+   check_svg(folder/(stem+'.svg'),scenario,example);expected|={slug+'/'+stem+'.json',slug+'/'+stem+'.svg'}
  require(set(actual)==expected,'Unapproved or missing public lesson files: '+str(set(actual)^expected));return sorted('learn/'+p for p in actual)
 if __name__=='__main__':
  try:print(json.dumps(validate(Path(sys.argv[1]).resolve())))
