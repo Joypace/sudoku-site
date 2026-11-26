@@ -104,10 +104,163 @@
       ]
     },
     {
+      "slug": "naked-triple",
+      "title": "Naked Triple: three cells reserve three digits",
+      "description": "Learn Naked Triple with three original Dilemma puzzles, real App animations and overlay marks, and exact playable puzzle links.",
+      "published": "2026-11-25",
+      "examples": [
+        {
+          "id": "example-1"
+        },
+        {
+          "id": "example-2"
+        },
+        {
+          "id": "example-3"
+        }
+      ]
+    },
+    {
+      "slug": "hidden-triple",
+      "title": "Hidden Triple: three digits reserve three cells",
+      "description": "Learn Hidden Triple with three original Dilemma puzzles, real App animations and overlay marks, and exact playable puzzle links.",
+      "published": "2026-11-25",
+      "examples": [
+        {
+          "id": "example-1"
+        },
+        {
+          "id": "example-2"
+        },
+        {
+          "id": "example-3"
+        }
+      ]
+    },
+    {
       "slug": "x-wing",
       "title": "X-Wing: two choices, one conclusion",
       "description": "Learn X-Wing with three real Sudoku examples, replayable app animations, copied-board overlays and links to play each starting position.",
       "published": "2026-11-24",
+      "examples": [
+        {
+          "id": "example-1"
+        },
+        {
+          "id": "example-2"
+        },
+        {
+          "id": "example-3"
+        }
+      ]
+    },
+    {
+      "slug": "skyscraper",
+      "title": "Skyscraper: compare the two roofs",
+      "description": "Learn Skyscraper with three original Dilemma puzzles, real App animations and overlay marks, and exact playable puzzle links.",
+      "published": "2026-11-25",
+      "examples": [
+        {
+          "id": "example-1"
+        },
+        {
+          "id": "example-2"
+        },
+        {
+          "id": "example-3"
+        }
+      ]
+    },
+    {
+      "slug": "two-string-kite",
+      "title": "Two-String Kite: a row and column tied in one box",
+      "description": "Learn Two-String Kite with three original Dilemma puzzles, real App animations and overlay marks, and exact playable puzzle links.",
+      "published": "2026-11-25",
+      "examples": [
+        {
+          "id": "example-1"
+        },
+        {
+          "id": "example-2"
+        },
+        {
+          "id": "example-3"
+        }
+      ]
+    },
+    {
+      "slug": "xy-wing",
+      "title": "XY-Wing: a two-note pivot connects two wings",
+      "description": "Learn XY-Wing with three original Dilemma puzzles, real App animations and overlay marks, and exact playable puzzle links.",
+      "published": "2026-11-25",
+      "examples": [
+        {
+          "id": "example-1"
+        },
+        {
+          "id": "example-2"
+        },
+        {
+          "id": "example-3"
+        }
+      ]
+    },
+    {
+      "slug": "swordfish",
+      "title": "Swordfish: three lines, three crossing lines",
+      "description": "Learn Swordfish with three original Dilemma puzzles, real App animations and overlay marks, and exact playable puzzle links.",
+      "published": "2026-11-25",
+      "examples": [
+        {
+          "id": "example-1"
+        },
+        {
+          "id": "example-2"
+        },
+        {
+          "id": "example-3"
+        }
+      ]
+    },
+    {
+      "slug": "xyz-wing",
+      "title": "XYZ-Wing: include the pivot in the shared view",
+      "description": "Learn XYZ-Wing with three original Dilemma puzzles, real App animations and overlay marks, and exact playable puzzle links.",
+      "published": "2026-11-25",
+      "examples": [
+        {
+          "id": "example-1"
+        },
+        {
+          "id": "example-2"
+        },
+        {
+          "id": "example-3"
+        }
+      ]
+    },
+    {
+      "slug": "w-wing",
+      "title": "W-Wing: matching pairs connected by a strong link",
+      "description": "Learn W-Wing with three original Dilemma puzzles, real App animations and overlay marks, and exact playable puzzle links.",
+      "published": "2026-11-25",
+      "examples": [
+        {
+          "id": "example-1"
+        },
+        {
+          "id": "example-2"
+        },
+        {
+          "id": "example-3"
+        }
+      ]
+    },
+    {
+      "slug": "empty-rectangle",
+      "title": "Empty Rectangle: a box cross and an outside link",
+      "description": "Learn Empty Rectangle with three original Dilemma puzzles, real App animations and overlay marks, and exact playable puzzle links.",
+      "published": "2026-11-25",
       "examples": [
         {
           "id": "example-1"

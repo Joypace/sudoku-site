@@ -1,5 +1,6 @@
 """Build-time contract for the intentionally public learning subtree."""
 import base64,hashlib,json,re,stat,sys,zlib,xml.etree.ElementTree as ET
+import importlib.util
 from datetime import date
 from pathlib import Path
 from urllib.parse import urlparse,parse_qs
@@ -118,6 +119,12 @@ def claiming_animation(data,e):
  require(checks.get('overlays')==[[slot,0] for slot in range(1,len(ps)+1)] and checks.get('notes')==[[i//9,i%9,d,False] for i in e['targets']],'Claiming must overlay every try and remove only proved box targets')
  require(checks.get('revealFrameCount')==1 and checks.get('revealLabelCount')==len(ps) and reveal.get('frames')==[geometry] and reveal.get('labels')==[[i//9,i%9,d] for i in ps],'Claiming reveal must show the complete source line')
 PROOFS={'x-wing':xwing,'hidden-single':hidden_single,'naked-pair':naked_pair,'pointing':pointing,'naked-single':naked_single,'hidden-pair':hidden_pair,'claiming':claiming}
+
+def _load_sibling(name):
+ spec=importlib.util.spec_from_file_location(name,Path(__file__).with_name(name+'.py'));module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module);return module
+INTERMEDIATE=('naked-triple','hidden-triple','swordfish','xy-wing','xyz-wing','w-wing','skyscraper','two-string-kite','empty-rectangle')
+_intermediate=_load_sibling('intermediate_proofs');_stories=_load_sibling('intermediate_stories')
+for _slug in INTERMEDIATE:PROOFS[_slug]=lambda example,slug=_slug:_intermediate.validate_pattern(slug,example)
 def check_svg(file,scenario,example):
  raw=file.read_text();without_declaration=re.sub(r'^\s*<\?xml\s[^?]*\?>','',raw,count=1);require('<?' not in without_declaration,'SVG processing instructions are forbidden');require('<!DOCTYPE' not in raw.upper() and '<!ENTITY' not in raw.upper(),'External XML declarations are forbidden');root=ET.fromstring(raw);require(root.tag=='{'+SVG+'}svg','Not a standalone SVG');require(float(root.attrib.get('data-duration',0))>0,'Not an animation')
  for e in root.iter():
@@ -164,6 +171,7 @@ def validate(root):
    if slug=='naked-single':naked_single_animation(data,example)
    if slug=='hidden-pair':hidden_pair_animation(data,example)
    if slug=='claiming':claiming_animation(data,example)
+   if slug in INTERMEDIATE:_stories.validate_story(data,example)
    check_svg(folder/(stem+'.svg'),scenario,example);expected|={slug+'/'+stem+'.json',slug+'/'+stem+'.svg'}
  require(set(actual)==expected,'Unapproved or missing public lesson files: '+str(set(actual)^expected));return sorted('learn/'+p for p in actual)
 if __name__=='__main__':

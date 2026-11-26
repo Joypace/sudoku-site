@@ -1,0 +1,344 @@
+[
+  {
+    "slug": "naked-triple",
+    "grid": "823050060450080032790023085519268374300715629267394518000809050030540090905100040",
+    "targets": [
+      [
+        14,
+        6
+      ]
+    ],
+    "branches": [
+      [
+        [
+          21,
+          4
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          12,
+          6
+        ]
+      ],
+      [
+        [
+          21,
+          6
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          12,
+          9
+        ]
+      ]
+    ],
+    "frames": [
+      [
+        0,
+        3,
+        3,
+        3
+      ]
+    ],
+    "labels": [
+      [
+        0,
+        3,
+        4
+      ],
+      [
+        0,
+        3,
+        9
+      ],
+      [
+        1,
+        3,
+        6
+      ],
+      [
+        1,
+        3,
+        9
+      ],
+      [
+        2,
+        3,
+        4
+      ],
+      [
+        2,
+        3,
+        6
+      ]
+    ],
+    "pattern": {
+      "unit": "box",
+      "unitIndex": 1,
+      "cells": [
+        3,
+        12,
+        21
+      ],
+      "digits": [
+        4,
+        6,
+        9
+      ],
+      "eliminations": [
+        [
+          14,
+          6
+        ]
+      ]
+    },
+    "origin": "original Sudoku Let\u2019s Try practice puzzle",
+    "sourceFamily": "129c94c1c97f8c0d",
+    "id": "example-1",
+    "animation": "example-1.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABgjBQBgRQCAAyeQAjCFUZJoN0MAcVYpJnOUUYAAgJBQAwVACQkFEABABIQSoq",
+    "scenarioSHA256": "a574a04d152394212adae34cd1f197e2ecef8a2d7e2625fd2592ee2ca26352fd"
+  },
+  {
+    "slug": "naked-triple",
+    "grid": "040008610106524700807600254024050070081002465059480321003240006400060032060003547",
+    "targets": [
+      [
+        0,
+        3
+      ],
+      [
+        54,
+        7
+      ]
+    ],
+    "branches": [
+      [
+        [
+          27,
+          3
+        ],
+        [
+          36,
+          7
+        ],
+        [
+          45,
+          6
+        ]
+      ],
+      [
+        [
+          27,
+          6
+        ],
+        [
+          36,
+          3
+        ],
+        [
+          45,
+          7
+        ]
+      ]
+    ],
+    "frames": [
+      [
+        0,
+        0,
+        9,
+        1
+      ]
+    ],
+    "labels": [
+      [
+        3,
+        0,
+        3
+      ],
+      [
+        3,
+        0,
+        6
+      ],
+      [
+        4,
+        0,
+        3
+      ],
+      [
+        4,
+        0,
+        7
+      ],
+      [
+        5,
+        0,
+        6
+      ],
+      [
+        5,
+        0,
+        7
+      ]
+    ],
+    "pattern": {
+      "unit": "column",
+      "unitIndex": 0,
+      "cells": [
+        27,
+        36,
+        45
+      ],
+      "digits": [
+        3,
+        6,
+        7
+      ],
+      "eliminations": [
+        [
+          0,
+          3
+        ],
+        [
+          54,
+          7
+        ]
+      ]
+    },
+    "origin": "original Sudoku Let\u2019s Try practice puzzle",
+    "sourceFamily": "298447d7991f38d8",
+    "id": "example-2",
+    "animation": "example-2.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABBAAIYQEGUkcAgHYAJUAkBQBwCBACRlBZSAMhADJAAGQABgAyBgADVHBMw9gQ",
+    "scenarioSHA256": "7d581732c3322a69854584941976e1492558ac19fd7d2baec2d62e3b46095880"
+  },
+  {
+    "slug": "naked-triple",
+    "grid": "705008000100900520060000000800060000000090010200810609043080000000074203000300480",
+    "targets": [
+      [
+        14,
+        3
+      ],
+      [
+        17,
+        4
+      ],
+      [
+        17,
+        8
+      ]
+    ],
+    "branches": [
+      [
+        [
+          10,
+          3
+        ],
+        [
+          13,
+          4
+        ],
+        [
+          11,
+          8
+        ]
+      ],
+      [
+        [
+          10,
+          8
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          13,
+          3
+        ]
+      ]
+    ],
+    "frames": [
+      [
+        1,
+        0,
+        1,
+        9
+      ]
+    ],
+    "labels": [
+      [
+        1,
+        1,
+        3
+      ],
+      [
+        1,
+        1,
+        8
+      ],
+      [
+        1,
+        2,
+        4
+      ],
+      [
+        1,
+        2,
+        8
+      ],
+      [
+        1,
+        4,
+        3
+      ],
+      [
+        1,
+        4,
+        4
+      ]
+    ],
+    "pattern": {
+      "unit": "row",
+      "unitIndex": 1,
+      "cells": [
+        10,
+        11,
+        13
+      ],
+      "digits": [
+        3,
+        4,
+        8
+      ],
+      "eliminations": [
+        [
+          14,
+          3
+        ],
+        [
+          17,
+          4
+        ],
+        [
+          17,
+          8
+        ]
+      ]
+    },
+    "origin": "original Sudoku Let\u2019s Try practice puzzle",
+    "sourceFamily": "afc6c3da2870b370",
+    "id": "example-3",
+    "animation": "example-3.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABcFAIAAEAkAUgBgAAAAgABgAAAACQAQIAgQYJBDCAAAAAB0IDAAMASACiSIH4",
+    "scenarioSHA256": "551d363e45ba49e88c28cf19feda31d9c7706d52c65a85417be3a2dbf8728a0d"
+  }
+]

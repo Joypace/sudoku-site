@@ -1,0 +1,293 @@
+[
+  {
+    "slug": "empty-rectangle",
+    "grid": "107350000300760000080000000400000051000201609001000803840029007000600002012000004",
+    "targets": [
+      [
+        24,
+        2
+      ]
+    ],
+    "branches": [
+      [
+        [
+          33,
+          2
+        ]
+      ],
+      [
+        [
+          33,
+          7
+        ],
+        [
+          28,
+          2
+        ],
+        [
+          18,
+          2
+        ]
+      ]
+    ],
+    "frames": [
+      [
+        0,
+        0,
+        3,
+        3
+      ],
+      [
+        3,
+        0,
+        1,
+        9
+      ]
+    ],
+    "labels": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        1,
+        1,
+        2
+      ],
+      [
+        2,
+        0,
+        2
+      ],
+      [
+        3,
+        1,
+        2
+      ],
+      [
+        3,
+        6,
+        2
+      ]
+    ],
+    "pattern": {
+      "boxIndex": 0,
+      "row": 2,
+      "col": 1,
+      "link": [
+        28,
+        33
+      ],
+      "unit": "row",
+      "unitIndex": 3,
+      "digit": 2,
+      "eliminations": [
+        [
+          24,
+          2
+        ]
+      ]
+    },
+    "origin": "original Sudoku Let\u2019s Try practice puzzle",
+    "sourceFamily": "a652c15d015657c1",
+    "id": "example-1",
+    "animation": "example-1.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABEHNQAAMAdgAACAAAAAQAAABRAAIBYJABAAgDhAApAHAAYAACASAAAEDCDn13",
+    "scenarioSHA256": "f939f5ec961b6af7b2f45f17deac046e2bcb085bc72e76309d20280d657e754f"
+  },
+  {
+    "slug": "empty-rectangle",
+    "grid": "506000192004009006010605430040007013021534009300900040400000900093000700150096384",
+    "targets": [
+      [
+        18,
+        7
+      ]
+    ],
+    "branches": [
+      [
+        [
+          26,
+          7
+        ]
+      ],
+      [
+        [
+          26,
+          8
+        ],
+        [
+          53,
+          7
+        ],
+        [
+          36,
+          7
+        ]
+      ]
+    ],
+    "frames": [
+      [
+        3,
+        0,
+        3,
+        3
+      ],
+      [
+        0,
+        8,
+        9,
+        1
+      ]
+    ],
+    "labels": [
+      [
+        2,
+        8,
+        7
+      ],
+      [
+        4,
+        0,
+        7
+      ],
+      [
+        5,
+        1,
+        7
+      ],
+      [
+        5,
+        2,
+        7
+      ],
+      [
+        5,
+        8,
+        7
+      ]
+    ],
+    "pattern": {
+      "boxIndex": 3,
+      "row": 5,
+      "col": 0,
+      "link": [
+        53,
+        26
+      ],
+      "unit": "column",
+      "unitIndex": 8,
+      "digit": 7,
+      "eliminations": [
+        [
+          18,
+          7
+        ]
+      ]
+    },
+    "origin": "original Sudoku Let\u2019s Try practice puzzle",
+    "sourceFamily": "eb751d236d2a5d65",
+    "id": "example-2",
+    "animation": "example-2.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABUGAAGSAEAJAGAQYFQwBAAHATAhU0AJMAkABAQAAAkACTAAcAFQCWOEDQVEwt",
+    "scenarioSHA256": "a154ee4b0cdbeae2dae716043d4a7882a4364b6b0cd094cb310d0e849805b94b"
+  },
+  {
+    "slug": "empty-rectangle",
+    "grid": "290056300000902065568037902782364591000705620605029030156298473873641259020573186",
+    "targets": [
+      [
+        10,
+        1
+      ]
+    ],
+    "branches": [
+      [
+        [
+          46,
+          1
+        ]
+      ],
+      [
+        [
+          46,
+          4
+        ],
+        [
+          48,
+          1
+        ],
+        [
+          13,
+          1
+        ]
+      ]
+    ],
+    "frames": [
+      [
+        0,
+        3,
+        3,
+        3
+      ],
+      [
+        5,
+        0,
+        1,
+        9
+      ]
+    ],
+    "labels": [
+      [
+        0,
+        3,
+        1
+      ],
+      [
+        1,
+        4,
+        1
+      ],
+      [
+        2,
+        3,
+        1
+      ],
+      [
+        5,
+        1,
+        1
+      ],
+      [
+        5,
+        3,
+        1
+      ]
+    ],
+    "pattern": {
+      "boxIndex": 1,
+      "row": 1,
+      "col": 3,
+      "link": [
+        48,
+        46
+      ],
+      "unit": "row",
+      "unitIndex": 5,
+      "digit": 1,
+      "eliminations": [
+        [
+          10,
+          1
+        ]
+      ]
+    },
+    "origin": "original Sudoku Let\u2019s Try practice puzzle",
+    "sourceFamily": "1c0bb037b7345ef1",
+    "id": "example-3",
+    "animation": "example-3.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABKQBWMAAAkCBlVoA3kCeCNkWRAAcFYgYFApAwFWKYRzhzZBJZAgVzGGCrDPRE",
+    "scenarioSHA256": "ae2ef2a896d55bb85034dc900e8651b1866ba378e737c2e2cf016d016722afce"
+  }
+]

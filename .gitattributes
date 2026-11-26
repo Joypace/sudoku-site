@@ -1,0 +1,2 @@
+# Preserve qualified App exports verbatim, including embedded font licenses.
+learn/**/*.svg binary

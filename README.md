@@ -68,7 +68,7 @@ embedded as an image to avoid a remote request. Its 48px height has 12px clear s
 
 `learn/manifest.json` is the public catalogue, ordered from simple to advanced.
 Keep new lessons in the appropriate learning position. Several lessons may share a
-publication date; completed lessons can be published as ready. Each page has3–5 original practice examples, a real App-exported
+publication date; completed lessons can be published as ready. Each page has 3–5 original practice examples, a real App-exported
 SVG animation and a native puzzle-share link for every example. The animation's
 starting givens must match the link; no hidden note edits may precede playback.
 
@@ -82,6 +82,9 @@ controls; animations start paused and stop offscreen or when the tab hides.
 names, original-grid share decoding, unique solutions, technique proof rules,
 App scenario provenance and the narrow native-SVG format. Unsupported proof rules
 fail before publication; new techniques add their own owning validator/test.
+Intermediate named rules live in `tools/intermediate_proofs.py`; their native
+gesture contracts live in `tools/intermediate_stories.py`. Their owning tests are
+`test/intermediate_proofs_test.py` and `test/intermediate_lessons_test.py`.
 The gate builder adds only the literal `/learn/*` static exclusion and exact
 known paths/aliases, keeping the combined Pages route budget bounded. Run
 `python3 test/lessons_test.py` and the isolated browser test

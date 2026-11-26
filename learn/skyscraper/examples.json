@@ -1,0 +1,284 @@
+[
+  {
+    "slug": "skyscraper",
+    "grid": "004500710000000039100080054000267040800100060600050090008000900050030000090000400",
+    "targets": [
+      [
+        38,
+        9
+      ]
+    ],
+    "branches": [
+      [
+        [
+          40,
+          4
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          27,
+          9
+        ]
+      ],
+      [
+        [
+          40,
+          9
+        ]
+      ]
+    ],
+    "frames": [
+      [
+        0,
+        0,
+        9,
+        1
+      ],
+      [
+        0,
+        4,
+        9,
+        1
+      ]
+    ],
+    "labels": [
+      [
+        0,
+        0,
+        9
+      ],
+      [
+        0,
+        4,
+        9
+      ],
+      [
+        3,
+        0,
+        9
+      ],
+      [
+        4,
+        4,
+        9
+      ]
+    ],
+    "pattern": {
+      "orientation": "columns",
+      "links": [
+        [
+          0,
+          27
+        ],
+        [
+          4,
+          40
+        ]
+      ],
+      "digit": 9,
+      "eliminations": [
+        [
+          38,
+          9
+        ]
+      ]
+    },
+    "origin": "original Sudoku Let\u2019s Try practice puzzle",
+    "sourceFamily": "cc6fd0a85fd0d53f",
+    "id": "example-1",
+    "animation": "example-1.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABAEUAcQAAAAA5EACABUAAJnBAgAEABgYABQCQAIAAkABQAwAACQAAQACHAo4k",
+    "scenarioSHA256": "dd0c3dcd865968bdbf0f392eea30e1cc56c533d0e4947a8bca0eedaba7776947"
+  },
+  {
+    "slug": "skyscraper",
+    "grid": "502107030100032700000090210204713508000050102851926374705309621023061057610275003",
+    "targets": [
+      [
+        16,
+        6
+      ]
+    ],
+    "branches": [
+      [
+        [
+          34,
+          6
+        ]
+      ],
+      [
+        [
+          34,
+          9
+        ],
+        [
+          28,
+          6
+        ],
+        [
+          8,
+          6
+        ]
+      ]
+    ],
+    "frames": [
+      [
+        0,
+        0,
+        1,
+        9
+      ],
+      [
+        3,
+        0,
+        1,
+        9
+      ]
+    ],
+    "labels": [
+      [
+        0,
+        1,
+        6
+      ],
+      [
+        0,
+        8,
+        6
+      ],
+      [
+        3,
+        1,
+        6
+      ],
+      [
+        3,
+        7,
+        6
+      ]
+    ],
+    "pattern": {
+      "orientation": "rows",
+      "links": [
+        [
+          1,
+          8
+        ],
+        [
+          28,
+          34
+        ]
+      ],
+      "digit": 6,
+      "eliminations": [
+        [
+          16,
+          6
+        ]
+      ]
+    },
+    "origin": "original Sudoku Let\u2019s Try practice puzzle",
+    "sourceFamily": "c70462e72e04671b",
+    "id": "example-2",
+    "animation": "example-2.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABUCEHAwEAAycAAACQIQIEcTUIAABQEChRkmN0cFMJYhAjBhBXYQJ1ADBGP1ZL",
+    "scenarioSHA256": "e6194f8b0e553f25c1d4013e20d8288c04ad49c006b2a0ad23628d33375a2b4a"
+  },
+  {
+    "slug": "skyscraper",
+    "grid": "014000275000070318730002004401356700370000040000247100100029407940000020260080000",
+    "targets": [
+      [
+        38,
+        8
+      ]
+    ],
+    "branches": [
+      [
+        [
+          41,
+          1
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          45,
+          8
+        ]
+      ],
+      [
+        [
+          41,
+          8
+        ]
+      ]
+    ],
+    "frames": [
+      [
+        0,
+        0,
+        9,
+        1
+      ],
+      [
+        0,
+        5,
+        9,
+        1
+      ]
+    ],
+    "labels": [
+      [
+        0,
+        0,
+        8
+      ],
+      [
+        0,
+        5,
+        8
+      ],
+      [
+        4,
+        5,
+        8
+      ],
+      [
+        5,
+        0,
+        8
+      ]
+    ],
+    "pattern": {
+      "orientation": "columns",
+      "links": [
+        [
+          0,
+          45
+        ],
+        [
+          5,
+          41
+        ]
+      ],
+      "digit": 8,
+      "eliminations": [
+        [
+          38,
+          8
+        ]
+      ]
+    },
+    "origin": "original Sudoku Let\u2019s Try practice puzzle",
+    "sourceFamily": "8f80967177d05ff2",
+    "id": "example-3",
+    "animation": "example-3.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABAUAAJ1AABwMYcwACAEQBNWcANwAABAAAJHEAEAApQHlAAAAgJgCAAAAiucQB",
+    "scenarioSHA256": "5f73c15d3ae6bf104b9e57d36ae93bfb5dc531f178b621091b7890eecd318c6a"
+  }
+]
