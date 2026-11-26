@@ -1,0 +1,610 @@
+{
+  "schema": 1,
+  "source": "https://hodoku.sourceforge.net/en/techniques.php",
+  "levels": [
+    {
+      "id": "basic",
+      "title": "Basic",
+      "description": "Start with single cells, candidate pairs and box–line restrictions. Revisit any lesson as needed."
+    },
+    {
+      "id": "intermediate",
+      "title": "Intermediate",
+      "description": "Extend subsets, fish and short links. Explain why the same elimination holds in every case."
+    },
+    {
+      "id": "advanced",
+      "title": "Advanced",
+      "description": "Combine larger patterns and longer implications, checking every premise and any uniqueness assumption."
+    },
+    {
+      "id": "expert",
+      "title": "Expert",
+      "description": "Study grouped reasoning, almost locked sets, nets and computational methods. These are learning groups, not App puzzle ratings."
+    }
+  ],
+  "families": [
+    {
+      "id": "singles",
+      "title": "Singles"
+    },
+    {
+      "id": "intersections",
+      "title": "Intersections"
+    },
+    {
+      "id": "hidden-subsets",
+      "title": "Hidden Subsets"
+    },
+    {
+      "id": "naked-subsets",
+      "title": "Naked Subsets"
+    },
+    {
+      "id": "basic-fish",
+      "title": "Basic Fish"
+    },
+    {
+      "id": "finned-fish",
+      "title": "Finned/Sashimi Fish"
+    },
+    {
+      "id": "complex-fish",
+      "title": "Complex Fish"
+    },
+    {
+      "id": "single-digit-patterns",
+      "title": "Single Digit Patterns"
+    },
+    {
+      "id": "uniqueness",
+      "title": "Uniqueness"
+    },
+    {
+      "id": "wings",
+      "title": "Wings"
+    },
+    {
+      "id": "miscellaneous",
+      "title": "Miscellaneous"
+    },
+    {
+      "id": "coloring",
+      "title": "Coloring"
+    },
+    {
+      "id": "chains-loops",
+      "title": "Chains and Loops"
+    },
+    {
+      "id": "almost-locked-sets",
+      "title": "Almost Locked Sets"
+    },
+    {
+      "id": "last-resort",
+      "title": "Methods of Last Resort"
+    }
+  ],
+  "techniques": [
+    {
+      "slug": "naked-single",
+      "title": "Naked Single",
+      "level": "basic",
+      "family": "singles",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_singles.php#n1",
+      "sectionHeading": "Naked Single"
+    },
+    {
+      "slug": "hidden-single",
+      "title": "Hidden Single",
+      "level": "basic",
+      "family": "singles",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_singles.php#h1",
+      "sectionHeading": "Hidden Single"
+    },
+    {
+      "slug": "naked-pair",
+      "title": "Naked Pair",
+      "level": "basic",
+      "family": "naked-subsets",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_naked.php#n2",
+      "sectionHeading": "Naked Pair/Locked Pair"
+    },
+    {
+      "slug": "pointing",
+      "title": "Pointing Pairs and Triples",
+      "level": "basic",
+      "family": "intersections",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_intersections.php#lc1",
+      "sectionHeading": "Locked Candidates Type 1 (Pointing)"
+    },
+    {
+      "slug": "claiming",
+      "title": "Claiming",
+      "level": "basic",
+      "family": "intersections",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_intersections.php#lc2",
+      "sectionHeading": "Locked Candidates Type 2 (Claiming)"
+    },
+    {
+      "slug": "hidden-pair",
+      "title": "Hidden Pair",
+      "level": "basic",
+      "family": "hidden-subsets",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_hidden.php#h2",
+      "sectionHeading": "Hidden Pair"
+    },
+    {
+      "slug": "full-house",
+      "title": "Full House / Last Digit",
+      "level": "basic",
+      "family": "singles",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_singles.php#fh",
+      "sectionHeading": "FullHouse/Last Digit"
+    },
+    {
+      "slug": "locked-pair",
+      "title": "Locked Pair",
+      "level": "basic",
+      "family": "naked-subsets",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_naked.php#n2",
+      "sectionHeading": "Naked Pair/Locked Pair",
+      "variantBounds": "Two cells and two digits shared by a row and box or column and box; eliminations may occur in both units."
+    },
+    {
+      "slug": "naked-triple",
+      "title": "Naked Triple",
+      "level": "intermediate",
+      "family": "naked-subsets",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_naked.php#n3",
+      "sectionHeading": "Naked Triple/Locked Triple"
+    },
+    {
+      "slug": "hidden-triple",
+      "title": "Hidden Triple",
+      "level": "intermediate",
+      "family": "hidden-subsets",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_hidden.php#h3",
+      "sectionHeading": "Hidden Triple"
+    },
+    {
+      "slug": "x-wing",
+      "title": "X-Wing",
+      "level": "intermediate",
+      "family": "basic-fish",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_fishb.php#bf2",
+      "sectionHeading": "X-Wing"
+    },
+    {
+      "slug": "skyscraper",
+      "title": "Skyscraper",
+      "level": "intermediate",
+      "family": "single-digit-patterns",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_sdp.php#sk",
+      "sectionHeading": "Skyscraper"
+    },
+    {
+      "slug": "two-string-kite",
+      "title": "Two-String Kite",
+      "level": "intermediate",
+      "family": "single-digit-patterns",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_sdp.php#t2sk",
+      "sectionHeading": "2-String Kite",
+      "variantBounds": "Standard and dual forms; dual means two independently proved kites, not an extra assumption."
+    },
+    {
+      "slug": "xy-wing",
+      "title": "XY-Wing",
+      "level": "intermediate",
+      "family": "wings",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_wings.php#xy",
+      "sectionHeading": "XY-Wing"
+    },
+    {
+      "slug": "swordfish",
+      "title": "Swordfish",
+      "level": "intermediate",
+      "family": "basic-fish",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_fishb.php#bf3",
+      "sectionHeading": "Swordfish"
+    },
+    {
+      "slug": "xyz-wing",
+      "title": "XYZ-Wing",
+      "level": "intermediate",
+      "family": "wings",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_wings.php#xyz",
+      "sectionHeading": "XYZ-Wing"
+    },
+    {
+      "slug": "w-wing",
+      "title": "W-Wing",
+      "level": "intermediate",
+      "family": "wings",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_wings.php#w",
+      "sectionHeading": "W-Wing"
+    },
+    {
+      "slug": "empty-rectangle",
+      "title": "Empty Rectangle",
+      "level": "intermediate",
+      "family": "single-digit-patterns",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_sdp.php#er",
+      "sectionHeading": "Empty Rectangle",
+      "variantBounds": "Standard cross, optional two-candidate form and dual forms; each named variant needs its own premise proof before being taught."
+    },
+    {
+      "slug": "locked-triple",
+      "title": "Locked Triple",
+      "level": "intermediate",
+      "family": "naked-subsets",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_naked.php#n3",
+      "sectionHeading": "Naked Triple/Locked Triple",
+      "variantBounds": "Three cells and three digits shared by a row/box or column/box intersection."
+    },
+    {
+      "slug": "turbot-fish",
+      "title": "Turbot Fish",
+      "level": "intermediate",
+      "family": "single-digit-patterns",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_sdp.php#tf",
+      "sectionHeading": "Turbot Fish",
+      "variantBounds": "Four-candidate single-digit chain with strong–weak–strong links; includes the named short-link shapes."
+    },
+    {
+      "slug": "naked-quadruple",
+      "title": "Naked Quadruple",
+      "level": "advanced",
+      "family": "naked-subsets",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_naked.php#n4",
+      "sectionHeading": "Naked Quadruple"
+    },
+    {
+      "slug": "hidden-quadruple",
+      "title": "Hidden Quadruple",
+      "level": "advanced",
+      "family": "hidden-subsets",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_hidden.php#h4",
+      "sectionHeading": "Hidden Quadruple"
+    },
+    {
+      "slug": "jellyfish",
+      "title": "Jellyfish",
+      "level": "advanced",
+      "family": "basic-fish",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_fishb.php#bf4",
+      "sectionHeading": "Jellyfish"
+    },
+    {
+      "slug": "finned-x-wing",
+      "title": "Finned X-Wing",
+      "level": "advanced",
+      "family": "finned-fish",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_fishfs.php#fbf2",
+      "sectionHeading": "Finned/Sashimi X-Wing",
+      "variantBounds": "Size 2 regular finned basic fish; the initial detector form has all fins in one base and one box. Sashimi is listed separately."
+    },
+    {
+      "slug": "finned-swordfish",
+      "title": "Finned Swordfish",
+      "level": "advanced",
+      "family": "finned-fish",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_fishfs.php#fbf3",
+      "sectionHeading": "Finned/Sashimi Swordfish",
+      "variantBounds": "Size 3 regular finned basic fish; the initial detector form has all fins in one base and one box. Sashimi is listed separately."
+    },
+    {
+      "slug": "finned-jellyfish",
+      "title": "Finned Jellyfish",
+      "level": "advanced",
+      "family": "finned-fish",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_fishfs.php#fbf4",
+      "sectionHeading": "Finned/Sashimi Jellyfish",
+      "variantBounds": "Size 4 regular finned basic fish; the initial detector form has all fins in one base and one box. Sashimi is listed separately."
+    },
+    {
+      "slug": "simple-coloring",
+      "title": "Simple Coloring",
+      "level": "advanced",
+      "family": "coloring",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_col.php#sc",
+      "sectionHeading": "Simple Colors (Color Wrap/Color Trap)",
+      "variantBounds": "Color Trap and Color Wrap on one complete conjugate-link component; a wrap must carry an explicit structural contradiction."
+    },
+    {
+      "slug": "remote-pairs",
+      "title": "Remote Pairs",
+      "level": "advanced",
+      "family": "chains-loops",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_chains.php#rp",
+      "sectionHeading": "Remote Pair",
+      "variantBounds": "Chains of identical bivalue cells; at least four cells, with opposite endpoint assignments and explicitly derived common-peer eliminations."
+    },
+    {
+      "slug": "unique-rectangle",
+      "title": "Unique Rectangle Type 1",
+      "level": "advanced",
+      "family": "uniqueness",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_ur.php#u1",
+      "sectionHeading": "Unique Rectangle Type 1",
+      "variantBounds": "Four unsolved corners in exactly two rows, two columns and two boxes; three exact bivalue corners and one roof. Requires verified uniqueness and the digit-swap argument."
+    },
+    {
+      "slug": "bug-plus-one",
+      "title": "BUG+1",
+      "level": "advanced",
+      "family": "uniqueness",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_ur.php#bug1",
+      "sectionHeading": "BUG+1 - Binary Universal Grave + 1",
+      "variantBounds": "One trivalue cell and all other unsolved cells bivalue; removing the extra candidate must leave exactly two positions per missing unit-digit. Requires verified uniqueness and a complement argument."
+    },
+    {
+      "slug": "sashimi-x-wing",
+      "title": "Sashimi X-Wing",
+      "level": "advanced",
+      "family": "finned-fish",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_fishfs.php#fbf2",
+      "sectionHeading": "Finned/Sashimi X-Wing",
+      "variantBounds": "Size 2 finned basic fish whose fin-free body is degenerate; distinguish it explicitly from regular finned forms."
+    },
+    {
+      "slug": "sashimi-swordfish",
+      "title": "Sashimi Swordfish",
+      "level": "advanced",
+      "family": "finned-fish",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_fishfs.php#fbf3",
+      "sectionHeading": "Finned/Sashimi Swordfish",
+      "variantBounds": "Size 3 finned basic fish whose fin-free body is degenerate."
+    },
+    {
+      "slug": "sashimi-jellyfish",
+      "title": "Sashimi Jellyfish",
+      "level": "advanced",
+      "family": "finned-fish",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_fishfs.php#fbf4",
+      "sectionHeading": "Finned/Sashimi Jellyfish",
+      "variantBounds": "Size 4 finned basic fish whose fin-free body is degenerate."
+    },
+    {
+      "slug": "multi-coloring",
+      "title": "Multi Coloring",
+      "level": "advanced",
+      "family": "coloring",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_col.php#mc",
+      "sectionHeading": "Multi Colors",
+      "variantBounds": "Two disjoint conjugate components with separately checked color-pair interactions, covering both described elimination cases."
+    },
+    {
+      "slug": "unique-rectangle-type-2",
+      "title": "Unique Rectangle Type 2",
+      "level": "advanced",
+      "family": "uniqueness",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_ur.php#u2",
+      "sectionHeading": "Unique Rectangle Type 2"
+    },
+    {
+      "slug": "unique-rectangle-type-3",
+      "title": "Unique Rectangle Type 3",
+      "level": "advanced",
+      "family": "uniqueness",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_ur.php#u3",
+      "sectionHeading": "Unique Rectangle Type 3"
+    },
+    {
+      "slug": "unique-rectangle-type-4",
+      "title": "Unique Rectangle Type 4",
+      "level": "advanced",
+      "family": "uniqueness",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_ur.php#u4",
+      "sectionHeading": "Unique Rectangle Type 4"
+    },
+    {
+      "slug": "unique-rectangle-type-5",
+      "title": "Unique Rectangle Type 5",
+      "level": "advanced",
+      "family": "uniqueness",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_ur.php#u5",
+      "sectionHeading": "Unique Rectangle Type 5"
+    },
+    {
+      "slug": "unique-rectangle-type-6",
+      "title": "Unique Rectangle Type 6",
+      "level": "advanced",
+      "family": "uniqueness",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_ur.php#u6",
+      "sectionHeading": "Unique Rectangle Type 6"
+    },
+    {
+      "slug": "hidden-rectangle",
+      "title": "Hidden Rectangle",
+      "level": "advanced",
+      "family": "uniqueness",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_ur.php#hr",
+      "sectionHeading": "Hidden Rectangle"
+    },
+    {
+      "slug": "avoidable-rectangle",
+      "title": "Avoidable Rectangle",
+      "level": "advanced",
+      "family": "uniqueness",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_ur.php#ar",
+      "sectionHeading": "Avoidable Rectangle",
+      "variantBounds": "Types 1 and 2; distinguish player-filled corners from original givens and prove the applicable uniqueness assumptions."
+    },
+    {
+      "slug": "sue-de-coq",
+      "title": "Sue de Coq",
+      "level": "expert",
+      "family": "miscellaneous",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_misc.php#sdc",
+      "sectionHeading": "Sue de Coq",
+      "variantBounds": "Basic and extended forms need explicit intersection cells, row/column ALS cells, box ALS cells and complete candidate counts; no inferred shape alone."
+    },
+    {
+      "slug": "x-chain",
+      "title": "X-Chain",
+      "level": "expert",
+      "family": "chains-loops",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_chains.php#x",
+      "sectionHeading": "X-Chain"
+    },
+    {
+      "slug": "xy-chain",
+      "title": "XY-Chain",
+      "level": "expert",
+      "family": "chains-loops",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_chains.php#xyc",
+      "sectionHeading": "XY-Chain"
+    },
+    {
+      "slug": "aic",
+      "title": "Nice Loops / AIC",
+      "level": "expert",
+      "family": "chains-loops",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_chains.php#nl",
+      "sectionHeading": "Nice Loop/AIC",
+      "variantBounds": "Discontinuous Nice Loops, AIC Types 1 and 2, and continuous loops; validate the exact strong/weak inference at every step."
+    },
+    {
+      "slug": "grouped-aic",
+      "title": "Grouped Nice Loops / AIC",
+      "level": "expert",
+      "family": "chains-loops",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_chains.php#gnl",
+      "sectionHeading": "Grouped Nice Loop",
+      "variantBounds": "Group-node and group-plus-ALS forms; each grouped truth/falsehood implication requires a checked candidate-set premise."
+    },
+    {
+      "slug": "als-xz",
+      "title": "ALS-XZ",
+      "level": "expert",
+      "family": "almost-locked-sets",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_als.php#axz",
+      "sectionHeading": "ALS-XZ",
+      "variantBounds": "Singly and doubly linked forms; validate ALS cardinalities, restricted common candidates and permissible overlap."
+    },
+    {
+      "slug": "als-xy-wing",
+      "title": "ALS-XY-Wing",
+      "level": "expert",
+      "family": "almost-locked-sets",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_als.php#axy",
+      "sectionHeading": "ALS-XY-Wing"
+    },
+    {
+      "slug": "als-chain",
+      "title": "ALS Chain",
+      "level": "expert",
+      "family": "almost-locked-sets",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_als.php#ach",
+      "sectionHeading": "ALS Chain"
+    },
+    {
+      "slug": "death-blossom",
+      "title": "Death Blossom",
+      "level": "expert",
+      "family": "almost-locked-sets",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_als.php#db",
+      "sectionHeading": "Death Blossom"
+    },
+    {
+      "slug": "forcing-chain",
+      "title": "Forcing Chain",
+      "level": "expert",
+      "family": "last-resort",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_last.php#fc",
+      "sectionHeading": "Forcing Chain",
+      "variantBounds": "Contradiction and verity forms; every inference must be explicit. Completion search alone is not a named chain certificate."
+    },
+    {
+      "slug": "forcing-net",
+      "title": "Forcing Net",
+      "level": "expert",
+      "family": "last-resort",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_last.php#fn",
+      "sectionHeading": "Forcing Net",
+      "variantBounds": "Explicit branching implications and reconvergence; do not label a linear chain or solver search as a net."
+    },
+    {
+      "slug": "larger-basic-fish",
+      "title": "Larger Basic Fish",
+      "level": "expert",
+      "family": "basic-fish",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_fishb.php#bf5",
+      "sectionHeading": "Larger Basic Fish",
+      "variantBounds": "Sizes 5–7 (Squirmbag, Whale, Leviathan), rows/columns transposed. Explain complementary smaller fish; no unbounded size catalogue."
+    },
+    {
+      "slug": "larger-finned-fish",
+      "title": "Larger Finned Fish",
+      "level": "expert",
+      "family": "finned-fish",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_fishfs.php#fbf567",
+      "sectionHeading": "Larger Finned Fish",
+      "variantBounds": "Sizes 5–7; finned and sashimi variants, with every fin and cover target explicitly certified."
+    },
+    {
+      "slug": "franken-fish",
+      "title": "Franken Fish",
+      "level": "expert",
+      "family": "complex-fish",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_fishc.php#ff",
+      "sectionHeading": "(Finned) Franken Fish",
+      "variantBounds": "Sizes 2–7; row/box bases against column/box covers, or the transpose, with at least one box. Include unfinned/finned forms; explicitly certify overlaps, exo/endo fins and cannibalism. Arbitrary mixed row/column bases belong to Mutant Fish."
+    },
+    {
+      "slug": "mutant-fish",
+      "title": "Mutant Fish",
+      "level": "expert",
+      "family": "complex-fish",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_fishc.php#mf",
+      "sectionHeading": "(Finned) Mutant Fish",
+      "variantBounds": "Sizes 2–7; mixed row/column/box base and cover families, unfinned/finned forms. Declare all overlaps and any endo fins/cannibalism; no shape-only admission."
+    },
+    {
+      "slug": "siamese-fish",
+      "title": "Siamese Fish",
+      "level": "expert",
+      "family": "complex-fish",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_fishc.php#sf",
+      "sectionHeading": "Siamese Fish",
+      "variantBounds": "Two finned fish of the same type and size 2–7 occupying the same candidate cells, differing in one cover set and producing different eliminations. Prove each constituent and the combined eliminations."
+    },
+    {
+      "slug": "unique-rectangles-missing-candidates",
+      "title": "Unique Rectangles with Missing Candidates",
+      "level": "expert",
+      "family": "uniqueness",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_ur.php#umc",
+      "sectionHeading": "Unique Rectangles with missing candidates",
+      "variantBounds": "Both swap digits must be unblocked by original givens at all four corners. Missing marks require explicit prior deductions and original-vs-player-fill provenance; no hidden setup or arbitrary note restriction."
+    },
+    {
+      "slug": "templates",
+      "title": "Templates",
+      "level": "expert",
+      "family": "last-resort",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_last.php#ts",
+      "sectionHeading": "Templates",
+      "variantBounds": "One digit at a time on standard 9×9: all 46,656 templates filtered by the complete current candidate state; distinguish computational enumeration from a human chain."
+    },
+    {
+      "slug": "kraken-fish",
+      "title": "Kraken Fish",
+      "level": "expert",
+      "family": "last-resort",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_last.php#kf",
+      "sectionHeading": "Kraken Fish",
+      "variantBounds": "Types 1 and 2, fish sizes 2–7, with explicit fin-to-target chains; a bounded fish family plus certified inference paths, not arbitrary search."
+    },
+    {
+      "slug": "brute-force",
+      "title": "Brute Force",
+      "level": "expert",
+      "family": "last-resort",
+      "sourceURL": "https://hodoku.sourceforge.net/en/tech_last.php#bf",
+      "sectionHeading": "Brute Force",
+      "variantBounds": "Explicitly labeled exhaustive search, with every branch/contradiction accounted for; never present solution-oracle output as a human pattern proof."
+    }
+  ]
+}

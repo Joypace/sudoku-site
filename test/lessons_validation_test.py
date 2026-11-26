@@ -8,6 +8,8 @@ class Contract(unittest.TestCase):
   self.temp=tempfile.TemporaryDirectory(prefix='lesson-contract-');self.root=Path(self.temp.name);self.learn=self.root/'learn';self.folder=self.learn/'x-wing';self.folder.mkdir(parents=True)
   for name in ['index.html','learn.css','learn.js']:(self.learn/name).write_text('test')
   (self.folder/'index.html').write_text('test');self.manifest=json.loads((ROOT/'learn/manifest.json').read_text());self.manifest['lessons']=[x for x in self.manifest['lessons'] if x['slug']=='x-wing'];self.cases=json.loads((ROOT/'learn/x-wing/examples.json').read_text())
+  # The level-based catalogue adds one required, canonical public data file.
+  shutil.copyfile(ROOT/'learn/curriculum.json',self.learn/'curriculum.json')
   for n,c in enumerate(self.cases,1):
    data=(ROOT/f'learn/x-wing/example-{n}.json').read_bytes();(self.folder/f'example-{n}.json').write_bytes(data)
    # Minimal non-executable SVG fixture tests this parser contract, not UI fidelity.
@@ -20,8 +22,8 @@ class Contract(unittest.TestCase):
  def reject(self,text):
   with self.assertRaisesRegex(ValueError,text):module.validate(self.root)
  def test_valid_native_format_and_current_real_exports(self):
-  self.assertEqual(len(module.validate(self.root)),12)
-  lessons=json.loads((ROOT/'learn/manifest.json').read_text())['lessons'];self.assertEqual(len(module.validate(ROOT)),4+sum(2+2*len(x['examples']) for x in lessons))
+  self.assertEqual(len(module.validate(self.root)),13)
+  lessons=json.loads((ROOT/'learn/manifest.json').read_text())['lessons'];self.assertEqual(len(module.validate(ROOT)),5+sum(2+2*len(x['examples']) for x in lessons))
  def test_same_publication_date_is_valid_but_duplicate_slug_is_not(self):
   lessons=json.loads((ROOT/'learn/manifest.json').read_text())['lessons'];dates=[x['published'] for x in lessons];self.assertLess(len(set(dates)),len(dates));module.validate(ROOT)
   self.manifest['lessons'].append(dict(self.manifest['lessons'][0]));self.write();self.reject('duplicate')

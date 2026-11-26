@@ -152,7 +152,10 @@ def validate(root):
    if file.is_dir():walk(file,name+'/')
    else:require(file.is_file(),'Unexpected public file type');actual.append(name)
  walk(directory)
- manifest=json.loads((directory/'manifest.json').read_text());require(manifest.get('schema')==1 and isinstance(manifest.get('lessons'),list),'Invalid lesson manifest');expected={'index.html','learn.css','learn.js','manifest.json'};slugs=set()
+ manifest=json.loads((directory/'manifest.json').read_text())
+ if 'curriculum' in manifest:
+  require(manifest['curriculum']=='curriculum.json' and (directory/'curriculum.json').is_file(),'Missing canonical curriculum')
+ require(manifest.get('schema')==1 and isinstance(manifest.get('lessons'),list),'Invalid lesson manifest');expected={'index.html','learn.css','learn.js','manifest.json'};expected|={'curriculum.json'} if 'curriculum' in manifest else set();slugs=set()
  for lesson in manifest['lessons']:
   slug=lesson['slug'];require(bool(re.fullmatch(r'[a-z][a-z0-9-]{1,70}',slug)) and slug not in {'index','learn','manifest'} and slug not in slugs,'Reserved/duplicate/unsafe lesson slug');slugs.add(slug);published=date.fromisoformat(lesson['published']);require(lesson.get('title') and lesson.get('description'),'Missing public lesson text');items=lesson['examples'];require(isinstance(items,list) and 3<=len(items)<=5,'Each technique needs 3–5 examples');folder=directory/slug;expected|={slug+'/index.html',slug+'/examples.json'};examples=json.loads((folder/'examples.json').read_text());require(len(examples)==len(items),'Example count mismatch');require(slug in PROOFS,'Technique requires a validated proof rule before publication')
   grids=set()
@@ -173,6 +176,7 @@ def validate(root):
    if slug=='claiming':claiming_animation(data,example)
    if slug in INTERMEDIATE:_stories.validate_story(data,example)
    check_svg(folder/(stem+'.svg'),scenario,example);expected|={slug+'/'+stem+'.json',slug+'/'+stem+'.svg'}
+ if 'curriculum' in manifest:_load_sibling('lesson_catalogue').validate_curriculum(json.loads((directory/'curriculum.json').read_text()),manifest)
  require(set(actual)==expected,'Unapproved or missing public lesson files: '+str(set(actual)^expected));return sorted('learn/'+p for p in actual)
 if __name__=='__main__':
  try:print(json.dumps(validate(Path(sys.argv[1]).resolve())))
