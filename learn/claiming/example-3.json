@@ -1,0 +1,912 @@
+{
+  "schema": 1,
+  "title": "Claiming example 3: column 1 to box 4",
+  "grid": "300007004741030006500040073037400002000702300025300060008924030973615008254873691",
+  "style": "chill",
+  "setup": [],
+  "camera": {
+    "targets": [
+      {
+        "part": "tray"
+      },
+      {
+        "part": "board"
+      },
+      {
+        "part": "panel-row"
+      }
+    ],
+    "padding": 0.04
+  },
+  "frames": [
+    {
+      "do": "hover",
+      "at": {
+        "part": "slot",
+        "slot": 2
+      },
+      "time": 3880,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "slot",
+        "slot": 2
+      },
+      "count": 1,
+      "time": 4380
+    },
+    {
+      "do": "depart",
+      "time": 4880,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 5080
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          3,
+          0
+        ]
+      },
+      "time": 6730,
+      "ms": 350
+    },
+    {
+      "do": "down",
+      "at": {
+        "part": "cell",
+        "cell": [
+          3,
+          0
+        ]
+      },
+      "time": 7230
+    },
+    {
+      "do": "move",
+      "at": {
+        "part": "cell",
+        "cell": [
+          3,
+          0
+        ],
+        "offset": [
+          0.0,
+          1.2
+        ]
+      },
+      "time": 7310,
+      "ms": 450
+    },
+    {
+      "do": "ready",
+      "digit": 8,
+      "time": 7830
+    },
+    {
+      "do": "up",
+      "time": 8530
+    },
+    {
+      "do": "depart",
+      "time": 9030,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 9230
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "slot",
+        "slot": 1
+      },
+      "time": 9430,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "slot",
+        "slot": 1
+      },
+      "count": 1,
+      "time": 9930
+    },
+    {
+      "do": "depart",
+      "time": 10430,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 10630
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "slot",
+        "slot": 3
+      },
+      "time": 12180,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "slot",
+        "slot": 3
+      },
+      "count": 1,
+      "time": 12680
+    },
+    {
+      "do": "depart",
+      "time": 13180,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 13380
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          4,
+          0
+        ]
+      },
+      "time": 15030,
+      "ms": 350
+    },
+    {
+      "do": "down",
+      "at": {
+        "part": "cell",
+        "cell": [
+          4,
+          0
+        ]
+      },
+      "time": 15530
+    },
+    {
+      "do": "move",
+      "at": {
+        "part": "cell",
+        "cell": [
+          4,
+          0
+        ],
+        "offset": [
+          0.0,
+          1.2
+        ]
+      },
+      "time": 15610,
+      "ms": 450
+    },
+    {
+      "do": "ready",
+      "digit": 8,
+      "time": 16130
+    },
+    {
+      "do": "up",
+      "time": 16830
+    },
+    {
+      "do": "depart",
+      "time": 17330,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 17530
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "slot",
+        "slot": 1
+      },
+      "time": 17730,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "slot",
+        "slot": 1
+      },
+      "count": 1,
+      "time": 18230
+    },
+    {
+      "do": "depart",
+      "time": 18730,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 18930
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "slot",
+        "slot": 4
+      },
+      "time": 20480,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "slot",
+        "slot": 4
+      },
+      "count": 1,
+      "time": 20980
+    },
+    {
+      "do": "depart",
+      "time": 21480,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 21680
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          5,
+          0
+        ]
+      },
+      "time": 23330,
+      "ms": 350
+    },
+    {
+      "do": "down",
+      "at": {
+        "part": "cell",
+        "cell": [
+          5,
+          0
+        ]
+      },
+      "time": 23830
+    },
+    {
+      "do": "move",
+      "at": {
+        "part": "cell",
+        "cell": [
+          5,
+          0
+        ],
+        "offset": [
+          0.0,
+          1.2
+        ]
+      },
+      "time": 23910,
+      "ms": 450
+    },
+    {
+      "do": "ready",
+      "digit": 8,
+      "time": 24430
+    },
+    {
+      "do": "up",
+      "time": 25130
+    },
+    {
+      "do": "depart",
+      "time": 25630,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 25830
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "slot",
+        "slot": 1
+      },
+      "time": 26030,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "slot",
+        "slot": 1
+      },
+      "count": 1,
+      "time": 26530
+    },
+    {
+      "do": "depart",
+      "time": 27030,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 27230
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "slot",
+        "slot": 2
+      },
+      "time": 28580,
+      "ms": 400
+    },
+    {
+      "do": "down",
+      "at": {
+        "part": "slot",
+        "slot": 2
+      },
+      "time": 29130
+    },
+    {
+      "do": "move",
+      "at": {
+        "part": "slot",
+        "slot": 1
+      },
+      "time": 29380,
+      "ms": 750
+    },
+    {
+      "do": "up",
+      "time": 30280
+    },
+    {
+      "do": "depart",
+      "time": 30680,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 30880
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "slot",
+        "slot": 3
+      },
+      "time": 32280,
+      "ms": 400
+    },
+    {
+      "do": "down",
+      "at": {
+        "part": "slot",
+        "slot": 3
+      },
+      "time": 32830
+    },
+    {
+      "do": "move",
+      "at": {
+        "part": "slot",
+        "slot": 1
+      },
+      "time": 33080,
+      "ms": 750
+    },
+    {
+      "do": "up",
+      "time": 33980
+    },
+    {
+      "do": "depart",
+      "time": 34380,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 34580
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "slot",
+        "slot": 4
+      },
+      "time": 35980,
+      "ms": 400
+    },
+    {
+      "do": "down",
+      "at": {
+        "part": "slot",
+        "slot": 4
+      },
+      "time": 36530
+    },
+    {
+      "do": "move",
+      "at": {
+        "part": "slot",
+        "slot": 1
+      },
+      "time": 36780,
+      "ms": 750
+    },
+    {
+      "do": "up",
+      "time": 37680
+    },
+    {
+      "do": "depart",
+      "time": 38080,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 38280
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          4,
+          1
+        ]
+      },
+      "time": 42680,
+      "ms": 350
+    },
+    {
+      "do": "down",
+      "at": {
+        "part": "cell",
+        "cell": [
+          4,
+          1
+        ]
+      },
+      "time": 43180,
+      "inputDelay": 440
+    },
+    {
+      "do": "move",
+      "at": {
+        "part": "cell",
+        "cell": [
+          4,
+          1
+        ],
+        "offset": [
+          0.0,
+          1.617
+        ]
+      },
+      "time": 43220,
+      "ms": 600
+    },
+    {
+      "do": "up",
+      "time": 43870
+    },
+    {
+      "do": "depart",
+      "time": 44380,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 44580
+    }
+  ],
+  "presentation": {
+    "duration": 48180,
+    "captions": [
+      {
+        "text": "Every 8 place in this column is inside box 4.",
+        "start": 500,
+        "end": 2480,
+        "target": {
+          "part": "board-columns",
+          "from": 0,
+          "count": 1
+        }
+      },
+      {
+        "text": "Copy the original to test this possible place.",
+        "start": 2480,
+        "end": 3880,
+        "target": {
+          "part": "slot",
+          "slot": 2
+        }
+      },
+      {
+        "text": "Try 8 at r4c1.",
+        "start": 5230,
+        "end": 6730,
+        "target": {
+          "part": "cell",
+          "cell": [
+            3,
+            0
+          ]
+        }
+      },
+      {
+        "text": "Copy the original to test this possible place.",
+        "start": 10780,
+        "end": 12180,
+        "target": {
+          "part": "slot",
+          "slot": 3
+        }
+      },
+      {
+        "text": "Try 8 at r5c1.",
+        "start": 13530,
+        "end": 15030,
+        "target": {
+          "part": "cell",
+          "cell": [
+            4,
+            0
+          ]
+        }
+      },
+      {
+        "text": "Copy the original to test this possible place.",
+        "start": 19080,
+        "end": 20480,
+        "target": {
+          "part": "slot",
+          "slot": 4
+        }
+      },
+      {
+        "text": "Try 8 at r6c1.",
+        "start": 21830,
+        "end": 23330,
+        "target": {
+          "part": "cell",
+          "cell": [
+            5,
+            0
+          ]
+        }
+      },
+      {
+        "text": "Overlay this try on the original.",
+        "start": 27380,
+        "end": 28580,
+        "target": {
+          "part": "slot",
+          "slot": 2
+        }
+      },
+      {
+        "text": "Overlay this try on the original.",
+        "start": 31080,
+        "end": 32280,
+        "target": {
+          "part": "slot",
+          "slot": 3
+        }
+      },
+      {
+        "text": "Overlay this try on the original.",
+        "start": 34780,
+        "end": 35980,
+        "target": {
+          "part": "slot",
+          "slot": 4
+        }
+      },
+      {
+        "text": "Every placement rules out the same 8 notes elsewhere in this box.",
+        "start": 38480,
+        "end": 41480,
+        "target": {
+          "part": "board-box",
+          "index": 3
+        }
+      },
+      {
+        "text": "Remove 8 at r5c2.",
+        "start": 41480,
+        "end": 42680,
+        "target": {
+          "part": "cell",
+          "cell": [
+            4,
+            1
+          ],
+          "note": 8
+        }
+      },
+      {
+        "text": "This column reserves the box\u2019s 8.",
+        "start": 44780,
+        "end": 47780,
+        "target": {
+          "part": "board-box",
+          "index": 3
+        }
+      }
+    ],
+    "focus": [
+      {
+        "start": 2480,
+        "duration": 1400,
+        "shape": "rect",
+        "target": {
+          "part": "slot",
+          "slot": 2
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 5230,
+        "duration": 1500,
+        "shape": "rect",
+        "target": {
+          "part": "cell",
+          "cell": [
+            3,
+            0
+          ]
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 10780,
+        "duration": 1400,
+        "shape": "rect",
+        "target": {
+          "part": "slot",
+          "slot": 3
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 13530,
+        "duration": 1500,
+        "shape": "rect",
+        "target": {
+          "part": "cell",
+          "cell": [
+            4,
+            0
+          ]
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 19080,
+        "duration": 1400,
+        "shape": "rect",
+        "target": {
+          "part": "slot",
+          "slot": 4
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 21830,
+        "duration": 1500,
+        "shape": "rect",
+        "target": {
+          "part": "cell",
+          "cell": [
+            5,
+            0
+          ]
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 27380,
+        "duration": 1200,
+        "shape": "rect",
+        "target": {
+          "part": "slot",
+          "slot": 2
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 31080,
+        "duration": 1200,
+        "shape": "rect",
+        "target": {
+          "part": "slot",
+          "slot": 3
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 34780,
+        "duration": 1200,
+        "shape": "rect",
+        "target": {
+          "part": "slot",
+          "slot": 4
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 38480,
+        "duration": 3000,
+        "shape": "rect",
+        "target": {
+          "part": "board-box",
+          "index": 3
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 41480,
+        "duration": 1200,
+        "shape": "rect",
+        "target": {
+          "part": "cell",
+          "cell": [
+            4,
+            1
+          ],
+          "note": 8
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 44780,
+        "duration": 3000,
+        "shape": "rect",
+        "target": {
+          "part": "board-box",
+          "index": 3
+        },
+        "from": 6,
+        "to": 2
+      }
+    ],
+    "choiceReveal": {
+      "start": 500,
+      "frames": [
+        [
+          0,
+          0,
+          9,
+          1
+        ]
+      ],
+      "labels": [
+        [
+          3,
+          0,
+          8
+        ],
+        [
+          4,
+          0,
+          8
+        ],
+        [
+          5,
+          0,
+          8
+        ]
+      ]
+    },
+    "bubbleSize": {
+      "maxWidth": 240,
+      "minHeight": 38
+    }
+  },
+  "expected": {
+    "initialStatus": "dilemma",
+    "revealFrameCount": 1,
+    "revealLabelCount": 3,
+    "boards": 4,
+    "overlays": [
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "validSlots": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slotFills": [
+      [
+        1,
+        3,
+        0,
+        8
+      ],
+      [
+        2,
+        4,
+        0,
+        8
+      ],
+      [
+        3,
+        5,
+        0,
+        8
+      ]
+    ],
+    "notes": [
+      [
+        4,
+        1,
+        8,
+        false
+      ]
+    ],
+    "fills": [
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        0
+      ],
+      [
+        5,
+        0,
+        0
+      ]
+    ]
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "schema": 1,
+  "title": "Naked Single example 1: r5c7 is 4",
+  "grid": "302056894840070010000008307000007581000815009518300762005001903900062108000709056",
+  "style": "chill",
+  "setup": [],
+  "camera": {
+    "targets": [
+      {
+        "part": "tray"
+      },
+      {
+        "part": "board"
+      },
+      {
+        "part": "panel-row"
+      }
+    ],
+    "padding": 0.04
+  },
+  "frames": [
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          4,
+          6
+        ]
+      },
+      "time": 7400,
+      "ms": 400
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "cell",
+        "cell": [
+          4,
+          6
+        ]
+      },
+      "count": 2,
+      "time": 8100
+    },
+    {
+      "do": "depart",
+      "time": 8900,
+      "ms": 250
+    },
+    {
+      "do": "hide",
+      "time": 9300
+    }
+  ],
+  "presentation": {
+    "duration": 12000,
+    "captions": [
+      {
+        "text": "Only 4 remains in this cell.",
+        "start": 500,
+        "end": 3900,
+        "target": {
+          "part": "cell",
+          "cell": [
+            4,
+            6
+          ]
+        }
+      },
+      {
+        "text": "Its row, column and box exclude every other digit.",
+        "start": 4000,
+        "end": 7300,
+        "target": {
+          "part": "cell",
+          "cell": [
+            4,
+            6
+          ]
+        }
+      },
+      {
+        "text": "Double-tap the cell center to fill 4.",
+        "start": 7400,
+        "end": 10200,
+        "target": {
+          "part": "cell",
+          "cell": [
+            4,
+            6
+          ]
+        }
+      },
+      {
+        "text": "r5c7 is 4; no guess was needed.",
+        "start": 10300,
+        "end": 12000,
+        "target": {
+          "part": "cell",
+          "cell": [
+            4,
+            6
+          ]
+        }
+      }
+    ],
+    "focus": [],
+    "choiceReveal": {
+      "start": 500,
+      "frames": [
+        [
+          4,
+          6,
+          1,
+          1
+        ]
+      ],
+      "labels": [
+        [
+          4,
+          6,
+          4
+        ]
+      ]
+    },
+    "bubbleSize": {
+      "maxWidth": 240,
+      "minHeight": 38
+    }
+  },
+  "expected": {
+    "initialStatus": "definite",
+    "initialSingle": [
+      4,
+      6,
+      4
+    ],
+    "boards": 1,
+    "overlays": [],
+    "validSlots": [
+      0
+    ],
+    "slotFills": [
+      [
+        0,
+        4,
+        6,
+        4
+      ]
+    ],
+    "fills": [
+      [
+        4,
+        6,
+        4
+      ]
+    ]
+  }
+}

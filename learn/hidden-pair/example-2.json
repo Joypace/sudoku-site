@@ -1,0 +1,970 @@
+{
+  "schema": 1,
+  "title": "Hidden Pair example 2: column 3",
+  "grid": "735698241600710038100030670523146080010927060900853120300501892201009050059000016",
+  "style": "chill",
+  "setup": [],
+  "camera": {
+    "targets": [
+      {
+        "part": "tray"
+      },
+      {
+        "part": "board"
+      },
+      {
+        "part": "panel-row"
+      }
+    ],
+    "padding": 0.04
+  },
+  "frames": [
+    {
+      "do": "hover",
+      "at": {
+        "part": "slot",
+        "slot": 2
+      },
+      "time": 3880,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "slot",
+        "slot": 2
+      },
+      "count": 1,
+      "time": 4380
+    },
+    {
+      "do": "depart",
+      "time": 4880,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 5080
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          5,
+          2
+        ]
+      },
+      "time": 6730,
+      "ms": 350
+    },
+    {
+      "do": "down",
+      "at": {
+        "part": "cell",
+        "cell": [
+          5,
+          2
+        ]
+      },
+      "time": 7230
+    },
+    {
+      "do": "move",
+      "at": {
+        "part": "cell",
+        "cell": [
+          5,
+          2
+        ],
+        "offset": [
+          1.2,
+          0.0
+        ]
+      },
+      "time": 7310,
+      "ms": 450
+    },
+    {
+      "do": "ready",
+      "digit": 6,
+      "time": 7830
+    },
+    {
+      "do": "up",
+      "time": 8530
+    },
+    {
+      "do": "depart",
+      "time": 9030,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 9230
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          6,
+          2
+        ]
+      },
+      "time": 11430,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "cell",
+        "cell": [
+          6,
+          2
+        ]
+      },
+      "count": 2,
+      "time": 11930
+    },
+    {
+      "do": "depart",
+      "time": 12430,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 12630
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "slot",
+        "slot": 1
+      },
+      "time": 12780,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "slot",
+        "slot": 1
+      },
+      "count": 1,
+      "time": 13280
+    },
+    {
+      "do": "depart",
+      "time": 13780,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 13980
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "slot",
+        "slot": 3
+      },
+      "time": 15530,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "slot",
+        "slot": 3
+      },
+      "count": 1,
+      "time": 16030
+    },
+    {
+      "do": "depart",
+      "time": 16530,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 16730
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          5,
+          2
+        ]
+      },
+      "time": 18380,
+      "ms": 350
+    },
+    {
+      "do": "down",
+      "at": {
+        "part": "cell",
+        "cell": [
+          5,
+          2
+        ]
+      },
+      "time": 18880
+    },
+    {
+      "do": "move",
+      "at": {
+        "part": "cell",
+        "cell": [
+          5,
+          2
+        ],
+        "offset": [
+          -1.2,
+          1.2
+        ]
+      },
+      "time": 18960,
+      "ms": 450
+    },
+    {
+      "do": "ready",
+      "digit": 7,
+      "time": 19480
+    },
+    {
+      "do": "up",
+      "time": 20180
+    },
+    {
+      "do": "depart",
+      "time": 20680,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 20880
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          6,
+          2
+        ]
+      },
+      "time": 23080,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "cell",
+        "cell": [
+          6,
+          2
+        ]
+      },
+      "count": 2,
+      "time": 23580
+    },
+    {
+      "do": "depart",
+      "time": 24080,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 24280
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "slot",
+        "slot": 1
+      },
+      "time": 24430,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "slot",
+        "slot": 1
+      },
+      "count": 1,
+      "time": 24930
+    },
+    {
+      "do": "depart",
+      "time": 25430,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 25630
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "slot",
+        "slot": 2
+      },
+      "time": 26980,
+      "ms": 400
+    },
+    {
+      "do": "down",
+      "at": {
+        "part": "slot",
+        "slot": 2
+      },
+      "time": 27530
+    },
+    {
+      "do": "move",
+      "at": {
+        "part": "slot",
+        "slot": 1
+      },
+      "time": 27780,
+      "ms": 750
+    },
+    {
+      "do": "up",
+      "time": 28680
+    },
+    {
+      "do": "depart",
+      "time": 29080,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 29280
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "slot",
+        "slot": 3
+      },
+      "time": 30680,
+      "ms": 400
+    },
+    {
+      "do": "down",
+      "at": {
+        "part": "slot",
+        "slot": 3
+      },
+      "time": 31230
+    },
+    {
+      "do": "move",
+      "at": {
+        "part": "slot",
+        "slot": 1
+      },
+      "time": 31480,
+      "ms": 750
+    },
+    {
+      "do": "up",
+      "time": 32380
+    },
+    {
+      "do": "depart",
+      "time": 32780,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 32980
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          5,
+          2
+        ]
+      },
+      "time": 37380,
+      "ms": 350
+    },
+    {
+      "do": "down",
+      "at": {
+        "part": "cell",
+        "cell": [
+          5,
+          2
+        ]
+      },
+      "time": 37880,
+      "inputDelay": 440
+    },
+    {
+      "do": "move",
+      "at": {
+        "part": "cell",
+        "cell": [
+          5,
+          2
+        ],
+        "offset": [
+          -1.617,
+          0.0
+        ]
+      },
+      "time": 37920,
+      "ms": 600
+    },
+    {
+      "do": "up",
+      "time": 38570
+    },
+    {
+      "do": "depart",
+      "time": 39080,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 39280
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          6,
+          2
+        ]
+      },
+      "time": 40680,
+      "ms": 350
+    },
+    {
+      "do": "down",
+      "at": {
+        "part": "cell",
+        "cell": [
+          6,
+          2
+        ]
+      },
+      "time": 41180,
+      "inputDelay": 440
+    },
+    {
+      "do": "move",
+      "at": {
+        "part": "cell",
+        "cell": [
+          6,
+          2
+        ],
+        "offset": [
+          -1.617,
+          0.0
+        ]
+      },
+      "time": 41220,
+      "ms": 600
+    },
+    {
+      "do": "up",
+      "time": 41870
+    },
+    {
+      "do": "depart",
+      "time": 42380,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 42580
+    }
+  ],
+  "presentation": {
+    "duration": 46180,
+    "captions": [
+      {
+        "text": "In this column, 6 and 7 have only these two places.",
+        "start": 500,
+        "end": 2480,
+        "target": {
+          "part": "cells",
+          "cells": [
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              2
+            ]
+          ]
+        }
+      },
+      {
+        "text": "Copy the original to try one assignment.",
+        "start": 2480,
+        "end": 3880,
+        "target": {
+          "part": "slot",
+          "slot": 2
+        }
+      },
+      {
+        "text": "Try 6 at r6c3.",
+        "start": 5230,
+        "end": 6730,
+        "target": {
+          "part": "cell",
+          "cell": [
+            5,
+            2
+          ]
+        }
+      },
+      {
+        "text": "Then r7c3 must be 7.",
+        "start": 9430,
+        "end": 11430,
+        "target": {
+          "part": "cell",
+          "cell": [
+            6,
+            2
+          ]
+        }
+      },
+      {
+        "text": "Copy the original to try one assignment.",
+        "start": 14130,
+        "end": 15530,
+        "target": {
+          "part": "slot",
+          "slot": 3
+        }
+      },
+      {
+        "text": "Try 7 at r6c3.",
+        "start": 16880,
+        "end": 18380,
+        "target": {
+          "part": "cell",
+          "cell": [
+            5,
+            2
+          ]
+        }
+      },
+      {
+        "text": "Then r7c3 must be 6.",
+        "start": 21080,
+        "end": 23080,
+        "target": {
+          "part": "cell",
+          "cell": [
+            6,
+            2
+          ]
+        }
+      },
+      {
+        "text": "Overlay this try on the original.",
+        "start": 25780,
+        "end": 26980,
+        "target": {
+          "part": "slot",
+          "slot": 2
+        }
+      },
+      {
+        "text": "Overlay this try on the original.",
+        "start": 29480,
+        "end": 30680,
+        "target": {
+          "part": "slot",
+          "slot": 3
+        }
+      },
+      {
+        "text": "Either way, this column uses both 6 and 7 here.",
+        "start": 33180,
+        "end": 36180,
+        "target": {
+          "part": "cells",
+          "cells": [
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              2
+            ]
+          ]
+        }
+      },
+      {
+        "text": "Remove 4 at r6c3.",
+        "start": 36180,
+        "end": 37380,
+        "target": {
+          "part": "cell",
+          "cell": [
+            5,
+            2
+          ],
+          "note": 4
+        }
+      },
+      {
+        "text": "Remove 4 at r7c3.",
+        "start": 39480,
+        "end": 40680,
+        "target": {
+          "part": "cell",
+          "cell": [
+            6,
+            2
+          ],
+          "note": 4
+        }
+      },
+      {
+        "text": "Both assignments give the same eliminations.",
+        "start": 42780,
+        "end": 45780,
+        "target": {
+          "part": "cells",
+          "cells": [
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              2
+            ]
+          ]
+        }
+      }
+    ],
+    "focus": [
+      {
+        "start": 2480,
+        "duration": 1400,
+        "shape": "rect",
+        "target": {
+          "part": "slot",
+          "slot": 2
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 5230,
+        "duration": 1500,
+        "shape": "rect",
+        "target": {
+          "part": "cell",
+          "cell": [
+            5,
+            2
+          ]
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 9430,
+        "duration": 2000,
+        "shape": "rect",
+        "target": {
+          "part": "cell",
+          "cell": [
+            6,
+            2
+          ]
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 14130,
+        "duration": 1400,
+        "shape": "rect",
+        "target": {
+          "part": "slot",
+          "slot": 3
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 16880,
+        "duration": 1500,
+        "shape": "rect",
+        "target": {
+          "part": "cell",
+          "cell": [
+            5,
+            2
+          ]
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 21080,
+        "duration": 2000,
+        "shape": "rect",
+        "target": {
+          "part": "cell",
+          "cell": [
+            6,
+            2
+          ]
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 25780,
+        "duration": 1200,
+        "shape": "rect",
+        "target": {
+          "part": "slot",
+          "slot": 2
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 29480,
+        "duration": 1200,
+        "shape": "rect",
+        "target": {
+          "part": "slot",
+          "slot": 3
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 33180,
+        "duration": 3000,
+        "shape": "rect",
+        "target": {
+          "part": "cells",
+          "cells": [
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              2
+            ]
+          ]
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 36180,
+        "duration": 1200,
+        "shape": "rect",
+        "target": {
+          "part": "cell",
+          "cell": [
+            5,
+            2
+          ],
+          "note": 4
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 39480,
+        "duration": 1200,
+        "shape": "rect",
+        "target": {
+          "part": "cell",
+          "cell": [
+            6,
+            2
+          ],
+          "note": 4
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 42780,
+        "duration": 3000,
+        "shape": "rect",
+        "target": {
+          "part": "cells",
+          "cells": [
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              2
+            ]
+          ]
+        },
+        "from": 6,
+        "to": 2
+      }
+    ],
+    "choiceReveal": {
+      "start": 500,
+      "frames": [
+        [
+          0,
+          2,
+          9,
+          1
+        ]
+      ],
+      "labels": [
+        [
+          5,
+          2,
+          6
+        ],
+        [
+          5,
+          2,
+          7
+        ],
+        [
+          6,
+          2,
+          6
+        ],
+        [
+          6,
+          2,
+          7
+        ]
+      ]
+    },
+    "bubbleSize": {
+      "maxWidth": 240,
+      "minHeight": 38
+    }
+  },
+  "expected": {
+    "initialStatus": "dilemma",
+    "boards": 3,
+    "overlays": [
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "validSlots": [
+      0,
+      1,
+      2
+    ],
+    "slotFills": [
+      [
+        1,
+        5,
+        2,
+        6
+      ],
+      [
+        1,
+        6,
+        2,
+        7
+      ],
+      [
+        2,
+        5,
+        2,
+        7
+      ],
+      [
+        2,
+        6,
+        2,
+        6
+      ]
+    ],
+    "notes": [
+      [
+        5,
+        2,
+        4,
+        false
+      ],
+      [
+        6,
+        2,
+        4,
+        false
+      ],
+      [
+        5,
+        2,
+        6,
+        true
+      ],
+      [
+        5,
+        2,
+        7,
+        true
+      ],
+      [
+        6,
+        2,
+        6,
+        true
+      ],
+      [
+        6,
+        2,
+        7,
+        true
+      ]
+    ],
+    "fills": [
+      [
+        5,
+        2,
+        0
+      ],
+      [
+        6,
+        2,
+        0
+      ]
+    ],
+    "revealFrameCount": 1,
+    "revealLabelCount": 4
+  }
+}

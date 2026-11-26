@@ -1,0 +1,69 @@
+[
+  {
+    "grid": "010930000030004050040062003000400390324090070000013046070300008002700030403009507",
+    "origin": "original Sudoku Let\u2019s Try practice puzzle",
+    "sourceFamily": "29739d24833562cd",
+    "initialStatus": "dilemma",
+    "initialSingles": 0,
+    "boxIndex": 5,
+    "digit": 1,
+    "line": "row",
+    "lineIndex": 4,
+    "positions": [
+      42,
+      44
+    ],
+    "targets": [
+      35
+    ],
+    "id": "example-1",
+    "animation": "example-1.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABAQkwAAAwAEBQBABiADAAQAOQMkCQBwAAATBGBwMAAIACcAAwQDAJUHCwc_v0",
+    "scenarioSHA256": "6fac5b8cde589cb0b2fc475293b93b841dc1652569ac2df2aeb113cb7ea27bdb"
+  },
+  {
+    "grid": "500030007000104530200507009700000300146000000080000000090002010000070093000910205",
+    "origin": "original Sudoku Let\u2019s Try practice puzzle",
+    "sourceFamily": "63bf784c8721a0df",
+    "initialStatus": "dilemma",
+    "initialSingles": 0,
+    "boxIndex": 5,
+    "digit": 1,
+    "line": "column",
+    "lineIndex": 8,
+    "positions": [
+      35,
+      53
+    ],
+    "targets": [
+      51
+    ],
+    "id": "example-2",
+    "animation": "example-2.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABUAAwAHAAEEUwIAUHAJcAAAMAFGAAAACAAAAACQACAQAABwCTAAkQIFDJyBVp",
+    "scenarioSHA256": "1b2d7cd39d0080573a05a1e9e488c84479aea2df814f02252bf2936bd707476f"
+  },
+  {
+    "grid": "300007004741030006500040073037400002000702300025300060008924030973615008254873691",
+    "origin": "original Sudoku Let\u2019s Try practice puzzle",
+    "sourceFamily": "e9e34da80cacb12f",
+    "initialStatus": "dilemma",
+    "initialSingles": 0,
+    "boxIndex": 3,
+    "digit": 8,
+    "line": "column",
+    "lineIndex": 0,
+    "positions": [
+      27,
+      36,
+      45
+    ],
+    "targets": [
+      37
+    ],
+    "id": "example-3",
+    "animation": "example-3.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABMAAHAEdBAwAGUABABzA3QAACAAcCMAAlMABgAIkkAwlzYVAIJUhzaRCH0ybZ",
+    "scenarioSHA256": "b038036001a767a71a89d9ef72a1fc7f1c82b20c1f499177601ea6be0327164f"
+  }
+]

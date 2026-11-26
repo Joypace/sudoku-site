@@ -1,0 +1,137 @@
+[
+  {
+    "grid": "302056894840070010000008307000007581000815009518300762005001903900062108000709056",
+    "cell": 42,
+    "digit": 4,
+    "exclusions": [
+      {
+        "digit": 1,
+        "given": 35
+      },
+      {
+        "digit": 2,
+        "given": 53
+      },
+      {
+        "digit": 3,
+        "given": 24
+      },
+      {
+        "digit": 5,
+        "given": 33
+      },
+      {
+        "digit": 6,
+        "given": 52
+      },
+      {
+        "digit": 7,
+        "given": 51
+      },
+      {
+        "digit": 8,
+        "given": 6
+      },
+      {
+        "digit": 9,
+        "given": 44
+      }
+    ],
+    "origin": "original generated unique puzzle",
+    "seed": 2026112506,
+    "id": "example-1",
+    "animation": "example-1.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABMCBWiUhABwAQAAAIMHAAAHWBAAgVAJUYMAdiAFABkDkABiEIAAcJBWDTX99z",
+    "scenarioSHA256": "8cf93d71b2636e78c2dfd378b3a8a3b5fcbb1751601e6ca6ead4e0aa90566331"
+  },
+  {
+    "grid": "000000080570200049268104507032980000005000018000705620029407305300820000410306092",
+    "cell": 32,
+    "digit": 1,
+    "exclusions": [
+      {
+        "digit": 2,
+        "given": 29
+      },
+      {
+        "digit": 3,
+        "given": 28
+      },
+      {
+        "digit": 4,
+        "given": 23
+      },
+      {
+        "digit": 5,
+        "given": 50
+      },
+      {
+        "digit": 6,
+        "given": 77
+      },
+      {
+        "digit": 7,
+        "given": 48
+      },
+      {
+        "digit": 8,
+        "given": 31
+      },
+      {
+        "digit": 9,
+        "given": 30
+      }
+    ],
+    "origin": "original generated unique puzzle",
+    "seed": 2026112506,
+    "id": "example-2",
+    "animation": "example-2.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABAAAACAVwIABJJoEEUHAymAAAAFAAAYAAcFYgApQHMFMAggAAQQMGCSAY8HqX",
+    "scenarioSHA256": "46de8c2b5b7c7e3ae65db4ac6ac2d71d2b65603fe8f936c3a605a2718a857d14"
+  },
+  {
+    "grid": "890200067467090310010060090608300000170856020923471000500140080200007009780930040",
+    "cell": 59,
+    "digit": 2,
+    "exclusions": [
+      {
+        "digit": 1,
+        "given": 50
+      },
+      {
+        "digit": 3,
+        "given": 76
+      },
+      {
+        "digit": 4,
+        "given": 58
+      },
+      {
+        "digit": 5,
+        "given": 54
+      },
+      {
+        "digit": 6,
+        "given": 41
+      },
+      {
+        "digit": 7,
+        "given": 68
+      },
+      {
+        "digit": 8,
+        "given": 61
+      },
+      {
+        "digit": 9,
+        "given": 75
+      }
+    ],
+    "origin": "original generated unique puzzle",
+    "seed": 2026112506,
+    "id": "example-3",
+    "animation": "example-3.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABiQIABnRnCQMQAQBgCQYIMAAAFwhWAgkjRxAAUAFACAIAAHAJeAkwBACYbz6l",
+    "scenarioSHA256": "0d3b256788e85a426169fff62a555cb150929f595143c640b7e401aa5b229f46"
+  }
+]

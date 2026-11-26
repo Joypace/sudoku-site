@@ -2,6 +2,23 @@
   "schema": 1,
   "lessons": [
     {
+      "slug": "naked-single",
+      "title": "Naked Single: one candidate remains",
+      "description": "Learn Naked Singles with three original puzzles, exact given-clue explanations, real App double-tap animations and playable starting-grid links.",
+      "published": "2026-11-25",
+      "examples": [
+        {
+          "id": "example-1"
+        },
+        {
+          "id": "example-2"
+        },
+        {
+          "id": "example-3"
+        }
+      ]
+    },
+    {
       "slug": "hidden-single",
       "title": "Hidden Single: one place for a digit",
       "description": "Find a Hidden Single in a row, column or box with three original puzzles, real app animations and a play link for each starting grid.",
@@ -39,6 +56,40 @@
       "slug": "pointing",
       "title": "Pointing Pairs and Triples: a box reserves a line",
       "description": "Explore pointing pairs and triples with three Dilemma puzzles, real App trial boards, overlay animations and links to play each exact starting grid.",
+      "published": "2026-11-25",
+      "examples": [
+        {
+          "id": "example-1"
+        },
+        {
+          "id": "example-2"
+        },
+        {
+          "id": "example-3"
+        }
+      ]
+    },
+    {
+      "slug": "claiming",
+      "title": "Claiming: a line reserves a digit in a box",
+      "description": "Understand Claiming in rows and columns with three Dilemma examples, real copied boards, overlay animations and exact puzzle links.",
+      "published": "2026-11-25",
+      "examples": [
+        {
+          "id": "example-1"
+        },
+        {
+          "id": "example-2"
+        },
+        {
+          "id": "example-3"
+        }
+      ]
+    },
+    {
+      "slug": "hidden-pair",
+      "title": "Hidden Pair: two digits have only two places",
+      "description": "See Hidden Pairs in a row, column and box through three original Dilemma puzzles, native App trials and overlays, and playable starting-grid links.",
       "published": "2026-11-25",
       "examples": [
         {

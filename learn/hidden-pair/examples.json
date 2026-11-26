@@ -1,0 +1,161 @@
+[
+  {
+    "grid": "859004100000503409040079250900001300000002910174938625590006000000045090400397501",
+    "origin": "original Sudoku Let\u2019s Try practice puzzle",
+    "sourceFamily": "c82846a27c29d502",
+    "initialStatus": "dilemma",
+    "initialSingles": 0,
+    "unit": "row",
+    "unitIndex": 4,
+    "pair": [
+      39,
+      44
+    ],
+    "digits": [
+      4,
+      7
+    ],
+    "targets": [
+      [
+        39,
+        6
+      ],
+      [
+        44,
+        8
+      ]
+    ],
+    "branches": [
+      [
+        [
+          39,
+          4
+        ],
+        [
+          44,
+          7
+        ]
+      ],
+      [
+        [
+          39,
+          7
+        ],
+        [
+          44,
+          4
+        ]
+      ]
+    ],
+    "id": "example-1",
+    "animation": "example-1.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABhZAEEAAAUDQJBAB5JQkAABMAAAACkQF0k4YlWQAGAAAABFCQQAOXUBC2gXp4",
+    "scenarioSHA256": "ebc735d525b240d2522d7088200f44a4e0defd9463c152a52d4bb9cc96b66468"
+  },
+  {
+    "grid": "735698241600710038100030670523146080010927060900853120300501892201009050059000016",
+    "origin": "original Sudoku Let\u2019s Try practice puzzle",
+    "sourceFamily": "ee41f646a2c4472d",
+    "initialStatus": "dilemma",
+    "initialSingles": 0,
+    "unit": "column",
+    "unitIndex": 2,
+    "pair": [
+      47,
+      56
+    ],
+    "digits": [
+      6,
+      7
+    ],
+    "targets": [
+      [
+        47,
+        4
+      ],
+      [
+        56,
+        4
+      ]
+    ],
+    "branches": [
+      [
+        [
+          47,
+          6
+        ],
+        [
+          56,
+          7
+        ]
+      ],
+      [
+        [
+          47,
+          7
+        ],
+        [
+          56,
+          6
+        ]
+      ]
+    ],
+    "id": "example-2",
+    "animation": "example-2.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABc1aYJBYAcQA4EAAwZwUjFGCAAQknBgkAhTEgMAUBiSIBAJBQBZAAAWDekmAV",
+    "scenarioSHA256": "5a000dc56c1577889683bb4c0e90d67391f702d376f15057d6967c27f56524c8"
+  },
+  {
+    "grid": "000000600008000000010004070100638250300010000600940000804701905521493000790850410",
+    "origin": "original Sudoku Let\u2019s Try practice puzzle",
+    "sourceFamily": "c19306f1b1e873d7",
+    "initialStatus": "dilemma",
+    "initialSingles": 0,
+    "unit": "box",
+    "unitIndex": 8,
+    "pair": [
+      61,
+      80
+    ],
+    "digits": [
+      2,
+      3
+    ],
+    "targets": [
+      [
+        61,
+        6
+      ],
+      [
+        80,
+        6
+      ]
+    ],
+    "branches": [
+      [
+        [
+          61,
+          2
+        ],
+        [
+          80,
+          3
+        ]
+      ],
+      [
+        [
+          61,
+          3
+        ],
+        [
+          80,
+          2
+        ]
+      ]
+    ],
+    "id": "example-3",
+    "animation": "example-3.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABAAAAYAAIAAAAAQAEBwEAY4JQMAAQAAYAlAAAgEcBkFUhSTAAeQhQQQDJFLz2",
+    "scenarioSHA256": "2fed1182ba682ad83ca04cc66bb592fd4dba93475ddc5bf6820ee7cd61ae70fa"
+  }
+]
