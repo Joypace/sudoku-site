@@ -1,0 +1,1145 @@
+{
+  "schema": 1,
+  "title": "Remote Pairs example 1",
+  "grid": "700300006800106037603027009900003621256001308300602005189264753562730104437015062",
+  "style": "chill",
+  "setup": [],
+  "camera": {
+    "targets": [
+      {
+        "part": "tray"
+      },
+      {
+        "part": "board"
+      },
+      {
+        "part": "panel-row"
+      }
+    ],
+    "padding": 0.04
+  },
+  "frames": [
+    {
+      "do": "hover",
+      "at": {
+        "part": "slot",
+        "slot": 2
+      },
+      "time": 4700,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "slot",
+        "slot": 2
+      },
+      "count": 1,
+      "time": 5200
+    },
+    {
+      "do": "depart",
+      "time": 5700,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 5900
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          0,
+          5
+        ]
+      },
+      "time": 7550,
+      "ms": 350
+    },
+    {
+      "do": "down",
+      "at": {
+        "part": "cell",
+        "cell": [
+          0,
+          5
+        ]
+      },
+      "time": 8050
+    },
+    {
+      "do": "move",
+      "at": {
+        "part": "cell",
+        "cell": [
+          0,
+          5
+        ],
+        "offset": [
+          0.0,
+          1.2
+        ]
+      },
+      "time": 8130,
+      "ms": 450
+    },
+    {
+      "do": "ready",
+      "digit": 8,
+      "time": 8650
+    },
+    {
+      "do": "up",
+      "time": 9350
+    },
+    {
+      "do": "depart",
+      "time": 9850,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 10050
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          7,
+          5
+        ]
+      },
+      "time": 12250,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "cell",
+        "cell": [
+          7,
+          5
+        ]
+      },
+      "count": 2,
+      "time": 12750
+    },
+    {
+      "do": "depart",
+      "time": 13250,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 13450
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          7,
+          7
+        ]
+      },
+      "time": 15600,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "cell",
+        "cell": [
+          7,
+          7
+        ]
+      },
+      "count": 2,
+      "time": 16100
+    },
+    {
+      "do": "depart",
+      "time": 16600,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 16800
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          8,
+          6
+        ]
+      },
+      "time": 18950,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "cell",
+        "cell": [
+          8,
+          6
+        ]
+      },
+      "count": 2,
+      "time": 19450
+    },
+    {
+      "do": "depart",
+      "time": 19950,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 20150
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "slot",
+        "slot": 1
+      },
+      "time": 20300,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "slot",
+        "slot": 1
+      },
+      "count": 1,
+      "time": 20800
+    },
+    {
+      "do": "depart",
+      "time": 21300,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 21500
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "slot",
+        "slot": 3
+      },
+      "time": 23050,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "slot",
+        "slot": 3
+      },
+      "count": 1,
+      "time": 23550
+    },
+    {
+      "do": "depart",
+      "time": 24050,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 24250
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          0,
+          5
+        ]
+      },
+      "time": 25900,
+      "ms": 350
+    },
+    {
+      "do": "down",
+      "at": {
+        "part": "cell",
+        "cell": [
+          0,
+          5
+        ]
+      },
+      "time": 26400
+    },
+    {
+      "do": "move",
+      "at": {
+        "part": "cell",
+        "cell": [
+          0,
+          5
+        ],
+        "offset": [
+          1.2,
+          1.2
+        ]
+      },
+      "time": 26480,
+      "ms": 450
+    },
+    {
+      "do": "ready",
+      "digit": 9,
+      "time": 27000
+    },
+    {
+      "do": "up",
+      "time": 27700
+    },
+    {
+      "do": "depart",
+      "time": 28200,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 28400
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          7,
+          5
+        ]
+      },
+      "time": 30600,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "cell",
+        "cell": [
+          7,
+          5
+        ]
+      },
+      "count": 2,
+      "time": 31100
+    },
+    {
+      "do": "depart",
+      "time": 31600,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 31800
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          7,
+          7
+        ]
+      },
+      "time": 33950,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "cell",
+        "cell": [
+          7,
+          7
+        ]
+      },
+      "count": 2,
+      "time": 34450
+    },
+    {
+      "do": "depart",
+      "time": 34950,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 35150
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          8,
+          6
+        ]
+      },
+      "time": 37300,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "cell",
+        "cell": [
+          8,
+          6
+        ]
+      },
+      "count": 2,
+      "time": 37800
+    },
+    {
+      "do": "depart",
+      "time": 38300,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 38500
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "slot",
+        "slot": 1
+      },
+      "time": 38650,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "slot",
+        "slot": 1
+      },
+      "count": 1,
+      "time": 39150
+    },
+    {
+      "do": "depart",
+      "time": 39650,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 39850
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "slot",
+        "slot": 2
+      },
+      "time": 41200,
+      "ms": 400
+    },
+    {
+      "do": "down",
+      "at": {
+        "part": "slot",
+        "slot": 2
+      },
+      "time": 41750
+    },
+    {
+      "do": "move",
+      "at": {
+        "part": "slot",
+        "slot": 1
+      },
+      "time": 42000,
+      "ms": 750
+    },
+    {
+      "do": "up",
+      "time": 42900
+    },
+    {
+      "do": "depart",
+      "time": 43300,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 43500
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "slot",
+        "slot": 3
+      },
+      "time": 44900,
+      "ms": 400
+    },
+    {
+      "do": "down",
+      "at": {
+        "part": "slot",
+        "slot": 3
+      },
+      "time": 45450
+    },
+    {
+      "do": "move",
+      "at": {
+        "part": "slot",
+        "slot": 1
+      },
+      "time": 45700,
+      "ms": 750
+    },
+    {
+      "do": "up",
+      "time": 46600
+    },
+    {
+      "do": "depart",
+      "time": 47000,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 47200
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "time": 51400,
+      "ms": 350
+    },
+    {
+      "do": "down",
+      "at": {
+        "part": "cell",
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "time": 51900,
+      "inputDelay": 440
+    },
+    {
+      "do": "move",
+      "at": {
+        "part": "cell",
+        "cell": [
+          0,
+          6
+        ],
+        "offset": [
+          0.0,
+          1.617
+        ]
+      },
+      "time": 51940,
+      "ms": 600
+    },
+    {
+      "do": "up",
+      "time": 52590
+    },
+    {
+      "do": "depart",
+      "time": 53100,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 53300
+    }
+  ],
+  "presentation": {
+    "duration": 56900,
+    "captions": [
+      {
+        "text": "Linked two-note cells alternate the same two digits.",
+        "start": 500,
+        "end": 3300,
+        "target": {
+          "part": "cell",
+          "cell": [
+            8,
+            6
+          ]
+        }
+      },
+      {
+        "text": "Copy the original to try one possible choice.",
+        "start": 3300,
+        "end": 4700,
+        "target": {
+          "part": "slot",
+          "slot": 2
+        }
+      },
+      {
+        "text": "Try 8 at r1c6.",
+        "start": 6050,
+        "end": 7550,
+        "target": {
+          "part": "cell",
+          "cell": [
+            0,
+            5
+          ]
+        }
+      },
+      {
+        "text": "Now r8c6 must be 9.",
+        "start": 10250,
+        "end": 12250,
+        "target": {
+          "part": "cell",
+          "cell": [
+            7,
+            5
+          ]
+        }
+      },
+      {
+        "text": "Now r8c8 must be 8.",
+        "start": 13600,
+        "end": 15600,
+        "target": {
+          "part": "cell",
+          "cell": [
+            7,
+            7
+          ]
+        }
+      },
+      {
+        "text": "Now r9c7 must be 9.",
+        "start": 16950,
+        "end": 18950,
+        "target": {
+          "part": "cell",
+          "cell": [
+            8,
+            6
+          ]
+        }
+      },
+      {
+        "text": "Copy the original to try one possible choice.",
+        "start": 21650,
+        "end": 23050,
+        "target": {
+          "part": "slot",
+          "slot": 3
+        }
+      },
+      {
+        "text": "Try 9 at r1c6.",
+        "start": 24400,
+        "end": 25900,
+        "target": {
+          "part": "cell",
+          "cell": [
+            0,
+            5
+          ]
+        }
+      },
+      {
+        "text": "Now r8c6 must be 8.",
+        "start": 28600,
+        "end": 30600,
+        "target": {
+          "part": "cell",
+          "cell": [
+            7,
+            5
+          ]
+        }
+      },
+      {
+        "text": "Now r8c8 must be 9.",
+        "start": 31950,
+        "end": 33950,
+        "target": {
+          "part": "cell",
+          "cell": [
+            7,
+            7
+          ]
+        }
+      },
+      {
+        "text": "Now r9c7 must be 8.",
+        "start": 35300,
+        "end": 37300,
+        "target": {
+          "part": "cell",
+          "cell": [
+            8,
+            6
+          ]
+        }
+      },
+      {
+        "text": "Overlay this try on the original.",
+        "start": 40000,
+        "end": 41200,
+        "target": {
+          "part": "slot",
+          "slot": 2
+        }
+      },
+      {
+        "text": "Overlay this try on the original.",
+        "start": 43700,
+        "end": 44900,
+        "target": {
+          "part": "slot",
+          "slot": 3
+        }
+      },
+      {
+        "text": "Every possible choice excludes these same notes.",
+        "start": 47400,
+        "end": 50200,
+        "target": {
+          "part": "cells",
+          "cells": [
+            [
+              0,
+              6
+            ]
+          ]
+        }
+      },
+      {
+        "text": "Remove 8 at r1c7.",
+        "start": 50200,
+        "end": 51400,
+        "target": {
+          "part": "cell",
+          "cell": [
+            0,
+            6
+          ],
+          "note": 8
+        }
+      },
+      {
+        "text": "Keep only the eliminations shared by every trial.",
+        "start": 53500,
+        "end": 56500,
+        "target": {
+          "part": "cells",
+          "cells": [
+            [
+              0,
+              6
+            ]
+          ]
+        }
+      }
+    ],
+    "focus": [
+      {
+        "start": 3300,
+        "duration": 1400,
+        "shape": "rect",
+        "target": {
+          "part": "slot",
+          "slot": 2
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 6050,
+        "duration": 1500,
+        "shape": "rect",
+        "target": {
+          "part": "cell",
+          "cell": [
+            0,
+            5
+          ]
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 10250,
+        "duration": 2000,
+        "shape": "rect",
+        "target": {
+          "part": "cell",
+          "cell": [
+            7,
+            5
+          ]
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 13600,
+        "duration": 2000,
+        "shape": "rect",
+        "target": {
+          "part": "cell",
+          "cell": [
+            7,
+            7
+          ]
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 16950,
+        "duration": 2000,
+        "shape": "rect",
+        "target": {
+          "part": "cell",
+          "cell": [
+            8,
+            6
+          ]
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 21650,
+        "duration": 1400,
+        "shape": "rect",
+        "target": {
+          "part": "slot",
+          "slot": 3
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 24400,
+        "duration": 1500,
+        "shape": "rect",
+        "target": {
+          "part": "cell",
+          "cell": [
+            0,
+            5
+          ]
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 28600,
+        "duration": 2000,
+        "shape": "rect",
+        "target": {
+          "part": "cell",
+          "cell": [
+            7,
+            5
+          ]
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 31950,
+        "duration": 2000,
+        "shape": "rect",
+        "target": {
+          "part": "cell",
+          "cell": [
+            7,
+            7
+          ]
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 35300,
+        "duration": 2000,
+        "shape": "rect",
+        "target": {
+          "part": "cell",
+          "cell": [
+            8,
+            6
+          ]
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 40000,
+        "duration": 1200,
+        "shape": "rect",
+        "target": {
+          "part": "slot",
+          "slot": 2
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 43700,
+        "duration": 1200,
+        "shape": "rect",
+        "target": {
+          "part": "slot",
+          "slot": 3
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 47400,
+        "duration": 2800,
+        "shape": "rect",
+        "target": {
+          "part": "cells",
+          "cells": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 50200,
+        "duration": 1200,
+        "shape": "rect",
+        "target": {
+          "part": "cell",
+          "cell": [
+            0,
+            6
+          ],
+          "note": 8
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 53500,
+        "duration": 3000,
+        "shape": "rect",
+        "target": {
+          "part": "cells",
+          "cells": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        "from": 6,
+        "to": 2
+      }
+    ],
+    "choiceReveal": {
+      "start": 500,
+      "frames": [
+        [
+          0,
+          5,
+          1,
+          1
+        ],
+        [
+          7,
+          5,
+          1,
+          1
+        ],
+        [
+          7,
+          7,
+          1,
+          1
+        ],
+        [
+          8,
+          6,
+          1,
+          1
+        ]
+      ],
+      "labels": [
+        [
+          0,
+          5,
+          8
+        ],
+        [
+          0,
+          5,
+          9
+        ],
+        [
+          7,
+          5,
+          8
+        ],
+        [
+          7,
+          5,
+          9
+        ],
+        [
+          7,
+          7,
+          8
+        ],
+        [
+          7,
+          7,
+          9
+        ],
+        [
+          8,
+          6,
+          8
+        ],
+        [
+          8,
+          6,
+          9
+        ]
+      ]
+    },
+    "bubbleSize": {
+      "maxWidth": 240,
+      "minHeight": 38
+    }
+  },
+  "expected": {
+    "initialStatus": "dilemma",
+    "boards": 3,
+    "overlays": [
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "validSlots": [
+      0,
+      1,
+      2
+    ],
+    "slotFills": [
+      [
+        1,
+        0,
+        5,
+        8
+      ],
+      [
+        1,
+        7,
+        5,
+        9
+      ],
+      [
+        1,
+        7,
+        7,
+        8
+      ],
+      [
+        1,
+        8,
+        6,
+        9
+      ],
+      [
+        2,
+        0,
+        5,
+        9
+      ],
+      [
+        2,
+        7,
+        5,
+        8
+      ],
+      [
+        2,
+        7,
+        7,
+        9
+      ],
+      [
+        2,
+        8,
+        6,
+        8
+      ]
+    ],
+    "fills": [
+      [
+        0,
+        5,
+        0
+      ],
+      [
+        7,
+        5,
+        0
+      ],
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        8,
+        6,
+        0
+      ]
+    ],
+    "notes": [
+      [
+        0,
+        6,
+        8,
+        false
+      ]
+    ],
+    "revealFrameCount": 4,
+    "revealLabelCount": 8
+  }
+}

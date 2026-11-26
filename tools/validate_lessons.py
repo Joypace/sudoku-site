@@ -125,6 +125,10 @@ def _load_sibling(name):
 INTERMEDIATE=('naked-triple','hidden-triple','swordfish','xy-wing','xyz-wing','w-wing','skyscraper','two-string-kite','empty-rectangle')
 _intermediate=_load_sibling('intermediate_proofs');_stories=_load_sibling('intermediate_stories')
 for _slug in INTERMEDIATE:PROOFS[_slug]=lambda example,slug=_slug:_intermediate.validate_pattern(slug,example)
+ADVANCED=('naked-quadruple','hidden-quadruple','jellyfish','finned-x-wing','finned-swordfish','finned-jellyfish','simple-coloring','remote-pairs')
+_advanced=_load_sibling('advanced_proofs')
+for _slug in ADVANCED:PROOFS[_slug]=lambda example,slug=_slug:_advanced.validate_pattern(slug,example)
+
 def check_svg(file,scenario,example):
  raw=file.read_text();without_declaration=re.sub(r'^\s*<\?xml\s[^?]*\?>','',raw,count=1);require('<?' not in without_declaration,'SVG processing instructions are forbidden');require('<!DOCTYPE' not in raw.upper() and '<!ENTITY' not in raw.upper(),'External XML declarations are forbidden');root=ET.fromstring(raw);require(root.tag=='{'+SVG+'}svg','Not a standalone SVG');require(float(root.attrib.get('data-duration',0))>0,'Not an animation')
  for e in root.iter():
@@ -175,6 +179,9 @@ def validate(root):
    if slug=='hidden-pair':hidden_pair_animation(data,example)
    if slug=='claiming':claiming_animation(data,example)
    if slug in INTERMEDIATE:_stories.validate_story(data,example)
+   if slug in ADVANCED:
+    require(all(o.get('kind')=='valid' for o in example.get('branchOutcomes',[])),'Contradictory advanced trials need their separate checked native outcome contract')
+    _stories.validate_story(data,example)
    check_svg(folder/(stem+'.svg'),scenario,example);expected|={slug+'/'+stem+'.json',slug+'/'+stem+'.svg'}
  if 'curriculum' in manifest:_load_sibling('lesson_catalogue').validate_curriculum(json.loads((directory/'curriculum.json').read_text()),manifest)
  require(set(actual)==expected,'Unapproved or missing public lesson files: '+str(set(actual)^expected));return sorted('learn/'+p for p in actual)

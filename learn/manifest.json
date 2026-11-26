@@ -272,6 +272,91 @@
           "id": "example-3"
         }
       ]
+    },
+    {
+      "slug": "naked-quadruple",
+      "title": "Naked Quadruple: four cells reserve four digits",
+      "description": "Learn Naked Quadruple with three original Dilemma puzzles, real App animations and overlay marks, and exact playable puzzle links.",
+      "published": "2026-11-26",
+      "examples": [
+        {
+          "id": "example-1"
+        },
+        {
+          "id": "example-2"
+        },
+        {
+          "id": "example-3"
+        }
+      ]
+    },
+    {
+      "slug": "jellyfish",
+      "title": "Jellyfish: four lines, four crossing lines",
+      "description": "Learn Jellyfish with three original Dilemma puzzles, real App animations and overlay marks, and exact playable puzzle links.",
+      "published": "2026-11-26",
+      "examples": [
+        {
+          "id": "example-1"
+        },
+        {
+          "id": "example-2"
+        },
+        {
+          "id": "example-3"
+        }
+      ]
+    },
+    {
+      "slug": "finned-x-wing",
+      "title": "Finned X-Wing: an x-wing with an extra case",
+      "description": "Learn Finned X-Wing with three original Dilemma puzzles, real App animations and overlay marks, and exact playable puzzle links.",
+      "published": "2026-11-26",
+      "examples": [
+        {
+          "id": "example-1"
+        },
+        {
+          "id": "example-2"
+        },
+        {
+          "id": "example-3"
+        }
+      ]
+    },
+    {
+      "slug": "simple-coloring",
+      "title": "Simple Coloring: opposite possibilities through strong links",
+      "description": "Learn Simple Coloring with three original Dilemma puzzles, real App animations and overlay marks, and exact playable puzzle links.",
+      "published": "2026-11-26",
+      "examples": [
+        {
+          "id": "example-1"
+        },
+        {
+          "id": "example-2"
+        },
+        {
+          "id": "example-3"
+        }
+      ]
+    },
+    {
+      "slug": "remote-pairs",
+      "title": "Remote Pairs: carry a two-note choice along a chain",
+      "description": "Learn Remote Pairs with three original Dilemma puzzles, real App animations and overlay marks, and exact playable puzzle links.",
+      "published": "2026-11-26",
+      "examples": [
+        {
+          "id": "example-1"
+        },
+        {
+          "id": "example-2"
+        },
+        {
+          "id": "example-3"
+        }
+      ]
     }
   ],
   "curriculum": "curriculum.json"

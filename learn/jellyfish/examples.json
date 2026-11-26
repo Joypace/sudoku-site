@@ -1,0 +1,523 @@
+[
+  {
+    "slug": "jellyfish",
+    "grid": "321598400800642931600713200108450320530001804462837519003100600916385742080000103",
+    "targets": [
+      [
+        55,
+        7
+      ],
+      [
+        74,
+        7
+      ]
+    ],
+    "branches": [
+      [
+        [
+          38,
+          7
+        ],
+        [
+          7,
+          7
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          35,
+          7
+        ]
+      ],
+      [
+        [
+          38,
+          9
+        ],
+        [
+          28,
+          7
+        ],
+        [
+          8,
+          7
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          43,
+          7
+        ]
+      ]
+    ],
+    "frames": [
+      [
+        0,
+        0,
+        1,
+        9
+      ],
+      [
+        1,
+        0,
+        1,
+        9
+      ],
+      [
+        3,
+        0,
+        1,
+        9
+      ],
+      [
+        4,
+        0,
+        1,
+        9
+      ]
+    ],
+    "labels": [
+      [
+        0,
+        7,
+        7
+      ],
+      [
+        0,
+        8,
+        7
+      ],
+      [
+        1,
+        1,
+        7
+      ],
+      [
+        1,
+        2,
+        7
+      ],
+      [
+        3,
+        1,
+        7
+      ],
+      [
+        3,
+        8,
+        7
+      ],
+      [
+        4,
+        2,
+        7
+      ],
+      [
+        4,
+        7,
+        7
+      ]
+    ],
+    "pattern": {
+      "orientation": "rows",
+      "bases": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "covers": [
+        1,
+        2,
+        7,
+        8
+      ],
+      "digit": 7,
+      "positions": [
+        7,
+        8,
+        10,
+        11,
+        28,
+        35,
+        38,
+        43
+      ],
+      "eliminations": [
+        [
+          55,
+          7
+        ],
+        [
+          74,
+          7
+        ]
+      ]
+    },
+    "origin": "original generated unique Dilemma practice puzzle",
+    "sourceFamily": "dd1ce16434f884f3",
+    "originalGridSHA256": "023945a2035e20087d0c5890c2397f7272c53cf05ad10c4777ec87721706982e",
+    "id": "example-1",
+    "animation": "example-1.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABMhWYQAgAZCkxYAcTIAEIRQMgUwABgERig3UZADEAYAkWOFdCCAAAEDDLUBBk",
+    "scenarioSHA256": "adec8bf80fc2fc96c8dee6fcd35633831d97fc8fb8ed24f469312681c8bf17aa"
+  },
+  {
+    "slug": "jellyfish",
+    "grid": "000006004000702000000309502946501200058900601300068059870600005400000010000000807",
+    "targets": [
+      [
+        40,
+        4
+      ],
+      [
+        58,
+        4
+      ],
+      [
+        76,
+        4
+      ]
+    ],
+    "branches": [
+      [
+        [
+          48,
+          2
+        ],
+        [
+          51,
+          4
+        ],
+        [
+          75,
+          4
+        ],
+        [
+          41,
+          4
+        ],
+        [
+          61,
+          4
+        ]
+      ],
+      [
+        [
+          48,
+          4
+        ],
+        [
+          43,
+          4
+        ],
+        [
+          60,
+          4
+        ],
+        [
+          77,
+          4
+        ]
+      ]
+    ],
+    "frames": [
+      [
+        0,
+        3,
+        9,
+        1
+      ],
+      [
+        0,
+        5,
+        9,
+        1
+      ],
+      [
+        0,
+        6,
+        9,
+        1
+      ],
+      [
+        0,
+        7,
+        9,
+        1
+      ]
+    ],
+    "labels": [
+      [
+        4,
+        5,
+        4
+      ],
+      [
+        4,
+        7,
+        4
+      ],
+      [
+        5,
+        3,
+        4
+      ],
+      [
+        5,
+        6,
+        4
+      ],
+      [
+        6,
+        5,
+        4
+      ],
+      [
+        6,
+        6,
+        4
+      ],
+      [
+        6,
+        7,
+        4
+      ],
+      [
+        8,
+        3,
+        4
+      ],
+      [
+        8,
+        5,
+        4
+      ],
+      [
+        8,
+        7,
+        4
+      ]
+    ],
+    "pattern": {
+      "orientation": "columns",
+      "bases": [
+        3,
+        5,
+        6,
+        7
+      ],
+      "covers": [
+        4,
+        5,
+        6,
+        8
+      ],
+      "digit": 4,
+      "positions": [
+        41,
+        43,
+        48,
+        51,
+        59,
+        60,
+        61,
+        75,
+        77,
+        79
+      ],
+      "eliminations": [
+        [
+          40,
+          4
+        ],
+        [
+          58,
+          4
+        ],
+        [
+          76,
+          4
+        ]
+      ]
+    },
+    "origin": "original generated unique Dilemma practice puzzle",
+    "sourceFamily": "94bd420ab355eccb",
+    "originalGridSHA256": "0ac2fd9b6e70624f66b9ccc01eea70a997dca2a1ded329cff743bc86de7a9abd",
+    "id": "example-2",
+    "animation": "example-2.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABAAAGAEAAcCAAAAMJUClGUBIABYkAYBMABoBZhwYAAFQAAAAQAAAAgHA7idNR",
+    "scenarioSHA256": "f3cc4e921633e801d4ea70738b144a5188f35b378432c1103994952e16b2d97c"
+  },
+  {
+    "slug": "jellyfish",
+    "grid": "400080207300420100020506004050040726260100540004265000600090400000004600047600300",
+    "targets": [
+      [
+        59,
+        7
+      ],
+      [
+        67,
+        7
+      ]
+    ],
+    "branches": [
+      [
+        [
+          40,
+          3
+        ],
+        [
+          41,
+          7
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          22,
+          7
+        ],
+        [
+          45,
+          7
+        ]
+      ],
+      [
+        [
+          40,
+          7
+        ],
+        [
+          14,
+          7
+        ],
+        [
+          18,
+          7
+        ],
+        [
+          46,
+          7
+        ]
+      ]
+    ],
+    "frames": [
+      [
+        1,
+        0,
+        1,
+        9
+      ],
+      [
+        2,
+        0,
+        1,
+        9
+      ],
+      [
+        4,
+        0,
+        1,
+        9
+      ],
+      [
+        5,
+        0,
+        1,
+        9
+      ]
+    ],
+    "labels": [
+      [
+        1,
+        1,
+        7
+      ],
+      [
+        1,
+        5,
+        7
+      ],
+      [
+        2,
+        0,
+        7
+      ],
+      [
+        2,
+        4,
+        7
+      ],
+      [
+        4,
+        4,
+        7
+      ],
+      [
+        4,
+        5,
+        7
+      ],
+      [
+        5,
+        0,
+        7
+      ],
+      [
+        5,
+        1,
+        7
+      ]
+    ],
+    "pattern": {
+      "orientation": "rows",
+      "bases": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "covers": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "digit": 7,
+      "positions": [
+        10,
+        14,
+        18,
+        22,
+        40,
+        41,
+        45,
+        46
+      ],
+      "eliminations": [
+        [
+          59,
+          7
+        ],
+        [
+          67,
+          7
+        ]
+      ]
+    },
+    "origin": "original generated unique Dilemma practice puzzle",
+    "sourceFamily": "f8f35cb063808a27",
+    "originalGridSHA256": "053be31f522cea13b574e9d0f93346ee71cc5433366f299998f84f5fa7233099",
+    "id": "example-3",
+    "animation": "example-3.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABQACAIHMAQgEAAgUGAEBQBAcmJgEAVAAEJlAAYACQQAAAAEYABHYAMAD4ZO6Z",
+    "scenarioSHA256": "a667152f0ce7c198d5541b3c8dcc42742d53e1f6b8b7bf4ff06b288202657cc1"
+  }
+]

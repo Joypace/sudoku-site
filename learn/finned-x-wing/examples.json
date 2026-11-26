@@ -1,0 +1,347 @@
+[
+  {
+    "slug": "finned-x-wing",
+    "grid": "060940850040001763805670940000000016591264387600107095020706034406300008300400609",
+    "targets": [
+      [
+        29,
+        8
+      ]
+    ],
+    "branches": [
+      [
+        [
+          46,
+          3
+        ],
+        [
+          49,
+          8
+        ],
+        [
+          56,
+          8
+        ]
+      ],
+      [
+        [
+          46,
+          8
+        ]
+      ]
+    ],
+    "frames": [
+      [
+        5,
+        0,
+        1,
+        9
+      ],
+      [
+        6,
+        0,
+        1,
+        9
+      ],
+      [
+        3,
+        0,
+        3,
+        3
+      ]
+    ],
+    "labels": [
+      [
+        5,
+        1,
+        8
+      ],
+      [
+        5,
+        2,
+        8
+      ],
+      [
+        5,
+        4,
+        8
+      ],
+      [
+        6,
+        2,
+        8
+      ],
+      [
+        6,
+        4,
+        8
+      ]
+    ],
+    "pattern": {
+      "orientation": "rows",
+      "bases": [
+        5,
+        6
+      ],
+      "covers": [
+        2,
+        4
+      ],
+      "digit": 8,
+      "positions": [
+        46,
+        47,
+        49,
+        56,
+        58
+      ],
+      "fins": [
+        46
+      ],
+      "finBox": 3,
+      "eliminations": [
+        [
+          29,
+          8
+        ]
+      ]
+    },
+    "origin": "original generated unique Dilemma practice puzzle",
+    "sourceFamily": "fa6e36bd496c244a",
+    "originalGridSHA256": "066cba09d7ad777fbe15d8377530858a76d82a24fe17829ce91423b7420463bb",
+    "id": "example-1",
+    "animation": "example-1.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABBglAhQBAABdjgFZwlAAAAAAWWRJkOHYAEHCVAgcGA0QGMAAIMAQAYJCRspfj",
+    "scenarioSHA256": "ab7e60acad19933b931313e6a30cd077d530b6505eb29774b42b92362ffb883e"
+  },
+  {
+    "slug": "finned-x-wing",
+    "grid": "105000209004529013209008605058400090701090008000800007000080000007350006512900004",
+    "targets": [
+      [
+        46,
+        3
+      ]
+    ],
+    "branches": [
+      [
+        [
+          27,
+          3
+        ]
+      ],
+      [
+        [
+          27,
+          6
+        ],
+        [
+          47,
+          3
+        ],
+        [
+          54,
+          3
+        ]
+      ]
+    ],
+    "frames": [
+      [
+        0,
+        0,
+        9,
+        1
+      ],
+      [
+        0,
+        2,
+        9,
+        1
+      ],
+      [
+        3,
+        0,
+        3,
+        3
+      ]
+    ],
+    "labels": [
+      [
+        3,
+        0,
+        3
+      ],
+      [
+        5,
+        0,
+        3
+      ],
+      [
+        5,
+        2,
+        3
+      ],
+      [
+        6,
+        0,
+        3
+      ],
+      [
+        6,
+        2,
+        3
+      ]
+    ],
+    "pattern": {
+      "orientation": "columns",
+      "bases": [
+        0,
+        2
+      ],
+      "covers": [
+        5,
+        6
+      ],
+      "digit": 3,
+      "positions": [
+        27,
+        45,
+        47,
+        54,
+        56
+      ],
+      "fins": [
+        27
+      ],
+      "finBox": 3,
+      "eliminations": [
+        [
+          46,
+          3
+        ]
+      ]
+    },
+    "origin": "original generated unique Dilemma practice puzzle",
+    "sourceFamily": "492bd2e7a082ab73",
+    "originalGridSHA256": "09de7dbcbe146fd2291d414efa28f3739c31da37632ccdfafe3ced276e65ea21",
+    "id": "example-2",
+    "animation": "example-2.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABEFAAIJAEUpATIJAIYFBYQACQcBCQAIAAgAAHAACAAAAHNQAGUSkAAEB-Lq-2",
+    "scenarioSHA256": "3226c2bb3ee9f251bf9cbcc7c7c44aaa9e7c0b55dcddd6902d7645073ed08a67"
+  },
+  {
+    "slug": "finned-x-wing",
+    "grid": "034020716200007835600030090000000100040509000006000500700350001108070000403190000",
+    "targets": [
+      [
+        20,
+        1
+      ]
+    ],
+    "branches": [
+      [
+        [
+          10,
+          1
+        ]
+      ],
+      [
+        [
+          10,
+          9
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          40,
+          1
+        ]
+      ]
+    ],
+    "frames": [
+      [
+        1,
+        0,
+        1,
+        9
+      ],
+      [
+        4,
+        0,
+        1,
+        9
+      ],
+      [
+        0,
+        0,
+        3,
+        3
+      ]
+    ],
+    "labels": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        1,
+        4,
+        1
+      ],
+      [
+        4,
+        2,
+        1
+      ],
+      [
+        4,
+        4,
+        1
+      ]
+    ],
+    "pattern": {
+      "orientation": "rows",
+      "bases": [
+        1,
+        4
+      ],
+      "covers": [
+        2,
+        4
+      ],
+      "digit": 1,
+      "positions": [
+        10,
+        11,
+        13,
+        38,
+        40
+      ],
+      "fins": [
+        10
+      ],
+      "finBox": 0,
+      "eliminations": [
+        [
+          20,
+          1
+        ]
+      ]
+    },
+    "origin": "original generated unique Dilemma practice puzzle",
+    "sourceFamily": "25961cf7cfa3a6a8",
+    "originalGridSHA256": "122aa330d8d4ddf513effb7532057f36c2c98e75a50654a61aa053e2840f3495",
+    "id": "example-3",
+    "animation": "example-3.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABA0AgcWIAAHg1YAAwCQAAAAEABAUJAAAGAAUAcANQABEIBwAAQDGQAAB-uR1-",
+    "scenarioSHA256": "f568b38f5138c2619bd99f8c4a4f1d22d25ef89bc1a4ce61207f1106870929e6"
+  }
+]

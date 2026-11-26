@@ -1,0 +1,433 @@
+[
+  {
+    "slug": "remote-pairs",
+    "grid": "700300006800106037603027009900003621256001308300602005189264753562730104437015062",
+    "targets": [
+      [
+        6,
+        8
+      ]
+    ],
+    "branches": [
+      [
+        [
+          5,
+          8
+        ],
+        [
+          68,
+          9
+        ],
+        [
+          70,
+          8
+        ],
+        [
+          78,
+          9
+        ]
+      ],
+      [
+        [
+          5,
+          9
+        ],
+        [
+          68,
+          8
+        ],
+        [
+          70,
+          9
+        ],
+        [
+          78,
+          8
+        ]
+      ]
+    ],
+    "frames": [
+      [
+        0,
+        5,
+        1,
+        1
+      ],
+      [
+        7,
+        5,
+        1,
+        1
+      ],
+      [
+        7,
+        7,
+        1,
+        1
+      ],
+      [
+        8,
+        6,
+        1,
+        1
+      ]
+    ],
+    "labels": [
+      [
+        0,
+        5,
+        8
+      ],
+      [
+        0,
+        5,
+        9
+      ],
+      [
+        7,
+        5,
+        8
+      ],
+      [
+        7,
+        5,
+        9
+      ],
+      [
+        7,
+        7,
+        8
+      ],
+      [
+        7,
+        7,
+        9
+      ],
+      [
+        8,
+        6,
+        8
+      ],
+      [
+        8,
+        6,
+        9
+      ]
+    ],
+    "pattern": {
+      "digits": [
+        8,
+        9
+      ],
+      "cells": [
+        5,
+        68,
+        70,
+        78
+      ],
+      "eliminations": [
+        [
+          6,
+          8
+        ]
+      ]
+    },
+    "origin": "original generated unique Dilemma practice puzzle",
+    "sourceFamily": "8f18c6d9279e2c7e",
+    "originalGridSHA256": "06b928bf22060ba62b1991d3ef90273095a682db49a24b5ac6e0e11829bfb8c9",
+    "id": "example-1",
+    "animation": "example-1.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABcAMAAGgAEGA3YDAnAJkAADYhJWABMIMAYCAFGJJkdTVicwEEQ3AVBiCdbUiT",
+    "scenarioSHA256": "362a45d7d444aa2269e6b30fa9baf72c5fae9f84d5b36b38b0d72e2afe6cfb0c"
+  },
+  {
+    "slug": "remote-pairs",
+    "grid": "812607405000184260604250810539718642007500000060300750000900380020800570000470026",
+    "targets": [
+      [
+        41,
+        9
+      ]
+    ],
+    "branches": [
+      [
+        [
+          23,
+          3
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          43,
+          9
+        ]
+      ],
+      [
+        [
+          23,
+          9
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          43,
+          3
+        ]
+      ]
+    ],
+    "frames": [
+      [
+        0,
+        4,
+        1,
+        1
+      ],
+      [
+        0,
+        7,
+        1,
+        1
+      ],
+      [
+        2,
+        5,
+        1,
+        1
+      ],
+      [
+        4,
+        7,
+        1,
+        1
+      ]
+    ],
+    "labels": [
+      [
+        0,
+        4,
+        3
+      ],
+      [
+        0,
+        4,
+        9
+      ],
+      [
+        0,
+        7,
+        3
+      ],
+      [
+        0,
+        7,
+        9
+      ],
+      [
+        2,
+        5,
+        3
+      ],
+      [
+        2,
+        5,
+        9
+      ],
+      [
+        4,
+        7,
+        3
+      ],
+      [
+        4,
+        7,
+        9
+      ]
+    ],
+    "pattern": {
+      "digits": [
+        3,
+        9
+      ],
+      "cells": [
+        23,
+        4,
+        7,
+        43
+      ],
+      "eliminations": [
+        [
+          41,
+          9
+        ]
+      ]
+    },
+    "origin": "original generated unique Dilemma practice puzzle",
+    "sourceFamily": "b24ccec739b6fb14",
+    "originalGridSHA256": "17469ddbd3fbd1100a23b3aee35690fe914b0f518703d592503770c4d87a7bdb",
+    "id": "example-2",
+    "animation": "example-2.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABgSYHQFAAGEJgYEJQgQU5cYZCAHUAAABgMAdQAAkAOAAggAVwAARwAmDhc9EF",
+    "scenarioSHA256": "5e28a310adf194ffbf6b8200f9271592adf63a2b7bea9d03fe1afb0550200435"
+  },
+  {
+    "slug": "remote-pairs",
+    "grid": "840000023352080700160032850901000080506008000478310502094801005015003008783045201",
+    "targets": [
+      [
+        30,
+        6
+      ],
+      [
+        39,
+        9
+      ]
+    ],
+    "branches": [
+      [
+        [
+          50,
+          6
+        ],
+        [
+          52,
+          9
+        ],
+        [
+          75,
+          9
+        ],
+        [
+          79,
+          6
+        ]
+      ],
+      [
+        [
+          50,
+          9
+        ],
+        [
+          52,
+          6
+        ],
+        [
+          75,
+          6
+        ],
+        [
+          79,
+          9
+        ]
+      ]
+    ],
+    "frames": [
+      [
+        5,
+        5,
+        1,
+        1
+      ],
+      [
+        5,
+        7,
+        1,
+        1
+      ],
+      [
+        8,
+        3,
+        1,
+        1
+      ],
+      [
+        8,
+        7,
+        1,
+        1
+      ]
+    ],
+    "labels": [
+      [
+        5,
+        5,
+        6
+      ],
+      [
+        5,
+        5,
+        9
+      ],
+      [
+        5,
+        7,
+        6
+      ],
+      [
+        5,
+        7,
+        9
+      ],
+      [
+        8,
+        3,
+        6
+      ],
+      [
+        8,
+        3,
+        9
+      ],
+      [
+        8,
+        7,
+        6
+      ],
+      [
+        8,
+        7,
+        9
+      ]
+    ],
+    "pattern": {
+      "digits": [
+        6,
+        9
+      ],
+      "cells": [
+        50,
+        52,
+        79,
+        75
+      ],
+      "eliminations": [
+        [
+          30,
+          6
+        ],
+        [
+          39,
+          9
+        ]
+      ]
+    },
+    "origin": "original generated unique Dilemma practice puzzle",
+    "sourceFamily": "10275b5f274f894d",
+    "originalGridSHA256": "00bf9b3c5fd6533e9b59355f59920a6d08a4c91f1ed28ae62ee6a00c5e980676",
+    "id": "example-3",
+    "animation": "example-3.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABhAAAAjNSCAcAFgAyhQkBAACAUGAIAAR4MQUCCUgBAFAVADAIeDBFIBCNRtm9",
+    "scenarioSHA256": "e63e9c6e7ff111ed33a9244b63ed83593e71356dfd722174e1bcb13026365bc6"
+  }
+]
