@@ -2,23 +2,6 @@
   "schema": 1,
   "lessons": [
     {
-      "slug": "x-wing",
-      "title": "X-Wing: two choices, one conclusion",
-      "description": "Learn X-Wing with three real Sudoku examples, replayable app animations, copied-board overlays and links to play each starting position.",
-      "published": "2026-11-24",
-      "examples": [
-        {
-          "id": "example-1"
-        },
-        {
-          "id": "example-2"
-        },
-        {
-          "id": "example-3"
-        }
-      ]
-    },
-    {
       "slug": "hidden-single",
       "title": "Hidden Single: one place for a digit",
       "description": "Find a Hidden Single in a row, column or box with three original puzzles, real app animations and a play link for each starting grid.",
@@ -57,6 +40,23 @@
       "title": "Pointing Pairs and Triples: a box reserves a line",
       "description": "Explore pointing pairs and triples with three Dilemma puzzles, real App trial boards, overlay animations and links to play each exact starting grid.",
       "published": "2026-11-25",
+      "examples": [
+        {
+          "id": "example-1"
+        },
+        {
+          "id": "example-2"
+        },
+        {
+          "id": "example-3"
+        }
+      ]
+    },
+    {
+      "slug": "x-wing",
+      "title": "X-Wing: two choices, one conclusion",
+      "description": "Learn X-Wing with three real Sudoku examples, replayable app animations, copied-board overlays and links to play each starting position.",
+      "published": "2026-11-24",
       "examples": [
         {
           "id": "example-1"
