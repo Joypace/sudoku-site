@@ -1,0 +1,146 @@
+[
+  {
+    "grid": "040160800200000060061000903000000650650000200912654307000470000000006030406203000",
+    "unit": "row",
+    "unitIndex": 5,
+    "cell": 52,
+    "digit": 8,
+    "sourceFamily": "c0e6e17aff7d9392",
+    "origin": "original App source family; ordinary singles promoted to explicit shared starting givens",
+    "unitGivens": [
+      [
+        45,
+        9
+      ],
+      [
+        46,
+        1
+      ],
+      [
+        47,
+        2
+      ],
+      [
+        48,
+        6
+      ],
+      [
+        49,
+        5
+      ],
+      [
+        50,
+        4
+      ],
+      [
+        51,
+        3
+      ],
+      [
+        53,
+        7
+      ]
+    ],
+    "solutionCount": 1,
+    "id": "example-1",
+    "animation": "example-1.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABBAFggAIAAABgBhAAkDAAAAZQZQAAIAkSZUMHAARwAAAAAGAwQGIDAACzi8ZE",
+    "scenarioSHA256": "eb8dc425d205c6d97b4993a968a67dbdf909c4d954eaa370ca50decf7b3d6d0a"
+  },
+  {
+    "grid": "342698751695271843007345629000012370003764000070083000000137985030050067050000000",
+    "unit": "column",
+    "unitIndex": 4,
+    "cell": 76,
+    "digit": 2,
+    "sourceFamily": "aaa3fc6652c079c2",
+    "origin": "original App source family; ordinary singles promoted to explicit shared starting givens",
+    "unitGivens": [
+      [
+        4,
+        9
+      ],
+      [
+        13,
+        7
+      ],
+      [
+        22,
+        4
+      ],
+      [
+        31,
+        1
+      ],
+      [
+        40,
+        6
+      ],
+      [
+        49,
+        8
+      ],
+      [
+        58,
+        3
+      ],
+      [
+        67,
+        5
+      ]
+    ],
+    "solutionCount": 1,
+    "id": "example-2",
+    "animation": "example-2.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABNCaYdRaVJxhDAHNFYpAAASNwADdkAABwCDAAAAE3mFAwBQBnBQAAAACoW6tt",
+    "scenarioSHA256": "8738b5b930f7d0d1137737d8adbf5cc907057c38852fe9cf1bea2400df326225"
+  },
+  {
+    "grid": "645371829020400713371800540506103070703000000402007600060704300234600087050030400",
+    "unit": "box",
+    "unitIndex": 2,
+    "cell": 26,
+    "digit": 6,
+    "sourceFamily": "013381ff7b246040",
+    "origin": "original App source family; ordinary singles promoted to explicit shared starting givens",
+    "unitGivens": [
+      [
+        6,
+        8
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        15,
+        7
+      ],
+      [
+        16,
+        1
+      ],
+      [
+        17,
+        3
+      ],
+      [
+        24,
+        5
+      ],
+      [
+        25,
+        4
+      ]
+    ],
+    "solutionCount": 1,
+    "id": "example-3",
+    "animation": "example-3.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABZFNxgpAgQAcTNxgAVAUGEDBwcDAAAAQCAHYABgcEMAI0YACHBQAwQACM5jMB",
+    "scenarioSHA256": "72bddd3d2f0ec301564e066922523ada5dd8021a21d01a788659a9272538f243"
+  }
+]

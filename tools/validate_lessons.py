@@ -100,13 +100,15 @@ def pointing_animation(data,example):
  require(checks.get('overlays')==[[slot,0] for slot in range(1,len(ps)+1)] and checks.get('notes')==[[i//9,i%9,d,False] for i in example['targets']],'Pointing animation must overlay every try and remove only proved targets')
  require(checks.get('revealFrameCount')==1 and checks.get('revealLabelCount')==len(ps) and reveal.get('frames')==[[box//3*3,box%3*3,3,3]] and reveal.get('labels')==[[i//9,i%9,d] for i in ps],'Pointing reveal must show the complete box choice set')
 
-def naked_single_animation(data,e):
+def forced_single_animation(data,e,geometry,name):
  i,d=e['cell'],e['digit'];q=[i//9,i%9,d];checks=data.get('expected',{});reveal=data.get('presentation',{}).get('choiceReveal',{})
- require(checks.get('initialStatus')=='definite' and checks.get('initialSingle')==q,'Naked Single must assert its actual forced starting choice')
- require(checks.get('boards')==1 and checks.get('slotFills')==[[0,*q]] and checks.get('fills')==[q] and checks.get('validSlots')==[0] and checks.get('overlays')==[],'Naked Single animation must fill its forced choice without a trial')
- require(reveal.get('frames')==[[i//9,i%9,1,1]] and reveal.get('labels')==[q],'Naked Single reveal must show its own cell and sole candidate')
+ require(checks.get('initialStatus')=='definite' and checks.get('initialSingle')==q,name+' must assert its actual forced starting choice')
+ require(checks.get('boards')==1 and checks.get('slotFills')==[[0,*q]] and checks.get('fills')==[q] and checks.get('validSlots')==[0] and checks.get('overlays')==[],name+' animation must fill its forced choice without a trial')
+ require(reveal.get('frames')==[geometry] and reveal.get('labels')==[q],name+' reveal must show its complete premise and sole candidate')
  actions=[f for f in data['frames'] if f['do'] not in ['hover','depart','hide']]
- require(len(actions)==1 and actions[0]['do']=='tap' and actions[0].get('count')==2 and actions[0].get('at')=={'part':'cell','cell':q[:2]},'Naked Single capture must use one cell-centered forced double tap')
+ require(len(actions)==1 and actions[0]['do']=='tap' and actions[0].get('count')==2 and actions[0].get('at')=={'part':'cell','cell':q[:2]},name+' capture must use one cell-centered forced double tap')
+def naked_single_animation(data,e):
+ forced_single_animation(data,e,[e['cell']//9,e['cell']%9,1,1],'Naked Single')
 def hidden_pair_animation(data,e):
  ds=e['digits'];pair=e['pair'];kind=e['unit'];n=e['unitIndex'];checks=data.get('expected',{});reveal=data.get('presentation',{}).get('choiceReveal',{});geometry={'row':[n,0,1,9],'column':[0,n,9,1],'box':[n//3*3,n%3*3,3,3]}[kind]
  require(checks.get('boards')==3 and checks.get('slotFills')==[[slot,i//9,i%9,d] for slot,branch in enumerate(e['branches'],1) for i,d in branch] and checks.get('validSlots')==[0,1,2],'Hidden Pair animation must test both assignments on valid copied boards')
@@ -122,6 +124,8 @@ PROOFS={'x-wing':xwing,'hidden-single':hidden_single,'naked-pair':naked_pair,'po
 
 def _load_sibling(name):
  spec=importlib.util.spec_from_file_location(name,Path(__file__).with_name(name+'.py'));module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module);return module
+_full_house=_load_sibling('full_house')
+PROOFS['full-house']=lambda example:_full_house.validate_pattern(example,position,require)
 INTERMEDIATE=('naked-triple','hidden-triple','swordfish','xy-wing','xyz-wing','w-wing','skyscraper','two-string-kite','empty-rectangle')
 _intermediate=_load_sibling('intermediate_proofs');_stories=_load_sibling('intermediate_stories')
 for _slug in INTERMEDIATE:PROOFS[_slug]=lambda example,slug=_slug:_intermediate.validate_pattern(slug,example)
@@ -176,6 +180,7 @@ def validate(root):
     require(len(actions)==1 and actions[0]['do']=='tap' and actions[0].get('count')==2 and actions[0].get('at')=={'part':'cell','cell':choice[:2]},'Hidden-single capture must use one cell-centered forced double tap')
    if slug=='pointing':pointing_animation(data,example)
    if slug=='naked-single':naked_single_animation(data,example)
+   if slug=='full-house':_full_house.validate_story(data,example,forced_single_animation,require)
    if slug=='hidden-pair':hidden_pair_animation(data,example)
    if slug=='claiming':claiming_animation(data,example)
    if slug in INTERMEDIATE:_stories.validate_story(data,example)

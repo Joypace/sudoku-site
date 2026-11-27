@@ -2,6 +2,23 @@
   "schema": 1,
   "lessons": [
     {
+      "slug": "full-house",
+      "title": "Full House / Last Digit: finish a row, column or box",
+      "description": "Count eight digits, find the missing one, and finish the house. Three real App animations and exact playable puzzles show Full House in a row, column and box.",
+      "published": "2026-11-27",
+      "examples": [
+        {
+          "id": "example-1"
+        },
+        {
+          "id": "example-2"
+        },
+        {
+          "id": "example-3"
+        }
+      ]
+    },
+    {
       "slug": "naked-single",
       "title": "Naked Single: one candidate remains",
       "description": "Learn Naked Singles with three original puzzles, exact given-clue explanations, real App double-tap animations and playable starting-grid links.",

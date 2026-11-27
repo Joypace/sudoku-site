@@ -1,0 +1,162 @@
+{
+  "schema": 1,
+  "title": "Full House example 3: box 3 needs 6",
+  "grid": "645371829020400713371800540506103070703000000402007600060704300234600087050030400",
+  "style": "chill",
+  "setup": [],
+  "camera": {
+    "targets": [
+      {
+        "part": "tray"
+      },
+      {
+        "part": "board"
+      },
+      {
+        "part": "panel-row"
+      }
+    ],
+    "padding": 0.04
+  },
+  "frames": [
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          2,
+          8
+        ]
+      },
+      "time": 7400,
+      "ms": 400
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "cell",
+        "cell": [
+          2,
+          8
+        ]
+      },
+      "count": 2,
+      "time": 8100
+    },
+    {
+      "do": "depart",
+      "time": 8900,
+      "ms": 250
+    },
+    {
+      "do": "hide",
+      "time": 9300
+    }
+  ],
+  "presentation": {
+    "duration": 12500,
+    "captions": [
+      {
+        "text": "This box has eight digits and one empty cell.",
+        "start": 500,
+        "end": 3900,
+        "target": {
+          "part": "cell",
+          "cell": [
+            2,
+            8
+          ]
+        }
+      },
+      {
+        "text": "Only 6 is missing from the whole box.",
+        "start": 4000,
+        "end": 7300,
+        "target": {
+          "part": "cell",
+          "cell": [
+            2,
+            8
+          ]
+        }
+      },
+      {
+        "text": "Double-tap the cell center to fill 6.",
+        "start": 7400,
+        "end": 10200,
+        "target": {
+          "part": "cell",
+          "cell": [
+            2,
+            8
+          ]
+        }
+      },
+      {
+        "text": "The box is complete; no guess was needed.",
+        "start": 10300,
+        "end": 11700,
+        "target": {
+          "part": "cell",
+          "cell": [
+            2,
+            8
+          ]
+        }
+      }
+    ],
+    "focus": [],
+    "choiceReveal": {
+      "start": 500,
+      "frames": [
+        [
+          0,
+          6,
+          3,
+          3
+        ]
+      ],
+      "labels": [
+        [
+          2,
+          8,
+          6
+        ]
+      ]
+    },
+    "bubbleSize": {
+      "maxWidth": 240,
+      "minHeight": 38
+    }
+  },
+  "expected": {
+    "initialStatus": "definite",
+    "initialSingle": [
+      2,
+      8,
+      6
+    ],
+    "boards": 1,
+    "overlays": [],
+    "validSlots": [
+      0
+    ],
+    "slotFills": [
+      [
+        0,
+        2,
+        8,
+        6
+      ]
+    ],
+    "fills": [
+      [
+        2,
+        8,
+        6
+      ]
+    ],
+    "revealFrameCount": 1,
+    "revealLabelCount": 1
+  }
+}

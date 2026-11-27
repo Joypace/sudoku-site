@@ -1,0 +1,162 @@
+{
+  "schema": 1,
+  "title": "Full House example 2: column 5 needs 2",
+  "grid": "342698751695271843007345629000012370003764000070083000000137985030050067050000000",
+  "style": "chill",
+  "setup": [],
+  "camera": {
+    "targets": [
+      {
+        "part": "tray"
+      },
+      {
+        "part": "board"
+      },
+      {
+        "part": "panel-row"
+      }
+    ],
+    "padding": 0.04
+  },
+  "frames": [
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          8,
+          4
+        ]
+      },
+      "time": 7400,
+      "ms": 400
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "cell",
+        "cell": [
+          8,
+          4
+        ]
+      },
+      "count": 2,
+      "time": 8100
+    },
+    {
+      "do": "depart",
+      "time": 8900,
+      "ms": 250
+    },
+    {
+      "do": "hide",
+      "time": 9300
+    }
+  ],
+  "presentation": {
+    "duration": 12500,
+    "captions": [
+      {
+        "text": "This column has eight digits and one empty cell.",
+        "start": 500,
+        "end": 3900,
+        "target": {
+          "part": "cell",
+          "cell": [
+            8,
+            4
+          ]
+        }
+      },
+      {
+        "text": "Only 2 is missing from the whole column.",
+        "start": 4000,
+        "end": 7300,
+        "target": {
+          "part": "cell",
+          "cell": [
+            8,
+            4
+          ]
+        }
+      },
+      {
+        "text": "Double-tap the cell center to fill 2.",
+        "start": 7400,
+        "end": 10200,
+        "target": {
+          "part": "cell",
+          "cell": [
+            8,
+            4
+          ]
+        }
+      },
+      {
+        "text": "The column is complete; no guess was needed.",
+        "start": 10300,
+        "end": 11700,
+        "target": {
+          "part": "cell",
+          "cell": [
+            8,
+            4
+          ]
+        }
+      }
+    ],
+    "focus": [],
+    "choiceReveal": {
+      "start": 500,
+      "frames": [
+        [
+          0,
+          4,
+          9,
+          1
+        ]
+      ],
+      "labels": [
+        [
+          8,
+          4,
+          2
+        ]
+      ]
+    },
+    "bubbleSize": {
+      "maxWidth": 240,
+      "minHeight": 38
+    }
+  },
+  "expected": {
+    "initialStatus": "definite",
+    "initialSingle": [
+      8,
+      4,
+      2
+    ],
+    "boards": 1,
+    "overlays": [],
+    "validSlots": [
+      0
+    ],
+    "slotFills": [
+      [
+        0,
+        8,
+        4,
+        2
+      ]
+    ],
+    "fills": [
+      [
+        8,
+        4,
+        2
+      ]
+    ],
+    "revealFrameCount": 1,
+    "revealLabelCount": 1
+  }
+}
