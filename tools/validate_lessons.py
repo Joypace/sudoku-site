@@ -126,6 +126,8 @@ def _load_sibling(name):
  spec=importlib.util.spec_from_file_location(name,Path(__file__).with_name(name+'.py'));module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module);return module
 _full_house=_load_sibling('full_house')
 PROOFS['full-house']=lambda example:_full_house.validate_pattern(example,position,require)
+_locked_pair=_load_sibling('locked_pair')
+PROOFS['locked-pair']=lambda example:_locked_pair.validate_pattern(example,advanced_position,naked_pair,require)
 INTERMEDIATE=('naked-triple','hidden-triple','swordfish','xy-wing','xyz-wing','w-wing','skyscraper','two-string-kite','empty-rectangle')
 _intermediate=_load_sibling('intermediate_proofs');_stories=_load_sibling('intermediate_stories')
 for _slug in INTERMEDIATE:PROOFS[_slug]=lambda example,slug=_slug:_intermediate.validate_pattern(slug,example)
@@ -181,6 +183,7 @@ def validate(root):
    if slug=='pointing':pointing_animation(data,example)
    if slug=='naked-single':naked_single_animation(data,example)
    if slug=='full-house':_full_house.validate_story(data,example,forced_single_animation,require)
+   if slug=='locked-pair':_stories.validate_story(data,example)
    if slug=='hidden-pair':hidden_pair_animation(data,example)
    if slug=='claiming':claiming_animation(data,example)
    if slug in INTERMEDIATE:_stories.validate_story(data,example)
