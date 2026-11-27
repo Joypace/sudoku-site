@@ -155,6 +155,23 @@
       ]
     },
     {
+      "slug": "locked-triple",
+      "title": "Locked Triple: three cells reserve two houses",
+      "description": "Learn Locked Triple with three original Dilemma puzzles, real App animations and overlay marks, and exact playable puzzle links.",
+      "published": "2026-11-27",
+      "examples": [
+        {
+          "id": "example-1"
+        },
+        {
+          "id": "example-2"
+        },
+        {
+          "id": "example-3"
+        }
+      ]
+    },
+    {
       "slug": "hidden-triple",
       "title": "Hidden Triple: three digits reserve three cells",
       "description": "Learn Hidden Triple with three original Dilemma puzzles, real App animations and overlay marks, and exact playable puzzle links.",

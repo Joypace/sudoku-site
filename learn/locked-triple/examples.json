@@ -1,0 +1,422 @@
+[
+  {
+    "grid": "405000070003000054700534800000340000374000500000902040259716438831400706647803005",
+    "origin": "original Sudoku Let\u2019s Try practice puzzle",
+    "sourceFamily": "6d8c1a3d92f5d7b0",
+    "slug": "locked-triple",
+    "pattern": {
+      "unit": "row",
+      "unitIndex": 4,
+      "boxIndex": 4,
+      "cells": [
+        39,
+        40,
+        41
+      ],
+      "digits": [
+        1,
+        6,
+        8
+      ]
+    },
+    "targets": [
+      [
+        32,
+        1
+      ],
+      [
+        32,
+        8
+      ],
+      [
+        43,
+        1
+      ],
+      [
+        43,
+        6
+      ],
+      [
+        43,
+        8
+      ],
+      [
+        44,
+        1
+      ],
+      [
+        49,
+        6
+      ],
+      [
+        49,
+        8
+      ]
+    ],
+    "branches": [
+      [
+        [
+          39,
+          1
+        ],
+        [
+          41,
+          8
+        ],
+        [
+          40,
+          6
+        ]
+      ],
+      [
+        [
+          39,
+          6
+        ],
+        [
+          40,
+          8
+        ],
+        [
+          41,
+          1
+        ]
+      ]
+    ],
+    "frames": [
+      [
+        4,
+        0,
+        1,
+        9
+      ],
+      [
+        3,
+        3,
+        3,
+        3
+      ]
+    ],
+    "labels": [
+      [
+        4,
+        3,
+        1
+      ],
+      [
+        4,
+        3,
+        6
+      ],
+      [
+        4,
+        4,
+        6
+      ],
+      [
+        4,
+        4,
+        8
+      ],
+      [
+        4,
+        5,
+        1
+      ],
+      [
+        4,
+        5,
+        8
+      ]
+    ],
+    "id": "example-1",
+    "animation": "example-1.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABQFAABwADAABUcAU0gAAANAAAN0AAUAAAkCBAJZcWQ4gxQAcGZHgDAFDYr9DC",
+    "scenarioSHA256": "413718631aec22b4e51d2d5255933b52c4f14f356f8699d351210935f63de96f"
+  },
+  {
+    "grid": "084020000020000000003500482000049006600000034401070000800000025000058600359261040",
+    "origin": "original Sudoku Let\u2019s Try practice puzzle",
+    "sourceFamily": "58d9c4757405fe26",
+    "slug": "locked-triple",
+    "pattern": {
+      "unit": "column",
+      "unitIndex": 1,
+      "boxIndex": 3,
+      "cells": [
+        28,
+        37,
+        46
+      ],
+      "digits": [
+        3,
+        7,
+        9
+      ]
+    },
+    "targets": [
+      [
+        19,
+        7
+      ],
+      [
+        19,
+        9
+      ],
+      [
+        27,
+        7
+      ],
+      [
+        29,
+        7
+      ],
+      [
+        38,
+        7
+      ],
+      [
+        55,
+        7
+      ],
+      [
+        64,
+        7
+      ]
+    ],
+    "branches": [
+      [
+        [
+          28,
+          3
+        ],
+        [
+          46,
+          9
+        ],
+        [
+          37,
+          7
+        ]
+      ],
+      [
+        [
+          28,
+          7
+        ],
+        [
+          37,
+          9
+        ],
+        [
+          46,
+          3
+        ]
+      ]
+    ],
+    "frames": [
+      [
+        0,
+        1,
+        9,
+        1
+      ],
+      [
+        3,
+        0,
+        3,
+        3
+      ]
+    ],
+    "labels": [
+      [
+        3,
+        1,
+        3
+      ],
+      [
+        3,
+        1,
+        7
+      ],
+      [
+        4,
+        1,
+        7
+      ],
+      [
+        4,
+        1,
+        9
+      ],
+      [
+        5,
+        1,
+        3
+      ],
+      [
+        5,
+        1,
+        9
+      ]
+    ],
+    "id": "example-2",
+    "animation": "example-2.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABCEAgAAAgAAAAADUASCAABJAGYAAAA0QBBwAAgAAAAlAABYYANZJhBABMlNpa",
+    "scenarioSHA256": "0bf1f1f7a2a0db388ae9559d4f117c757171b2d69083214119277ee43e65b0bf"
+  },
+  {
+    "grid": "009760000700054000600800000420000800070600100005000020500000917000537682007006453",
+    "origin": "original Sudoku Let\u2019s Try practice puzzle",
+    "sourceFamily": "8a89af47dc26f7ed",
+    "slug": "locked-triple",
+    "pattern": {
+      "unit": "row",
+      "unitIndex": 6,
+      "boxIndex": 7,
+      "cells": [
+        57,
+        58,
+        59
+      ],
+      "digits": [
+        2,
+        4,
+        8
+      ]
+    },
+    "targets": [
+      [
+        55,
+        4
+      ],
+      [
+        55,
+        8
+      ],
+      [
+        56,
+        2
+      ],
+      [
+        56,
+        4
+      ],
+      [
+        56,
+        8
+      ],
+      [
+        75,
+        2
+      ],
+      [
+        76,
+        2
+      ],
+      [
+        76,
+        8
+      ]
+    ],
+    "branches": [
+      [
+        [
+          58,
+          2
+        ],
+        [
+          57,
+          4
+        ],
+        [
+          59,
+          8
+        ]
+      ],
+      [
+        [
+          58,
+          4
+        ],
+        [
+          57,
+          2
+        ],
+        [
+          59,
+          8
+        ]
+      ],
+      [
+        [
+          58,
+          8
+        ],
+        [
+          57,
+          4
+        ],
+        [
+          59,
+          2
+        ]
+      ]
+    ],
+    "frames": [
+      [
+        6,
+        0,
+        1,
+        9
+      ],
+      [
+        6,
+        3,
+        3,
+        3
+      ]
+    ],
+    "labels": [
+      [
+        6,
+        3,
+        2
+      ],
+      [
+        6,
+        3,
+        4
+      ],
+      [
+        6,
+        4,
+        2
+      ],
+      [
+        6,
+        4,
+        4
+      ],
+      [
+        6,
+        4,
+        8
+      ],
+      [
+        6,
+        5,
+        2
+      ],
+      [
+        6,
+        5,
+        8
+      ]
+    ],
+    "id": "example-3",
+    "animation": "example-3.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABAJdgAAcABUAAYAgAAAQgAAgABwYAEAAFAAAgUAAAkXAAU3aCAHAGRTDS_mrV",
+    "scenarioSHA256": "13ef7a3882efedf7ea028ba5b7bcc2424c01005d920b3be583fabf94093dda6a"
+  }
+]
