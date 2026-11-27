@@ -359,6 +359,23 @@
       ]
     },
     {
+      "slug": "hidden-quadruple",
+      "title": "Hidden Quadruple: four digits reserve four cells",
+      "description": "Learn Hidden Quadruple with three original Dilemma puzzles, real App animations and overlay marks, and exact playable puzzle links.",
+      "published": "2026-11-27",
+      "examples": [
+        {
+          "id": "example-1"
+        },
+        {
+          "id": "example-2"
+        },
+        {
+          "id": "example-3"
+        }
+      ]
+    },
+    {
       "slug": "jellyfish",
       "title": "Jellyfish: four lines, four crossing lines",
       "description": "Learn Jellyfish with three original Dilemma puzzles, real App animations and overlay marks, and exact playable puzzle links.",

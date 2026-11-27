@@ -1,0 +1,670 @@
+[
+  {
+    "slug": "hidden-quadruple",
+    "grid": "832614975049000036056390084465800391083050607017036008698003012521000703374000809",
+    "targets": [
+      [
+        14,
+        2
+      ],
+      [
+        14,
+        7
+      ],
+      [
+        41,
+        2
+      ],
+      [
+        77,
+        2
+      ]
+    ],
+    "branches": [
+      [
+        [
+          68,
+          8
+        ],
+        [
+          41,
+          9
+        ],
+        [
+          77,
+          1
+        ],
+        [
+          14,
+          5
+        ]
+      ],
+      [
+        [
+          68,
+          9
+        ],
+        [
+          14,
+          8
+        ],
+        [
+          77,
+          5
+        ],
+        [
+          41,
+          1
+        ]
+      ]
+    ],
+    "frames": [
+      [
+        0,
+        5,
+        9,
+        1
+      ]
+    ],
+    "labels": [
+      [
+        1,
+        5,
+        5
+      ],
+      [
+        1,
+        5,
+        8
+      ],
+      [
+        4,
+        5,
+        1
+      ],
+      [
+        4,
+        5,
+        9
+      ],
+      [
+        7,
+        5,
+        8
+      ],
+      [
+        7,
+        5,
+        9
+      ],
+      [
+        8,
+        5,
+        1
+      ],
+      [
+        8,
+        5,
+        5
+      ]
+    ],
+    "pattern": {
+      "unit": "column",
+      "unitIndex": 5,
+      "cells": [
+        14,
+        41,
+        68,
+        77
+      ],
+      "digits": [
+        1,
+        5,
+        8,
+        9
+      ],
+      "eliminations": [
+        [
+          14,
+          2
+        ],
+        [
+          14,
+          7
+        ],
+        [
+          41,
+          2
+        ],
+        [
+          77,
+          2
+        ]
+      ]
+    },
+    "originalGrid": "002610070000000000006090084400800391000050000007006008000003010500000703074000809",
+    "completedForcedMoves": [
+      [
+        8,
+        5
+      ],
+      [
+        6,
+        9
+      ],
+      [
+        16,
+        3
+      ],
+      [
+        21,
+        3
+      ],
+      [
+        28,
+        6
+      ],
+      [
+        29,
+        5
+      ],
+      [
+        38,
+        3
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        0,
+        8
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        10,
+        4
+      ],
+      [
+        19,
+        5
+      ],
+      [
+        37,
+        8
+      ],
+      [
+        44,
+        7
+      ],
+      [
+        49,
+        3
+      ],
+      [
+        72,
+        3
+      ],
+      [
+        54,
+        6
+      ],
+      [
+        17,
+        6
+      ],
+      [
+        42,
+        6
+      ],
+      [
+        62,
+        2
+      ],
+      [
+        55,
+        9
+      ],
+      [
+        11,
+        9
+      ],
+      [
+        56,
+        8
+      ],
+      [
+        64,
+        2
+      ],
+      [
+        46,
+        1
+      ],
+      [
+        65,
+        1
+      ]
+    ],
+    "origin": "original Sudoku Lets Try generated practice puzzle",
+    "sourceFamily": "79e7ba98f649c809",
+    "generation": {
+      "seed": 2026112501,
+      "ordinal": 1233,
+      "generatorSHA256": "5228acf573836318e14aed993e56488835f824351dab4c8c89b76ba95be66564"
+    },
+    "solutionCount": 1,
+    "id": "example-1",
+    "animation": "example-1.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABgyYUl1BJAAA2BWOQCERlgAORCDBQYHAXA2AIaYADASUhAAcDN0AAgJAFJSlk",
+    "scenarioSHA256": "b0e0c73a6e7c60fdc6a312e864a1d6670c5b0963c60c99a93f5ad50f6a8a9ef1"
+  },
+  {
+    "grid": "001000900005216407000938002030060040006000020500102090803000004010700069000001000",
+    "origin": "original Sudoku Let\u2019s Try practice puzzle",
+    "sourceFamily": "2cc5c8e468c2e5e5",
+    "originalGrid": "001000000005000407000938002030060000006000020500102090803000004010700069000001000",
+    "completedForcedMoves": 5,
+    "initialStatus": "dilemma",
+    "initialSingles": 0,
+    "slug": "hidden-quadruple",
+    "pattern": {
+      "unit": "box",
+      "unitIndex": 0,
+      "cells": [
+        0,
+        1,
+        9,
+        10
+      ],
+      "digits": [
+        2,
+        3,
+        8,
+        9
+      ],
+      "eliminations": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          7
+        ]
+      ]
+    },
+    "targets": [
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        7
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        7
+      ]
+    ],
+    "branches": [
+      [
+        [
+          9,
+          3
+        ],
+        [
+          10,
+          9
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      [
+        [
+          9,
+          9
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          10,
+          8
+        ]
+      ]
+    ],
+    "frames": [
+      [
+        0,
+        0,
+        3,
+        3
+      ]
+    ],
+    "labels": [
+      [
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        3
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        1,
+        8
+      ],
+      [
+        1,
+        0,
+        3
+      ],
+      [
+        1,
+        0,
+        9
+      ],
+      [
+        1,
+        1,
+        8
+      ],
+      [
+        1,
+        1,
+        9
+      ]
+    ],
+    "id": "example-2",
+    "animation": "example-2.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABABAAkAAFIWQHAAk4ACAwBgBAAGAAAgUAECCQgDAAAEAQcABpAAABAAA9OKHV",
+    "scenarioSHA256": "83ca1f0ae4c4dbdfaede9997f3f31ba27628e1aaa6ea13d539ac6cffbfa32523"
+  },
+  {
+    "slug": "hidden-quadruple",
+    "grid": "297614385004050000003982400006040100009160004041208060675821943930476051410000600",
+    "targets": [
+      [
+        16,
+        2
+      ],
+      [
+        16,
+        7
+      ],
+      [
+        17,
+        2
+      ],
+      [
+        17,
+        7
+      ]
+    ],
+    "branches": [
+      [
+        [
+          10,
+          6
+        ],
+        [
+          9,
+          8
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          17,
+          9
+        ]
+      ],
+      [
+        [
+          10,
+          8
+        ],
+        [
+          9,
+          1
+        ],
+        [
+          17,
+          6
+        ],
+        [
+          16,
+          9
+        ]
+      ]
+    ],
+    "frames": [
+      [
+        1,
+        0,
+        1,
+        9
+      ]
+    ],
+    "labels": [
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        8
+      ],
+      [
+        1,
+        1,
+        6
+      ],
+      [
+        1,
+        1,
+        8
+      ],
+      [
+        1,
+        7,
+        1
+      ],
+      [
+        1,
+        7,
+        9
+      ],
+      [
+        1,
+        8,
+        6
+      ],
+      [
+        1,
+        8,
+        9
+      ]
+    ],
+    "pattern": {
+      "unit": "row",
+      "unitIndex": 1,
+      "cells": [
+        9,
+        10,
+        16,
+        17
+      ],
+      "digits": [
+        1,
+        6,
+        8,
+        9
+      ],
+      "eliminations": [
+        [
+          16,
+          2
+        ],
+        [
+          16,
+          7
+        ],
+        [
+          17,
+          2
+        ],
+        [
+          17,
+          7
+        ]
+      ]
+    },
+    "originalGrid": "007610085004050000000902000006000100000000004041208060075000903900476050400000600",
+    "completedForcedMoves": [
+      [
+        1,
+        9
+      ],
+      [
+        38,
+        9
+      ],
+      [
+        40,
+        6
+      ],
+      [
+        54,
+        6
+      ],
+      [
+        59,
+        1
+      ],
+      [
+        39,
+        1
+      ],
+      [
+        57,
+        8
+      ],
+      [
+        22,
+        8
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        20,
+        3
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        6,
+        3
+      ],
+      [
+        24,
+        4
+      ],
+      [
+        31,
+        4
+      ],
+      [
+        58,
+        2
+      ],
+      [
+        61,
+        4
+      ],
+      [
+        64,
+        3
+      ],
+      [
+        71,
+        1
+      ],
+      [
+        73,
+        1
+      ]
+    ],
+    "origin": "original Sudoku Lets Try generated practice puzzle",
+    "sourceFamily": "3b5f4b514f475262",
+    "generation": {
+      "seed": 2026112701,
+      "ordinal": 829,
+      "generatorSHA256": "5228acf573836318e14aed993e56488835f824351dab4c8c89b76ba95be66564"
+    },
+    "solutionCount": 1,
+    "id": "example-3",
+    "animation": "example-3.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABKXYUOFAEBQAAADmCQAAGBAEAAJFgAEBBIIBgZ1ghlDkwR2BRQQAAYAB9UfuG",
+    "scenarioSHA256": "e4c0f03afcabaa44f5fbde352795dcdd311a5cec25638dfb93d7ada0856f660c"
+  }
+]
