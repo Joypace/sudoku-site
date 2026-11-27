@@ -1,0 +1,673 @@
+[
+  {
+    "slug": "finned-swordfish",
+    "grid": "009183765070652490005974802900306580000500329053090106004709250530001900092805600",
+    "targets": [
+      [
+        80,
+        7
+      ]
+    ],
+    "branches": [
+      [
+        [
+          70,
+          4
+        ],
+        [
+          52,
+          7
+        ],
+        [
+          41,
+          7
+        ],
+        [
+          72,
+          7
+        ]
+      ],
+      [
+        [
+          70,
+          7
+        ]
+      ]
+    ],
+    "frames": [
+      [
+        0,
+        0,
+        9,
+        1
+      ],
+      [
+        0,
+        5,
+        9,
+        1
+      ],
+      [
+        0,
+        7,
+        9,
+        1
+      ],
+      [
+        6,
+        6,
+        3,
+        3
+      ]
+    ],
+    "labels": [
+      [
+        4,
+        0,
+        7
+      ],
+      [
+        4,
+        5,
+        7
+      ],
+      [
+        5,
+        0,
+        7
+      ],
+      [
+        5,
+        5,
+        7
+      ],
+      [
+        5,
+        7,
+        7
+      ],
+      [
+        7,
+        7,
+        7
+      ],
+      [
+        8,
+        0,
+        7
+      ],
+      [
+        8,
+        7,
+        7
+      ]
+    ],
+    "pattern": {
+      "orientation": "columns",
+      "bases": [
+        0,
+        5,
+        7
+      ],
+      "covers": [
+        4,
+        5,
+        8
+      ],
+      "digit": 7,
+      "positions": [
+        36,
+        41,
+        45,
+        50,
+        52,
+        70,
+        72,
+        79
+      ],
+      "fins": [
+        70
+      ],
+      "finBox": 8,
+      "eliminations": [
+        [
+          80,
+          7
+        ]
+      ]
+    },
+    "originalGrid": "009000760070052490000004002000306080000000029053090000004009050530000000092800600",
+    "completedForcedMoves": [
+      [
+        3,
+        1
+      ],
+      [
+        8,
+        5
+      ],
+      [
+        12,
+        6
+      ],
+      [
+        20,
+        5
+      ],
+      [
+        21,
+        9
+      ],
+      [
+        22,
+        7
+      ],
+      [
+        27,
+        9
+      ],
+      [
+        33,
+        5
+      ],
+      [
+        39,
+        5
+      ],
+      [
+        42,
+        3
+      ],
+      [
+        51,
+        1
+      ],
+      [
+        24,
+        8
+      ],
+      [
+        53,
+        6
+      ],
+      [
+        60,
+        2
+      ],
+      [
+        57,
+        7
+      ],
+      [
+        68,
+        1
+      ],
+      [
+        69,
+        9
+      ],
+      [
+        77,
+        5
+      ],
+      [
+        5,
+        3
+      ],
+      [
+        4,
+        8
+      ]
+    ],
+    "origin": "original Sudoku Lets Try generated practice puzzle",
+    "sourceFamily": "0a6c75950148df99",
+    "generation": {
+      "seed": 2026112702,
+      "ordinal": 7084,
+      "generatorSHA256": "5228acf573836318e14aed993e56488835f824351dab4c8c89b76ba95be66564"
+    },
+    "solutionCount": 1,
+    "id": "example-1",
+    "animation": "example-1.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABAJGDdlBwZSSQAFl0gCkAMGWAAAUAMpBTCQEGAEcJJQUwABkACSgFYAAZEkbL",
+    "scenarioSHA256": "281b8ac1ccb6c0afff3417a887e92dc79b7e746d7357808bd018354a23378870"
+  },
+  {
+    "slug": "finned-swordfish",
+    "grid": "081000070502700481040010020400000000200005006850100203125307064604052130038461052",
+    "targets": [
+      [
+        31,
+        8
+      ]
+    ],
+    "branches": [
+      [
+        [
+          39,
+          8
+        ]
+      ],
+      [
+        [
+          39,
+          9
+        ],
+        [
+          66,
+          8
+        ],
+        [
+          23,
+          8
+        ],
+        [
+          35,
+          8
+        ]
+      ]
+    ],
+    "frames": [
+      [
+        0,
+        3,
+        9,
+        1
+      ],
+      [
+        0,
+        5,
+        9,
+        1
+      ],
+      [
+        0,
+        8,
+        9,
+        1
+      ],
+      [
+        3,
+        3,
+        3,
+        3
+      ]
+    ],
+    "labels": [
+      [
+        2,
+        3,
+        8
+      ],
+      [
+        2,
+        5,
+        8
+      ],
+      [
+        3,
+        3,
+        8
+      ],
+      [
+        3,
+        5,
+        8
+      ],
+      [
+        3,
+        8,
+        8
+      ],
+      [
+        4,
+        3,
+        8
+      ],
+      [
+        7,
+        3,
+        8
+      ],
+      [
+        7,
+        8,
+        8
+      ]
+    ],
+    "pattern": {
+      "orientation": "columns",
+      "bases": [
+        3,
+        5,
+        8
+      ],
+      "covers": [
+        2,
+        3,
+        7
+      ],
+      "digit": 8,
+      "positions": [
+        21,
+        23,
+        30,
+        32,
+        35,
+        39,
+        66,
+        71
+      ],
+      "fins": [
+        39
+      ],
+      "finBox": 4,
+      "eliminations": [
+        [
+          31,
+          8
+        ]
+      ]
+    },
+    "originalGrid": "081000070000700480040010000400000000200005006000100203005307000600052000038060050",
+    "completedForcedMoves": [
+      [
+        17,
+        1
+      ],
+      [
+        45,
+        8
+      ],
+      [
+        46,
+        5
+      ],
+      [
+        9,
+        5
+      ],
+      [
+        55,
+        2
+      ],
+      [
+        25,
+        2
+      ],
+      [
+        11,
+        2
+      ],
+      [
+        61,
+        6
+      ],
+      [
+        65,
+        4
+      ],
+      [
+        70,
+        3
+      ],
+      [
+        77,
+        1
+      ],
+      [
+        54,
+        1
+      ],
+      [
+        69,
+        1
+      ],
+      [
+        80,
+        2
+      ],
+      [
+        62,
+        4
+      ],
+      [
+        75,
+        4
+      ]
+    ],
+    "origin": "original Sudoku Lets Try generated practice puzzle",
+    "sourceFamily": "c86fca4b2e859602",
+    "generation": {
+      "seed": 2026112703,
+      "ordinal": 4287,
+      "generatorSHA256": "5228acf573836318e14aed993e56488835f824351dab4c8c89b76ba95be66564"
+    },
+    "solutionCount": 1,
+    "id": "example-2",
+    "animation": "example-2.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABCBAABwUCcASBBAAQAgQAAAAAIAAFAGhQEAIDElMHBkYEBSEwA4RhBSAZhyVe",
+    "scenarioSHA256": "26281b6b01e6fe5edecd4b3af40662afc543d3f5c8a2cf3724a24d4461248876"
+  },
+  {
+    "slug": "finned-swordfish",
+    "grid": "000001083010000900308000107473962815896145732521000009135704090260010000080000301",
+    "targets": [
+      [
+        4,
+        9
+      ]
+    ],
+    "branches": [
+      [
+        [
+          23,
+          6
+        ],
+        [
+          77,
+          9
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          65,
+          9
+        ]
+      ],
+      [
+        [
+          23,
+          9
+        ]
+      ]
+    ],
+    "frames": [
+      [
+        0,
+        0,
+        9,
+        1
+      ],
+      [
+        0,
+        2,
+        9,
+        1
+      ],
+      [
+        0,
+        5,
+        9,
+        1
+      ],
+      [
+        0,
+        3,
+        3,
+        3
+      ]
+    ],
+    "labels": [
+      [
+        0,
+        0,
+        9
+      ],
+      [
+        0,
+        2,
+        9
+      ],
+      [
+        2,
+        5,
+        9
+      ],
+      [
+        7,
+        2,
+        9
+      ],
+      [
+        7,
+        5,
+        9
+      ],
+      [
+        8,
+        0,
+        9
+      ],
+      [
+        8,
+        2,
+        9
+      ],
+      [
+        8,
+        5,
+        9
+      ]
+    ],
+    "pattern": {
+      "orientation": "columns",
+      "bases": [
+        0,
+        2,
+        5
+      ],
+      "covers": [
+        0,
+        7,
+        8
+      ],
+      "digit": 9,
+      "positions": [
+        0,
+        2,
+        23,
+        65,
+        68,
+        72,
+        74,
+        77
+      ],
+      "fins": [
+        23
+      ],
+      "finBox": 1,
+      "eliminations": [
+        [
+          4,
+          9
+        ]
+      ]
+    },
+    "originalGrid": "000000083010000900308000107403902810090045000501000000000704090260010000000000300",
+    "completedForcedMoves": [
+      [
+        5,
+        1
+      ],
+      [
+        28,
+        7
+      ],
+      [
+        31,
+        6
+      ],
+      [
+        35,
+        5
+      ],
+      [
+        39,
+        1
+      ],
+      [
+        36,
+        8
+      ],
+      [
+        38,
+        6
+      ],
+      [
+        43,
+        3
+      ],
+      [
+        42,
+        7
+      ],
+      [
+        44,
+        2
+      ],
+      [
+        46,
+        2
+      ],
+      [
+        53,
+        9
+      ],
+      [
+        54,
+        1
+      ],
+      [
+        55,
+        3
+      ],
+      [
+        56,
+        5
+      ],
+      [
+        73,
+        8
+      ],
+      [
+        80,
+        1
+      ]
+    ],
+    "origin": "original Sudoku Lets Try generated practice puzzle",
+    "sourceFamily": "0e29467769a70008",
+    "generation": {
+      "seed": 2026112703,
+      "ordinal": 13140,
+      "generatorSHA256": "5228acf573836318e14aed993e56488835f824351dab4c8c89b76ba95be66564"
+    },
+    "solutionCount": 1,
+    "id": "example-3",
+    "animation": "example-3.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABAAABCDAQAAkAMIAAEHRzligViWFFcyUhAAAJE1cECQJgAQAACAAAMBClWaqV",
+    "scenarioSHA256": "55a00a1fc53cb3ff577968998ef3e846e04b1cb7f837a33f18633ee81fd1ef7c"
+  }
+]
