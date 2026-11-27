@@ -1,11 +1,12 @@
 """Bind intermediate demonstrations to exhaustive native copied-board trials."""
 def require(ok,why):
  if not ok:raise ValueError(why)
-def validate_story(data,e):
+def validate_story(data,e,*,valid_slots=None):
  require(data.get('style')=='chill' and data.get('setup')==[],'Use normal Chill Mode without hidden setup')
  branches=e['branches'];count=len(branches);checks=data.get('expected',{});reveal=data.get('presentation',{}).get('choiceReveal',{})
  require(checks.get('initialStatus')=='dilemma','Intermediate stories must assert Dilemma')
- require(checks.get('boards')==count+1 and checks.get('validSlots')==list(range(count+1)),'Every exhaustive trial needs a separate valid copied board')
+ if valid_slots is None:valid_slots=list(range(count+1))
+ require(checks.get('boards')==count+1 and checks.get('validSlots')==valid_slots,'Every exhaustive trial needs its declared copied-board state')
  require(checks.get('slotFills')==[[slot,i//9,i%9,d] for slot,b in enumerate(branches,1) for i,d in b],'Story fills must match its proved trials')
  require(checks.get('overlays')==[[slot,0] for slot in range(1,count+1)],'Every trial must overlay the original')
  require(checks.get('notes')==[[i//9,i%9,d,False] for i,d in e['targets']],'Remove exactly the common proved targets')

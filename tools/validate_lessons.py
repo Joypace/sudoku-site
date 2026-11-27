@@ -132,6 +132,9 @@ INTERMEDIATE=('naked-triple','hidden-triple','swordfish','xy-wing','xyz-wing','w
 _intermediate=_load_sibling('intermediate_proofs');_stories=_load_sibling('intermediate_stories')
 _locked_triple=_load_sibling('locked_triple')
 PROOFS['locked-triple']=lambda example:_locked_triple.validate_pattern(example,_intermediate,require)
+_rectangle=_load_sibling('unique_rectangle')
+PROOFS['unique-rectangle']=lambda example:_rectangle.validate_pattern(example,unique_solution)
+_rectangle_stories=_load_sibling('unique_rectangle_stories')
 for _slug in INTERMEDIATE:PROOFS[_slug]=lambda example,slug=_slug:_intermediate.validate_pattern(slug,example)
 ADVANCED=('naked-quadruple','hidden-quadruple','jellyfish','finned-x-wing','finned-swordfish','finned-jellyfish','simple-coloring','remote-pairs')
 _advanced=_load_sibling('advanced_proofs')
@@ -172,7 +175,9 @@ def validate(root):
   slug=lesson['slug'];require(bool(re.fullmatch(r'[a-z][a-z0-9-]{1,70}',slug)) and slug not in {'index','learn','manifest'} and slug not in slugs,'Reserved/duplicate/unsafe lesson slug');slugs.add(slug);published=date.fromisoformat(lesson['published']);require(lesson.get('title') and lesson.get('description'),'Missing public lesson text');items=lesson['examples'];require(isinstance(items,list) and 3<=len(items)<=5,'Each technique needs 3–5 examples');folder=directory/slug;expected|={slug+'/index.html',slug+'/examples.json'};examples=json.loads((folder/'examples.json').read_text());require(len(examples)==len(items),'Example count mismatch');require(slug in PROOFS,'Technique requires a validated proof rule before publication')
   grids=set()
   for n,(entry,example) in enumerate(zip(items,examples),1):
-   stem=f'example-{n}';require(entry.get('id')==stem and example.get('id')==stem and example.get('animation')==stem+'.svg','Example ID mismatch');grid=example['grid'];require(grid not in grids,'Each example must use a different starting puzzle');grids.add(grid);require(bool(re.fullmatch('[0-9]{81}',grid)),'Invalid starting grid');require(share_grid(example['shareURL'])==grid,'Share link does not open the animated starting clues');unique_solution(grid);PROOFS[slug](example)
+   stem=f'example-{n}';require(entry.get('id')==stem and example.get('id')==stem and example.get('animation')==stem+'.svg','Example ID mismatch');grid=example['grid'];require(grid not in grids,'Each example must use a different starting puzzle');grids.add(grid);require(bool(re.fullmatch('[0-9]{81}',grid)),'Invalid starting grid');require(share_grid(example['shareURL'])==grid,'Share link does not open the animated starting clues');
+   if slug!='unique-rectangle':unique_solution(grid)
+   PROOFS[slug](example)
    scenario=folder/(stem+'.json');data=json.loads(scenario.read_text());require(data['grid']==grid and isinstance(data.get('setup'),list) and data['setup']==[],'No hidden setup may precede a shared example')
    if slug in ['x-wing','naked-pair','pointing','hidden-pair','claiming']:require(data.get('expected',{}).get('initialStatus')=='dilemma','Missing initial Dilemma runtime assertion')
    if slug=='hidden-single':
@@ -187,6 +192,7 @@ def validate(root):
    if slug=='full-house':_full_house.validate_story(data,example,forced_single_animation,require)
    if slug=='locked-pair':_stories.validate_story(data,example)
    if slug=='locked-triple':_stories.validate_story(data,example)
+   if slug=='unique-rectangle':_rectangle_stories.validate_story(data,example,_stories,_intermediate,require)
    if slug=='hidden-pair':hidden_pair_animation(data,example)
    if slug=='claiming':claiming_animation(data,example)
    if slug in INTERMEDIATE:_stories.validate_story(data,example)

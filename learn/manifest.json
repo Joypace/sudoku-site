@@ -476,6 +476,23 @@
           "id": "example-3"
         }
       ]
+    },
+    {
+      "slug": "unique-rectangle",
+      "title": "Unique Rectangle Type 1: protect the unique solution",
+      "description": "Learn Unique Rectangle Type 1 with three verified unique puzzles, real App ambiguity warnings, copied-board animations and exact playable links.",
+      "published": "2026-11-27",
+      "examples": [
+        {
+          "id": "example-1"
+        },
+        {
+          "id": "example-2"
+        },
+        {
+          "id": "example-3"
+        }
+      ]
     }
   ],
   "curriculum": "curriculum.json"
