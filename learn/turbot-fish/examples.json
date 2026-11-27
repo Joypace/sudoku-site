@@ -1,0 +1,323 @@
+[
+  {
+    "grid": "000000200810300900000009005000503090034000001000087003300000150056030009009025340",
+    "origin": "original Sudoku Let\u2019s Try practice puzzle",
+    "sourceFamily": "7decffdabb9e45dd",
+    "slug": "turbot-fish",
+    "pattern": {
+      "digit": 1,
+      "units": [
+        {
+          "unit": "row",
+          "unitIndex": 8
+        },
+        {
+          "unit": "box",
+          "unitIndex": 4
+        }
+      ],
+      "links": [
+        [
+          75,
+          72
+        ],
+        [
+          48,
+          31
+        ]
+      ],
+      "bridge": {
+        "unit": "column",
+        "unitIndex": 3
+      }
+    },
+    "targets": [
+      [
+        27,
+        1
+      ]
+    ],
+    "branches": [
+      [
+        [
+          72,
+          1
+        ]
+      ],
+      [
+        [
+          72,
+          7
+        ],
+        [
+          75,
+          1
+        ],
+        [
+          31,
+          1
+        ]
+      ]
+    ],
+    "frames": [
+      [
+        8,
+        0,
+        1,
+        9
+      ],
+      [
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        3,
+        9,
+        1
+      ]
+    ],
+    "labels": [
+      [
+        3,
+        4,
+        1
+      ],
+      [
+        5,
+        3,
+        1
+      ],
+      [
+        8,
+        0,
+        1
+      ],
+      [
+        8,
+        3,
+        1
+      ]
+    ],
+    "id": "example-1",
+    "animation": "example-1.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABAAAAIAgQMAkAAAAJAFAAUDCQA0AAABAACHADMAAAFQBWAwAJAJAlNABVwmus",
+    "scenarioSHA256": "a7a78ef088820f2e4798073f70336bd859816e2be8439970ef178784157e2678"
+  },
+  {
+    "grid": "000010609690004801080096734000009106068001390000063240000135460006902513315640900",
+    "origin": "original Sudoku Let\u2019s Try practice puzzle",
+    "sourceFamily": "e7b86de1cd0d5782",
+    "slug": "turbot-fish",
+    "pattern": {
+      "digit": 7,
+      "units": [
+        {
+          "unit": "column",
+          "unitIndex": 7
+        },
+        {
+          "unit": "box",
+          "unitIndex": 7
+        }
+      ],
+      "links": [
+        [
+          79,
+          34
+        ],
+        [
+          77,
+          67
+        ]
+      ],
+      "bridge": {
+        "unit": "row",
+        "unitIndex": 8
+      }
+    },
+    "targets": [
+      [
+        31,
+        7
+      ]
+    ],
+    "branches": [
+      [
+        [
+          67,
+          7
+        ]
+      ],
+      [
+        [
+          67,
+          8
+        ],
+        [
+          77,
+          7
+        ],
+        [
+          34,
+          7
+        ]
+      ]
+    ],
+    "frames": [
+      [
+        0,
+        7,
+        9,
+        1
+      ],
+      [
+        6,
+        3,
+        3,
+        3
+      ],
+      [
+        8,
+        0,
+        1,
+        9
+      ]
+    ],
+    "labels": [
+      [
+        3,
+        7,
+        7
+      ],
+      [
+        7,
+        4,
+        7
+      ],
+      [
+        8,
+        5,
+        7
+      ],
+      [
+        8,
+        7,
+        7
+      ]
+    ],
+    "id": "example-2",
+    "animation": "example-2.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABAAAQYJaQAEgBCACWc0AAAJEGBoABOQAABjJAAAE1RgAGkCUTMVZAkAC_6QdT",
+    "scenarioSHA256": "40e06e8bd4c6379e39e358304745d320b751ab1e8d3d1e9f1b445ea18b64a105"
+  },
+  {
+    "grid": "300000000200095700500130000109028000860000002752010008000400200015200004420001697",
+    "origin": "original Sudoku Let\u2019s Try practice puzzle",
+    "sourceFamily": "2854e41a042d76ec",
+    "slug": "turbot-fish",
+    "pattern": {
+      "digit": 3,
+      "units": [
+        {
+          "unit": "row",
+          "unitIndex": 8
+        },
+        {
+          "unit": "box",
+          "unitIndex": 3
+        }
+      ],
+      "links": [
+        [
+          74,
+          75
+        ],
+        [
+          38,
+          28
+        ]
+      ],
+      "bridge": {
+        "unit": "column",
+        "unitIndex": 2
+      }
+    },
+    "targets": [
+      [
+        30,
+        3
+      ]
+    ],
+    "branches": [
+      [
+        [
+          28,
+          3
+        ]
+      ],
+      [
+        [
+          28,
+          4
+        ],
+        [
+          38,
+          3
+        ],
+        [
+          75,
+          3
+        ]
+      ]
+    ],
+    "frames": [
+      [
+        8,
+        0,
+        1,
+        9
+      ],
+      [
+        3,
+        0,
+        3,
+        3
+      ],
+      [
+        0,
+        2,
+        9,
+        1
+      ]
+    ],
+    "labels": [
+      [
+        3,
+        1,
+        3
+      ],
+      [
+        4,
+        2,
+        3
+      ],
+      [
+        8,
+        2,
+        3
+      ],
+      [
+        8,
+        3,
+        3
+      ]
+    ],
+    "id": "example-3",
+    "animation": "example-3.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABMAAAAAIACVcAUAEwAAEJAoAAhgAAACdSAQAIAAQAIAAVIAAEQgABaXC-2VO6",
+    "scenarioSHA256": "ea95c2bf0948a611ba0eb75f3dccf57da73154fb00b6bcc0f46507704efe053e"
+  }
+]

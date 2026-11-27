@@ -266,6 +266,25 @@ def _two_links(slug, p, cs):
     return _common(cs, [b, f], d), frames, _labels(cs, [a, b, c, f], {d})
 
 
+def _turbot(p, cs):
+    d = _integer(p['digit'], 10, 'Turbot digit', 1)
+    links, units = p['links'], p['units']
+    _require(type(links) is list and len(links) == 2 and
+             type(units) is list and len(units) == 2, 'Turbot needs two declared strong links')
+    for link in links:
+        _cells(link, 2)
+    (a, b), (c, f) = links
+    _require(len({a, b, c, f}) == 4, 'Turbot needs four distinct candidates')
+    frames = set()
+    for unit, link in zip(units, links):
+        _require(_live(cs, _unit(unit), d) == set(link), 'Incomplete Turbot conjugate unit')
+        frames.add(_frame(unit['unit'], unit['unitIndex']))
+    bridge = p['bridge']
+    _require({a, c} <= _unit(bridge), 'Turbot connectors must share the declared weak-link unit')
+    frames.add(_frame(bridge['unit'], bridge['unitIndex']))
+    return _common(cs, [b, f], d), frames, _labels(cs, [a, b, c, f], {d})
+
+
 def _empty_rectangle(p, cs):
     box = _integer(p['boxIndex'], 9, 'ER box')
     r = _integer(p['row'], 9, 'ER row')
@@ -330,6 +349,8 @@ def validate_pattern(slug, e):
             targets, frames, labels = _w_wing(p, cs)
         elif slug in ('skyscraper', 'two-string-kite'):
             targets, frames, labels = _two_links(slug, p, cs)
+        elif slug == 'turbot-fish':
+            targets, frames, labels = _turbot(p, cs)
         elif slug == 'empty-rectangle':
             targets, frames, labels = _empty_rectangle(p, cs)
         else:

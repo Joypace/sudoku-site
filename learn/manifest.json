@@ -325,6 +325,23 @@
       ]
     },
     {
+      "slug": "turbot-fish",
+      "title": "Turbot Fish: one of the two ends must be true",
+      "description": "Learn Turbot Fish with three original Dilemma puzzles, real App animations and overlay marks, and exact playable puzzle links.",
+      "published": "2026-11-27",
+      "examples": [
+        {
+          "id": "example-1"
+        },
+        {
+          "id": "example-2"
+        },
+        {
+          "id": "example-3"
+        }
+      ]
+    },
+    {
       "slug": "naked-quadruple",
       "title": "Naked Quadruple: four cells reserve four digits",
       "description": "Learn Naked Quadruple with three original Dilemma puzzles, real App animations and overlay marks, and exact playable puzzle links.",
