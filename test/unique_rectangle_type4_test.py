@@ -100,6 +100,16 @@ class UR4(unittest.TestCase):
     elif mutation=='two-solutions':q['branchOutcomes'][0]['witness']={'kind':'two-solutions','count':2}
     else:q['coverage']['kind']='exhaustive-cell'
     with self.subTest(mutation=mutation),self.assertRaises(ValueError):proof.trials(q,[0]*81,cs,targets,base=b,rectangle=rectangle)
+ def test_each_swap_witness_requires_exact_integer_cells_and_digits(self):
+  e,cs=fixture();targets=set(map(tuple,e['targets']))
+  mutations=[('corners',0,0.0),('corners',0,False),('corners',1,1.0),
+             ('corners',1,True),('digits',0,1.0),('digits',0,True),('digits',1,2.0)]
+  with patch.object(b,'_candidates',side_effect=lambda state:after_mask(cs,state)):
+   for branch in (0,1):
+    for field,index,value in mutations:
+     q=copy.deepcopy(e);q['branchOutcomes'][branch]['witness'][field][index]=value
+     with self.subTest(branch=branch,field=field,value=value),self.assertRaises(ValueError):
+      proof.trials(q,[0]*81,cs,targets,base=b,rectangle=rectangle)
  def test_root_only_callback_full_targets_and_appearance(self):
   e,cs=fixture();unique=Mock()
   with patch.object(b,'_candidates',side_effect=lambda state:after_mask(cs,state)):

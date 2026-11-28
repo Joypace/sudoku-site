@@ -47,6 +47,13 @@ def trials(e,grid,cs,targets,*,base,rectangle):
     branches=e['branches'];b._require(type(branches) is list and len(branches)==2 and all(type(x) is list and len(x)==4 for x in branches),'Each independent trial fills exactly four corners')
     b._require([list(b._choice(branch[0])) for branch in branches]==choices,'Each rejected roof-Y must found its own trial')
     witness={'kind':'rectangle-digit-swap','corners':p['corners'],'digits':p['digits']}
+    outcomes=e.get('branchOutcomes')
+    b._require(type(outcomes) is list and len(outcomes)==2,'Two exact swap outcomes required')
+    for outcome in outcomes:
+        b._require(type(outcome) is dict and set(outcome)=={'kind','witness'},'Exact conditional-swap outcome schema required')
+        stated=outcome['witness']
+        b._require(type(stated) is dict and set(stated)=={'kind','corners','digits'},'Exact conditional-swap witness schema required')
+        b._cells(stated['corners'],4);b._digits(stated['digits'],2)
     b._require(e.get('branchOutcomes')==[{'kind':'uniqueness-contradiction','witness':witness} for _ in choices],'Use conditional swap witnesses, not ordinary invalidity or two actual solutions')
     for branch in branches:
         state=grid.copy();current=cs;visited=set()
