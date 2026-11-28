@@ -1,0 +1,1071 @@
+[
+  {
+    "slug": "bug-plus-one",
+    "grid": "502408000603507000748103590156374829389215060427986153861732945974651000235849671",
+    "solutionCount": 1,
+    "initialStatus": "dilemma",
+    "initialSingles": 0,
+    "pattern": {
+      "cell": 17,
+      "digit": 2,
+      "pair": [
+        4,
+        8
+      ],
+      "cells": [
+        1,
+        4,
+        6,
+        7,
+        8,
+        10,
+        13,
+        15,
+        16,
+        17,
+        22,
+        26,
+        42,
+        44,
+        69,
+        70,
+        71
+      ],
+      "eliminations": [
+        [
+          17,
+          4
+        ],
+        [
+          17,
+          8
+        ]
+      ]
+    },
+    "targets": [
+      [
+        17,
+        4
+      ],
+      [
+        17,
+        8
+      ]
+    ],
+    "branches": [
+      [
+        [
+          17,
+          4
+        ],
+        [
+          16,
+          8
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          6,
+          3
+        ]
+      ],
+      [
+        [
+          17,
+          2
+        ]
+      ],
+      [
+        [
+          17,
+          8
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          6,
+          7
+        ]
+      ]
+    ],
+    "branchOutcomes": [
+      {
+        "kind": "uniqueness-contradiction",
+        "witness": {
+          "kind": "bug-complement",
+          "cell": 17,
+          "digit": 2
+        }
+      },
+      {
+        "kind": "valid"
+      },
+      {
+        "kind": "uniqueness-contradiction",
+        "witness": {
+          "kind": "bug-complement",
+          "cell": 17,
+          "digit": 2
+        }
+      }
+    ],
+    "frames": [
+      [
+        0,
+        0,
+        9,
+        9
+      ]
+    ],
+    "labels": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        9
+      ],
+      [
+        0,
+        4,
+        6
+      ],
+      [
+        0,
+        4,
+        9
+      ],
+      [
+        0,
+        6,
+        3
+      ],
+      [
+        0,
+        6,
+        7
+      ],
+      [
+        0,
+        7,
+        1
+      ],
+      [
+        0,
+        7,
+        3
+      ],
+      [
+        0,
+        8,
+        6
+      ],
+      [
+        0,
+        8,
+        7
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        9
+      ],
+      [
+        1,
+        4,
+        2
+      ],
+      [
+        1,
+        4,
+        9
+      ],
+      [
+        1,
+        6,
+        4
+      ],
+      [
+        1,
+        6,
+        2
+      ],
+      [
+        1,
+        7,
+        1
+      ],
+      [
+        1,
+        7,
+        8
+      ],
+      [
+        1,
+        8,
+        4
+      ],
+      [
+        1,
+        8,
+        2
+      ],
+      [
+        1,
+        8,
+        8
+      ],
+      [
+        2,
+        4,
+        2
+      ],
+      [
+        2,
+        4,
+        6
+      ],
+      [
+        2,
+        8,
+        2
+      ],
+      [
+        2,
+        8,
+        6
+      ],
+      [
+        4,
+        6,
+        4
+      ],
+      [
+        4,
+        6,
+        7
+      ],
+      [
+        4,
+        8,
+        4
+      ],
+      [
+        4,
+        8,
+        7
+      ],
+      [
+        7,
+        6,
+        3
+      ],
+      [
+        7,
+        6,
+        2
+      ],
+      [
+        7,
+        7,
+        3
+      ],
+      [
+        7,
+        7,
+        8
+      ],
+      [
+        7,
+        8,
+        2
+      ],
+      [
+        7,
+        8,
+        8
+      ]
+    ],
+    "uniquenessPremise": {
+      "kind": "unique-root",
+      "solutionCount": 1
+    },
+    "sourceFamily": "fc3f519aed79e01a",
+    "origin": "original Sudoku Let\u2019s Try practice puzzle; digit-relabelled original family",
+    "originalGrid": "502000000000007000008103000006000809000205000000080053060700040970600000000840601",
+    "completedForcedMoves": 40,
+    "digitRelabeling": {
+      "permutation": [
+        1,
+        5,
+        3,
+        4,
+        2,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sourceGridSHA256": "6f26bd41be580e0b405665ce26dbd26ae05c01b8bc98615130a8319b59e25096",
+      "sourceGrid": "205408000603207000748103290126374859389512060457986123861735942974621000532849671",
+      "sourceOriginalGrid": "205000000000007000008103000006000809000502000000080023060700040970600000000840601",
+      "sourceCompletedForcedMoves": 40,
+      "sourceOriginalGridSHA256": "0237afe93aedd09fd820650cdcc486e598cc552499da23bd17ddb0677dd7c2f0"
+    },
+    "nativeWarnings": [
+      {
+        "kind": "crowded",
+        "constraints": [
+          [
+            0,
+            4,
+            6
+          ],
+          [
+            1,
+            4,
+            6
+          ],
+          [
+            2,
+            6,
+            1
+          ],
+          [
+            2,
+            8,
+            6
+          ],
+          [
+            3,
+            5,
+            6
+          ]
+        ]
+      },
+      {
+        "kind": "valid"
+      },
+      {
+        "kind": "crowded",
+        "constraints": [
+          [
+            0,
+            4,
+            8
+          ],
+          [
+            1,
+            4,
+            3
+          ],
+          [
+            2,
+            6,
+            3
+          ],
+          [
+            3,
+            5,
+            3
+          ]
+        ]
+      }
+    ],
+    "id": "example-1",
+    "animation": "example-1.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABUCQIAAYDUHAAdIEDWQFWN0gpOJIVBgQnmGFThhcylFl0ZRAAI1hJZxBDNPdC",
+    "scenarioSHA256": "c6916c867bbe44b98e582aee28fd5a13b29c9190104fcd591c6a48a3f3dced43"
+  },
+  {
+    "slug": "bug-plus-one",
+    "grid": "826000500345080700179005800438010956961854237752369481587126394693478125214593678",
+    "solutionCount": 1,
+    "initialStatus": "dilemma",
+    "initialSingles": 0,
+    "pattern": {
+      "cell": 12,
+      "digit": 2,
+      "pair": [
+        9,
+        6
+      ],
+      "cells": [
+        3,
+        4,
+        5,
+        7,
+        8,
+        12,
+        14,
+        16,
+        17,
+        21,
+        22,
+        25,
+        26,
+        30,
+        32
+      ],
+      "eliminations": [
+        [
+          12,
+          9
+        ],
+        [
+          12,
+          6
+        ]
+      ]
+    },
+    "targets": [
+      [
+        12,
+        9
+      ],
+      [
+        12,
+        6
+      ]
+    ],
+    "branches": [
+      [
+        [
+          12,
+          2
+        ]
+      ],
+      [
+        [
+          12,
+          9
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      [
+        [
+          12,
+          6
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          5,
+          7
+        ]
+      ]
+    ],
+    "branchOutcomes": [
+      {
+        "kind": "valid"
+      },
+      {
+        "kind": "uniqueness-contradiction",
+        "witness": {
+          "kind": "bug-complement",
+          "cell": 12,
+          "digit": 2
+        }
+      },
+      {
+        "kind": "uniqueness-contradiction",
+        "witness": {
+          "kind": "bug-complement",
+          "cell": 12,
+          "digit": 2
+        }
+      }
+    ],
+    "frames": [
+      [
+        0,
+        0,
+        9,
+        9
+      ]
+    ],
+    "labels": [
+      [
+        0,
+        3,
+        9
+      ],
+      [
+        0,
+        3,
+        7
+      ],
+      [
+        0,
+        4,
+        3
+      ],
+      [
+        0,
+        4,
+        4
+      ],
+      [
+        0,
+        5,
+        1
+      ],
+      [
+        0,
+        5,
+        7
+      ],
+      [
+        0,
+        7,
+        1
+      ],
+      [
+        0,
+        7,
+        4
+      ],
+      [
+        0,
+        8,
+        3
+      ],
+      [
+        0,
+        8,
+        9
+      ],
+      [
+        1,
+        3,
+        2
+      ],
+      [
+        1,
+        3,
+        9
+      ],
+      [
+        1,
+        3,
+        6
+      ],
+      [
+        1,
+        5,
+        1
+      ],
+      [
+        1,
+        5,
+        2
+      ],
+      [
+        1,
+        7,
+        1
+      ],
+      [
+        1,
+        7,
+        6
+      ],
+      [
+        1,
+        8,
+        2
+      ],
+      [
+        1,
+        8,
+        9
+      ],
+      [
+        2,
+        3,
+        2
+      ],
+      [
+        2,
+        3,
+        6
+      ],
+      [
+        2,
+        4,
+        3
+      ],
+      [
+        2,
+        4,
+        4
+      ],
+      [
+        2,
+        7,
+        4
+      ],
+      [
+        2,
+        7,
+        6
+      ],
+      [
+        2,
+        8,
+        2
+      ],
+      [
+        2,
+        8,
+        3
+      ],
+      [
+        3,
+        3,
+        2
+      ],
+      [
+        3,
+        3,
+        7
+      ],
+      [
+        3,
+        5,
+        2
+      ],
+      [
+        3,
+        5,
+        7
+      ]
+    ],
+    "uniquenessPremise": {
+      "kind": "unique-root",
+      "solutionCount": 1
+    },
+    "sourceFamily": "ac2dbe5dc3a59ad5",
+    "origin": "original Sudoku Let\u2019s Try practice puzzle; digit-relabelled original family",
+    "originalGrid": "020000000340000700009000800038000006060054000002309000507100090000070025000003008",
+    "completedForcedMoves": 42,
+    "digitRelabeling": {
+      "permutation": [
+        1,
+        2,
+        3,
+        4,
+        9,
+        6,
+        7,
+        8,
+        5
+      ],
+      "sourceGridSHA256": "13b438211fba68d5b70844bcb46a9f48f80825b213e547fd51344cb01ec7945d",
+      "sourceGrid": "826000900349080700175009800438010596561894237792365481987126354653478129214953678",
+      "sourceOriginalGrid": "020000000340000700005000800038000006060094000002305000907100050000070029000003008",
+      "sourceCompletedForcedMoves": 42,
+      "sourceOriginalGridSHA256": "02b23fd9ff2d89c0923f8b94c8fad541b1103003a44a27f8e30d99a5135b56ee"
+    },
+    "nativeWarnings": [
+      {
+        "kind": "valid"
+      },
+      {
+        "kind": "crowded",
+        "constraints": [
+          [
+            0,
+            1,
+            7
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "kind": "crowded",
+        "constraints": [
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            2,
+            7,
+            0
+          ],
+          [
+            3,
+            2,
+            0
+          ]
+        ]
+      }
+    ],
+    "id": "example-2",
+    "animation": "example-2.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABgmAAUANFCAcAF5AFgAQ4AQlWlhhUI3dSNpSBWHEmOUaTR4ElIUWTZ4B1SnZS",
+    "scenarioSHA256": "1b5e56971b966c076f998ddd48175d46a15da94b359dcc688422136439752264"
+  },
+  {
+    "slug": "bug-plus-one",
+    "grid": "769154238481392765235876000307918506008460007006720080973641852812539674654287193",
+    "solutionCount": 1,
+    "initialStatus": "dilemma",
+    "initialSingles": 0,
+    "pattern": {
+      "cell": 51,
+      "digit": 9,
+      "pair": [
+        3,
+        4
+      ],
+      "cells": [
+        24,
+        25,
+        26,
+        28,
+        34,
+        36,
+        37,
+        41,
+        42,
+        43,
+        45,
+        46,
+        50,
+        51,
+        53
+      ],
+      "eliminations": [
+        [
+          51,
+          3
+        ],
+        [
+          51,
+          4
+        ]
+      ]
+    },
+    "targets": [
+      [
+        51,
+        3
+      ],
+      [
+        51,
+        4
+      ]
+    ],
+    "branches": [
+      [
+        [
+          51,
+          3
+        ],
+        [
+          42,
+          9
+        ]
+      ],
+      [
+        [
+          51,
+          4
+        ],
+        [
+          42,
+          3
+        ]
+      ],
+      [
+        [
+          51,
+          9
+        ]
+      ]
+    ],
+    "branchOutcomes": [
+      {
+        "kind": "uniqueness-contradiction",
+        "witness": {
+          "kind": "bug-complement",
+          "cell": 51,
+          "digit": 9
+        }
+      },
+      {
+        "kind": "uniqueness-contradiction",
+        "witness": {
+          "kind": "bug-complement",
+          "cell": 51,
+          "digit": 9
+        }
+      },
+      {
+        "kind": "valid"
+      }
+    ],
+    "frames": [
+      [
+        0,
+        0,
+        9,
+        9
+      ]
+    ],
+    "labels": [
+      [
+        2,
+        6,
+        4
+      ],
+      [
+        2,
+        6,
+        9
+      ],
+      [
+        2,
+        7,
+        1
+      ],
+      [
+        2,
+        7,
+        4
+      ],
+      [
+        2,
+        8,
+        1
+      ],
+      [
+        2,
+        8,
+        9
+      ],
+      [
+        3,
+        1,
+        2
+      ],
+      [
+        3,
+        1,
+        4
+      ],
+      [
+        3,
+        7,
+        2
+      ],
+      [
+        3,
+        7,
+        4
+      ],
+      [
+        4,
+        0,
+        1
+      ],
+      [
+        4,
+        0,
+        5
+      ],
+      [
+        4,
+        1,
+        2
+      ],
+      [
+        4,
+        1,
+        9
+      ],
+      [
+        4,
+        5,
+        3
+      ],
+      [
+        4,
+        5,
+        5
+      ],
+      [
+        4,
+        6,
+        3
+      ],
+      [
+        4,
+        6,
+        9
+      ],
+      [
+        4,
+        7,
+        1
+      ],
+      [
+        4,
+        7,
+        2
+      ],
+      [
+        5,
+        0,
+        1
+      ],
+      [
+        5,
+        0,
+        5
+      ],
+      [
+        5,
+        1,
+        4
+      ],
+      [
+        5,
+        1,
+        9
+      ],
+      [
+        5,
+        5,
+        3
+      ],
+      [
+        5,
+        5,
+        5
+      ],
+      [
+        5,
+        6,
+        3
+      ],
+      [
+        5,
+        6,
+        4
+      ],
+      [
+        5,
+        6,
+        9
+      ],
+      [
+        5,
+        8,
+        1
+      ],
+      [
+        5,
+        8,
+        9
+      ]
+    ],
+    "uniquenessPremise": {
+      "kind": "unique-root",
+      "solutionCount": 1
+    },
+    "sourceFamily": "81ef993885e11b04",
+    "origin": "original Sudoku Let\u2019s Try practice puzzle; digit-relabelled original family",
+    "originalGrid": "009000030401300060000870000300010000000400007006000080073000002800009000650007100",
+    "completedForcedMoves": 43,
+    "digitRelabeling": {
+      "permutation": [
+        1,
+        2,
+        3,
+        4,
+        9,
+        6,
+        7,
+        8,
+        5
+      ],
+      "sourceGridSHA256": "d9f44dd48d82bbf312786d47727a9084b65b638d98b914e5d2bdb760c09560c1",
+      "sourceGrid": "765194238481352769239876000307518906008460007006720080573641892812935674694287153",
+      "sourceOriginalGrid": "005000030401300060000870000300010000000400007006000080073000002800005000690007100",
+      "sourceCompletedForcedMoves": 43,
+      "sourceOriginalGridSHA256": "0f32954a816ef6318a3a8449ad5abb68ad238566f9286276b5db4b1935e67ac2"
+    },
+    "nativeWarnings": [
+      {
+        "kind": "crowded",
+        "constraints": [
+          [
+            0,
+            5,
+            1
+          ]
+        ]
+      },
+      {
+        "kind": "crowded",
+        "constraints": [
+          [
+            1,
+            5,
+            8
+          ],
+          [
+            2,
+            1,
+            8
+          ],
+          [
+            3,
+            3,
+            8
+          ]
+        ]
+      },
+      {
+        "kind": "valid"
+      }
+    ],
+    "id": "example-3",
+    "animation": "example-3.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABdpFUI4SBOSdlI1h2AAMHkYUGAIRgAHAGcgCAlzZBhSgSU5Z0ZUKHGTDxJloM",
+    "scenarioSHA256": "432c52e4f3c2852d173998c1b6aec0d08b3f0e9c7686f77bfef14936b51348eb"
+  }
+]

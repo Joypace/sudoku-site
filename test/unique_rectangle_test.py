@@ -51,6 +51,7 @@ class RectangleWarningBinding(unittest.TestCase):
   from unittest.mock import Mock
   common=Mock();data=self.shell();self.check(data,common)
   common.validate_story.assert_called_once_with(data,FIXTURE,valid_slots=[0,3])
+  common.validate_warning_views.assert_called_once_with(data,[0,1])
  def test_generic_invalid_missing_wrong_or_untyped_uniqueness_assertions_are_rejected(self):
   from unittest.mock import Mock
   for mode in ['missing','generic-invalid','wrong-corner','extra-slot','float-slot','float-cell','false-premise']:
@@ -72,7 +73,7 @@ class RectangleWarningBinding(unittest.TestCase):
    if mode=='after-board-switch':data['presentation']['warningFrames'][0]=2000
    if mode=='float-time':data['presentation']['warningFrames'][0]=1800.0
    if mode=='caption-covered':data['presentation']['captions']=[{'start':1700,'end':1900}]
-   with self.subTest(mode=mode),self.assertRaises(ValueError):self.check(data,Mock())
+   with self.subTest(mode=mode),self.assertRaises(ValueError):p._stories.validate_warning_views(data,[0,1])
 class RectanglePublishedFlow(unittest.TestCase):
  def test_real_story_integrates_diagnostic_states_without_weakening_gesture_setup(self):
   import json

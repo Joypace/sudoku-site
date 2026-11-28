@@ -53,3 +53,18 @@ def validate_story(data,e,*,valid_slots=None):
  require(type(data['presentation'].get('duration')) is int and data['presentation']['duration']>=previous+frames[-1].get('ms',0),'Tutorial must finish its last action')
 
  require(all(f.get('inputDelay')==440 for f in [x for x in frames if x['do']=='down'][count*2:]),'Strike notes quickly without a held wheel popup')
+
+
+def validate_warning_views(data,rejected_indices):
+    """Bind unobscured proof frames to the live rejected board, after its fills."""
+    presentation=data.get('presentation',{})
+    times=presentation.get('warningFrames')
+    require(type(times) is list and len(times)==len(rejected_indices) and all(type(t) is int for t in times),'Record one actual warning view per rejected trial')
+    frames=data['frames'];warning=0
+    for k in rejected_indices:
+        start=next(i for i,f in enumerate(frames) if f['do']=='tap' and f.get('at')=={'part':'slot','slot':k+2})
+        end=next(i for i in range(start+1,len(frames)) if frames[i]['do']=='tap' and frames[i].get('at')=={'part':'slot','slot':1})
+        fills=[f for f in frames[start:end] if f['do']=='tap' and f.get('count')==2]
+        t=times[warning];warning+=1
+        require(fills and fills[-1]['time']+500<=t<frames[end]['time'],'Warning view must follow the completed swap and precede leaving that board')
+        require(not any(c['start']<=t<=c['end']+200 for c in presentation.get('captions',[])),'Warning proof view must be unobscured by captions')

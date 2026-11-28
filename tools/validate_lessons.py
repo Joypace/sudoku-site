@@ -135,6 +135,9 @@ PROOFS['locked-triple']=lambda example:_locked_triple.validate_pattern(example,_
 _rectangle=_load_sibling('unique_rectangle')
 PROOFS['unique-rectangle']=lambda example:_rectangle.validate_pattern(example,unique_solution)
 _rectangle_stories=_load_sibling('unique_rectangle_stories')
+_bug=_load_sibling('bug_plus_one')
+PROOFS['bug-plus-one']=lambda example:_bug.validate_pattern(example,unique_solution)
+_bug_stories=_load_sibling('bug_stories')
 for _slug in INTERMEDIATE:PROOFS[_slug]=lambda example,slug=_slug:_intermediate.validate_pattern(slug,example)
 ADVANCED=('naked-quadruple','hidden-quadruple','jellyfish','finned-x-wing','finned-swordfish','finned-jellyfish','simple-coloring','remote-pairs')
 _advanced=_load_sibling('advanced_proofs')
@@ -176,7 +179,7 @@ def validate(root):
   grids=set()
   for n,(entry,example) in enumerate(zip(items,examples),1):
    stem=f'example-{n}';require(entry.get('id')==stem and example.get('id')==stem and example.get('animation')==stem+'.svg','Example ID mismatch');grid=example['grid'];require(grid not in grids,'Each example must use a different starting puzzle');grids.add(grid);require(bool(re.fullmatch('[0-9]{81}',grid)),'Invalid starting grid');require(share_grid(example['shareURL'])==grid,'Share link does not open the animated starting clues');
-   if slug!='unique-rectangle':unique_solution(grid)
+   if slug not in ['unique-rectangle','bug-plus-one']:unique_solution(grid)
    PROOFS[slug](example)
    scenario=folder/(stem+'.json');data=json.loads(scenario.read_text());require(data['grid']==grid and isinstance(data.get('setup'),list) and data['setup']==[],'No hidden setup may precede a shared example')
    if slug in ['x-wing','naked-pair','pointing','hidden-pair','claiming']:require(data.get('expected',{}).get('initialStatus')=='dilemma','Missing initial Dilemma runtime assertion')
@@ -193,6 +196,7 @@ def validate(root):
    if slug=='locked-pair':_stories.validate_story(data,example)
    if slug=='locked-triple':_stories.validate_story(data,example)
    if slug=='unique-rectangle':_rectangle_stories.validate_story(data,example,_stories,_intermediate,require)
+   if slug=='bug-plus-one':_bug_stories.validate_story(data,example,_stories,_intermediate,require)
    if slug=='hidden-pair':hidden_pair_animation(data,example)
    if slug=='claiming':claiming_animation(data,example)
    if slug in INTERMEDIATE:_stories.validate_story(data,example)
