@@ -1,0 +1,1610 @@
+{
+  "schema": 1,
+  "title": "Unique Rectangle Type 3 example 3",
+  "grid": "003010690008400170060000820000097248000040501040000709700904302000201907090005406",
+  "style": "chill",
+  "setup": [],
+  "camera": {
+    "targets": [
+      {
+        "part": "tray"
+      },
+      {
+        "part": "board"
+      },
+      {
+        "part": "panel-row"
+      }
+    ],
+    "padding": 0.04
+  },
+  "frames": [
+    {
+      "do": "hover",
+      "at": {
+        "part": "slot",
+        "slot": 2
+      },
+      "time": 4700,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "slot",
+        "slot": 2
+      },
+      "count": 1,
+      "time": 5200
+    },
+    {
+      "do": "depart",
+      "time": 5700,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 5900
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          4,
+          5
+        ]
+      },
+      "time": 7550,
+      "ms": 350
+    },
+    {
+      "do": "down",
+      "at": {
+        "part": "cell",
+        "cell": [
+          4,
+          5
+        ]
+      },
+      "time": 8050
+    },
+    {
+      "do": "move",
+      "at": {
+        "part": "cell",
+        "cell": [
+          4,
+          5
+        ],
+        "offset": [
+          0.0,
+          -1.2
+        ]
+      },
+      "time": 8130,
+      "ms": 450
+    },
+    {
+      "do": "ready",
+      "digit": 2,
+      "time": 8650
+    },
+    {
+      "do": "up",
+      "time": 9350
+    },
+    {
+      "do": "depart",
+      "time": 9850,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 10050
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          0,
+          5
+        ]
+      },
+      "time": 12250,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "cell",
+        "cell": [
+          0,
+          5
+        ]
+      },
+      "count": 2,
+      "time": 12750
+    },
+    {
+      "do": "depart",
+      "time": 13250,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 13450
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "slot",
+        "slot": 1
+      },
+      "time": 13600,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "slot",
+        "slot": 1
+      },
+      "count": 1,
+      "time": 14100
+    },
+    {
+      "do": "depart",
+      "time": 14600,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 14800
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "slot",
+        "slot": 3
+      },
+      "time": 16350,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "slot",
+        "slot": 3
+      },
+      "count": 1,
+      "time": 16850
+    },
+    {
+      "do": "depart",
+      "time": 17350,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 17550
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          4,
+          5
+        ]
+      },
+      "time": 19200,
+      "ms": 350
+    },
+    {
+      "do": "down",
+      "at": {
+        "part": "cell",
+        "cell": [
+          4,
+          5
+        ]
+      },
+      "time": 19700
+    },
+    {
+      "do": "move",
+      "at": {
+        "part": "cell",
+        "cell": [
+          4,
+          5
+        ],
+        "offset": [
+          0.0,
+          1.2
+        ]
+      },
+      "time": 19780,
+      "ms": 450
+    },
+    {
+      "do": "ready",
+      "digit": 8,
+      "time": 20300
+    },
+    {
+      "do": "up",
+      "time": 21000
+    },
+    {
+      "do": "depart",
+      "time": 21500,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 21700
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          0,
+          5
+        ]
+      },
+      "time": 23900,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "cell",
+        "cell": [
+          0,
+          5
+        ]
+      },
+      "count": 2,
+      "time": 24400
+    },
+    {
+      "do": "depart",
+      "time": 24900,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 25100
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "slot",
+        "slot": 1
+      },
+      "time": 25250,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "slot",
+        "slot": 1
+      },
+      "count": 1,
+      "time": 25750
+    },
+    {
+      "do": "depart",
+      "time": 26250,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 26450
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "slot",
+        "slot": 4
+      },
+      "time": 28000,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "slot",
+        "slot": 4
+      },
+      "count": 1,
+      "time": 28500
+    },
+    {
+      "do": "depart",
+      "time": 29000,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 29200
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          5,
+          5
+        ]
+      },
+      "time": 30850,
+      "ms": 350
+    },
+    {
+      "do": "down",
+      "at": {
+        "part": "cell",
+        "cell": [
+          5,
+          5
+        ]
+      },
+      "time": 31350
+    },
+    {
+      "do": "move",
+      "at": {
+        "part": "cell",
+        "cell": [
+          5,
+          5
+        ],
+        "offset": [
+          0.0,
+          -1.2
+        ]
+      },
+      "time": 31430,
+      "ms": 450
+    },
+    {
+      "do": "ready",
+      "digit": 2,
+      "time": 31950
+    },
+    {
+      "do": "up",
+      "time": 32650
+    },
+    {
+      "do": "depart",
+      "time": 33150,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 33350
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          0,
+          5
+        ]
+      },
+      "time": 35550,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "cell",
+        "cell": [
+          0,
+          5
+        ]
+      },
+      "count": 2,
+      "time": 36050
+    },
+    {
+      "do": "depart",
+      "time": 36550,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 36750
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "slot",
+        "slot": 1
+      },
+      "time": 36900,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "slot",
+        "slot": 1
+      },
+      "count": 1,
+      "time": 37400
+    },
+    {
+      "do": "depart",
+      "time": 37900,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 38100
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "slot",
+        "slot": 5
+      },
+      "time": 39650,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "slot",
+        "slot": 5
+      },
+      "count": 1,
+      "time": 40150
+    },
+    {
+      "do": "depart",
+      "time": 40650,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 40850
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          5,
+          5
+        ]
+      },
+      "time": 42500,
+      "ms": 350
+    },
+    {
+      "do": "down",
+      "at": {
+        "part": "cell",
+        "cell": [
+          5,
+          5
+        ]
+      },
+      "time": 43000
+    },
+    {
+      "do": "move",
+      "at": {
+        "part": "cell",
+        "cell": [
+          5,
+          5
+        ],
+        "offset": [
+          0.0,
+          1.2
+        ]
+      },
+      "time": 43080,
+      "ms": 450
+    },
+    {
+      "do": "ready",
+      "digit": 8,
+      "time": 43600
+    },
+    {
+      "do": "up",
+      "time": 44300
+    },
+    {
+      "do": "depart",
+      "time": 44800,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 45000
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          0,
+          5
+        ]
+      },
+      "time": 47200,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "cell",
+        "cell": [
+          0,
+          5
+        ]
+      },
+      "count": 2,
+      "time": 47700
+    },
+    {
+      "do": "depart",
+      "time": 48200,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 48400
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "slot",
+        "slot": 1
+      },
+      "time": 48550,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "slot",
+        "slot": 1
+      },
+      "count": 1,
+      "time": 49050
+    },
+    {
+      "do": "depart",
+      "time": 49550,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 49750
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "slot",
+        "slot": 2
+      },
+      "time": 51100,
+      "ms": 400
+    },
+    {
+      "do": "down",
+      "at": {
+        "part": "slot",
+        "slot": 2
+      },
+      "time": 51650
+    },
+    {
+      "do": "move",
+      "at": {
+        "part": "slot",
+        "slot": 1
+      },
+      "time": 51900,
+      "ms": 750
+    },
+    {
+      "do": "up",
+      "time": 52800
+    },
+    {
+      "do": "depart",
+      "time": 53200,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 53400
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "slot",
+        "slot": 3
+      },
+      "time": 54800,
+      "ms": 400
+    },
+    {
+      "do": "down",
+      "at": {
+        "part": "slot",
+        "slot": 3
+      },
+      "time": 55350
+    },
+    {
+      "do": "move",
+      "at": {
+        "part": "slot",
+        "slot": 1
+      },
+      "time": 55600,
+      "ms": 750
+    },
+    {
+      "do": "up",
+      "time": 56500
+    },
+    {
+      "do": "depart",
+      "time": 56900,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 57100
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "slot",
+        "slot": 4
+      },
+      "time": 58500,
+      "ms": 400
+    },
+    {
+      "do": "down",
+      "at": {
+        "part": "slot",
+        "slot": 4
+      },
+      "time": 59050
+    },
+    {
+      "do": "move",
+      "at": {
+        "part": "slot",
+        "slot": 1
+      },
+      "time": 59300,
+      "ms": 750
+    },
+    {
+      "do": "up",
+      "time": 60200
+    },
+    {
+      "do": "depart",
+      "time": 60600,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 60800
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "slot",
+        "slot": 5
+      },
+      "time": 62200,
+      "ms": 400
+    },
+    {
+      "do": "down",
+      "at": {
+        "part": "slot",
+        "slot": 5
+      },
+      "time": 62750
+    },
+    {
+      "do": "move",
+      "at": {
+        "part": "slot",
+        "slot": 1
+      },
+      "time": 63000,
+      "ms": 750
+    },
+    {
+      "do": "up",
+      "time": 63900
+    },
+    {
+      "do": "depart",
+      "time": 64300,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 64500
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          1,
+          5
+        ]
+      },
+      "time": 68700,
+      "ms": 350
+    },
+    {
+      "do": "down",
+      "at": {
+        "part": "cell",
+        "cell": [
+          1,
+          5
+        ]
+      },
+      "time": 69200,
+      "inputDelay": 440
+    },
+    {
+      "do": "move",
+      "at": {
+        "part": "cell",
+        "cell": [
+          1,
+          5
+        ],
+        "offset": [
+          0.0,
+          -1.617
+        ]
+      },
+      "time": 69240,
+      "ms": 600
+    },
+    {
+      "do": "up",
+      "time": 69890
+    },
+    {
+      "do": "depart",
+      "time": 70400,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 70600
+    }
+  ],
+  "presentation": {
+    "duration": 74200,
+    "captions": [
+      {
+        "text": "One roof needs an extra. Together with the pair, both extras are reserved.",
+        "start": 500,
+        "end": 3300,
+        "target": {
+          "part": "cell",
+          "cell": [
+            5,
+            7
+          ]
+        }
+      },
+      {
+        "text": "Copy the original to try one possible choice.",
+        "start": 3300,
+        "end": 4700,
+        "target": {
+          "part": "slot",
+          "slot": 2
+        }
+      },
+      {
+        "text": "Try 2 at r5c6.",
+        "start": 6050,
+        "end": 7550,
+        "target": {
+          "part": "cell",
+          "cell": [
+            4,
+            5
+          ]
+        }
+      },
+      {
+        "text": "Now r1c6 must be 8.",
+        "start": 10250,
+        "end": 12250,
+        "target": {
+          "part": "cell",
+          "cell": [
+            0,
+            5
+          ]
+        }
+      },
+      {
+        "text": "Copy the original to try one possible choice.",
+        "start": 14950,
+        "end": 16350,
+        "target": {
+          "part": "slot",
+          "slot": 3
+        }
+      },
+      {
+        "text": "Try 8 at r5c6.",
+        "start": 17700,
+        "end": 19200,
+        "target": {
+          "part": "cell",
+          "cell": [
+            4,
+            5
+          ]
+        }
+      },
+      {
+        "text": "Now r1c6 must be 2.",
+        "start": 21900,
+        "end": 23900,
+        "target": {
+          "part": "cell",
+          "cell": [
+            0,
+            5
+          ]
+        }
+      },
+      {
+        "text": "Copy the original to try one possible choice.",
+        "start": 26600,
+        "end": 28000,
+        "target": {
+          "part": "slot",
+          "slot": 4
+        }
+      },
+      {
+        "text": "Try 2 at r6c6.",
+        "start": 29350,
+        "end": 30850,
+        "target": {
+          "part": "cell",
+          "cell": [
+            5,
+            5
+          ]
+        }
+      },
+      {
+        "text": "Now r1c6 must be 8.",
+        "start": 33550,
+        "end": 35550,
+        "target": {
+          "part": "cell",
+          "cell": [
+            0,
+            5
+          ]
+        }
+      },
+      {
+        "text": "Copy the original to try one possible choice.",
+        "start": 38250,
+        "end": 39650,
+        "target": {
+          "part": "slot",
+          "slot": 5
+        }
+      },
+      {
+        "text": "Try 8 at r6c6.",
+        "start": 41000,
+        "end": 42500,
+        "target": {
+          "part": "cell",
+          "cell": [
+            5,
+            5
+          ]
+        }
+      },
+      {
+        "text": "Now r1c6 must be 2.",
+        "start": 45200,
+        "end": 47200,
+        "target": {
+          "part": "cell",
+          "cell": [
+            0,
+            5
+          ]
+        }
+      },
+      {
+        "text": "Overlay this try on the original.",
+        "start": 49900,
+        "end": 51100,
+        "target": {
+          "part": "slot",
+          "slot": 2
+        }
+      },
+      {
+        "text": "Overlay this try on the original.",
+        "start": 53600,
+        "end": 54800,
+        "target": {
+          "part": "slot",
+          "slot": 3
+        }
+      },
+      {
+        "text": "Overlay this try on the original.",
+        "start": 57300,
+        "end": 58500,
+        "target": {
+          "part": "slot",
+          "slot": 4
+        }
+      },
+      {
+        "text": "Overlay this try on the original.",
+        "start": 61000,
+        "end": 62200,
+        "target": {
+          "part": "slot",
+          "slot": 5
+        }
+      },
+      {
+        "text": "Every roof-extra alternative excludes these same notes.",
+        "start": 64700,
+        "end": 67500,
+        "target": {
+          "part": "cells",
+          "cells": [
+            [
+              1,
+              5
+            ]
+          ]
+        }
+      },
+      {
+        "text": "Remove 2 at r2c6.",
+        "start": 67500,
+        "end": 68700,
+        "target": {
+          "part": "cell",
+          "cell": [
+            1,
+            5
+          ],
+          "note": 2
+        }
+      },
+      {
+        "text": "Keep only the eliminations shared by every trial.",
+        "start": 70800,
+        "end": 73800,
+        "target": {
+          "part": "cells",
+          "cells": [
+            [
+              1,
+              5
+            ]
+          ]
+        }
+      }
+    ],
+    "focus": [
+      {
+        "start": 3300,
+        "duration": 1400,
+        "shape": "rect",
+        "target": {
+          "part": "slot",
+          "slot": 2
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 6050,
+        "duration": 1500,
+        "shape": "rect",
+        "target": {
+          "part": "cell",
+          "cell": [
+            4,
+            5
+          ]
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 10250,
+        "duration": 2000,
+        "shape": "rect",
+        "target": {
+          "part": "cell",
+          "cell": [
+            0,
+            5
+          ]
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 14950,
+        "duration": 1400,
+        "shape": "rect",
+        "target": {
+          "part": "slot",
+          "slot": 3
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 17700,
+        "duration": 1500,
+        "shape": "rect",
+        "target": {
+          "part": "cell",
+          "cell": [
+            4,
+            5
+          ]
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 21900,
+        "duration": 2000,
+        "shape": "rect",
+        "target": {
+          "part": "cell",
+          "cell": [
+            0,
+            5
+          ]
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 26600,
+        "duration": 1400,
+        "shape": "rect",
+        "target": {
+          "part": "slot",
+          "slot": 4
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 29350,
+        "duration": 1500,
+        "shape": "rect",
+        "target": {
+          "part": "cell",
+          "cell": [
+            5,
+            5
+          ]
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 33550,
+        "duration": 2000,
+        "shape": "rect",
+        "target": {
+          "part": "cell",
+          "cell": [
+            0,
+            5
+          ]
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 38250,
+        "duration": 1400,
+        "shape": "rect",
+        "target": {
+          "part": "slot",
+          "slot": 5
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 41000,
+        "duration": 1500,
+        "shape": "rect",
+        "target": {
+          "part": "cell",
+          "cell": [
+            5,
+            5
+          ]
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 45200,
+        "duration": 2000,
+        "shape": "rect",
+        "target": {
+          "part": "cell",
+          "cell": [
+            0,
+            5
+          ]
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 49900,
+        "duration": 1200,
+        "shape": "rect",
+        "target": {
+          "part": "slot",
+          "slot": 2
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 53600,
+        "duration": 1200,
+        "shape": "rect",
+        "target": {
+          "part": "slot",
+          "slot": 3
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 57300,
+        "duration": 1200,
+        "shape": "rect",
+        "target": {
+          "part": "slot",
+          "slot": 4
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 61000,
+        "duration": 1200,
+        "shape": "rect",
+        "target": {
+          "part": "slot",
+          "slot": 5
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 64700,
+        "duration": 2800,
+        "shape": "rect",
+        "target": {
+          "part": "cells",
+          "cells": [
+            [
+              1,
+              5
+            ]
+          ]
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 67500,
+        "duration": 1200,
+        "shape": "rect",
+        "target": {
+          "part": "cell",
+          "cell": [
+            1,
+            5
+          ],
+          "note": 2
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 70800,
+        "duration": 3000,
+        "shape": "rect",
+        "target": {
+          "part": "cells",
+          "cells": [
+            [
+              1,
+              5
+            ]
+          ]
+        },
+        "from": 6,
+        "to": 2
+      }
+    ],
+    "choiceReveal": {
+      "start": 500,
+      "frames": [
+        [
+          0,
+          5,
+          9,
+          1
+        ],
+        [
+          4,
+          5,
+          1,
+          1
+        ],
+        [
+          4,
+          7,
+          1,
+          1
+        ],
+        [
+          5,
+          5,
+          1,
+          1
+        ],
+        [
+          5,
+          7,
+          1,
+          1
+        ]
+      ],
+      "labels": [
+        [
+          0,
+          5,
+          2
+        ],
+        [
+          0,
+          5,
+          8
+        ],
+        [
+          4,
+          5,
+          2
+        ],
+        [
+          4,
+          5,
+          3
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          4,
+          5,
+          8
+        ],
+        [
+          4,
+          7,
+          3
+        ],
+        [
+          4,
+          7,
+          6
+        ],
+        [
+          5,
+          5,
+          2
+        ],
+        [
+          5,
+          5,
+          3
+        ],
+        [
+          5,
+          5,
+          6
+        ],
+        [
+          5,
+          5,
+          8
+        ],
+        [
+          5,
+          7,
+          3
+        ],
+        [
+          5,
+          7,
+          6
+        ]
+      ]
+    },
+    "bubbleSize": {
+      "maxWidth": 240,
+      "minHeight": 38
+    },
+    "uniquenessPremise": {
+      "kind": "unique-root",
+      "solutionCount": 1
+    },
+    "coverage": {
+      "kind": "roof-extras-disjunction",
+      "choices": [
+        [
+          41,
+          2
+        ],
+        [
+          41,
+          8
+        ],
+        [
+          50,
+          2
+        ],
+        [
+          50,
+          8
+        ]
+      ]
+    },
+    "captureFrameMs": 80
+  },
+  "expected": {
+    "initialStatus": "dilemma",
+    "boards": 5,
+    "overlays": [
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ]
+    ],
+    "validSlots": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "slotFills": [
+      [
+        1,
+        4,
+        5,
+        2
+      ],
+      [
+        1,
+        0,
+        5,
+        8
+      ],
+      [
+        2,
+        4,
+        5,
+        8
+      ],
+      [
+        2,
+        0,
+        5,
+        2
+      ],
+      [
+        3,
+        5,
+        5,
+        2
+      ],
+      [
+        3,
+        0,
+        5,
+        8
+      ],
+      [
+        4,
+        5,
+        5,
+        8
+      ],
+      [
+        4,
+        0,
+        5,
+        2
+      ]
+    ],
+    "fills": [
+      [
+        0,
+        5,
+        0
+      ],
+      [
+        4,
+        5,
+        0
+      ],
+      [
+        5,
+        5,
+        0
+      ]
+    ],
+    "notes": [
+      [
+        1,
+        5,
+        2,
+        false
+      ],
+      [
+        0,
+        5,
+        2,
+        true
+      ],
+      [
+        0,
+        5,
+        8,
+        true
+      ],
+      [
+        4,
+        5,
+        2,
+        true
+      ],
+      [
+        4,
+        5,
+        3,
+        true
+      ],
+      [
+        4,
+        5,
+        6,
+        true
+      ],
+      [
+        4,
+        5,
+        8,
+        true
+      ],
+      [
+        4,
+        7,
+        3,
+        true
+      ],
+      [
+        4,
+        7,
+        6,
+        true
+      ],
+      [
+        5,
+        5,
+        2,
+        true
+      ],
+      [
+        5,
+        5,
+        3,
+        true
+      ],
+      [
+        5,
+        5,
+        6,
+        true
+      ],
+      [
+        5,
+        5,
+        8,
+        true
+      ],
+      [
+        5,
+        7,
+        3,
+        true
+      ],
+      [
+        5,
+        7,
+        6,
+        true
+      ]
+    ],
+    "revealFrameCount": 5,
+    "revealLabelCount": 14
+  }
+}
