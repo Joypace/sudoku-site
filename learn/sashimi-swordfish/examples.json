@@ -1,0 +1,485 @@
+[
+  {
+    "grid": "005037680000000304030006000809000040004900000001054007700600400002300009010080000",
+    "origin": "original Sudoku Let\u2019s Try practice puzzle",
+    "sourceFamily": "b70c0b6c1fe07e5d",
+    "originalGrid": "000007680000000304030006000809000000004900000001054007700600400002300009010080000",
+    "completedForcedMoves": 3,
+    "initialStatus": "dilemma",
+    "initialSingles": 0,
+    "slug": "sashimi-swordfish",
+    "pattern": {
+      "orientation": "rows",
+      "bases": [
+        2,
+        5,
+        7
+      ],
+      "covers": [
+        1,
+        3,
+        6
+      ],
+      "digit": 8,
+      "positions": [
+        20,
+        21,
+        48,
+        51,
+        64,
+        69
+      ],
+      "fins": [
+        20
+      ],
+      "finBox": 0,
+      "eliminations": [
+        [
+          10,
+          8
+        ]
+      ]
+    },
+    "targets": [
+      [
+        10,
+        8
+      ]
+    ],
+    "branches": [
+      [
+        [
+          20,
+          7
+        ],
+        [
+          21,
+          8
+        ],
+        [
+          51,
+          8
+        ],
+        [
+          64,
+          8
+        ]
+      ],
+      [
+        [
+          20,
+          8
+        ]
+      ]
+    ],
+    "frames": [
+      [
+        2,
+        0,
+        1,
+        9
+      ],
+      [
+        5,
+        0,
+        1,
+        9
+      ],
+      [
+        7,
+        0,
+        1,
+        9
+      ],
+      [
+        0,
+        0,
+        3,
+        3
+      ]
+    ],
+    "labels": [
+      [
+        2,
+        2,
+        8
+      ],
+      [
+        2,
+        3,
+        8
+      ],
+      [
+        5,
+        3,
+        8
+      ],
+      [
+        5,
+        6,
+        8
+      ],
+      [
+        7,
+        1,
+        8
+      ],
+      [
+        7,
+        6,
+        8
+      ]
+    ],
+    "id": "example-1",
+    "animation": "example-1.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABAFA3aAAAAAMEAwAGAAgJAABAAEkAAAABBUAHcAYAQAACMAAJAQCAAABK8hs_",
+    "scenarioSHA256": "edb01a37fd877c6d21929234856040150669544a4fb5e9bca6b5514ab5fb6e9f"
+  },
+  {
+    "grid": "130250608000068102286910507953172864001805079008090015812009056304520981090081023",
+    "origin": "original Sudoku Let\u2019s Try practice puzzle",
+    "sourceFamily": "7f43db2fec667f06",
+    "originalGrid": "030000000000068000206900500000100064001005000008090010800009000004020001090080023",
+    "completedForcedMoves": 29,
+    "initialStatus": "dilemma",
+    "initialSingles": 0,
+    "slug": "sashimi-swordfish",
+    "pattern": {
+      "orientation": "rows",
+      "bases": [
+        0,
+        5,
+        7
+      ],
+      "covers": [
+        0,
+        1,
+        5
+      ],
+      "digit": 7,
+      "positions": [
+        2,
+        5,
+        45,
+        46,
+        64,
+        68
+      ],
+      "fins": [
+        2
+      ],
+      "finBox": 0,
+      "eliminations": [
+        [
+          9,
+          7
+        ],
+        [
+          10,
+          7
+        ]
+      ]
+    },
+    "targets": [
+      [
+        9,
+        7
+      ],
+      [
+        10,
+        7
+      ]
+    ],
+    "branches": [
+      [
+        [
+          2,
+          7
+        ]
+      ],
+      [
+        [
+          2,
+          9
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          64,
+          7
+        ],
+        [
+          45,
+          7
+        ]
+      ]
+    ],
+    "frames": [
+      [
+        0,
+        0,
+        1,
+        9
+      ],
+      [
+        5,
+        0,
+        1,
+        9
+      ],
+      [
+        7,
+        0,
+        1,
+        9
+      ],
+      [
+        0,
+        0,
+        3,
+        3
+      ]
+    ],
+    "labels": [
+      [
+        0,
+        2,
+        7
+      ],
+      [
+        0,
+        5,
+        7
+      ],
+      [
+        5,
+        0,
+        7
+      ],
+      [
+        5,
+        1,
+        7
+      ],
+      [
+        7,
+        1,
+        7
+      ],
+      [
+        7,
+        5,
+        7
+      ]
+    ],
+    "id": "example-2",
+    "animation": "example-2.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABEwJQYIAABoECKGkQUHlTFyhkABgFB5AICQAVgSAJBWMEUgmBCQCBAjBgFxkU",
+    "scenarioSHA256": "785087c1434d0930bc313c74acfeb3572ad9acd0853755d139ae957bff976a5c"
+  },
+  {
+    "grid": "000026081020400600670091032062380100000160020010972000953000200046209850280600900",
+    "originalGrid": "000000081020400600070091030002380000000000000010072000903000200006200850080600900",
+    "completedForcedMoves": [
+      [
+        2,
+        6
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        16,
+        4
+      ],
+      [
+        15,
+        5
+      ],
+      [
+        36,
+        2
+      ],
+      [
+        40,
+        6
+      ],
+      [
+        12,
+        6
+      ],
+      [
+        31,
+        1
+      ],
+      [
+        32,
+        9
+      ],
+      [
+        45,
+        6
+      ],
+      [
+        52,
+        9
+      ],
+      [
+        57,
+        1
+      ],
+      [
+        67,
+        2
+      ],
+      [
+        74,
+        2
+      ]
+    ],
+    "origin": "original Sudoku Lets Try generated practice puzzle",
+    "sourceFamily": "446f4fb8cb4145fb",
+    "generation": {
+      "seed": 2026112501,
+      "ordinal": 1099,
+      "generatorSHA256": "5228acf573836318e14aed993e56488835f824351dab4c8c89b76ba95be66564"
+    },
+    "solutionCount": 1,
+    "slug": "sashimi-swordfish",
+    "pattern": {
+      "orientation": "columns",
+      "bases": [
+        2,
+        3,
+        6
+      ],
+      "covers": [
+        0,
+        4,
+        8
+      ],
+      "digit": 7,
+      "positions": [
+        3,
+        6,
+        38,
+        42,
+        57,
+        74
+      ],
+      "fins": [
+        57
+      ],
+      "finBox": 7,
+      "eliminations": [
+        [
+          77,
+          7
+        ]
+      ]
+    },
+    "targets": [
+      [
+        77,
+        7
+      ]
+    ],
+    "branches": [
+      [
+        [
+          57,
+          7
+        ]
+      ],
+      [
+        [
+          57,
+          8
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          42,
+          7
+        ],
+        [
+          74,
+          7
+        ]
+      ]
+    ],
+    "frames": [
+      [
+        0,
+        2,
+        9,
+        1
+      ],
+      [
+        0,
+        3,
+        9,
+        1
+      ],
+      [
+        0,
+        6,
+        9,
+        1
+      ],
+      [
+        6,
+        3,
+        3,
+        3
+      ]
+    ],
+    "labels": [
+      [
+        4,
+        2,
+        7
+      ],
+      [
+        8,
+        2,
+        7
+      ],
+      [
+        0,
+        3,
+        7
+      ],
+      [
+        6,
+        3,
+        7
+      ],
+      [
+        0,
+        6,
+        7
+      ],
+      [
+        4,
+        6,
+        7
+      ]
+    ],
+    "sourceTransform": {
+      "type": "transpose",
+      "inputGrid": "006000902027601548000200360040319026209867000601002090060100289803020050102000000",
+      "inputOriginalGrid": "000000900027001008000200360040300026009807000001002000060000289803000050100000000",
+      "canonicalSourceFamilyUnchanged": true
+    },
+    "id": "example-3",
+    "animation": "example-3.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABAAAmCBAgQAYAZwCRAyBiOAEAAAFgAgAQlyAAlTAAIABGIJhQKAYAkABa8VJE",
+    "scenarioSHA256": "01aaf80ad80db3441353f92935cd3a90677fa73337cd9a7a835aba073606bcd6"
+  }
+]
