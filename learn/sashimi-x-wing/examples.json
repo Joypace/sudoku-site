@@ -1,0 +1,374 @@
+[
+  {
+    "grid": "093002007000090000060030500836207010975000003124080700300005670600000002019800000",
+    "origin": "original Sudoku Let\u2019s Try practice puzzle",
+    "sourceFamily": "6f366165c03fb1a3",
+    "originalGrid": "003002007000090000060030500000207010975000003004080000300005670600000002019800000",
+    "completedForcedMoves": 7,
+    "initialStatus": "dilemma",
+    "initialSingles": 0,
+    "slug": "sashimi-x-wing",
+    "pattern": {
+      "orientation": "columns",
+      "bases": [
+        5,
+        6
+      ],
+      "covers": [
+        5,
+        7
+      ],
+      "digit": 9,
+      "positions": [
+        33,
+        50,
+        68,
+        69
+      ],
+      "fins": [
+        33
+      ],
+      "finBox": 5,
+      "eliminations": [
+        [
+          52,
+          9
+        ],
+        [
+          53,
+          9
+        ]
+      ]
+    },
+    "targets": [
+      [
+        52,
+        9
+      ],
+      [
+        53,
+        9
+      ]
+    ],
+    "branches": [
+      [
+        [
+          33,
+          4
+        ],
+        [
+          69,
+          9
+        ],
+        [
+          50,
+          9
+        ]
+      ],
+      [
+        [
+          33,
+          9
+        ]
+      ]
+    ],
+    "frames": [
+      [
+        0,
+        5,
+        9,
+        1
+      ],
+      [
+        0,
+        6,
+        9,
+        1
+      ],
+      [
+        3,
+        6,
+        3,
+        3
+      ]
+    ],
+    "labels": [
+      [
+        3,
+        6,
+        9
+      ],
+      [
+        5,
+        5,
+        9
+      ],
+      [
+        7,
+        5,
+        9
+      ],
+      [
+        7,
+        6,
+        9
+      ]
+    ],
+    "id": "example-1",
+    "animation": "example-1.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABCTACAHAACQAABgAwUAg2IHAQl1AAADEkCAcAMAAFZwYAAAACAZgAAAA_3vtc",
+    "scenarioSHA256": "bce119d82ac7d8616358e5ce071df4715f1ae6a57a4f0d9bfd86924b7b5f650d"
+  },
+  {
+    "grid": "070000002000050080900030500000618090060905013100003806000000108007580409080002060",
+    "origin": "original Sudoku Let\u2019s Try practice puzzle",
+    "sourceFamily": "fa2ce3e1c5cf9c8b",
+    "originalGrid": "070000002000050080900030500000608090060900013100003800000000108007500400080002060",
+    "completedForcedMoves": 5,
+    "initialStatus": "dilemma",
+    "initialSingles": 0,
+    "slug": "sashimi-x-wing",
+    "pattern": {
+      "orientation": "rows",
+      "bases": [
+        2,
+        7
+      ],
+      "covers": [
+        2,
+        5
+      ],
+      "digit": 6,
+      "positions": [
+        20,
+        23,
+        63,
+        68
+      ],
+      "fins": [
+        63
+      ],
+      "finBox": 6,
+      "eliminations": [
+        [
+          56,
+          6
+        ]
+      ]
+    },
+    "targets": [
+      [
+        56,
+        6
+      ]
+    ],
+    "branches": [
+      [
+        [
+          63,
+          2
+        ],
+        [
+          68,
+          6
+        ],
+        [
+          20,
+          6
+        ]
+      ],
+      [
+        [
+          63,
+          3
+        ],
+        [
+          68,
+          6
+        ],
+        [
+          20,
+          6
+        ]
+      ],
+      [
+        [
+          63,
+          6
+        ]
+      ]
+    ],
+    "frames": [
+      [
+        2,
+        0,
+        1,
+        9
+      ],
+      [
+        7,
+        0,
+        1,
+        9
+      ],
+      [
+        6,
+        0,
+        3,
+        3
+      ]
+    ],
+    "labels": [
+      [
+        2,
+        2,
+        6
+      ],
+      [
+        2,
+        5,
+        6
+      ],
+      [
+        7,
+        0,
+        6
+      ],
+      [
+        7,
+        5,
+        6
+      ]
+    ],
+    "id": "example-2",
+    "animation": "example-2.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABBwAAACAABQCAkAAwUAAAYYCQBgkFATEAADgGAAAAEIAHWAQJCAACBgAo5Oki",
+    "scenarioSHA256": "bf3e70acaed541c7d62e4ca386cc2f8de134b3ccc9cbdade7e6d38f8603e66b8"
+  },
+  {
+    "grid": "010905030000000710000010400830059000720000000100802000081590320590203080000081050",
+    "origin": "original Sudoku Let\u2019s Try practice puzzle",
+    "sourceFamily": "f6fab1582361b91b",
+    "originalGrid": "000905030000000710000010400830059000720000000100802000081000320590203080000001050",
+    "completedForcedMoves": 4,
+    "initialStatus": "dilemma",
+    "initialSingles": 0,
+    "slug": "sashimi-x-wing",
+    "pattern": {
+      "orientation": "columns",
+      "bases": [
+        1,
+        5
+      ],
+      "covers": [
+        2,
+        8
+      ],
+      "digit": 7,
+      "positions": [
+        19,
+        23,
+        59,
+        73
+      ],
+      "fins": [
+        59
+      ],
+      "finBox": 7,
+      "eliminations": [
+        [
+          75,
+          7
+        ]
+      ]
+    },
+    "targets": [
+      [
+        75,
+        7
+      ]
+    ],
+    "branches": [
+      [
+        [
+          59,
+          4
+        ],
+        [
+          23,
+          7
+        ],
+        [
+          73,
+          7
+        ]
+      ],
+      [
+        [
+          59,
+          6
+        ],
+        [
+          23,
+          7
+        ],
+        [
+          73,
+          7
+        ]
+      ],
+      [
+        [
+          59,
+          7
+        ]
+      ]
+    ],
+    "frames": [
+      [
+        0,
+        1,
+        9,
+        1
+      ],
+      [
+        0,
+        5,
+        9,
+        1
+      ],
+      [
+        6,
+        3,
+        3,
+        3
+      ]
+    ],
+    "labels": [
+      [
+        2,
+        1,
+        7
+      ],
+      [
+        2,
+        5,
+        7
+      ],
+      [
+        6,
+        5,
+        7
+      ],
+      [
+        8,
+        1,
+        7
+      ]
+    ],
+    "id": "example-3",
+    "animation": "example-3.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABAQkFAwAAAAcQAAAQQAgwBZAAcgAAAAEAgCAACBWQMgWQIDCAAACBBQC3GnBq",
+    "scenarioSHA256": "3397793f2f4d71a950dd69926b84e4699296d483d36dae8ff2270b3982e79476"
+  }
+]

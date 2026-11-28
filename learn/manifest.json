@@ -410,6 +410,23 @@
       ]
     },
     {
+      "slug": "sashimi-x-wing",
+      "title": "Sashimi X-Wing: when the fin-free fish becomes forced",
+      "description": "Learn Sashimi X-Wing with three original Dilemma puzzles, real App animations and overlay marks, and exact playable puzzle links.",
+      "published": "2026-11-27",
+      "examples": [
+        {
+          "id": "example-1"
+        },
+        {
+          "id": "example-2"
+        },
+        {
+          "id": "example-3"
+        }
+      ]
+    },
+    {
       "slug": "finned-swordfish",
       "title": "Finned Swordfish: a three-line fish with a fin",
       "description": "Learn Finned Swordfish with three original Dilemma puzzles, real App animations and overlay marks, and exact playable puzzle links.",
