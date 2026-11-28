@@ -1,0 +1,742 @@
+[
+  {
+    "grid": "040980600806003100002156840500000396984001752263579418000000207030200501020010934",
+    "origin": "original Sudoku Let\u2019s Try practice puzzle",
+    "sourceFamily": "d34f203843062cd3",
+    "originalGrid": "040980600806003000000050040500000006004001750200079008000000007030200500020010030",
+    "completedForcedMoves": 19,
+    "initialStatus": "dilemma",
+    "initialSingles": 0,
+    "slug": "unique-rectangle-type-4",
+    "pattern": {
+      "type": 4,
+      "rows": [
+        4,
+        6
+      ],
+      "columns": [
+        3,
+        4
+      ],
+      "boxes": [
+        4,
+        7
+      ],
+      "corners": [
+        39,
+        40,
+        57,
+        58
+      ],
+      "roofs": [
+        57,
+        58
+      ],
+      "floors": [
+        39,
+        40
+      ],
+      "digits": [
+        3,
+        6
+      ],
+      "strongDigit": 3,
+      "strongPositions": [
+        57,
+        58
+      ],
+      "unit": "row",
+      "unitIndex": 6
+    },
+    "proofMode": "independent-uniqueness-refutations",
+    "coverage": {
+      "kind": "each-target-refuted",
+      "choices": [
+        [
+          57,
+          6
+        ],
+        [
+          58,
+          6
+        ]
+      ]
+    },
+    "branches": [
+      [
+        [
+          57,
+          6
+        ],
+        [
+          39,
+          3
+        ],
+        [
+          40,
+          6
+        ],
+        [
+          58,
+          3
+        ]
+      ],
+      [
+        [
+          58,
+          6
+        ],
+        [
+          39,
+          6
+        ],
+        [
+          40,
+          3
+        ],
+        [
+          57,
+          3
+        ]
+      ]
+    ],
+    "branchOutcomes": [
+      {
+        "kind": "uniqueness-contradiction",
+        "witness": {
+          "kind": "rectangle-digit-swap",
+          "corners": [
+            39,
+            40,
+            57,
+            58
+          ],
+          "digits": [
+            3,
+            6
+          ]
+        }
+      },
+      {
+        "kind": "uniqueness-contradiction",
+        "witness": {
+          "kind": "rectangle-digit-swap",
+          "corners": [
+            39,
+            40,
+            57,
+            58
+          ],
+          "digits": [
+            3,
+            6
+          ]
+        }
+      }
+    ],
+    "targets": [
+      [
+        57,
+        6
+      ],
+      [
+        58,
+        6
+      ]
+    ],
+    "frames": [
+      [
+        4,
+        3,
+        1,
+        1
+      ],
+      [
+        4,
+        4,
+        1,
+        1
+      ],
+      [
+        6,
+        0,
+        1,
+        9
+      ],
+      [
+        6,
+        3,
+        1,
+        1
+      ],
+      [
+        6,
+        4,
+        1,
+        1
+      ]
+    ],
+    "labels": [
+      [
+        4,
+        3,
+        3
+      ],
+      [
+        4,
+        3,
+        6
+      ],
+      [
+        4,
+        4,
+        3
+      ],
+      [
+        4,
+        4,
+        6
+      ],
+      [
+        6,
+        3,
+        3
+      ],
+      [
+        6,
+        3,
+        4
+      ],
+      [
+        6,
+        3,
+        6
+      ],
+      [
+        6,
+        3,
+        8
+      ],
+      [
+        6,
+        4,
+        3
+      ],
+      [
+        6,
+        4,
+        4
+      ],
+      [
+        6,
+        4,
+        6
+      ],
+      [
+        6,
+        4,
+        9
+      ]
+    ],
+    "uniquenessPremise": {
+      "kind": "unique-root",
+      "solutionCount": 1
+    },
+    "solutionCount": 1,
+    "roofOrientation": "rows",
+    "id": "example-1",
+    "animation": "example-1.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABBAmAYAgGADEAACFWhAUAAAOWmEABdSJjV5QYAAAAIHAwIAUBAgAQk0BatGE7",
+    "scenarioSHA256": "4ba88f86a803206b4a22f84d7b0e669b3024f24c73f12827449f9bd3e144a9b6"
+  },
+  {
+    "grid": "400072060500409020090608004958720043100900082620800000840097200000064800709280410",
+    "origin": "original Sudoku Let\u2019s Try practice puzzle",
+    "sourceFamily": "75aa016a97526447",
+    "originalGrid": "400072060500000020090000004908000003100900000020800000040007200000064800709080010",
+    "completedForcedMoves": 15,
+    "initialStatus": "dilemma",
+    "initialSingles": 0,
+    "slug": "unique-rectangle-type-4",
+    "pattern": {
+      "type": 4,
+      "rows": [
+        2,
+        7
+      ],
+      "columns": [
+        0,
+        2
+      ],
+      "boxes": [
+        0,
+        6
+      ],
+      "corners": [
+        18,
+        20,
+        63,
+        65
+      ],
+      "roofs": [
+        20,
+        65
+      ],
+      "floors": [
+        18,
+        63
+      ],
+      "digits": [
+        2,
+        3
+      ],
+      "strongDigit": 2,
+      "strongPositions": [
+        20,
+        65
+      ],
+      "unit": "column",
+      "unitIndex": 2
+    },
+    "proofMode": "independent-uniqueness-refutations",
+    "coverage": {
+      "kind": "each-target-refuted",
+      "choices": [
+        [
+          20,
+          3
+        ],
+        [
+          65,
+          3
+        ]
+      ]
+    },
+    "branches": [
+      [
+        [
+          20,
+          3
+        ],
+        [
+          18,
+          2
+        ],
+        [
+          63,
+          3
+        ],
+        [
+          65,
+          2
+        ]
+      ],
+      [
+        [
+          65,
+          3
+        ],
+        [
+          18,
+          3
+        ],
+        [
+          20,
+          2
+        ],
+        [
+          63,
+          2
+        ]
+      ]
+    ],
+    "branchOutcomes": [
+      {
+        "kind": "uniqueness-contradiction",
+        "witness": {
+          "kind": "rectangle-digit-swap",
+          "corners": [
+            18,
+            20,
+            63,
+            65
+          ],
+          "digits": [
+            2,
+            3
+          ]
+        }
+      },
+      {
+        "kind": "uniqueness-contradiction",
+        "witness": {
+          "kind": "rectangle-digit-swap",
+          "corners": [
+            18,
+            20,
+            63,
+            65
+          ],
+          "digits": [
+            2,
+            3
+          ]
+        }
+      }
+    ],
+    "targets": [
+      [
+        20,
+        3
+      ],
+      [
+        65,
+        3
+      ]
+    ],
+    "frames": [
+      [
+        0,
+        2,
+        9,
+        1
+      ],
+      [
+        2,
+        0,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        1,
+        1
+      ],
+      [
+        7,
+        0,
+        1,
+        1
+      ],
+      [
+        7,
+        2,
+        1,
+        1
+      ]
+    ],
+    "labels": [
+      [
+        2,
+        0,
+        2
+      ],
+      [
+        2,
+        0,
+        3
+      ],
+      [
+        2,
+        2,
+        1
+      ],
+      [
+        2,
+        2,
+        2
+      ],
+      [
+        2,
+        2,
+        3
+      ],
+      [
+        2,
+        2,
+        7
+      ],
+      [
+        7,
+        0,
+        2
+      ],
+      [
+        7,
+        0,
+        3
+      ],
+      [
+        7,
+        2,
+        1
+      ],
+      [
+        7,
+        2,
+        2
+      ],
+      [
+        7,
+        2,
+        3
+      ],
+      [
+        7,
+        2,
+        5
+      ]
+    ],
+    "uniquenessPremise": {
+      "kind": "unique-root",
+      "solutionCount": 1
+    },
+    "solutionCount": 1,
+    "roofOrientation": "columns",
+    "id": "example-2",
+    "animation": "example-2.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABQAByBgUAQJAgCQYIAElYcgBDEAkACCYggAAAhACXIAAABkgAcJKAQQAP-fPG",
+    "scenarioSHA256": "3ddf01f2fe6251e4d47bc8a42bad2ad6ff0a02771761ced8da20c22189df539f"
+  },
+  {
+    "grid": "724985316968100547100647829007510408810704205400800173080271054541369782070458031",
+    "origin": "original Sudoku Let\u2019s Try practice puzzle",
+    "sourceFamily": "0efb476e867d5c63",
+    "originalGrid": "020005310068000007100040009007000400010700005000800000000001000040069002000050001",
+    "completedForcedMoves": 37,
+    "initialStatus": "dilemma",
+    "initialSingles": 0,
+    "slug": "unique-rectangle-type-4",
+    "pattern": {
+      "type": 4,
+      "rows": [
+        6,
+        8
+      ],
+      "columns": [
+        2,
+        6
+      ],
+      "boxes": [
+        6,
+        8
+      ],
+      "corners": [
+        56,
+        60,
+        74,
+        78
+      ],
+      "roofs": [
+        56,
+        74
+      ],
+      "floors": [
+        60,
+        78
+      ],
+      "digits": [
+        6,
+        9
+      ],
+      "strongDigit": 9,
+      "strongPositions": [
+        56,
+        74
+      ],
+      "unit": "box",
+      "unitIndex": 6
+    },
+    "proofMode": "independent-uniqueness-refutations",
+    "coverage": {
+      "kind": "each-target-refuted",
+      "choices": [
+        [
+          56,
+          6
+        ],
+        [
+          74,
+          6
+        ]
+      ]
+    },
+    "branches": [
+      [
+        [
+          56,
+          6
+        ],
+        [
+          60,
+          9
+        ],
+        [
+          74,
+          9
+        ],
+        [
+          78,
+          6
+        ]
+      ],
+      [
+        [
+          74,
+          6
+        ],
+        [
+          56,
+          9
+        ],
+        [
+          60,
+          6
+        ],
+        [
+          78,
+          9
+        ]
+      ]
+    ],
+    "branchOutcomes": [
+      {
+        "kind": "uniqueness-contradiction",
+        "witness": {
+          "kind": "rectangle-digit-swap",
+          "corners": [
+            56,
+            60,
+            74,
+            78
+          ],
+          "digits": [
+            6,
+            9
+          ]
+        }
+      },
+      {
+        "kind": "uniqueness-contradiction",
+        "witness": {
+          "kind": "rectangle-digit-swap",
+          "corners": [
+            56,
+            60,
+            74,
+            78
+          ],
+          "digits": [
+            6,
+            9
+          ]
+        }
+      }
+    ],
+    "targets": [
+      [
+        56,
+        6
+      ],
+      [
+        74,
+        6
+      ]
+    ],
+    "frames": [
+      [
+        6,
+        0,
+        3,
+        3
+      ],
+      [
+        6,
+        2,
+        1,
+        1
+      ],
+      [
+        6,
+        6,
+        1,
+        1
+      ],
+      [
+        8,
+        2,
+        1,
+        1
+      ],
+      [
+        8,
+        6,
+        1,
+        1
+      ]
+    ],
+    "labels": [
+      [
+        6,
+        2,
+        3
+      ],
+      [
+        6,
+        2,
+        6
+      ],
+      [
+        6,
+        2,
+        9
+      ],
+      [
+        6,
+        6,
+        6
+      ],
+      [
+        6,
+        6,
+        9
+      ],
+      [
+        8,
+        2,
+        2
+      ],
+      [
+        8,
+        2,
+        6
+      ],
+      [
+        8,
+        2,
+        9
+      ],
+      [
+        8,
+        6,
+        6
+      ],
+      [
+        8,
+        6,
+        9
+      ]
+    ],
+    "uniquenessPremise": {
+      "kind": "unique-root",
+      "solutionCount": 1
+    },
+    "solutionCount": 1,
+    "roofOrientation": "columns",
+    "id": "example-3",
+    "animation": "example-3.svg",
+    "shareURL": "https://sudoku.joypace.com/share/?p=U1ABckmFMWloEAVHEAZHgpAHUQQIgQcEIFQAgAFzCAJxBUVBNpeCBwRYAxDyyrHQ",
+    "scenarioSHA256": "003843b729a8379cfe6d86cd18b59eb4ecec11ecb8af5d3c08867a8fbc16d4e7"
+  }
+]
