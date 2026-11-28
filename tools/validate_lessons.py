@@ -154,6 +154,8 @@ PROOFS['sashimi-jellyfish']=lambda example:_sashimi_jellyfish.validate(example,b
 for _slug in INTERMEDIATE:PROOFS[_slug]=lambda example,slug=_slug:_intermediate.validate_pattern(slug,example)
 ADVANCED=('naked-quadruple','hidden-quadruple','jellyfish','finned-x-wing','finned-swordfish','finned-jellyfish','simple-coloring','remote-pairs')
 _advanced=_load_sibling('advanced_proofs')
+_multicoloring=_load_sibling('multicoloring')
+PROOFS['multi-coloring']=lambda example:_multicoloring.validate(example,base=_intermediate,advanced=_advanced)
 for _slug in ADVANCED:PROOFS[_slug]=lambda example,slug=_slug:_advanced.validate_pattern(slug,example)
 
 def check_svg(file,scenario,example):
@@ -214,6 +216,7 @@ def validate(root):
    if slug=='sashimi-x-wing':_stories.validate_story(data,example)
    if slug=='sashimi-swordfish':_stories.validate_story(data,example)
    if slug=='sashimi-jellyfish':_stories.validate_story(data,example)
+   if slug=='multi-coloring':_stories.validate_story(data,example)
    if slug=='hidden-pair':hidden_pair_animation(data,example)
    if slug=='claiming':claiming_animation(data,example)
    if slug in INTERMEDIATE:_stories.validate_story(data,example)

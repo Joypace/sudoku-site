@@ -512,6 +512,23 @@
       ]
     },
     {
+      "slug": "multi-coloring",
+      "title": "Multi-Coloring: two connected groups, one shared conclusion",
+      "description": "Learn Multi-Coloring with three original Dilemma puzzles, real App animations and overlay marks, and exact playable puzzle links.",
+      "published": "2026-11-28",
+      "examples": [
+        {
+          "id": "example-1"
+        },
+        {
+          "id": "example-2"
+        },
+        {
+          "id": "example-3"
+        }
+      ]
+    },
+    {
       "slug": "remote-pairs",
       "title": "Remote Pairs: carry a two-note choice along a chain",
       "description": "Learn Remote Pairs with three original Dilemma puzzles, real App animations and overlay marks, and exact playable puzzle links.",

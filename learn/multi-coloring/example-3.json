@@ -1,0 +1,1786 @@
+{
+  "schema": 1,
+  "title": "Multi-Coloring example 3",
+  "grid": "638500002904086000100900000540091007810050429090800510005000701001020000409000208",
+  "style": "chill",
+  "setup": [],
+  "camera": {
+    "targets": [
+      {
+        "part": "tray"
+      },
+      {
+        "part": "board"
+      },
+      {
+        "part": "panel-row"
+      }
+    ],
+    "padding": 0.04
+  },
+  "frames": [
+    {
+      "do": "hover",
+      "at": {
+        "part": "slot",
+        "slot": 2
+      },
+      "time": 4700,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "slot",
+        "slot": 2
+      },
+      "count": 1,
+      "time": 5200
+    },
+    {
+      "do": "depart",
+      "time": 5700,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 5900
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          3,
+          2
+        ]
+      },
+      "time": 7550,
+      "ms": 350
+    },
+    {
+      "do": "down",
+      "at": {
+        "part": "cell",
+        "cell": [
+          3,
+          2
+        ]
+      },
+      "time": 8050
+    },
+    {
+      "do": "move",
+      "at": {
+        "part": "cell",
+        "cell": [
+          3,
+          2
+        ],
+        "offset": [
+          0.0,
+          -1.2
+        ]
+      },
+      "time": 8130,
+      "ms": 450
+    },
+    {
+      "do": "ready",
+      "digit": 2,
+      "time": 8650
+    },
+    {
+      "do": "up",
+      "time": 9350
+    },
+    {
+      "do": "depart",
+      "time": 9850,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 10050
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          1,
+          3
+        ]
+      },
+      "time": 12250,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "cell",
+        "cell": [
+          1,
+          3
+        ]
+      },
+      "count": 2,
+      "time": 12750
+    },
+    {
+      "do": "depart",
+      "time": 13250,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 13450
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          2,
+          1
+        ]
+      },
+      "time": 15600,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "cell",
+        "cell": [
+          2,
+          1
+        ]
+      },
+      "count": 2,
+      "time": 16100
+    },
+    {
+      "do": "depart",
+      "time": 16600,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 16800
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "slot",
+        "slot": 1
+      },
+      "time": 16950,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "slot",
+        "slot": 1
+      },
+      "count": 1,
+      "time": 17450
+    },
+    {
+      "do": "depart",
+      "time": 17950,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 18150
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "slot",
+        "slot": 3
+      },
+      "time": 19700,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "slot",
+        "slot": 3
+      },
+      "count": 1,
+      "time": 20200
+    },
+    {
+      "do": "depart",
+      "time": 20700,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 20900
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          3,
+          2
+        ]
+      },
+      "time": 22550,
+      "ms": 350
+    },
+    {
+      "do": "down",
+      "at": {
+        "part": "cell",
+        "cell": [
+          3,
+          2
+        ]
+      },
+      "time": 23050
+    },
+    {
+      "do": "move",
+      "at": {
+        "part": "cell",
+        "cell": [
+          3,
+          2
+        ],
+        "offset": [
+          1.2,
+          -1.2
+        ]
+      },
+      "time": 23130,
+      "ms": 450
+    },
+    {
+      "do": "ready",
+      "digit": 3,
+      "time": 23650
+    },
+    {
+      "do": "up",
+      "time": 24350
+    },
+    {
+      "do": "depart",
+      "time": 24850,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 25050
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          3,
+          3
+        ]
+      },
+      "time": 27250,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "cell",
+        "cell": [
+          3,
+          3
+        ]
+      },
+      "count": 2,
+      "time": 27750
+    },
+    {
+      "do": "depart",
+      "time": 28250,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 28450
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          2,
+          5
+        ]
+      },
+      "time": 30600,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "cell",
+        "cell": [
+          2,
+          5
+        ]
+      },
+      "count": 2,
+      "time": 31100
+    },
+    {
+      "do": "depart",
+      "time": 31600,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 31800
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          1,
+          1
+        ]
+      },
+      "time": 33950,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "cell",
+        "cell": [
+          1,
+          1
+        ]
+      },
+      "count": 2,
+      "time": 34450
+    },
+    {
+      "do": "depart",
+      "time": 34950,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 35150
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          5,
+          2
+        ]
+      },
+      "time": 37300,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "cell",
+        "cell": [
+          5,
+          2
+        ]
+      },
+      "count": 2,
+      "time": 37800
+    },
+    {
+      "do": "depart",
+      "time": 38300,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 38500
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "slot",
+        "slot": 1
+      },
+      "time": 38650,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "slot",
+        "slot": 1
+      },
+      "count": 1,
+      "time": 39150
+    },
+    {
+      "do": "depart",
+      "time": 39650,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 39850
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "slot",
+        "slot": 4
+      },
+      "time": 41400,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "slot",
+        "slot": 4
+      },
+      "count": 1,
+      "time": 41900
+    },
+    {
+      "do": "depart",
+      "time": 42400,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 42600
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          3,
+          2
+        ]
+      },
+      "time": 44250,
+      "ms": 350
+    },
+    {
+      "do": "down",
+      "at": {
+        "part": "cell",
+        "cell": [
+          3,
+          2
+        ]
+      },
+      "time": 44750
+    },
+    {
+      "do": "move",
+      "at": {
+        "part": "cell",
+        "cell": [
+          3,
+          2
+        ],
+        "offset": [
+          1.2,
+          0.0
+        ]
+      },
+      "time": 44830,
+      "ms": 450
+    },
+    {
+      "do": "ready",
+      "digit": 6,
+      "time": 45350
+    },
+    {
+      "do": "up",
+      "time": 46050
+    },
+    {
+      "do": "depart",
+      "time": 46550,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 46750
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          3,
+          3
+        ]
+      },
+      "time": 48950,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "cell",
+        "cell": [
+          3,
+          3
+        ]
+      },
+      "count": 2,
+      "time": 49450
+    },
+    {
+      "do": "depart",
+      "time": 49950,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 50150
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          2,
+          5
+        ]
+      },
+      "time": 52300,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "cell",
+        "cell": [
+          2,
+          5
+        ]
+      },
+      "count": 2,
+      "time": 52800
+    },
+    {
+      "do": "depart",
+      "time": 53300,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 53500
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          1,
+          1
+        ]
+      },
+      "time": 55650,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "cell",
+        "cell": [
+          1,
+          1
+        ]
+      },
+      "count": 2,
+      "time": 56150
+    },
+    {
+      "do": "depart",
+      "time": 56650,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 56850
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          5,
+          2
+        ]
+      },
+      "time": 59000,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "cell",
+        "cell": [
+          5,
+          2
+        ]
+      },
+      "count": 2,
+      "time": 59500
+    },
+    {
+      "do": "depart",
+      "time": 60000,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 60200
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "slot",
+        "slot": 1
+      },
+      "time": 60350,
+      "ms": 350
+    },
+    {
+      "do": "tap",
+      "at": {
+        "part": "slot",
+        "slot": 1
+      },
+      "count": 1,
+      "time": 60850
+    },
+    {
+      "do": "depart",
+      "time": 61350,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 61550
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "slot",
+        "slot": 2
+      },
+      "time": 62900,
+      "ms": 400
+    },
+    {
+      "do": "down",
+      "at": {
+        "part": "slot",
+        "slot": 2
+      },
+      "time": 63450
+    },
+    {
+      "do": "move",
+      "at": {
+        "part": "slot",
+        "slot": 1
+      },
+      "time": 63700,
+      "ms": 750
+    },
+    {
+      "do": "up",
+      "time": 64600
+    },
+    {
+      "do": "depart",
+      "time": 65000,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 65200
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "slot",
+        "slot": 3
+      },
+      "time": 66600,
+      "ms": 400
+    },
+    {
+      "do": "down",
+      "at": {
+        "part": "slot",
+        "slot": 3
+      },
+      "time": 67150
+    },
+    {
+      "do": "move",
+      "at": {
+        "part": "slot",
+        "slot": 1
+      },
+      "time": 67400,
+      "ms": 750
+    },
+    {
+      "do": "up",
+      "time": 68300
+    },
+    {
+      "do": "depart",
+      "time": 68700,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 68900
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "slot",
+        "slot": 4
+      },
+      "time": 70300,
+      "ms": 400
+    },
+    {
+      "do": "down",
+      "at": {
+        "part": "slot",
+        "slot": 4
+      },
+      "time": 70850
+    },
+    {
+      "do": "move",
+      "at": {
+        "part": "slot",
+        "slot": 1
+      },
+      "time": 71100,
+      "ms": 750
+    },
+    {
+      "do": "up",
+      "time": 72000
+    },
+    {
+      "do": "depart",
+      "time": 72400,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 72600
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          5,
+          0
+        ]
+      },
+      "time": 76800,
+      "ms": 350
+    },
+    {
+      "do": "down",
+      "at": {
+        "part": "cell",
+        "cell": [
+          5,
+          0
+        ]
+      },
+      "time": 77300,
+      "inputDelay": 440
+    },
+    {
+      "do": "move",
+      "at": {
+        "part": "cell",
+        "cell": [
+          5,
+          0
+        ],
+        "offset": [
+          0.0,
+          -1.617
+        ]
+      },
+      "time": 77340,
+      "ms": 600
+    },
+    {
+      "do": "up",
+      "time": 77990
+    },
+    {
+      "do": "depart",
+      "time": 78500,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 78700
+    },
+    {
+      "do": "hover",
+      "at": {
+        "part": "cell",
+        "cell": [
+          6,
+          1
+        ]
+      },
+      "time": 80100,
+      "ms": 350
+    },
+    {
+      "do": "down",
+      "at": {
+        "part": "cell",
+        "cell": [
+          6,
+          1
+        ]
+      },
+      "time": 80600,
+      "inputDelay": 440
+    },
+    {
+      "do": "move",
+      "at": {
+        "part": "cell",
+        "cell": [
+          6,
+          1
+        ],
+        "offset": [
+          0.0,
+          -1.617
+        ]
+      },
+      "time": 80640,
+      "ms": 600
+    },
+    {
+      "do": "up",
+      "time": 81290
+    },
+    {
+      "do": "depart",
+      "time": 81800,
+      "ms": 200
+    },
+    {
+      "do": "hide",
+      "time": 82000
+    }
+  ],
+  "presentation": {
+    "duration": 85600,
+    "captions": [
+      {
+        "text": "Separate strong-link groups interact through peer conflicts.",
+        "start": 500,
+        "end": 3300,
+        "target": {
+          "part": "cell",
+          "cell": [
+            6,
+            1
+          ]
+        }
+      },
+      {
+        "text": "Copy the original to try one possible choice.",
+        "start": 3300,
+        "end": 4700,
+        "target": {
+          "part": "slot",
+          "slot": 2
+        }
+      },
+      {
+        "text": "Try 2 at r4c3.",
+        "start": 6050,
+        "end": 7550,
+        "target": {
+          "part": "cell",
+          "cell": [
+            3,
+            2
+          ]
+        }
+      },
+      {
+        "text": "Now r2c4 must be 2.",
+        "start": 10250,
+        "end": 12250,
+        "target": {
+          "part": "cell",
+          "cell": [
+            1,
+            3
+          ]
+        }
+      },
+      {
+        "text": "Now r3c2 must be 2.",
+        "start": 13600,
+        "end": 15600,
+        "target": {
+          "part": "cell",
+          "cell": [
+            2,
+            1
+          ]
+        }
+      },
+      {
+        "text": "Copy the original to try one possible choice.",
+        "start": 18300,
+        "end": 19700,
+        "target": {
+          "part": "slot",
+          "slot": 3
+        }
+      },
+      {
+        "text": "Try 3 at r4c3.",
+        "start": 21050,
+        "end": 22550,
+        "target": {
+          "part": "cell",
+          "cell": [
+            3,
+            2
+          ]
+        }
+      },
+      {
+        "text": "Now r4c4 must be 2.",
+        "start": 25250,
+        "end": 27250,
+        "target": {
+          "part": "cell",
+          "cell": [
+            3,
+            3
+          ]
+        }
+      },
+      {
+        "text": "Now r3c6 must be 2.",
+        "start": 28600,
+        "end": 30600,
+        "target": {
+          "part": "cell",
+          "cell": [
+            2,
+            5
+          ]
+        }
+      },
+      {
+        "text": "Now r2c2 must be 2.",
+        "start": 31950,
+        "end": 33950,
+        "target": {
+          "part": "cell",
+          "cell": [
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "text": "Now r6c3 must be 2.",
+        "start": 35300,
+        "end": 37300,
+        "target": {
+          "part": "cell",
+          "cell": [
+            5,
+            2
+          ]
+        }
+      },
+      {
+        "text": "Copy the original to try one possible choice.",
+        "start": 40000,
+        "end": 41400,
+        "target": {
+          "part": "slot",
+          "slot": 4
+        }
+      },
+      {
+        "text": "Try 6 at r4c3.",
+        "start": 42750,
+        "end": 44250,
+        "target": {
+          "part": "cell",
+          "cell": [
+            3,
+            2
+          ]
+        }
+      },
+      {
+        "text": "Now r4c4 must be 2.",
+        "start": 46950,
+        "end": 48950,
+        "target": {
+          "part": "cell",
+          "cell": [
+            3,
+            3
+          ]
+        }
+      },
+      {
+        "text": "Now r3c6 must be 2.",
+        "start": 50300,
+        "end": 52300,
+        "target": {
+          "part": "cell",
+          "cell": [
+            2,
+            5
+          ]
+        }
+      },
+      {
+        "text": "Now r2c2 must be 2.",
+        "start": 53650,
+        "end": 55650,
+        "target": {
+          "part": "cell",
+          "cell": [
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "text": "Now r6c3 must be 2.",
+        "start": 57000,
+        "end": 59000,
+        "target": {
+          "part": "cell",
+          "cell": [
+            5,
+            2
+          ]
+        }
+      },
+      {
+        "text": "Overlay this try on the original.",
+        "start": 61700,
+        "end": 62900,
+        "target": {
+          "part": "slot",
+          "slot": 2
+        }
+      },
+      {
+        "text": "Overlay this try on the original.",
+        "start": 65400,
+        "end": 66600,
+        "target": {
+          "part": "slot",
+          "slot": 3
+        }
+      },
+      {
+        "text": "Overlay this try on the original.",
+        "start": 69100,
+        "end": 70300,
+        "target": {
+          "part": "slot",
+          "slot": 4
+        }
+      },
+      {
+        "text": "Every possible choice excludes these same notes.",
+        "start": 72800,
+        "end": 75600,
+        "target": {
+          "part": "cells",
+          "cells": [
+            [
+              5,
+              0
+            ],
+            [
+              6,
+              1
+            ]
+          ]
+        }
+      },
+      {
+        "text": "Remove 2 at r6c1.",
+        "start": 75600,
+        "end": 76800,
+        "target": {
+          "part": "cell",
+          "cell": [
+            5,
+            0
+          ],
+          "note": 2
+        }
+      },
+      {
+        "text": "Remove 2 at r7c2.",
+        "start": 78900,
+        "end": 80100,
+        "target": {
+          "part": "cell",
+          "cell": [
+            6,
+            1
+          ],
+          "note": 2
+        }
+      },
+      {
+        "text": "Keep only the eliminations shared by every trial.",
+        "start": 82200,
+        "end": 85200,
+        "target": {
+          "part": "cells",
+          "cells": [
+            [
+              5,
+              0
+            ],
+            [
+              6,
+              1
+            ]
+          ]
+        }
+      }
+    ],
+    "focus": [
+      {
+        "start": 3300,
+        "duration": 1400,
+        "shape": "rect",
+        "target": {
+          "part": "slot",
+          "slot": 2
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 6050,
+        "duration": 1500,
+        "shape": "rect",
+        "target": {
+          "part": "cell",
+          "cell": [
+            3,
+            2
+          ]
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 10250,
+        "duration": 2000,
+        "shape": "rect",
+        "target": {
+          "part": "cell",
+          "cell": [
+            1,
+            3
+          ]
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 13600,
+        "duration": 2000,
+        "shape": "rect",
+        "target": {
+          "part": "cell",
+          "cell": [
+            2,
+            1
+          ]
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 18300,
+        "duration": 1400,
+        "shape": "rect",
+        "target": {
+          "part": "slot",
+          "slot": 3
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 21050,
+        "duration": 1500,
+        "shape": "rect",
+        "target": {
+          "part": "cell",
+          "cell": [
+            3,
+            2
+          ]
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 25250,
+        "duration": 2000,
+        "shape": "rect",
+        "target": {
+          "part": "cell",
+          "cell": [
+            3,
+            3
+          ]
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 28600,
+        "duration": 2000,
+        "shape": "rect",
+        "target": {
+          "part": "cell",
+          "cell": [
+            2,
+            5
+          ]
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 31950,
+        "duration": 2000,
+        "shape": "rect",
+        "target": {
+          "part": "cell",
+          "cell": [
+            1,
+            1
+          ]
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 35300,
+        "duration": 2000,
+        "shape": "rect",
+        "target": {
+          "part": "cell",
+          "cell": [
+            5,
+            2
+          ]
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 40000,
+        "duration": 1400,
+        "shape": "rect",
+        "target": {
+          "part": "slot",
+          "slot": 4
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 42750,
+        "duration": 1500,
+        "shape": "rect",
+        "target": {
+          "part": "cell",
+          "cell": [
+            3,
+            2
+          ]
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 46950,
+        "duration": 2000,
+        "shape": "rect",
+        "target": {
+          "part": "cell",
+          "cell": [
+            3,
+            3
+          ]
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 50300,
+        "duration": 2000,
+        "shape": "rect",
+        "target": {
+          "part": "cell",
+          "cell": [
+            2,
+            5
+          ]
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 53650,
+        "duration": 2000,
+        "shape": "rect",
+        "target": {
+          "part": "cell",
+          "cell": [
+            1,
+            1
+          ]
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 57000,
+        "duration": 2000,
+        "shape": "rect",
+        "target": {
+          "part": "cell",
+          "cell": [
+            5,
+            2
+          ]
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 61700,
+        "duration": 1200,
+        "shape": "rect",
+        "target": {
+          "part": "slot",
+          "slot": 2
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 65400,
+        "duration": 1200,
+        "shape": "rect",
+        "target": {
+          "part": "slot",
+          "slot": 3
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 69100,
+        "duration": 1200,
+        "shape": "rect",
+        "target": {
+          "part": "slot",
+          "slot": 4
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 72800,
+        "duration": 2800,
+        "shape": "rect",
+        "target": {
+          "part": "cells",
+          "cells": [
+            [
+              5,
+              0
+            ],
+            [
+              6,
+              1
+            ]
+          ]
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 75600,
+        "duration": 1200,
+        "shape": "rect",
+        "target": {
+          "part": "cell",
+          "cell": [
+            5,
+            0
+          ],
+          "note": 2
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 78900,
+        "duration": 1200,
+        "shape": "rect",
+        "target": {
+          "part": "cell",
+          "cell": [
+            6,
+            1
+          ],
+          "note": 2
+        },
+        "from": 6,
+        "to": 2
+      },
+      {
+        "start": 82200,
+        "duration": 3000,
+        "shape": "rect",
+        "target": {
+          "part": "cells",
+          "cells": [
+            [
+              5,
+              0
+            ],
+            [
+              6,
+              1
+            ]
+          ]
+        },
+        "from": 6,
+        "to": 2
+      }
+    ],
+    "choiceReveal": {
+      "start": 500,
+      "frames": [
+        [
+          0,
+          0,
+          9,
+          1
+        ],
+        [
+          0,
+          3,
+          3,
+          3
+        ],
+        [
+          0,
+          3,
+          9,
+          1
+        ],
+        [
+          0,
+          5,
+          9,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          9
+        ],
+        [
+          3,
+          0,
+          1,
+          9
+        ],
+        [
+          3,
+          3,
+          3,
+          3
+        ],
+        [
+          6,
+          0,
+          1,
+          9
+        ],
+        [
+          6,
+          0,
+          3,
+          3
+        ]
+      ],
+      "labels": [
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          3,
+          2
+        ],
+        [
+          2,
+          5,
+          2
+        ],
+        [
+          3,
+          2,
+          2
+        ],
+        [
+          3,
+          3,
+          2
+        ],
+        [
+          5,
+          0,
+          2
+        ],
+        [
+          5,
+          5,
+          2
+        ],
+        [
+          6,
+          0,
+          2
+        ],
+        [
+          6,
+          1,
+          2
+        ]
+      ]
+    },
+    "bubbleSize": {
+      "maxWidth": 240,
+      "minHeight": 38
+    },
+    "captureFrameMs": 80
+  },
+  "expected": {
+    "initialStatus": "dilemma",
+    "boards": 4,
+    "overlays": [
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "validSlots": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slotFills": [
+      [
+        1,
+        3,
+        2,
+        2
+      ],
+      [
+        1,
+        1,
+        3,
+        2
+      ],
+      [
+        1,
+        2,
+        1,
+        2
+      ],
+      [
+        2,
+        3,
+        2,
+        3
+      ],
+      [
+        2,
+        3,
+        3,
+        2
+      ],
+      [
+        2,
+        2,
+        5,
+        2
+      ],
+      [
+        2,
+        1,
+        1,
+        2
+      ],
+      [
+        2,
+        5,
+        2,
+        2
+      ],
+      [
+        3,
+        3,
+        2,
+        6
+      ],
+      [
+        3,
+        3,
+        3,
+        2
+      ],
+      [
+        3,
+        2,
+        5,
+        2
+      ],
+      [
+        3,
+        1,
+        1,
+        2
+      ],
+      [
+        3,
+        5,
+        2,
+        2
+      ]
+    ],
+    "fills": [
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        3,
+        0
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        2,
+        5,
+        0
+      ],
+      [
+        3,
+        2,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        5,
+        2,
+        0
+      ]
+    ],
+    "notes": [
+      [
+        5,
+        0,
+        2,
+        false
+      ],
+      [
+        6,
+        1,
+        2,
+        false
+      ]
+    ],
+    "revealFrameCount": 9,
+    "revealLabelCount": 9
+  }
+}
