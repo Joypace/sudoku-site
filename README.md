@@ -85,6 +85,11 @@ fail before publication; new techniques add their own owning validator/test.
 Intermediate named rules live in `tools/intermediate_proofs.py`; their native
 gesture contracts live in `tools/intermediate_stories.py`. Their owning tests are
 `test/intermediate_proofs_test.py` and `test/intermediate_lessons_test.py`.
+Brute Force uses finite contextual search certificates and independently replays
+the visible events in `tools/brute_force.py` and `tools/brute_stories.py`.
+Its input binding keeps real history gestures, redo cues and intermediate native
+checkpoints attached to those events; the owning `test/brute_*_test.py` tests
+cover refuted subtrees, global copied-board history and checkpoint timing.
 The gate builder adds only the literal `/learn/*` static exclusion and exact
 known paths/aliases, keeping the combined Pages route budget bounded. Run
 `python3 test/lessons_test.py` and the isolated browser test

@@ -527,6 +527,23 @@
           "id": "example-3"
         }
       ]
+    },
+    {
+      "slug": "brute-force",
+      "title": "Brute Force: explore a choice, follow it, and backtrack",
+      "description": "Learn Sudoku search with copied boards, single-board depth-first search, Lightning, smart Undo/Redo and the real redo cues. Three App animations and playable examples.",
+      "published": "2026-11-27",
+      "examples": [
+        {
+          "id": "example-1"
+        },
+        {
+          "id": "example-2"
+        },
+        {
+          "id": "example-3"
+        }
+      ]
     }
   ],
   "curriculum": "curriculum.json"

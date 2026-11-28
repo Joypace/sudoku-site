@@ -124,6 +124,13 @@ PROOFS={'x-wing':xwing,'hidden-single':hidden_single,'naked-pair':naked_pair,'po
 
 def _load_sibling(name):
  spec=importlib.util.spec_from_file_location(name,Path(__file__).with_name(name+'.py'));module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module);return module
+_brute=_load_sibling('brute_force')
+_brute_events=_load_sibling('brute_stories')
+_brute_binding=_load_sibling('brute_story_binding')
+def brute_force(example):
+ _brute.validate(example)
+ _brute_events.validate_events(example)
+PROOFS['brute-force']=brute_force
 _full_house=_load_sibling('full_house')
 PROOFS['full-house']=lambda example:_full_house.validate_pattern(example,position,require)
 _locked_pair=_load_sibling('locked_pair')
@@ -199,6 +206,7 @@ def validate(root):
    if slug=='locked-triple':_stories.validate_story(data,example)
    if slug=='unique-rectangle':_rectangle_stories.validate_story(data,example,_stories,_intermediate,require)
    if slug=='bug-plus-one':_bug_stories.validate_story(data,example,_stories,_intermediate,require)
+   if slug=='brute-force':_brute_binding.validate_story(data,example)
    if slug=='sashimi-x-wing':_stories.validate_story(data,example)
    if slug=='hidden-pair':hidden_pair_animation(data,example)
    if slug=='claiming':claiming_animation(data,example)

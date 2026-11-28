@@ -3,6 +3,7 @@ import os from 'node:os';
 import path from 'node:path';
 import {spawn} from 'node:child_process';
 import assert from 'node:assert/strict';
+import {closeOwnedBrowser} from './browser_cleanup.mjs';
 const url=process.argv[2];assert(url,'Supply the local lesson URL');
 const output=path.resolve(process.argv[3]||os.tmpdir());await fs.mkdir(output,{recursive:true});
 const profile=await fs.mkdtemp(path.join(os.tmpdir(),'lesson-qa-'));
@@ -35,5 +36,5 @@ try{
  await call('Emulation.setEmulatedMedia',{features:[{name:'prefers-reduced-motion',value:'reduce'}]});await navigate();await until('document.querySelector("[data-example-animation]")','Reduced motion page missing');await read('document.querySelector("[data-example-animation]").scrollIntoView({block:"center",behavior:"instant"})');await until(`${svg}?.localName==='svg'&&!document.querySelector('[data-play]').disabled`,'Reduced motion SVG missing');assert(await read(`${svg}.animationsPaused()&&${svg}.getCurrentTime()<.05`),'Reduced motion autoplay');assert.equal(errors.length,0,errors.join(';'));
  await fs.writeFile(path.join(output,'browser-check.local.json'),JSON.stringify({state:'PASS',responsive,checks:['three original examples','paused initial frame','play/pause','seek','replay','mobile enlarge contained','offscreen pause','reduced motion','noJSexceptions'],errors},null,2));console.log('PASS responsive320/390/834/1280, actualAppSVG play/pause/seek/replay/enlarge/offscreen/reduced-motion checks');
 }finally{
- socket?.close();if(browser.exitCode===null){browser.kill();await Promise.race([new Promise(r=>browser.once('exit',r)),wait(3000)])}assert(browser.exitCode!==null||browser.signalCode!==null,'Owned browser not terminal');await fs.rm(profile,{recursive:true,force:true});
+ socket?.close();const cleanup=await closeOwnedBrowser(browser);await fs.writeFile(path.join(output,'browser-cleanup.local.json'),JSON.stringify(cleanup));await fs.rm(profile,{recursive:true,force:true});
 }
