@@ -478,6 +478,23 @@
       ]
     },
     {
+      "slug": "sashimi-jellyfish",
+      "title": "Sashimi Jellyfish: four lines, a fin, and a simpler pattern underneath",
+      "description": "Learn Sashimi Jellyfish with three original Dilemma puzzles, real App animations and overlay marks, and exact playable puzzle links.",
+      "published": "2026-11-28",
+      "examples": [
+        {
+          "id": "example-1"
+        },
+        {
+          "id": "example-2"
+        },
+        {
+          "id": "example-3"
+        }
+      ]
+    },
+    {
       "slug": "simple-coloring",
       "title": "Simple Coloring: opposite possibilities through strong links",
       "description": "Learn Simple Coloring with three original Dilemma puzzles, real App animations and overlay marks, and exact playable puzzle links.",
